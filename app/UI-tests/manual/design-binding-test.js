@@ -1,5 +1,5 @@
 /**
- *  
+ * 
  * @author mg
  */
 function design_binding_test() {
