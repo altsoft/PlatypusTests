@@ -10,6 +10,10 @@ function design_binding_test() {
     self.show = function() {
         form.show();
     };
+    
+    self.showOnDesktop = function(aDesktop) {
+        form.showInternalFrame(aDesktop);
+    };
 
     self.showOn = function(aElementOrId) {
         form.view.showOn(aElementOrId);
