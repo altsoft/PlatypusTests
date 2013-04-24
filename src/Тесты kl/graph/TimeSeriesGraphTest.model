@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
+<entity Title="KL_TEST_GRAPH_TIMESERIES" entityHeight="200" entityIconified="false" entityId="134088772744498" entityLocationX="188" entityLocationY="27" entityWidth="150" tableAlias="" tableName="KL_TEST_GRAPH_TIMESERIES" tableSchemaName=""/>
+</datamodel>

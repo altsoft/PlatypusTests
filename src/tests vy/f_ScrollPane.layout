@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="294px" prefWidth="453px">
+<widget name="jScrollPane1" parent="Form" prefHeight="210px" prefWidth="250px" type="ScrollDesignInfo" verticalScrollBarPolicy="21">
+<border type="EtchedBorderDesignInfo"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="30" y="10"/>
+<easSize height="210" width="250"/>
+</constraints>
+</widget>
+<widget name="jPanel1" parent="jScrollPane1" prefHeight="215px" prefWidth="319px" type="PanelDesignInfo">
+<layout type="AbsoluteLayoutDesignInfo"/>
+</widget>
+<widget name="jButton1" parent="jPanel1" prefHeight="25px" prefWidth="59px" text="jButton1" type="ButtonDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="10" y="10"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget name="jButton2" parent="jPanel1" prefHeight="25px" prefWidth="59px" text="jButton2" type="ButtonDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="260" y="60"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget name="jButton3" parent="jPanel1" prefHeight="25px" prefWidth="59px" text="jButton3" type="ButtonDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="100" y="190"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget name="jButton4" parent="jPanel1" prefHeight="25px" prefWidth="59px" text="jButton4" type="ButtonDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="70" y="90"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<layout type="AbsoluteLayoutDesignInfo"/>
+</layout>

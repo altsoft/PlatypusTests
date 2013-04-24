@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dbSettings name="130113304554061" password="eas" schema="PM" title="conn1" url="jdbc:oracle:thin:@olympic.altsoft.biz:1521/adb" user="eas"/>

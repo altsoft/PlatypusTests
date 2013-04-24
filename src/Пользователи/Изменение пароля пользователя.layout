@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px" windowOpened="formWindowOpened">
+<widget name="jETALabel" parent="Form" prefHeight="15px" prefWidth="120px" text="Пользователь:" type="LabelDesignInfo">
+<constraints height="15px" left="12px" top="12px" type="MarginConstraintsDesignInfo" width="120px"/>
+</widget>
+<widget backgroundColor="#eeeeee" editable="false" foregroundColor="#333333" name="lblUser" parent="Form" prefHeight="19px" prefWidth="178px" toolTipText="Пользователь Platypus" type="DbLabelDesignInfo">
+<datamodelElement entityId="132124999657222" fieldName="USR_NAME"/>
+<constraints height="19px" left="201px" top="12px" type="MarginConstraintsDesignInfo" width="178px"/>
+</widget>
+<widget name="jETALabel1" parent="Form" prefHeight="20px" prefWidth="120px" text="Новый пароль:" type="LabelDesignInfo">
+<constraints height="20px" left="12px" top="43px" type="MarginConstraintsDesignInfo" width="120px"/>
+</widget>
+<widget horizontalAlignment="2" name="edNewPswd1" parent="Form" prefHeight="19px" prefWidth="178px" toolTipText="Введите новый пароль" type="PasswordFieldDesignInfo">
+<constraints height="19px" left="201px" top="43px" type="MarginConstraintsDesignInfo" width="178px"/>
+</widget>
+<widget name="jETALabel2" parent="Form" prefHeight="15px" prefWidth="171px" text="Новый пароль еще раз:" type="LabelDesignInfo">
+<constraints height="15px" left="12px" top="75px" type="MarginConstraintsDesignInfo" width="171px"/>
+</widget>
+<widget horizontalAlignment="2" name="edNewPswd2" parent="Form" prefHeight="19px" prefWidth="178px" toolTipText="Повторно введите новый пароль" type="PasswordFieldDesignInfo">
+<constraints height="19px" left="201px" top="75px" type="MarginConstraintsDesignInfo" width="178px"/>
+</widget>
+<widget actionPerformed="btnCancelActionPerformed" name="btnCancel" opaque="false" parent="Form" prefHeight="25px" prefWidth="88px" text="Отмена" type="ButtonDesignInfo">
+<constraints height="25px" left="291px" top="106px" type="MarginConstraintsDesignInfo" width="88px"/>
+</widget>
+<widget actionPerformed="btnOkActionPerformed" name="btnOk" opaque="false" parent="Form" prefHeight="25px" prefWidth="73px" text="ОK" type="ButtonDesignInfo">
+<constraints height="25px" left="212px" top="106px" type="MarginConstraintsDesignInfo" width="73px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

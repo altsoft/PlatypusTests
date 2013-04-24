@@ -1,0 +1,7 @@
+/**
+ * @name 131434483524937
+*/
+Select t.LOG_ID, t.OPDATE, t.OPHOST 
+From MTD_DATACHNGLOG t
+, q131831338017172 q
+ Where ROWNUM < 100

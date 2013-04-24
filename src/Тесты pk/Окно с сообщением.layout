@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget name="jETALabel" parent="Form" prefHeight="15px" prefWidth="143px" text="This is a popup form" type="LabelDesignInfo">
+<constraints height="15px" left="51px" top="28px" type="MarginConstraintsDesignInfo" width="143px"/>
+</widget>
+<widget actionPerformed="btnCancel_actionPerformed" name="btnCancel" parent="Form" prefHeight="25px" prefWidth="88px" text="Отмена" type="ButtonDesignInfo">
+<constraints height="25px" left="257px" top="246px" type="MarginConstraintsDesignInfo" width="88px"/>
+</widget>
+<widget actionPerformed="btnOk_actionPerformed" name="btnOk" parent="Form" prefHeight="25px" prefWidth="54px" text="OK" type="ButtonDesignInfo">
+<constraints height="25px" left="197px" top="246px" type="MarginConstraintsDesignInfo" width="54px"/>
+</widget>
+<widget name="dbGrid" parent="Form" prefHeight="100px" prefWidth="297px" type="DbGridDesignInfo">
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="124758616401523451" field="false"/>
+</rowsColumnsDesignInfo>
+<constraints height="100px" left="51px" top="43px" type="MarginConstraintsDesignInfo" width="297px"/>
+</widget>
+<widget name="dbGrid1" parent="Form" prefHeight="100px" prefWidth="297px" type="DbGridDesignInfo">
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="ORDER_ID" title="Id заказа">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="124766906867158846" fieldName="ORDER_ID"/>
+<headerEasFont name="Dialog"/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124766906867158846" fieldName="ORDER_ID"/>
+</controlInfo>
+</column>
+<column name="GOOD_NAME" title="Наименование товара" width="350">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="124766906867158846" fieldName="AMOUNT"/>
+<headerEasFont name="Dialog"/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124766906867158846" fieldName="AMOUNT"/>
+</controlInfo>
+</column>
+<column title="Объединение">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+<column name="AMOUNT" title="&lt;b&gt;Количество товара&lt;/b&gt;">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="124766906867158846" fieldName="AMOUNT"/>
+<headerEasFont name="Dialog"/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124766906867158846" fieldName="AMOUNT"/>
+</controlInfo>
+</column>
+<column name="CUSTOMER_NAME" title="Имя заказчика">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+<style>
+<nativeBackground/>
+<nativeFont name="Tahoma" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+</column>
+<style>
+<nativeBackground/>
+<nativeFont name="Tahoma" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+</column>
+<rowsColumnsDesignInfo fixedColumns="2" fixedRows="1">
+<rowsDatasource entityId="124766906867158846" field="false"/>
+</rowsColumnsDesignInfo>
+<constraints height="100px" left="51px" top="143px" type="MarginConstraintsDesignInfo" width="297px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

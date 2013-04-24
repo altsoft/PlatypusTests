@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="510px" prefWidth="782px">
+<widget dividerLocation="350" foregroundColor="#333333" leftComponent="jPanel" name="jSplitPane" parent="Form" prefHeight="510px" prefWidth="780px" rightComponent="jPanel1" type="SplitDesignInfo">
+<easFont name="Dialog"/>
+<constraints bottom="0px" left="0px" right="2px" top="0px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget name="jPanel" parent="jSplitPane" prefHeight="508px" prefWidth="349px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+</widget>
+<widget name="dbGrid" parent="jPanel" prefHeight="510px" prefWidth="354px" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="124686122289018231" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField entityId="124686122289018231" fieldName="P_ID"/>
+</treeDesignInfo>
+<column name="NAME" title="Наименование" width="300">
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="124686122289018231" fieldName="NAME"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="Dialog"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124686122289018231" fieldName="NAME"/>
+</controlInfo>
+</column>
+<column title="Номер">
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="Tahoma" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+</column>
+<column>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="Tahoma" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+</column>
+<constraints bottom="-2px" left="0px" right="-5px" top="0px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget name="jPanel1" parent="jSplitPane" prefHeight="508px" prefWidth="424px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+</widget>
+<widget name="jTabbedPane" parent="jPanel1" prefHeight="510px" prefWidth="430px" type="TabsDesignInfo">
+<constraints bottom="-2px" left="0px" right="-6px" top="0px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget name="jPanel2" parent="jTabbedPane" prefHeight="465px" prefWidth="425px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints tabTitle="Описание" type="TabsConstraintsDesignInfo"/>
+</widget>
+<widget name="jTabbedPane1" parent="jPanel2" prefHeight="460px" prefWidth="420px" type="TabsDesignInfo">
+<constraints bottom="5px" left="0px" right="5px" top="0px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget name="jPanel3" parent="jTabbedPane1" prefHeight="415px" prefWidth="415px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints tabTitle="Паспорт" type="TabsConstraintsDesignInfo"/>
+</widget>
+<widget name="jETALabel" parent="jPanel3" prefHeight="0px" prefWidth="0px" text="Наименование объекта" type="LabelDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jETALabel1" parent="jPanel3" prefHeight="0px" prefWidth="0px" text="Номер объекта" type="LabelDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jETALabel2" parent="jPanel3" prefHeight="0px" prefWidth="0px" text="Шифр технологический" type="LabelDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jETALabel3" parent="jPanel3" prefHeight="0px" prefWidth="0px" text="Завод-изготовитель" type="LabelDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jETALabel4" parent="jPanel3" prefHeight="18px" prefWidth="10px" text="Заводской номер" type="LabelDesignInfo">
+<constraints height="18px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="10px"/>
+</widget>
+<widget name="jTextField" parent="jPanel3" prefHeight="0px" prefWidth="0px" type="TextFieldDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jTextField1" parent="jPanel3" prefHeight="0px" prefWidth="0px" type="TextFieldDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jTextField2" parent="jPanel3" prefHeight="0px" prefWidth="0px" type="TextFieldDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jTextField3" parent="jPanel3" prefHeight="0px" prefWidth="0px" type="TextFieldDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jTextField4" parent="jPanel3" prefHeight="0px" prefWidth="0px" type="TextFieldDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jETALabel5" parent="jPanel3" prefHeight="19px" prefWidth="10px" text="Дата выпуска" type="LabelDesignInfo">
+<constraints height="19px" left="0px" top="18px" type="MarginConstraintsDesignInfo" width="10px"/>
+</widget>
+<widget name="jTextField5" parent="jPanel3" prefHeight="0px" prefWidth="0px" type="TextFieldDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jETALabel6" parent="jPanel3" prefHeight="19px" prefWidth="10px" text="Дата ввода" type="LabelDesignInfo">
+<constraints height="19px" left="0px" top="37px" type="MarginConstraintsDesignInfo" width="10px"/>
+</widget>
+<widget name="jTextField6" parent="jPanel3" prefHeight="0px" prefWidth="0px" type="TextFieldDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jETALabel7" parent="jPanel3" prefHeight="19px" prefWidth="34px" text="№ акта ввода" type="LabelDesignInfo">
+<constraints height="19px" left="10px" top="37px" type="MarginConstraintsDesignInfo" width="34px"/>
+</widget>
+<widget name="jTextField7" parent="jPanel3" prefHeight="19px" prefWidth="50px" type="TextFieldDesignInfo">
+<constraints height="19px" left="44px" top="37px" type="MarginConstraintsDesignInfo" width="50px"/>
+</widget>
+<widget name="jETALabel8" parent="jPanel3" prefHeight="19px" prefWidth="10px" text="Дата списания" type="LabelDesignInfo">
+<constraints height="19px" left="0px" top="56px" type="MarginConstraintsDesignInfo" width="10px"/>
+</widget>
+<widget name="jTextField8" parent="jPanel3" prefHeight="0px" prefWidth="0px" type="TextFieldDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jETALabel9" parent="jPanel3" prefHeight="19px" prefWidth="10px" text="Количество" type="LabelDesignInfo">
+<constraints height="19px" left="0px" top="75px" type="MarginConstraintsDesignInfo" width="10px"/>
+</widget>
+<widget name="jTextField9" parent="jPanel3" prefHeight="0px" prefWidth="0px" type="TextFieldDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jETALabel10" parent="jPanel3" prefHeight="18px" prefWidth="34px" text="Краткое наименование" type="LabelDesignInfo">
+<constraints height="18px" left="10px" top="0px" type="MarginConstraintsDesignInfo" width="34px"/>
+</widget>
+<widget name="jTextField10" parent="jPanel3" prefHeight="18px" prefWidth="50px" type="TextFieldDesignInfo">
+<constraints height="18px" left="44px" top="0px" type="MarginConstraintsDesignInfo" width="50px"/>
+</widget>
+<widget name="jETALabel11" parent="jPanel3" prefHeight="19px" prefWidth="10px" text="Стоимость" type="LabelDesignInfo">
+<constraints height="19px" left="0px" top="94px" type="MarginConstraintsDesignInfo" width="10px"/>
+</widget>
+<widget name="jTextField11" parent="jPanel3" prefHeight="0px" prefWidth="0px" type="TextFieldDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jETALabel12" parent="jPanel3" prefHeight="19px" prefWidth="10px" text="Коэффициент использования" type="LabelDesignInfo">
+<constraints height="19px" left="0px" top="113px" type="MarginConstraintsDesignInfo" width="10px"/>
+</widget>
+<widget name="jTextField12" parent="jPanel3" prefHeight="0px" prefWidth="0px" type="TextFieldDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jETALabel13" parent="jPanel3" prefHeight="19px" prefWidth="34px" text="Время использования" type="LabelDesignInfo">
+<constraints height="19px" left="10px" top="113px" type="MarginConstraintsDesignInfo" width="34px"/>
+</widget>
+<widget name="jTextField13" parent="jPanel3" prefHeight="19px" prefWidth="50px" type="TextFieldDesignInfo">
+<constraints height="19px" left="44px" top="113px" type="MarginConstraintsDesignInfo" width="50px"/>
+</widget>
+<widget name="jETALabel14" parent="jPanel3" prefHeight="19px" prefWidth="10px" text="Срок службы" type="LabelDesignInfo">
+<constraints height="19px" left="0px" top="132px" type="MarginConstraintsDesignInfo" width="10px"/>
+</widget>
+<widget name="jTextField14" parent="jPanel3" prefHeight="0px" prefWidth="0px" type="TextFieldDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jETALabel15" parent="jPanel3" prefHeight="19px" prefWidth="10px" text="Отработано (пробег)" type="LabelDesignInfo">
+<constraints height="19px" left="0px" top="151px" type="MarginConstraintsDesignInfo" width="10px"/>
+</widget>
+<widget name="jTextField15" parent="jPanel3" prefHeight="0px" prefWidth="0px" type="TextFieldDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jETALabel16" parent="jPanel3" prefHeight="19px" prefWidth="34px" text="в годах" type="LabelDesignInfo">
+<constraints height="19px" left="10px" top="132px" type="MarginConstraintsDesignInfo" width="34px"/>
+</widget>
+<widget name="jETALabel17" parent="jPanel3" prefHeight="19px" prefWidth="50px" text="с 24.07.2008 по 24.07.2018" type="LabelDesignInfo">
+<constraints height="19px" left="44px" top="132px" type="MarginConstraintsDesignInfo" width="50px"/>
+</widget>
+<widget name="jETALabel18" parent="jPanel3" prefHeight="19px" prefWidth="34px" text="в месяцах" type="LabelDesignInfo">
+<constraints height="19px" left="10px" top="151px" type="MarginConstraintsDesignInfo" width="34px"/>
+</widget>
+<widget name="jETALabel19" parent="jPanel3" prefHeight="19px" prefWidth="50px" text="с 24.07.2008 по 20.12.2008" type="LabelDesignInfo">
+<constraints height="19px" left="44px" top="151px" type="MarginConstraintsDesignInfo" width="50px"/>
+</widget>
+<widget name="jPanel4" parent="jTabbedPane1" prefHeight="415px" prefWidth="415px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints tabTitle="Классификация" type="TabsConstraintsDesignInfo"/>
+</widget>
+<widget name="jPanel5" parent="jTabbedPane1" prefHeight="415px" prefWidth="415px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints tabTitle="ОС" type="TabsConstraintsDesignInfo"/>
+</widget>
+<widget name="jPanel6" parent="jTabbedPane1" prefHeight="415px" prefWidth="415px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints tabTitle="ТС" type="TabsConstraintsDesignInfo"/>
+</widget>
+<widget name="jPanel7" parent="jTabbedPane1" prefHeight="415px" prefWidth="415px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints tabTitle="Документы" type="TabsConstraintsDesignInfo"/>
+</widget>
+<widget name="jPanel8" parent="jTabbedPane1" prefHeight="415px" prefWidth="415px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints tabTitle="МОЛ" type="TabsConstraintsDesignInfo"/>
+</widget>
+<widget name="jPanel9" parent="jTabbedPane" prefHeight="465px" prefWidth="425px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints tabTitle="Спецификация" type="TabsConstraintsDesignInfo"/>
+</widget>
+<widget name="jPanel10" parent="jTabbedPane" prefHeight="465px" prefWidth="425px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints tabTitle="Состояние" type="TabsConstraintsDesignInfo"/>
+</widget>
+<widget name="jPanel11" parent="jTabbedPane" prefHeight="465px" prefWidth="425px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints tabTitle="Обслуживание" type="TabsConstraintsDesignInfo"/>
+</widget>
+<widget name="jPanel12" parent="jTabbedPane" prefHeight="465px" prefWidth="425px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints tabTitle="Работы и материалы" type="TabsConstraintsDesignInfo"/>
+</widget>
+<widget floatable="false" name="jToolBar" parent="Form" prefHeight="0px" prefWidth="0px" type="ToolbarDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget actionPerformed="btnAdd_onClick" icon="plus.png" name="btnAdd" parent="jToolBar" prefHeight="-4px" prefWidth="28px" toolTipText="Добавить новый элемент справочника" type="ButtonDesignInfo"/>
+<widget actionPerformed="" icon="pencil.png" name="jButton" parent="jToolBar" prefHeight="-4px" prefWidth="28px" toolTipText="Редактировать элемент справочника" type="ButtonDesignInfo"/>
+<widget actionPerformed="" icon="cross.png" name="jButton1" parent="jToolBar" prefHeight="-4px" prefWidth="28px" toolTipText="Удалить элемент справочника" type="ButtonDesignInfo"/>
+<widget actionPerformed="" icon="funnel--plus.png" name="jButton2" parent="jToolBar" prefHeight="-4px" prefWidth="28px" toolTipText="Установить фильтр" type="ButtonDesignInfo"/>
+<widget actionPerformed="" icon="funnel--minus.png" name="jButton3" parent="jToolBar" prefHeight="-4px" prefWidth="28px" toolTipText="Снять фильтр" type="ButtonDesignInfo"/>
+<widget actionPerformed="" icon="refresh/refresh.png" name="jButton4" parent="jToolBar" prefHeight="-4px" prefWidth="28px" toolTipText="Обновить" type="ButtonDesignInfo"/>
+<widget actionPerformed="" icon="disk-black.png" name="jButton5" parent="jToolBar" prefHeight="-4px" prefWidth="28px" toolTipText="Сохранить" type="ButtonDesignInfo"/>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parameters>
+<parameter description="" name="Param1" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName=""/>
+<parameter description="" name="Param2" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName=""/>
+<parameter description="" name="Param3" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName=""/>
+</parameters>
+<parametersEntity entityHeight="185" entityIconified="false" entityLocationX="22" entityLocationY="21" entityWidth="149" onAfterChange="ordersRowChanged"/>
+<entity Name="orders1" Title="Заказы" entityHeight="254" entityIconified="false" entityId="124964617295076" entityLocationX="308" entityLocationY="28" entityWidth="310" onAfterChange="ordersRowChanged" onAfterDelete="ordersRowDeleted" onAfterInsert="ordersRowInserted" queryId="null" tableDbId="null" tableName="GOODORDER" tableSchemaName="EAS"/>
+<entity Name="" Title="Дети узла" entityHeight="256" entityIconified="false" entityId="124972711515054" entityLocationX="22" entityLocationY="306" entityWidth="351" queryId="124887306913345" tableDbId="null" tableName="" tableSchemaName=""/>
+<relation leftEntityFieldName="Param2" leftEntityId="-1" rightEntityFieldName="MDENT_NAME" rightEntityId="124972711515054"/>
+</datamodel>

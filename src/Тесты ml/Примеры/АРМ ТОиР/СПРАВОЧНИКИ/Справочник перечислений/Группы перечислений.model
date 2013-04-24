@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+<entity Title="Справочник перечислений" entityHeight="200" entityIconified="false" entityId="124904941368704" entityLocationX="224" entityLocationY="13" entityWidth="256" queryId="null" tableAlias="T_ENUMERATIONS_1" tableName="ENUMERATIONS" tableSchemaName="EAS"/>
+</datamodel>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel datamodelDbId="null">
+<fieldsEntity entityHeight="200" entityIconified="false" entityId="132005261659878" entityLocationX="369" entityLocationY="19" entityWidth="150" tableName="CUSTOMER"/>
+<fieldsEntity entityHeight="200" entityIconified="false" entityId="131727804875779" entityLocationX="91" entityLocationY="15" entityWidth="150" tableName="myTest"/>
+</datamodel>

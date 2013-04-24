@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parameters>
+<parameter description="" name="Param1" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="2" typeName=""/>
+<parameter description="" name="Param2" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="2" typeName=""/>
+</parameters>
+<entity Title="Запрос" entityHeight="200" entityIconified="false" entityId="125170452096483" entityLocationX="256" entityLocationY="238" entityWidth="456" queryId="125170430311726" tableAlias="T_Q125170430311726_2" tableName="" tableSchemaName=""/>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+<entity Title="Запрос" entityHeight="199" entityIconified="false" entityId="125170449770855" entityLocationX="291" entityLocationY="8" entityWidth="435" queryId="125170430311726" tableAlias="T_Q125170430311726_1" tableName="" tableSchemaName=""/>
+<relation leftEntityFieldName="Param1" leftEntityId="-1" rightEntityId="125170449770855" rightEntityParameterName="Param1"/>
+<relation leftEntityFieldName="Param2" leftEntityId="-1" rightEntityId="125170452096483" rightEntityParameterName="Param1"/>
+</datamodel>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget name="jSlider1" parent="Form" prefHeight="39px" prefWidth="204px" type="SliderDesignInfo"/>
+<widget actionPerformed="jButton1ActionPerformed" name="jButton1" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton1" type="ButtonDesignInfo"/>
+<widget actionPerformed="jButton2ActionPerformed" name="jButton2" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton2" type="ButtonDesignInfo"/>
+<widget buttonGroup="buttonGroup1" name="jToggleButton1" parent="Form" prefHeight="25px" prefWidth="97px" text="jToggleButton1" type="ToggleButtonDesignInfo"/>
+<widget buttonGroup="buttonGroup1" name="jToggleButton2" parent="Form" prefHeight="25px" prefWidth="97px" text="jToggleButton2" type="ToggleButtonDesignInfo"/>
+<widget buttonGroup="buttonGroup1" name="jToggleButton3" parent="Form" prefHeight="25px" prefWidth="97px" text="jToggleButton3" type="ToggleButtonDesignInfo"/>
+<widget actionPerformed="jButton3ActionPerformed" name="jButton3" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton3" type="ButtonDesignInfo"/>
+<widget actionPerformed="jButton4ActionPerformed" name="jButton4" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton4" type="ButtonDesignInfo"/>
+<widget caretPosition="11" mouseMoved="jTextField1MouseMoved" name="jTextField1" parent="Form" prefHeight="23px" prefWidth="70px" selectionEnd="11" selectionStart="11" text="jTextField1" type="TextFieldDesignInfo"/>
+<widget actionPerformed="jButton5ActionPerformed" name="jButton5" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton5" type="ButtonDesignInfo"/>
+<widget name="jProgressBar1" parent="Form" prefHeight="20px" prefWidth="150px" string="�" type="ProgressBarDesignInfo"/>
+<widget actionPerformed="jButton6ActionPerformed" name="jButton6" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton6" type="ButtonDesignInfo"/>
+<widget name="jLabel1" parent="Form" prefHeight="32px" prefWidth="48px" text="jLabel1" type="LabelDesignInfo">
+<border title="tt" titleJustification="0" type="TitledBorderDesignInfo"/>
+</widget>
+<widget name="jLabel2" parent="Form" prefHeight="32px" prefWidth="48px" text="jLabel2" type="LabelDesignInfo">
+<border title="tt" titleJustification="0" type="TitledBorderDesignInfo"/>
+</widget>
+<widget name="jLabel3" parent="Form" prefHeight="32px" prefWidth="48px" text="jLabel3" type="LabelDesignInfo">
+<border title="tt" titleJustification="0" type="TitledBorderDesignInfo"/>
+</widget>
+<widget actionPerformed="jButton7ActionPerformed" name="jButton7" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton7" type="ButtonDesignInfo"/>
+<nonvisual name="buttonGroup1" type="ButtonGroupDesignInfo"/>
+<layout type="FlowLayoutDesignInfo"/>
+</layout>

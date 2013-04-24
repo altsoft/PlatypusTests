@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="10" entityLocationY="20" entityWidth="150"/>
+<entity Title="MDSYS.SDO_TOPO_MAPS" entityHeight="200" entityIconified="false" entityId="126648240764077" entityLocationX="218" entityLocationY="18" entityWidth="150" queryId="null" tableAlias="T_SDO_TOPO_MAPS_1" tableName="SDO_TOPO_MAPS" tableSchemaName="MDSYS"/>
+</datamodel>

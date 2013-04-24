@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<outputFields>
+<field bindedColumn="first_field" sqlType="3"/>
+<field bindedColumn="second_field" sqlType="3"/>
+</outputFields>

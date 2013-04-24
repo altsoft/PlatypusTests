@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget actionPerformed="btnShowFrame_actionPerformed" name="btnShowFrame" parent="Form" prefHeight="25px" prefWidth="153px" text="Показать JFrame" type="ButtonDesignInfo">
+<constraints height="25px" left="123px" top="137px" type="MarginConstraintsDesignInfo" width="153px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

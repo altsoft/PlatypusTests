@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="10" entityLocationY="20" entityWidth="150"/>
+<entity Title="Тестовая таблица для данных с устройств - абонентских транспортных терминалов" entityHeight="200" entityIconified="false" entityId="129164454096803" entityLocationX="247" entityLocationY="32" entityWidth="150" queryId="null" tableAlias="T_pos_analog_data_1" tableName="pos_analog_data" tableSchemaName=""/>
+</datamodel>

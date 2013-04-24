@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form">
+<widget name="dbGrid" parent="Form" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="128221881670378" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="ORDER_ID" title="Id заказа">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128221881670378" fieldName="ORDER_ID"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221881670378" fieldName="ORDER_ID"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="AMOUNT" title="Количество товара">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128221881670378" fieldName="AMOUNT"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221881670378" fieldName="AMOUNT"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="GOOD" title="Заказанный товар">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128221881670378" fieldName="GOOD"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221881670378" fieldName="GOOD"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="CUSTOMER" title="Заказчик">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128221881670378" fieldName="CUSTOMER"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221881670378" fieldName="CUSTOMER"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="1" gridy="1" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbGrid1" parent="Form" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="128221882995377" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="ORDER_ID" title="Id заказа">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128221882995377" fieldName="ORDER_ID"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221882995377" fieldName="ORDER_ID"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="GOOD_NAME" title="Наименование товара">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221882995377" fieldName="GOOD_NAME"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221882995377" fieldName="GOOD_NAME"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="AMOUNT" title="Количество товара">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128221882995377" fieldName="AMOUNT"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221882995377" fieldName="AMOUNT"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="CUSTOMER_NAME" title="Имя заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221882995377" fieldName="CUSTOMER_NAME"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221882995377" fieldName="CUSTOMER_NAME"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="CUSTOMER_ADDRESS" title="Адрес заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221882995377" fieldName="CUSTOMER_ADDRESS"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221882995377" fieldName="CUSTOMER_ADDRESS"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="2" gridy="1" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbGrid2" parent="Form" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="128221884240606" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="ORDER_ID" title="Id заказа">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128221884240606" fieldName="ORDER_ID"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221884240606" fieldName="ORDER_ID"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="GOOD_NAME" title="Наименование товара">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221884240606" fieldName="GOOD_NAME"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221884240606" fieldName="GOOD_NAME"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="AMOUNT" title="Количество товара">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128221884240606" fieldName="AMOUNT"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221884240606" fieldName="AMOUNT"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="CUSTOMER_NAME" title="Имя заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221884240606" fieldName="CUSTOMER_NAME"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221884240606" fieldName="CUSTOMER_NAME"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="CUSTOMER_ADDRESS" title="Адрес заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221884240606" fieldName="CUSTOMER_ADDRESS"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221884240606" fieldName="CUSTOMER_ADDRESS"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="2" gridy="3" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbGrid3" parent="Form" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="128221887250073" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="ORDER_ID" title="Id заказа">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128221887250073" fieldName="ORDER_ID"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887250073" fieldName="ORDER_ID"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="GOOD_NAME" title="Наименование товара">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221887250073" fieldName="GOOD_NAME"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887250073" fieldName="GOOD_NAME"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="AMOUNT" title="Количество товара">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128221887250073" fieldName="AMOUNT"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887250073" fieldName="AMOUNT"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="CUSTOMER_NAME" title="Имя заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221887250073" fieldName="CUSTOMER_NAME"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887250073" fieldName="CUSTOMER_NAME"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="CUSTOMER_ADDRESS" title="Адрес заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221887250073" fieldName="CUSTOMER_ADDRESS"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887250073" fieldName="CUSTOMER_ADDRESS"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="3" gridy="1" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbGrid4" parent="Form" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="128221887267191" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="ORDER_ID" title="Id заказа">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128221887267191" fieldName="ORDER_ID"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887267191" fieldName="ORDER_ID"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="GOOD_NAME" title="Наименование товара">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221887267191" fieldName="GOOD_NAME"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887267191" fieldName="GOOD_NAME"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="AMOUNT" title="Количество товара">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128221887267191" fieldName="AMOUNT"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887267191" fieldName="AMOUNT"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="CUSTOMER_NAME" title="Имя заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221887267191" fieldName="CUSTOMER_NAME"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887267191" fieldName="CUSTOMER_NAME"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="CUSTOMER_ADDRESS" title="Адрес заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221887267191" fieldName="CUSTOMER_ADDRESS"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887267191" fieldName="CUSTOMER_ADDRESS"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="3" gridy="3" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbGrid5" parent="Form" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="128221887289092" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="ORDER_ID" title="Id заказа">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128221887289092" fieldName="ORDER_ID"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887289092" fieldName="ORDER_ID"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="GOOD_NAME" title="Наименование товара">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221887289092" fieldName="GOOD_NAME"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887289092" fieldName="GOOD_NAME"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="AMOUNT" title="Количество товара">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128221887289092" fieldName="AMOUNT"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887289092" fieldName="AMOUNT"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="CUSTOMER_NAME" title="Имя заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221887289092" fieldName="CUSTOMER_NAME"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887289092" fieldName="CUSTOMER_NAME"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="CUSTOMER_ADDRESS" title="Адрес заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221887289092" fieldName="CUSTOMER_ADDRESS"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887289092" fieldName="CUSTOMER_ADDRESS"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="3" gridy="5" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbGrid6" parent="Form" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="128221887987600" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="ORDER_ID" title="Id заказа">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128221887987600" fieldName="ORDER_ID"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887987600" fieldName="ORDER_ID"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="GOOD_NAME" title="Наименование товара">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221887987600" fieldName="GOOD_NAME"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887987600" fieldName="GOOD_NAME"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="AMOUNT" title="Количество товара">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128221887987600" fieldName="AMOUNT"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887987600" fieldName="AMOUNT"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="CUSTOMER_NAME" title="Имя заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221887987600" fieldName="CUSTOMER_NAME"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887987600" fieldName="CUSTOMER_NAME"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<column name="CUSTOMER_ADDRESS" title="Адрес заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128221887987600" fieldName="CUSTOMER_ADDRESS"/>
+</controlInfo>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<datamodelElement entityId="128221887987600" fieldName="CUSTOMER_ADDRESS"/>
+<headerEasFont name="Dialog"/>
+<columnsDisplayField/>
+</column>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="4" gridy="1" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<layout type="GridBagLayoutDesignInfo"/>
+</layout>

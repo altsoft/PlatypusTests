@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="388px" prefWidth="461px">
+<widget name="jButton1" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton1" type="ButtonDesignInfo"/>
+<widget name="jToggleButton1" parent="Form" prefHeight="25px" prefWidth="97px" text="jToggleButton1" type="ToggleButtonDesignInfo"/>
+<widget name="jProgressBar1" parent="Form" prefHeight="20px" prefWidth="150px" string="�" type="ProgressBarDesignInfo"/>
+<widget caretPosition="11" name="jTextField1" parent="Form" prefHeight="23px" prefWidth="70px" selectionEnd="11" selectionStart="11" text="jTextField1" type="TextFieldDesignInfo"/>
+<widget name="jLabel1" parent="Form" prefHeight="13px" prefWidth="40px" text="jLabel1" type="LabelDesignInfo"/>
+<widget name="jCheckBox1" parent="Form" prefHeight="22px" prefWidth="89px" text="jCheckBox1" type="CheckDesignInfo"/>
+<widget name="jRadioButton1" parent="Form" prefHeight="22px" prefWidth="102px" text="jRadioButton1" type="RadioDesignInfo"/>
+<widget name="jSlider1" parent="Form" prefHeight="39px" prefWidth="204px" type="SliderDesignInfo"/>
+<widget caretPosition="20" name="jFormattedTextField1" parent="Form" prefHeight="23px" prefWidth="128px" selectionEnd="20" selectionStart="20" text="jFormattedTextField1" type="FormattedFieldDesignInfo"/>
+<widget caretPosition="15" name="jPasswordField1" parent="Form" prefHeight="23px" prefWidth="100px" selectionEnd="15" selectionStart="15" text="jPasswordField1" type="PasswordFieldDesignInfo"/>
+<widget name="jScrollPane1" parent="Form" prefHeight="21px" prefWidth="108px" type="ScrollDesignInfo"/>
+<widget name="jEditorPane1" parent="jScrollPane1" prefHeight="19px" prefWidth="106px" type="EditorPaneDesignInfo"/>
+<widget backgroundColor="#f0ebe2" foregroundColor="#3c3b37" name="dbCheck1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbCheckDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param2"/>
+</widget>
+<widget backgroundColor="#f0ebe2" foregroundColor="#3c3b37" name="dbCombo1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbComboDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param2"/>
+</widget>
+<widget backgroundColor="#f0ebe2" foregroundColor="#3c3b37" name="dbDate1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbDateDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param3"/>
+</widget>
+<widget name="dbGrid1" parent="Form" prefHeight="100px" prefWidth="100px" type="DbGridDesignInfo">
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="-1" field="false"/>
+</rowsColumnsDesignInfo>
+<column name="Param1">
+<style>
+<nativeFont name="DejaVu Sans" size="11"/>
+<nativeForeground rGB="-16777216"/>
+<nativeBackground/>
+</style>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="-1" fieldName="Param1"/>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param1"/>
+</controlInfo>
+<headerEasFont/>
+</column>
+<column name="Param2">
+<style>
+<nativeFont name="DejaVu Sans" size="11"/>
+<nativeForeground rGB="-16777216"/>
+<nativeBackground/>
+</style>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="-1" fieldName="Param2"/>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param2"/>
+</controlInfo>
+<headerEasFont/>
+</column>
+<column name="Param3">
+<style>
+<nativeFont name="DejaVu Sans" size="11"/>
+<nativeForeground rGB="-16777216"/>
+<nativeBackground/>
+</style>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="-1" fieldName="Param3"/>
+<controlInfo classHint="DbDateDesignInfo" dateFormat="DD_MM_YYYY_HH_MM_SS">
+<datamodelElement entityId="-1" fieldName="Param3"/>
+</controlInfo>
+<headerEasFont/>
+</column>
+<column name="Param4">
+<style>
+<nativeFont name="DejaVu Sans" size="11"/>
+<nativeForeground rGB="-16777216"/>
+<nativeBackground/>
+</style>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="-1" fieldName="Param4"/>
+<controlInfo classHint="DbImageDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param4"/>
+</controlInfo>
+<headerEasFont/>
+</column>
+</widget>
+<widget backgroundColor="#f0ebe2" foregroundColor="#3c3b37" name="dbImage1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbImageDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param4"/>
+</widget>
+<widget backgroundColor="#f0ebe2" foregroundColor="#3c3b37" name="dbLabel1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbLabelDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param1"/>
+</widget>
+<widget name="dbMap1" parent="Form" prefHeight="100px" prefWidth="100px" type="DbMapDesignInfo"/>
+<widget backgroundColor="#f0ebe2" foregroundColor="#3c3b37" name="dbSpin1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbSpinDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param2"/>
+</widget>
+<widget backgroundColor="#f0ebe2" foregroundColor="#3c3b37" name="dbText1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbTextDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param1"/>
+</widget>
+<widget name="jPanel1" parent="Form" prefHeight="0px" prefWidth="0px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+</widget>
+<widget name="jTabbedPane1" parent="Form" prefHeight="12px" prefWidth="12px" type="TabsDesignInfo"/>
+<widget name="jSplitPane1" parent="Form" prefHeight="25px" prefWidth="153px" type="SplitDesignInfo"/>
+<widget name="jScrollPane2" parent="Form" prefHeight="2px" prefWidth="2px" type="ScrollDesignInfo"/>
+<widget name="jToolBar1" parent="Form" prefHeight="2px" prefWidth="12px" rollover="true" type="ToolbarDesignInfo"/>
+<widget name="jDesktopPane1" parent="Form" prefHeight="1px" prefWidth="1px" type="DesktopDesignInfo"/>
+<widget backgroundColor="#f0ebe2" foregroundColor="#3c3b37" name="jLayeredPane1" parent="Form" prefHeight="1px" prefWidth="1px" type="LayersDesignInfo">
+<easFont name="DejaVu Sans" size="11"/>
+</widget>
+<layout type="FlowLayoutDesignInfo"/>
+</layout>

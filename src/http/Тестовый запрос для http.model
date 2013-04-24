@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="15" entityLocationY="27" entityWidth="150"/>
+<entity Title="Элементы приложения" entityHeight="200" entityIconified="false" entityId="130875379288554" entityLocationX="264" entityLocationY="51" entityWidth="150" tableAlias="t" tableName="MTD_ENTITIES" tableSchemaName=""/>
+</datamodel>

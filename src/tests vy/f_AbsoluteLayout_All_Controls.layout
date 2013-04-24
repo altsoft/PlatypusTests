@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="380px" prefWidth="471px">
+<widget name="jMenuItem1" parent="jPopupMenu1" prefHeight="0px" prefWidth="0px" text="jMenuItem1" type="MenuItemDesignInfo"/>
+<widget name="jMenuItem2" parent="jPopupMenu1" prefHeight="0px" prefWidth="0px" text="jMenuItem2" type="MenuItemDesignInfo"/>
+<widget componentPopupMenu="jPopupMenu1" name="jButton1" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton1" type="ButtonDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="12" y="5"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jToggleButton1" parent="Form" prefHeight="25px" prefWidth="97px" text="jToggleButton1" type="ToggleButtonDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="90" y="5"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jProgressBar1" parent="Form" prefHeight="20px" prefWidth="150px" string="�" type="ProgressBarDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="200" y="9"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget caretPosition="11" componentPopupMenu="jPopupMenu1" name="jTextField1" parent="Form" prefHeight="23px" prefWidth="70px" selectionEnd="11" selectionStart="11" text="jTextField1" type="TextFieldDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="351" y="6"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jLabel1" parent="Form" prefHeight="13px" prefWidth="40px" text="jLabel1" type="LabelDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="415" y="9"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget backgroundColor="#66ff33" componentPopupMenu="jPopupMenu1" name="jCheckBox1" parent="Form" prefHeight="22px" prefWidth="89px" text="jCheckBox1" type="CheckDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="38" y="33"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jRadioButton1" parent="Form" prefHeight="22px" prefWidth="102px" text="jRadioButton1" type="RadioDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="124" y="33"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jSlider1" parent="Form" prefHeight="39px" prefWidth="204px" type="SliderDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="222" y="33"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget caretPosition="20" componentPopupMenu="jPopupMenu1" name="jFormattedTextField1" parent="Form" prefHeight="23px" prefWidth="128px" selectionEnd="20" selectionStart="20" text="jFormattedTextField1" type="FormattedFieldDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="9" y="62"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget caretPosition="15" componentPopupMenu="jPopupMenu1" name="jPasswordField1" parent="Form" prefHeight="23px" prefWidth="100px" selectionEnd="15" selectionStart="15" text="jPasswordField1" type="PasswordFieldDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="123" y="62"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget name="jScrollPane1" parent="Form" prefHeight="60px" prefWidth="108px" type="ScrollDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="239" y="61"/>
+<easSize height="60" width="-1"/>
+</constraints>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jEditorPane1" parent="jScrollPane1" prefHeight="58px" prefWidth="106px" type="EditorPaneDesignInfo"/>
+<widget backgroundColor="#f0ebe2" componentPopupMenu="jPopupMenu1" foregroundColor="#3c3b37" name="dbCheck1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbCheckDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param2"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="352" y="62"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget backgroundColor="#f0ebe2" componentPopupMenu="jPopupMenu1" foregroundColor="#3c3b37" name="dbCombo1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbComboDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param2"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="23" y="128"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget backgroundColor="#f0ebe2" componentPopupMenu="jPopupMenu1" foregroundColor="#3c3b37" name="dbDate1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbDateDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param3"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="128" y="128"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="dbGrid1" parent="Form" prefHeight="60px" prefWidth="100px" type="DbGridDesignInfo">
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="-1" field="false"/>
+</rowsColumnsDesignInfo>
+<column name="Param1">
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeForeground rGB="-16777216"/>
+<nativeBackground/>
+</style>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="-1" fieldName="Param1"/>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param1"/>
+</controlInfo>
+<headerEasFont/>
+</column>
+<column name="Param2">
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeForeground rGB="-16777216"/>
+<nativeBackground/>
+</style>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="-1" fieldName="Param2"/>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param2"/>
+</controlInfo>
+<headerEasFont/>
+</column>
+<column name="Param3">
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeForeground rGB="-16777216"/>
+<nativeBackground/>
+</style>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="-1" fieldName="Param3"/>
+<controlInfo classHint="DbDateDesignInfo" dateFormat="DD_MM_YYYY_HH_MM_SS">
+<datamodelElement entityId="-1" fieldName="Param3"/>
+</controlInfo>
+<headerEasFont/>
+</column>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="233" y="128"/>
+<easSize height="60" width="-1"/>
+</constraints>
+</widget>
+<widget backgroundColor="#f0ebe2" componentPopupMenu="jPopupMenu1" foregroundColor="#3c3b37" name="dbImage1" parent="Form" prefHeight="80px" prefWidth="100px" type="DbImageDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param4"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="338" y="98"/>
+<easSize height="80" width="-1"/>
+</constraints>
+</widget>
+<widget backgroundColor="#f0ebe2" componentPopupMenu="jPopupMenu1" foregroundColor="#3c3b37" name="dbLabel1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbLabelDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param1"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="15" y="233"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="dbMap1" parent="Form" prefHeight="100px" prefWidth="100px" type="DbMapDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="120" y="193"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget backgroundColor="#f0ebe2" componentPopupMenu="jPopupMenu1" foregroundColor="#3c3b37" name="dbSpin1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbSpinDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param2"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="225" y="233"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget backgroundColor="#f0ebe2" componentPopupMenu="jPopupMenu1" foregroundColor="#3c3b37" name="dbText1" parent="Form" prefHeight="23px" prefWidth="60px" type="DbTextDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param1"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="330" y="233"/>
+<easSize height="-1" width="60"/>
+</constraints>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jPanel1" parent="Form" prefHeight="30px" prefWidth="60px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="400" y="230"/>
+<easSize height="30" width="60"/>
+</constraints>
+</widget>
+<widget name="jPanel2" parent="jPanel1" prefHeight="23px" prefWidth="20px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints height="23px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="20px"/>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jTabbedPane1" parent="Form" prefHeight="40px" prefWidth="110px" type="TabsDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="10" y="290"/>
+<easSize height="40" width="110"/>
+</constraints>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" leftComponent="jLabel2" name="jSplitPane1" parent="Form" prefHeight="25px" prefWidth="104px" rightComponent="jButton2" type="SplitDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="130" y="300"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jLabel2" parent="jSplitPane1" prefHeight="25px" prefWidth="84px" text="jLabel2" type="LabelDesignInfo"/>
+<widget componentPopupMenu="jPopupMenu1" name="jButton2" parent="jSplitPane1" prefHeight="25px" prefWidth="15px" text="jButton2" type="ButtonDesignInfo"/>
+<widget componentPopupMenu="jPopupMenu1" name="jScrollPane2" parent="Form" prefHeight="30px" prefWidth="80px" type="ScrollDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="320" y="300"/>
+<easSize height="30" width="80"/>
+</constraints>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jToolBar1" parent="Form" prefHeight="20px" prefWidth="120px" rollover="true" type="ToolbarDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="10" y="350"/>
+<easSize height="20" width="120"/>
+</constraints>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jDesktopPane1" parent="Form" prefHeight="40px" prefWidth="70px" type="DesktopDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="140" y="340"/>
+<easSize height="40" width="70"/>
+</constraints>
+</widget>
+<widget backgroundColor="#f0ebe2" componentPopupMenu="jPopupMenu1" foregroundColor="#3c3b37" name="jLayeredPane1" parent="Form" prefHeight="40px" prefWidth="70px" type="LayersDesignInfo">
+<easFont name="DejaVu Sans" size="11"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="230" y="340"/>
+<easSize height="40" width="70"/>
+</constraints>
+</widget>
+<nonvisual name="jPopupMenu1" prefHeight="0px" prefWidth="0px" type="PopupDesignInfo"/>
+<layout type="AbsoluteLayoutDesignInfo"/>
+</layout>

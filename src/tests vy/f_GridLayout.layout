@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="259px" prefWidth="419px">
+<widget name="jButton1" parent="Form" prefHeight="57px" prefWidth="123px" text="jButton1" type="ButtonDesignInfo"/>
+<widget name="jButton2" parent="Form" prefHeight="57px" prefWidth="123px" text="jButton2" type="ButtonDesignInfo"/>
+<widget caretPosition="11" name="jTextField1" parent="Form" prefHeight="57px" prefWidth="123px" selectionEnd="11" selectionStart="11" text="jTextField1" type="TextFieldDesignInfo"/>
+<widget name="jButton3" parent="Form" prefHeight="57px" prefWidth="123px" text="jButton3" type="ButtonDesignInfo"/>
+<widget name="jButton4" parent="Form" prefHeight="57px" prefWidth="123px" text="jButton4" type="ButtonDesignInfo"/>
+<widget name="jButton6" parent="Form" prefHeight="57px" prefWidth="123px" text="jButton6" type="ButtonDesignInfo"/>
+<widget name="jCheckBox1" parent="Form" prefHeight="57px" prefWidth="123px" text="jCheckBox1" type="CheckDesignInfo"/>
+<widget name="jButton7" parent="Form" prefHeight="57px" prefWidth="123px" text="jButton7" type="ButtonDesignInfo"/>
+<widget name="jButton8" parent="Form" prefHeight="57px" prefWidth="123px" text="jButton8" type="ButtonDesignInfo"/>
+<widget name="jButton9" parent="Form" prefHeight="57px" prefWidth="123px" text="jButton9" type="ButtonDesignInfo"/>
+<widget name="jButton10" parent="Form" prefHeight="57px" prefWidth="123px" text="jButton10" type="ButtonDesignInfo"/>
+<widget name="jButton11" parent="Form" prefHeight="57px" prefWidth="123px" text="jButton11" type="ButtonDesignInfo"/>
+<layout columns="3" hgap="25" rows="4" type="GridLayoutDesignInfo" vgap="10"/>
+</layout>

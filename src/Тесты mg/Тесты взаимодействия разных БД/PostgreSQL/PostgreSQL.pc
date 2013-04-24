@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dbSettings name="128083706440617" password="1" schema="proba" title="Внутреннее соединение с PostgreSQL" url="jdbc:postgresql://asvr:8526/postgres" user="proba"/>

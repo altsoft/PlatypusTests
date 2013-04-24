@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="292px" prefWidth="473px">
+<widget name="dbGrid1" parent="Form" prefHeight="100px" prefWidth="100px" type="DbGridDesignInfo">
+<treeDesignInfo treeKind="2">
+<unaryLinkField entityId="134148692619803" fieldName="MDENT_PARENT_ID"/>
+<param2GetChildren entityId="134148692619803" field="false" fieldName="parent"/>
+<paramSourceField entityId="134148692619803" fieldName="MDENT_ID"/>
+</treeDesignInfo>
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="134148692619803" field="false"/>
+</rowsColumnsDesignInfo>
+<column name="MDENT_ID">
+<datamodelElement entityId="134148692619803" fieldName="MDENT_ID"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField/>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="134148692619803" fieldName="MDENT_ID"/>
+</controlInfo>
+</column>
+<column name="MDENT_NAME">
+<datamodelElement entityId="134148692619803" fieldName="MDENT_NAME"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField/>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="134148692619803" fieldName="MDENT_NAME"/>
+</controlInfo>
+</column>
+<column name="MDENT_TYPE">
+<datamodelElement entityId="134148692619803" fieldName="MDENT_TYPE"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField/>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="134148692619803" fieldName="MDENT_TYPE"/>
+</controlInfo>
+</column>
+<column name="TAG1">
+<datamodelElement entityId="134148692619803" fieldName="TAG1"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField/>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="134148692619803" fieldName="TAG1"/>
+</controlInfo>
+</column>
+<column name="TAG2">
+<datamodelElement entityId="134148692619803" fieldName="TAG2"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField/>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="134148692619803" fieldName="TAG2"/>
+</controlInfo>
+</column>
+<column name="TAG3">
+<datamodelElement entityId="134148692619803" fieldName="TAG3"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField/>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="134148692619803" fieldName="TAG3"/>
+</controlInfo>
+</column>
+<column name="MDENT_PARENT_ID">
+<datamodelElement entityId="134148692619803" fieldName="MDENT_PARENT_ID"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField/>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="134148692619803" fieldName="MDENT_PARENT_ID"/>
+</controlInfo>
+</column>
+<column name="MDENT_ORDER">
+<datamodelElement entityId="134148692619803" fieldName="MDENT_ORDER"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField/>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="134148692619803" fieldName="MDENT_ORDER"/>
+</controlInfo>
+</column>
+<constraints place="Center" type="BorderLayoutConstraintsDesignInfo"/>
+</widget>
+<layout type="BorderLayoutDesignInfo"/>
+</layout>

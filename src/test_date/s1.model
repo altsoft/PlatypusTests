@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
+<entity Title="fordel_t1" entityHeight="200" entityIconified="false" entityId="132124942881262" entityLocationX="176" entityLocationY="6" entityWidth="150" queryId="null" tableAlias="t" tableName="fordel_t1" tableSchemaName=""/>
+</datamodel>

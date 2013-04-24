@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<entity Title="MTD_DATACHNGLOG" entityHeight="200" entityIconified="false" entityId="131434572001375" entityLocationX="244" entityLocationY="13" entityWidth="150" queryId="null" tableAlias="t" tableName="MTD_DATACHNGLOG" tableSchemaName=""/>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
+<entity Title="dual md test" entityHeight="200" entityIconified="false" entityId="131971952958314" entityLocationX="505" entityLocationY="29" entityWidth="150" queryId="131831338017172" tableAlias="q" tableName="" tableSchemaName=""/>
+</datamodel>

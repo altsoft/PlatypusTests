@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dbSettings name="128757521939035" password="Sa1234" schema="dbo" title="Ms Sql tauer на mgstation" url="jdbc:jtds:sqlserver://mgstation:1434/tauer" user="sa"/>

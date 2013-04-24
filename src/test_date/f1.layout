@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget name="dbGrid1" parent="Form" prefHeight="239px" prefWidth="376px" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="132125053807827" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="FORDEL_T1_ID">
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="132125053807827" fieldName="FORDEL_T1_ID"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="Dialog"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="132125053807827" fieldName="FORDEL_T1_ID"/>
+</controlInfo>
+</column>
+<column name="F1">
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="132125053807827" fieldName="F1"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="Dialog"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbDateDesignInfo" dateFormat="DD_MM_YYYY_HH_MM_SS">
+<datamodelElement entityId="132125053807827" fieldName="F1"/>
+</controlInfo>
+</column>
+<column name="F2">
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="132125053807827" fieldName="F2"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="Dialog"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbDateDesignInfo" dateFormat="DD_MM_YYYY_HH_MM_SS">
+<datamodelElement entityId="132125053807827" fieldName="F2"/>
+</controlInfo>
+</column>
+<constraints height="239px" left="12px" top="49px" type="MarginConstraintsDesignInfo" width="376px"/>
+</widget>
+<widget actionPerformed="jButton2ActionPerformed" name="jButton2" parent="Form" prefHeight="25px" prefWidth="94px" text="jButton2" type="ButtonDesignInfo">
+<constraints height="25px" left="40px" top="12px" type="MarginConstraintsDesignInfo" width="94px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="428px" prefWidth="541px">
+<widget actionPerformed="mnu1_onClick" name="mnu1" parent="jPopupMenu" prefHeight="0px" prefWidth="0px" text="gnnnnn" toolTipText="hint" type="MenuDesignInfo"/>
+<widget name="jMenuItem10" parent="jPopupMenu" prefHeight="0px" prefWidth="0px" text="kkkkk" type="MenuDesignInfo"/>
+<widget name="jMenuItem11" parent="jMenuItem10" prefHeight="0px" prefWidth="0px" text="11" type="MenuItemDesignInfo"/>
+<widget name="jMenuItem12" parent="jMenuItem10" prefHeight="0px" prefWidth="0px" text="22" type="MenuItemDesignInfo"/>
+<widget name="jMenuItem13" parent="jMenuItem10" prefHeight="0px" prefWidth="0px" text="33" type="MenuDesignInfo"/>
+<widget name="jMenuItem14" parent="jMenuItem13" prefHeight="0px" prefWidth="0px" text="331" type="MenuItemDesignInfo"/>
+<widget name="jMenuItem15" parent="jMenuItem13" prefHeight="0px" prefWidth="0px" text="332" type="MenuItemDesignInfo"/>
+<widget name="jMenuItem16" parent="jMenuItem10" prefHeight="0px" prefWidth="0px" text="44" type="MenuItemDesignInfo"/>
+<widget name="jMenuItem17" parent="jPopupMenu" prefHeight="0px" prefWidth="0px" type="MenuDesignInfo"/>
+<widget name="jMenuItem18" parent="jPopupMenu" prefHeight="0px" prefWidth="0px" type="MenuDesignInfo"/>
+<widget name="jButton" parent="Form" prefHeight="20px" prefWidth="120px" text="Новый заказчик" type="ButtonDesignInfo">
+<constraints height="20px" left="10px" top="250px" type="MarginConstraintsDesignInfo" width="120px"/>
+</widget>
+<widget name="jButton1" parent="Form" prefHeight="20px" prefWidth="90px" text="Кнопка" type="ButtonDesignInfo">
+<constraints bottom="107px" height="20px" left="10px" type="MarginConstraintsDesignInfo" width="90px"/>
+</widget>
+<widget name="jButton2" parent="Form" prefHeight="20px" prefWidth="90px" text="Кнопка" type="ButtonDesignInfo">
+<constraints bottom="77px" height="20px" left="10px" type="MarginConstraintsDesignInfo" width="90px"/>
+</widget>
+<widget actionPerformed="actionPerformed2" name="jButton3" parent="Form" prefHeight="20px" prefWidth="90px" text="Кнопка" type="ButtonDesignInfo">
+<constraints bottom="47px" height="20px" left="10px" type="MarginConstraintsDesignInfo" width="90px"/>
+</widget>
+<widget name="jButton4" parent="Form" prefHeight="20px" prefWidth="90px" text="Кнопка" type="ButtonDesignInfo">
+<constraints bottom="17px" height="20px" left="10px" type="MarginConstraintsDesignInfo" width="90px"/>
+</widget>
+<widget name="jButton5" parent="Form" prefHeight="20px" prefWidth="80px" text="Кнопка" type="ButtonDesignInfo">
+<constraints bottom="107px" height="20px" left="110px" type="MarginConstraintsDesignInfo" width="80px"/>
+</widget>
+<widget actionPerformed="actionPerformed" name="jButton6" parent="Form" prefHeight="20px" prefWidth="80px" text="gc" type="ButtonDesignInfo">
+<constraints bottom="77px" height="20px" left="110px" type="MarginConstraintsDesignInfo" width="80px"/>
+</widget>
+<widget actionPerformed="actionPerformed1" name="jButton7" parent="Form" prefHeight="20px" prefWidth="80px" text="Save" type="ButtonDesignInfo">
+<constraints bottom="47px" height="20px" left="110px" type="MarginConstraintsDesignInfo" width="80px"/>
+</widget>
+<widget name="gridCustomers" parent="Form" prefHeight="230px" prefWidth="200px" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo fixedColumns="1" fixedRows="3" rowsHeaderType="2">
+<rowsDatasource entityId="124636816057894750" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<unaryLinkField entityId="124636816057894750" fieldName="PARENT"/>
+<param2GetChildren/>
+<paramSourceField/>
+</treeDesignInfo>
+<column name="CUSTOMER_NAME" title="Заказчик" width="200">
+<datamodelElement entityId="124885048607889" fieldName="CUSTOMER_NAME"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+<controlInfo backgroundColor="#ffffff" classHint="DbTextDesignInfo" foregroundColor="#000000" name="view" prefHeight="0px" prefWidth="0px">
+<datamodelElement entityId="124885048607889" fieldName="CUSTOMER_NAME"/>
+</controlInfo>
+</column>
+<column name="PARENT" title="Старший заказчик" width="150">
+<datamodelElement entityId="124636816057894750" fieldName="PARENT"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+<controlInfo backgroundColor="#ffffff" classHint="DbComboDesignInfo" foregroundColor="#000000" list="true" name="view" prefHeight="0px" prefWidth="0px">
+<displayField entityId="124636816057894750" fieldName="CUSTOMER_NAME"/>
+<valueField entityId="124636816057894750" fieldName="CUSTOMER_ID"/>
+<datamodelElement entityId="124636816057894750" fieldName="PARENT"/>
+</controlInfo>
+</column>
+<column cellFunction="gridCustomers_colVeer_calcCell" name="colVeer" plain="false" selectFunction="selectValue" title="Пример разворота">
+<cellDesignInfo>
+<cellControlInfo backgroundColor="#ffffff" classHint="DbTextDesignInfo" foregroundColor="#000000" name="view" prefHeight="0px" prefWidth="0px">
+<datamodelElement entityId="124636816057894750" fieldName="CUSTOMER_ADDRESS"/>
+</cellControlInfo>
+<rowsKeyField entityId="124636816057894750" fieldName="CUSTOMER_ID"/>
+<columnsKeyField entityId="124636816057894750" fieldName="CUSTOMER_ID"/>
+<cellValueField entityId="124636816057894750" fieldName="CUSTOMER_ADDRESS"/>
+</cellDesignInfo>
+<columnsDatasource entityId="124636816057894750" field="false"/>
+<cellsDatasource entityId="124636816057894750" field="false"/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField entityId="124636816057894750" fieldName="CUSTOMER_NAME"/>
+</column>
+<constraints bottom="167px" left="10px" top="10px" type="MarginConstraintsDesignInfo" width="200px"/>
+</widget>
+<widget name="dbGrid" parent="Form" prefHeight="390px" prefWidth="310px" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="124636816057894750" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<unaryLinkField/>
+<param2GetChildren/>
+<paramSourceField/>
+</treeDesignInfo>
+<column name="CUSTOMER_ID" title="Id Заказчика">
+<datamodelElement entityId="124636816057894750" fieldName="CUSTOMER_ID"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+<controlInfo backgroundColor="#ffffff" classHint="DbSpinDesignInfo" foregroundColor="#000000" name="view" prefHeight="0px" prefWidth="0px">
+<datamodelElement entityId="124636816057894750" fieldName="CUSTOMER_ID"/>
+</controlInfo>
+</column>
+<column name="CUSTOMER_ADDRESS" title="Имя заказчика">
+<datamodelElement entityId="124636816057894750" fieldName="CUSTOMER_NAME"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+<controlInfo backgroundColor="#ffffff" classHint="DbTextDesignInfo" foregroundColor="#000000" name="view" prefHeight="0px" prefWidth="0px">
+<datamodelElement entityId="124636816057894750" fieldName="CUSTOMER_NAME"/>
+</controlInfo>
+</column>
+<column name="column" title="Адрес заказчика">
+<datamodelElement entityId="124636816057894750" fieldName="CUSTOMER_ADDRESS"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+<controlInfo backgroundColor="#ffffff" classHint="DbTextDesignInfo" foregroundColor="#000000" name="view" prefHeight="0px" prefWidth="0px">
+<datamodelElement entityId="124636816057894750" fieldName="CUSTOMER_ADDRESS"/>
+</controlInfo>
+</column>
+<column name="PARENT">
+<datamodelElement entityId="124636816057894750" fieldName="PARENT"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+<controlInfo backgroundColor="#ffffff" classHint="DbSpinDesignInfo" foregroundColor="#000000" name="view" prefHeight="0px" prefWidth="0px">
+<datamodelElement entityId="124636816057894750" fieldName="PARENT"/>
+</controlInfo>
+</column>
+<constraints bottom="7px" left="220px" right="11px" top="10px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget name="jMenuBar" parent="Form" prefHeight="21px" prefWidth="541px" type="MenubarDesignInfo">
+<constraints bottom="10px" height="10px" left="10px" right="10px" top="10px" type="MarginConstraintsDesignInfo" width="10px"/>
+</widget>
+<widget name="jMenuItem" parent="jMenuBar" prefHeight="19px" prefWidth="21px" text="h1" type="MenuDesignInfo"/>
+<widget name="jMenuItem1" parent="jMenuBar" prefHeight="19px" prefWidth="21px" text="h2" type="MenuDesignInfo"/>
+<widget name="hhhh" parent="jMenuBar" prefHeight="19px" prefWidth="21px" text="h3" type="MenuDesignInfo"/>
+<widget name="jMenuItem2" parent="hhhh" prefHeight="0px" prefWidth="0px" text="h31" type="MenuItemDesignInfo"/>
+<widget actionPerformed="ghjghj_onClick" name="ghjghj" parent="hhhh" prefHeight="0px" prefWidth="0px" text="h32" toolTipText="ghmghjn" type="MenuDesignInfo"/>
+<widget name="jMenuItem3" parent="ghjghj" prefHeight="0px" prefWidth="0px" type="MenuItemDesignInfo"/>
+<widget actionPerformed="hh_onClick" name="hh" parent="ghjghj" prefHeight="0px" prefWidth="0px" text="hhh" toolTipText="hh" type="MenuItemDesignInfo"/>
+<widget name="jMenuItem4" parent="ghjghj" prefHeight="0px" prefWidth="0px" text="h" type="MenuItemDesignInfo"/>
+<widget name="jMenuItem5" parent="hhhh" prefHeight="0px" prefWidth="0px" text="h33" type="MenuItemDesignInfo"/>
+<widget name="jMenuItem6" parent="hhhh" prefHeight="0px" prefWidth="0px" text="h34" type="MenuItemDesignInfo"/>
+<widget name="jMenuItem7" parent="jMenuBar" prefHeight="19px" prefWidth="21px" text="h4" type="MenuDesignInfo"/>
+<widget name="jMenuItem8" parent="jMenuBar" prefHeight="19px" prefWidth="21px" text="h5" type="MenuDesignInfo"/>
+<widget name="jMenuItem9" parent="jMenuBar" prefHeight="19px" prefWidth="21px" text="h6" type="MenuDesignInfo"/>
+<nonvisual name="jPopupMenu" prefHeight="0px" prefWidth="0px" type="PopupDesignInfo"/>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

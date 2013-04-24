@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+<entity Name="entities" Title="query from entities1" entityHeight="200" entityIconified="false" entityId="130418373711352" entityLocationX="220" entityLocationY="20" entityWidth="204" queryId="130198481999681" tableName="" tableSchemaName=""/>
+</datamodel>

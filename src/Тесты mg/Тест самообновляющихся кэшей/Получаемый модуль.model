@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+<entity Name="" Title="Отслеживаемый запрос" entityHeight="200" entityIconified="false" entityId="133535591749288" entityLocationX="176" entityLocationY="6" entityWidth="240" queryId="133249006955538" tableDbId="null" tableName="" tableSchemaName=""/>
+</datamodel>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+<entity Name="DS_RoleList" Title="Список ролей" entityHeight="200" entityIconified="false" entityId="126217784179427" entityLocationX="199" entityLocationY="16" entityWidth="300" tableName="eas_Roles" tableSchemaName=""/>
+</datamodel>

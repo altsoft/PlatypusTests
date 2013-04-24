@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="311px" prefWidth="418px">
+<widget name="jScrollPane1" parent="Form" prefHeight="21px" prefWidth="418px" type="ScrollDesignInfo">
+<constraints place="South" type="BorderLayoutConstraintsDesignInfo"/>
+</widget>
+<widget componentAdded="jEditorPane1ComponentAdded" componentHidden="jEditorPane1ComponentHidden" componentMoved="jEditorPane1ComponentMoved" componentRemoved="jEditorPane1ComponentRemoved" componentResized="jEditorPane1ComponentResized" componentShown="jEditorPane1ComponentShown" focusGained="jEditorPane1FocusGained" focusLost="jEditorPane1FocusLost" keyPressed="jEditorPane1KeyPressed" keyReleased="jEditorPane1KeyReleased" keyTyped="jEditorPane1KeyTyped" mouseClicked="jEditorPane1MouseClicked" mouseDragged="jEditorPane1MouseDragged" mouseEntered="jEditorPane1MouseEntered" mouseExited="jEditorPane1MouseExited" mouseMoved="jEditorPane1MouseMoved" mousePressed="jEditorPane1MousePressed" mouseReleased="jEditorPane1MouseReleased" mouseWheelMoved="jEditorPane1MouseWheelMoved" name="jEditorPane1" parent="jScrollPane1" prefHeight="19px" prefWidth="416px" type="EditorPaneDesignInfo"/>
+<widget actionPerformed="jButton1ActionPerformed" name="jButton1" parent="Form" prefHeight="25px" prefWidth="418px" stateChanged="jButton1StateChanged" text="jButton1" type="ButtonDesignInfo">
+<constraints place="North" type="BorderLayoutConstraintsDesignInfo"/>
+</widget>
+<widget componentAdded="jPanel1ComponentAdded" componentRemoved="jPanel1ComponentRemoved" name="jPanel1" parent="Form" prefHeight="265px" prefWidth="418px" type="PanelDesignInfo">
+<layout type="FlowLayoutDesignInfo"/>
+<constraints place="Center" type="BorderLayoutConstraintsDesignInfo"/>
+</widget>
+<widget caretPosition="11" mousePressed="jTextField1MousePressed" name="jTextField1" parent="jPanel1" prefHeight="23px" prefWidth="70px" selectionEnd="11" selectionStart="11" text="jTextField1" type="TextFieldDesignInfo"/>
+<widget actionPerformed="jButton2ActionPerformed" name="jButton2" parent="jPanel1" prefHeight="25px" prefWidth="59px" text="jButton2" type="ButtonDesignInfo"/>
+<widget actionPerformed="jButton3ActionPerformed" name="jButton3" parent="jPanel1" prefHeight="25px" prefWidth="59px" text="jButton3" type="ButtonDesignInfo"/>
+<widget itemStateChanged="jCheckBox1ItemStateChanged" name="jCheckBox1" parent="jPanel1" prefHeight="22px" prefWidth="89px" stateChanged="jCheckBox1StateChanged" text="jCheckBox1" type="CheckDesignInfo"/>
+<layout type="BorderLayoutDesignInfo"/>
+</layout>

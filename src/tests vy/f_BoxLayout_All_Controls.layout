@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="724px" prefWidth="475px">
+<widget name="jButton1" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton1" type="ButtonDesignInfo"/>
+<widget name="jToggleButton1" parent="Form" prefHeight="25px" prefWidth="97px" text="jToggleButton1" type="ToggleButtonDesignInfo"/>
+<widget name="jProgressBar1" parent="Form" prefHeight="20px" prefWidth="475px" string="�" type="ProgressBarDesignInfo"/>
+<widget caretPosition="11" name="jTextField1" parent="Form" prefHeight="28px" prefWidth="475px" selectionEnd="11" selectionStart="11" text="jTextField1" type="TextFieldDesignInfo"/>
+<widget name="jLabel1" parent="Form" prefHeight="13px" prefWidth="40px" text="jLabel1" type="LabelDesignInfo"/>
+<widget name="jCheckBox1" parent="Form" prefHeight="22px" prefWidth="89px" text="jCheckBox1" type="CheckDesignInfo"/>
+<widget name="jRadioButton1" parent="Form" prefHeight="22px" prefWidth="102px" text="jRadioButton1" type="RadioDesignInfo"/>
+<widget name="jSlider1" parent="Form" prefHeight="39px" prefWidth="475px" type="SliderDesignInfo"/>
+<widget caretPosition="20" name="jFormattedTextField1" parent="Form" prefHeight="28px" prefWidth="475px" selectionEnd="20" selectionStart="20" text="jFormattedTextField1" type="FormattedFieldDesignInfo"/>
+<widget caretPosition="15" name="jPasswordField1" parent="Form" prefHeight="28px" prefWidth="475px" selectionEnd="15" selectionStart="15" text="jPasswordField1" type="PasswordFieldDesignInfo"/>
+<widget name="jScrollPane1" parent="Form" prefHeight="21px" prefWidth="475px" type="ScrollDesignInfo"/>
+<widget name="jEditorPane1" parent="jScrollPane1" prefHeight="19px" prefWidth="473px" type="EditorPaneDesignInfo"/>
+<widget backgroundColor="#f0ebe2" foregroundColor="#3c3b37" name="dbCheck1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbCheckDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param2"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="352" y="62"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget backgroundColor="#f0ebe2" foregroundColor="#3c3b37" name="dbCombo1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbComboDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param2"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="23" y="128"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget backgroundColor="#f0ebe2" foregroundColor="#3c3b37" name="dbDate1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbDateDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param3"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="128" y="128"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget name="dbGrid1" parent="Form" prefHeight="105px" prefWidth="475px" type="DbGridDesignInfo">
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="-1" field="false"/>
+</rowsColumnsDesignInfo>
+<column name="Param1">
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeForeground rGB="-16777216"/>
+<nativeBackground/>
+</style>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="-1" fieldName="Param1"/>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param1"/>
+</controlInfo>
+<headerEasFont/>
+</column>
+<column name="Param2">
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeForeground rGB="-16777216"/>
+<nativeBackground/>
+</style>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="-1" fieldName="Param2"/>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param2"/>
+</controlInfo>
+<headerEasFont/>
+</column>
+<column name="Param3">
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeForeground rGB="-16777216"/>
+<nativeBackground/>
+</style>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="-1" fieldName="Param3"/>
+<controlInfo classHint="DbDateDesignInfo" dateFormat="DD_MM_YYYY_HH_MM_SS">
+<datamodelElement entityId="-1" fieldName="Param3"/>
+</controlInfo>
+<headerEasFont/>
+</column>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="233" y="128"/>
+<easSize height="60" width="-1"/>
+</constraints>
+</widget>
+<widget backgroundColor="#f0ebe2" foregroundColor="#3c3b37" name="dbImage1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbImageDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param4"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="338" y="98"/>
+<easSize height="80" width="-1"/>
+</constraints>
+</widget>
+<widget backgroundColor="#f0ebe2" foregroundColor="#3c3b37" name="dbLabel1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbLabelDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param1"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="15" y="233"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget name="dbMap1" parent="Form" prefHeight="105px" prefWidth="475px" type="DbMapDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="120" y="193"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget backgroundColor="#f0ebe2" foregroundColor="#3c3b37" name="dbSpin1" parent="Form" prefHeight="23px" prefWidth="100px" type="DbSpinDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param2"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="225" y="233"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget backgroundColor="#f0ebe2" foregroundColor="#3c3b37" name="dbText1" parent="Form" prefHeight="28px" prefWidth="475px" type="DbTextDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param1"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easLocation x="330" y="233"/>
+<easSize height="-1" width="-1"/>
+</constraints>
+</widget>
+<widget name="jPanel1" parent="Form" prefHeight="23px" prefWidth="475px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+</widget>
+<widget name="jTabbedPane1" parent="Form" prefHeight="12px" prefWidth="475px" type="TabsDesignInfo"/>
+<widget name="jSplitPane1" parent="Form" prefHeight="30px" prefWidth="398px" type="SplitDesignInfo"/>
+<widget name="jScrollPane2" parent="Form" prefHeight="2px" prefWidth="475px" type="ScrollDesignInfo"/>
+<widget name="jToolBar1" parent="Form" prefHeight="2px" prefWidth="475px" rollover="true" type="ToolbarDesignInfo"/>
+<widget name="jDesktopPane1" parent="Form" prefHeight="6px" prefWidth="475px" type="DesktopDesignInfo"/>
+<widget backgroundColor="#f0ebe2" foregroundColor="#3c3b37" name="jLayeredPane1" parent="Form" prefHeight="1px" prefWidth="475px" type="LayersDesignInfo">
+<easFont name="DejaVu Sans" size="11"/>
+</widget>
+<layout type="BoxLayoutDesignInfo"/>
+</layout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parameters>
+<parameter description="" name="Param1" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName="VARCHAR"/>
+<parameter description="" name="Param2" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName="VARCHAR"/>
+<parameter description="" name="Param3" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName="VARCHAR"/>
+<parameter description="" name="Param4" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName="VARCHAR"/>
+<parameter description="" name="Param5" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName="VARCHAR"/>
+</parameters>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="10" entityLocationY="20" entityWidth="150"/>
+<entity Title="SQUID_LOG" entityHeight="200" entityIconified="false" entityId="128452877853125" entityLocationX="281" entityLocationY="34" entityWidth="150" queryId="null" tableAlias="T_SQUID_LOG_1" tableName="SQUID_LOG" tableSchemaName=""/>
+</datamodel>

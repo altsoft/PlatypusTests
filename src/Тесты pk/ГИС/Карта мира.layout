@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget mapTitle="Карта мира" name="mapControl" parent="Form" prefHeight="100px" prefWidth="139px" type="DbMapDesignInfo">
+<feature geometryBinding="com.vividsolutions.jts.geom.MultiPolygon" typeName="countries">
+<style>
+<serialLineColor rGB="-16777216"/>
+<serialFillColor rGB="-13395712"/>
+<labelField entityId="126649903074245" fieldName="NAME"/>
+</style>
+<ref entityId="126649903074245" field="false"/>
+</feature>
+<constraints height="100px" left="130px" top="200px" type="MarginConstraintsDesignInfo" width="139px"/>
+</widget>
+<widget floatable="false" name="jToolBar" parent="Form" prefHeight="32px" prefWidth="139px" type="ToolbarDesignInfo">
+<constraints height="32px" left="130px" top="0px" type="MarginConstraintsDesignInfo" width="139px"/>
+</widget>
+<widget actionPerformed="btnRefresh_onClick" icon="refresh/refresh.png" name="btnRefresh" parent="jToolBar" prefHeight="28px" prefWidth="99px" text="Обновить" type="ButtonDesignInfo"/>
+<widget actionPerformed="" name="btnZoomIn" parent="jToolBar" prefHeight="12px" prefWidth="12px" type="ButtonDesignInfo"/>
+<widget actionPerformed="" name="btnZoomOut" parent="jToolBar" prefHeight="12px" prefWidth="12px" type="ButtonDesignInfo"/>
+<widget actionPerformed="" name="btnPan" parent="jToolBar" prefHeight="12px" prefWidth="12px" type="ButtonDesignInfo"/>
+<widget name="jETALabel" parent="Form" prefHeight="168px" prefWidth="32px" text="CRS:" type="LabelDesignInfo">
+<constraints height="168px" left="130px" top="32px" type="MarginConstraintsDesignInfo" width="32px"/>
+</widget>
+<widget name="tfCRS" parent="Form" prefHeight="168px" prefWidth="4px" type="TextFieldDesignInfo">
+<constraints height="168px" left="162px" top="32px" type="MarginConstraintsDesignInfo" width="4px"/>
+</widget>
+<widget actionPerformed="btnSetCRS_actionPerformed" name="btnSetCRS" parent="Form" prefHeight="168px" prefWidth="103px" text="Update" type="ButtonDesignInfo">
+<constraints height="168px" left="166px" top="32px" type="MarginConstraintsDesignInfo" width="103px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

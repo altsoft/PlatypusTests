@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+<entity Name="ds_myTest" Title="MYTEST" entityHeight="200" entityIconified="false" entityId="131727815206944" entityLocationX="176" entityLocationY="6" entityWidth="150" tableName="MYTEST" tableSchemaName=""/>
+</datamodel>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<nonvisual name="buttonGroup1" type="ButtonGroupDesignInfo"/>
+<nonvisual name="jPopupMenu1" type="PopupDesignInfo"/>
+<widget name="jMenu3" parent="jPopupMenu1" text="Edit" type="MenuDesignInfo"/>
+<widget icon="hourglass--exclamation.png" name="jToggleButton1" parent="Form" prefHeight="26px" prefWidth="162px" text="jToggleButton1" type="ToggleButtonDesignInfo">
+<constraints height="26px" left="77px" top="151px" type="MarginConstraintsDesignInfo" width="162px"/>
+</widget>
+<widget horizontalTextPosition="10" icon="address-book-blue.png" name="jButton1" parent="Form" prefHeight="26px" prefWidth="162px" text="jButton1" type="ButtonDesignInfo">
+<constraints height="26px" left="77px" top="59px" type="MarginConstraintsDesignInfo" width="162px"/>
+</widget>
+<widget name="jMenuBar1" parent="Form" prefHeight="21px" prefWidth="400px" type="MenubarDesignInfo"/>
+<widget name="jMenu1" parent="jMenuBar1" prefHeight="19px" prefWidth="37px" text="File" type="MenuDesignInfo"/>
+<widget name="jMenu2" parent="jMenuBar1" prefHeight="19px" prefWidth="39px" text="Edit" type="MenuDesignInfo"/>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

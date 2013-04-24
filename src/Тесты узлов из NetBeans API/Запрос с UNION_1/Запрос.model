@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parameters>
+<parameter description="Единица оборудования 1" name="Param1" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="2" typeName=""/>
+</parameters>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="278"/>
+<entity Title="События единицы оборудования" entityHeight="161" entityIconified="false" entityId="125170432328511" entityLocationX="339" entityLocationY="21" entityWidth="461" queryId="null" tableAlias="T_EAM_EQUIPMENT_UNIT_EVENTS_1" tableName="EAM_EQUIPMENT_UNIT_EVENTS" tableSchemaName="EAS"/>
+<relation leftEntityFieldName="Param1" leftEntityId="-1" rightEntityFieldName="EUE_EQUIPMENT_UNIT" rightEntityId="125170432328511"/>
+</datamodel>

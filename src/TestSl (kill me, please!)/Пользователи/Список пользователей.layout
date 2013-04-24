@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget floatable="false" name="jToolBar" parent="Form" prefHeight="32px" prefWidth="128px" type="ToolbarDesignInfo">
+<constraints height="32px" left="41px" top="71px" type="MarginConstraintsDesignInfo" width="128px"/>
+</widget>
+<widget actionPerformed="" icon="plus.png" name="jButton" parent="jToolBar" prefHeight="28px" prefWidth="28px" toolTipText="Добавить группу пользователей" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnDeleteUserGroup_onClick" icon="cross.png" name="btnDeleteUserGroup" parent="jToolBar" prefHeight="28px" prefWidth="28px" toolTipText="Удалить группу пользователей" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnSaveUserGroup_onClick" name="btnSaveUserGroup" parent="jToolBar" prefHeight="12px" prefWidth="12px" toolTipText="Сохранить" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnRefreshUserGroup_onClick" icon="refresh/refresh.png" name="btnRefreshUserGroup" parent="jToolBar" prefHeight="28px" prefWidth="28px" type="ButtonDesignInfo"/>
+<widget actionPerformed="" icon="binocular.png" name="jButton1" parent="jToolBar" prefHeight="28px" prefWidth="28px" toolTipText="Поиск группы" type="ButtonDesignInfo"/>
+<widget floatable="false" name="jToolBar1" parent="Form" prefHeight="32px" prefWidth="190px" type="ToolbarDesignInfo">
+<constraints height="32px" left="169px" top="71px" type="MarginConstraintsDesignInfo" width="190px"/>
+</widget>
+<widget actionPerformed="btn_Add_User_onClick" icon="plus.png" name="btn_Add_User" parent="jToolBar1" prefHeight="28px" prefWidth="28px" toolTipText="Добавить" type="ButtonDesignInfo"/>
+<widget actionPerformed="btn_Edit_User_onClick" name="btn_Edit_User" parent="jToolBar1" prefHeight="12px" prefWidth="12px" toolTipText="Редактировать" type="ButtonDesignInfo"/>
+<widget actionPerformed="" icon="cross.png" name="btn_Delete_User" parent="jToolBar1" prefHeight="28px" prefWidth="28px" toolTipText="Удалить\" type="ButtonDesignInfo"/>
+<widget actionPerformed="btn_Save_User_onClick" name="btn_Save_User" parent="jToolBar1" prefHeight="12px" prefWidth="12px" toolTipText="Сохранить" type="ButtonDesignInfo"/>
+<widget actionPerformed="btn_Refresh_Users_onClick" icon="refresh/refresh.png" name="btn_Refresh_Users" parent="jToolBar1" prefHeight="28px" prefWidth="28px" type="ButtonDesignInfo"/>
+<widget actionPerformed="" icon="binocular.png" name="btn_SearchIntoGroup" parent="jToolBar1" prefHeight="28px" prefWidth="28px" toolTipText="Найти пользователя внутри группы" type="ButtonDesignInfo"/>
+<widget name="dbg_UserGroups" parent="Form" prefHeight="100px" prefWidth="128px" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="126269405094185" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="USER_NAME" title="Группы пользователей" width="300">
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="126269405094185" fieldName="USER_NAME"/>
+<headerEasFont name="Dialog"/>
+<style>
+<nativeBackground/>
+<nativeFont name="Dialog"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="126269405094185" fieldName="USER_NAME"/>
+</controlInfo>
+</column>
+<constraints height="100px" left="41px" top="103px" type="MarginConstraintsDesignInfo" width="128px"/>
+</widget>
+<widget name="dbg_Users" parent="Form" prefHeight="100px" prefWidth="190px" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="126269386548990" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="USR_NAME" title="Пользователи" width="400">
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="126269386548990" fieldName="USR_NAME"/>
+<headerEasFont name="Dialog"/>
+<style>
+<nativeBackground/>
+<nativeFont name="Dialog"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="126269386548990" fieldName="USR_NAME"/>
+</controlInfo>
+</column>
+<constraints height="100px" left="169px" top="103px" type="MarginConstraintsDesignInfo" width="190px"/>
+</widget>
+<widget actionPerformed="actionPerformed" name="jButton2" parent="Form" prefHeight="25px" prefWidth="95px" text="Выбрать" type="ButtonDesignInfo">
+<constraints height="25px" left="169px" top="203px" type="MarginConstraintsDesignInfo" width="95px"/>
+</widget>
+<widget actionPerformed="btnClose_actionPerformed" name="btnClose" parent="Form" prefHeight="25px" prefWidth="95px" text="Закрыть" type="ButtonDesignInfo">
+<constraints height="25px" left="264px" top="203px" type="MarginConstraintsDesignInfo" width="95px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

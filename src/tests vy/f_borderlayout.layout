@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="297px" prefWidth="502px">
+<widget name="jButton1c" parent="Form" prefHeight="0px" prefWidth="0px" text="jButton1-C" type="ButtonDesignInfo">
+<constraints place="Center" type="BorderLayoutConstraintsDesignInfo"/>
+</widget>
+<widget name="jButton2n" parent="Form" prefHeight="25px" prefWidth="502px" text="jButton2-N" type="ButtonDesignInfo">
+<constraints place="North" type="BorderLayoutConstraintsDesignInfo"/>
+</widget>
+<widget name="jButton3s" parent="Form" prefHeight="25px" prefWidth="502px" text="jButton3-S" type="ButtonDesignInfo">
+<constraints place="Last" type="BorderLayoutConstraintsDesignInfo"/>
+</widget>
+<widget name="jButton4e" parent="Form" prefHeight="237px" prefWidth="70px" text="jButton4-E" type="ButtonDesignInfo">
+<constraints place="After" type="BorderLayoutConstraintsDesignInfo"/>
+</widget>
+<widget name="jButton5w" parent="Form" prefHeight="237px" prefWidth="64px" text="jButton5-W" type="ButtonDesignInfo">
+<border type="BevelBorderDesignInfo"/>
+<constraints place="Before" type="BorderLayoutConstraintsDesignInfo"/>
+</widget>
+<widget name="jButton1" parent="Form" prefHeight="237px" prefWidth="348px" text="jButton1" type="ButtonDesignInfo">
+<constraints place="Center" type="BorderLayoutConstraintsDesignInfo"/>
+</widget>
+<layout hgap="10" type="BorderLayoutDesignInfo" vgap="5"/>
+</layout>

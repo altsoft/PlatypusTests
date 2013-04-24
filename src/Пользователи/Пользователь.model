@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parameters>
+<parameter description="Пользователь" name="user" nullable="true" parameterMode="1" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="3" typeName="DECIMAL">
+<primaryKey field="USR_ID" name="" schema="" table="MTD_USERS"/>
+</parameter>
+</parameters>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
+<entity Title="MTD_USERS" entityHeight="200" entityIconified="false" entityId="132124907239815" entityLocationX="187" entityLocationY="7" entityWidth="150" queryId="null" tableAlias="t" tableName="MTD_USERS" tableSchemaName=""/>
+<relation leftEntityFieldName="user" leftEntityId="-1" rightEntityFieldName="USR_ID" rightEntityId="132124907239815"/>
+</datamodel>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px" windowClosing="formWindowClosing">
+<widget floatable="false" name="jToolBar" parent="Form" prefHeight="32px" prefWidth="400px" type="ToolbarDesignInfo">
+<constraints height="32px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="400px"/>
+</widget>
+<widget actionPerformed="ee" borderPainted="false" icon="user--plus.png" name="btnAdd" parent="jToolBar" prefHeight="23px" prefWidth="23px" type="ButtonDesignInfo"/>
+<widget actionPerformed="ee" borderPainted="false" icon="user--minus.png" name="btnRemove" parent="jToolBar" prefHeight="23px" prefWidth="23px" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnSaveActionPerformed" borderPainted="false" icon="disk-blue.png" name="btnSave" parent="jToolBar" prefHeight="23px" prefWidth="23px" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnRefreshActionPerformed" borderPainted="false" icon="refresh/refresh.png" name="btnRefresh" parent="jToolBar" prefHeight="23px" prefWidth="23px" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnFindActionPerformed" borderPainted="false" focusable="false" horizontalTextPosition="0" icon="binocular.png" name="btnFind" opaque="false" parent="jToolBar" prefHeight="23px" prefWidth="23px" toolTipText="Найти..." type="ButtonDesignInfo" verticalTextPosition="3"/>
+<widget name="grdMtdUsers" parent="Form" prefHeight="219px" prefWidth="400px" type="DbGridDesignInfo">
+<column name="USR_NAME" title="Имя">
+<datamodelElement entityId="132124933620063" fieldName="USR_NAME"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<controlInfo backgroundColor="#ffffff" classHint="DbLabelDesignInfo" foregroundColor="#000000" name="view" prefHeight="0px" prefWidth="0px">
+<datamodelElement entityId="132124933620063" fieldName="USR_NAME"/>
+</controlInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+</column>
+<column name="USR_PASSWD" selectFunction="USR_PASSWDSelectValue" selectOnly="true" title="Пароль">
+<datamodelElement entityId="132124933620063" fieldName="USR_PASSWD"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<controlInfo backgroundColor="#ffffff" classHint="DbLabelDesignInfo" foregroundColor="#000000" name="view" prefHeight="0px" prefWidth="0px">
+<datamodelElement entityId="132124933620063" fieldName="USR_PASSWD"/>
+</controlInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+</column>
+<column name="USR_FORM" title="Форма">
+<datamodelElement entityId="132124933620063" fieldName="USR_FORM"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<controlInfo backgroundColor="#ffffff" classHint="DbSpinDesignInfo" foregroundColor="#000000" name="view" prefHeight="0px" prefWidth="0px">
+<datamodelElement entityId="132124933620063" fieldName="USR_FORM"/>
+</controlInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+</column>
+<column name="USR_GROUP_ID" title="Группа пользователей">
+<datamodelElement entityId="132124933620063" fieldName="USR_GROUP_ID"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<controlInfo backgroundColor="#ffffff" classHint="DbSpinDesignInfo" foregroundColor="#000000" name="view" prefHeight="0px" prefWidth="0px">
+<datamodelElement entityId="132124933620063" fieldName="USR_GROUP_ID"/>
+</controlInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+</column>
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="132124933620063" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<unaryLinkField/>
+<param2GetChildren/>
+<paramSourceField/>
+</treeDesignInfo>
+<constraints height="219px" left="0px" top="38px" type="MarginConstraintsDesignInfo" width="400px"/>
+</widget>
+<widget actionPerformed="btnCloseActionPerformed" name="btnClose" parent="Form" prefHeight="25px" prefWidth="95px" text="Закрыть" type="ButtonDesignInfo">
+<constraints height="25px" left="293px" top="263px" type="MarginConstraintsDesignInfo" width="95px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form">
+<widget dividerLocation="581" leftComponent="jPanel" name="jSplitPane" parent="Form" rightComponent="jPanel1" type="SplitDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="4" gridy="2" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="jPanel" parent="jSplitPane" type="PanelDesignInfo">
+<layout type="GridBagLayoutDesignInfo"/>
+</widget>
+<widget name="Grid" parent="jPanel" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo fixedColumns="2" rowsHeaderType="2">
+<rowsDatasource entityId="124765165128184169" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<unaryLinkField/>
+<param2GetChildren/>
+<paramSourceField/>
+</treeDesignInfo>
+<column name="NAME" selectFunction="Grid_NAME_selectValue" title="Название" width="220">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124765165128184169" fieldName="NAME"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124765165128184169" fieldName="NAME"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="SHORTNAME" title="Сокращение">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124765165128184169" fieldName="SHORTNAME"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124765165128184169" fieldName="SHORTNAME"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="INTERVERIFYINGINTERVAL" title="&lt;html&gt;&lt;div align=center&gt;МПИ/МКИ, &lt;br &gt;мес.&lt;/div&gt;&lt;/html&gt;">
+<column name="colWORKKIND" selectFunction="Grid_colWORKKIND_selectValue" title="Вид работы спр." width="100">
+<style>
+<nativeFont name="Candara" size="18"/>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124765165128184169" fieldName="WORKKIND"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbComboDesignInfo" list="true">
+<displayField entityId="124765153484301457" fieldName="NAME"/>
+<valueField entityId="124765153484301457" fieldName="ID"/>
+<datamodelElement entityId="124765165128184169" fieldName="WORKKIND"/>
+<easFont name="Candara" size="18"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="colWORKKIND" selectFunction="Grid_colWORKKIND_selectValue" title="Вид работы" width="100">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124765165128184169" fieldName="WORKKIND"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124765165128184169" fieldName="WORKKIND"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124765165128184169" fieldName="INTERVERIFYINGINTERVAL"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbSpinDesignInfo" max="12.0" min="1.0">
+<datamodelElement entityId="124765165128184169" fieldName="INTERVERIFYINGINTERVAL"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column title="Название">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124765153484301457" fieldName="NAME"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124765153484301457" fieldName="NAME"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="1" gridy="1" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="jETALabel" parent="jPanel" text="Описание" type="LabelDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="1" gridy="2" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget multiline="true" name="dbText" parent="jPanel" type="DbTextDesignInfo">
+<datamodelElement entityId="124757815295304913" fieldName="DESCRIPTION"/>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="1" gridy="3" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="jPanel1" parent="jSplitPane" type="PanelDesignInfo">
+<layout type="GridBagLayoutDesignInfo"/>
+</widget>
+<widget name="dbGrid" parent="jPanel1" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="124765153484301457" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<unaryLinkField/>
+<param2GetChildren/>
+<paramSourceField/>
+</treeDesignInfo>
+<column name="ID" width="140">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124765153484301457" fieldName="ID"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124765153484301457" fieldName="ID"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="NAME" title="Название" width="150">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124765153484301457" fieldName="NAME"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124765153484301457" fieldName="NAME"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="1" gridy="1" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbGrid1" parent="jPanel1" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="124930559900042" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<unaryLinkField/>
+<param2GetChildren/>
+<paramSourceField/>
+</treeDesignInfo>
+<column name="ORDER_ID" title="Id заказа">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124930559900042" fieldName="ORDER_ID"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124930559900042" fieldName="ORDER_ID"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="GOOD_NAME" title="Наименование товара">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124930559900042" fieldName="GOOD_NAME"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124930559900042" fieldName="GOOD_NAME"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="AMOUNT" title="Количество товара">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124930559900042" fieldName="AMOUNT"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124930559900042" fieldName="AMOUNT"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="CUSTOMER_NAME" title="Имя заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124930559900042" fieldName="CUSTOMER_NAME"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124930559900042" fieldName="CUSTOMER_NAME"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="CUSTOMER_ADDRESS" title="Адрес заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124930559900042" fieldName="CUSTOMER_ADDRESS"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124930559900042" fieldName="CUSTOMER_ADDRESS"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="1" gridy="3" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0" weighty="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbGrid2" parent="jPanel1" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="124930619232818" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<unaryLinkField/>
+<param2GetChildren/>
+<paramSourceField/>
+</treeDesignInfo>
+<column name="ORDER_ID" title="Id заказа">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124930619232818" fieldName="ORDER_ID"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124930619232818" fieldName="ORDER_ID"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="GOOD_NAME" title="Наименование товара">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124930619232818" fieldName="GOOD_NAME"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124930619232818" fieldName="GOOD_NAME"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="AMOUNT" title="Количество товара">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124930619232818" fieldName="AMOUNT"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124930619232818" fieldName="AMOUNT"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="CUSTOMER_NAME" title="Имя заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124930619232818" fieldName="CUSTOMER_NAME"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124930619232818" fieldName="CUSTOMER_NAME"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="CUSTOMER_ADDRESS" title="Адрес заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124930619232818" fieldName="CUSTOMER_ADDRESS"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124930619232818" fieldName="CUSTOMER_ADDRESS"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="1" gridy="4" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0" weighty="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget floatable="false" name="ToolBar" parent="Form" type="ToolbarDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="4" gridy="1" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0" weighty="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget actionPerformed="btnAdd_onClick" icon="plus.png" name="btnAdd" parent="ToolBar" toolTipText="Добавить" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnDelete_onClick" icon="minus.png" name="btnDelete" parent="ToolBar" toolTipText="Удалить" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnRefresh_onClick" icon="refresh/refresh.png" name="btnRefresh" parent="ToolBar" toolTipText="Обновить" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnSave_onClick" icon="disk-black.png" name="btnSave" parent="ToolBar" toolTipText="Сохранить" type="ButtonDesignInfo"/>
+<widget floatable="false" name="ToolBar1" parent="Form" type="ToolbarDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="4" gridy="3" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget actionPerformed="" icon="plus.png" name="btnAdd1" parent="ToolBar1" toolTipText="Добавить" type="ButtonDesignInfo"/>
+<widget actionPerformed="" icon="minus.png" name="btnDelete1" parent="ToolBar1" toolTipText="Удалить" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnFilter_onClick" icon="funnel--plus.png" name="btnFilter" parent="ToolBar1" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnCancelFilter_onClick" icon="funnel--minus.png" name="btnCancelFilter" parent="ToolBar1" type="ButtonDesignInfo"/>
+<widget actionPerformed="" icon="refresh/refresh.png" name="btnRefresh1" parent="ToolBar1" toolTipText="Обновить" type="ButtonDesignInfo"/>
+<widget actionPerformed="" icon="disk-black.png" name="btnSave1" parent="ToolBar1" toolTipText="Сохранить" type="ButtonDesignInfo"/>
+<widget floatable="false" name="jToolBar" parent="Form" type="ToolbarDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="4" gridy="4" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget actionPerformed="btnFilter1_onClick" icon="funnel--plus.png" name="btnFilter1" parent="jToolBar" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnCancelFilter1_onClick" icon="funnel--minus.png" name="btnCancelFilter1" parent="jToolBar" type="ButtonDesignInfo"/>
+<widget actionPerformed="onClick" name="jButton" parent="jToolBar" text="Сохранить" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnSizeCalc_onClick" name="btnSizeCalc" parent="jToolBar" text="Кол-во записей" type="ButtonDesignInfo"/>
+<widget name="dbCheck" parent="Form" type="DbCheckDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="1" gridy="2" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbCombo" parent="Form" type="DbComboDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="2" gridy="2" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbDate" parent="Form" type="DbDateDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="3" gridy="2" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbImage" parent="Form" type="DbImageDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="1" gridy="3" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbLabel" parent="Form" type="DbLabelDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="2" gridy="3" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbSpin" parent="Form" type="DbSpinDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="1" gridy="4" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbScheme" parent="Form" type="DbSchemeDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="3" gridy="3" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbText1" parent="Form" type="DbTextDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="2" gridy="4" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbGrid3" parent="Form" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="124765165128184169" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<unaryLinkField/>
+<param2GetChildren/>
+<paramSourceField/>
+</treeDesignInfo>
+<column name="ID">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124765165128184169" fieldName="ID"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124765165128184169" fieldName="ID"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="NAME" title="Название">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124765165128184169" fieldName="NAME"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="124765165128184169" fieldName="NAME"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="SHORTNAME" title="Сокращение">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124765165128184169" fieldName="SHORTNAME"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="124765165128184169" fieldName="SHORTNAME"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="DESCRIPTION" title="Описание">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124765165128184169" fieldName="DESCRIPTION"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="124765165128184169" fieldName="DESCRIPTION"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="INTERVERIFYINGINTERVAL" title="МПИ/МКИ">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124765165128184169" fieldName="INTERVERIFYINGINTERVAL"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124765165128184169" fieldName="INTERVERIFYINGINTERVAL"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="WORKKIND" title="Вид работы">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124765165128184169" fieldName="WORKKIND"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124765165128184169" fieldName="WORKKIND"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<column name="CREATIONDATE">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<datamodelElement entityId="124765165128184169" fieldName="CREATIONDATE"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<controlInfo classHint="DbDateDesignInfo" dateFormat="DD_MM_YYYY_HH_MM_SS">
+<datamodelElement entityId="124765165128184169" fieldName="CREATIONDATE"/>
+</controlInfo>
+<columnsDisplayField/>
+<headerEasFont name="Dialog"/>
+</column>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="1" gridy="5" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbMap" parent="Form" type="DbMapDesignInfo">
+<feature typeName="Перечень заказов">
+<ref entityId="124930559900042" field="false"/>
+<style/>
+</feature>
+<feature typeName="Категории СИ">
+<ref entityId="124765165128184169" field="false"/>
+<style/>
+</feature>
+<feature typeName="Виды метрологического обслуживания">
+<ref entityId="124765153484301457" field="false"/>
+<style/>
+</feature>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="2" gridy="5" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="jPanel2" parent="Form" type="PanelDesignInfo">
+<layout type="GridBagLayoutDesignInfo"/>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="4" gridy="5" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget list="true" name="dbCombo1" parent="jPanel2" type="DbComboDesignInfo">
+<displayField entityId="124765153484301457" fieldName="NAME"/>
+<valueField entityId="124765153484301457" fieldName="ID"/>
+<datamodelElement entityId="124765165128184169" fieldName="WORKKIND"/>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="2" gridx="1" gridy="1" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+<easFont name="Century" size="18"/>
+</widget>
+<widget list="true" name="dbCombo2" parent="jPanel2" type="DbComboDesignInfo">
+<displayField entityId="124765153484301457" fieldName="NAME"/>
+<valueField entityId="124765153484301457" fieldName="ID"/>
+<datamodelElement entityId="124765165128184169" fieldName="WORKKIND"/>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="2" gridx="4" gridy="1" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+<easFont name="Calibri" size="28"/>
+</widget>
+<widget name="spin1" parent="jPanel2" step="0.5" type="DbSpinDesignInfo">
+<datamodelElement entityId="124765165128184169" fieldName="WORKKIND"/>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="2" gridx="1" gridy="3" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbSpin1" parent="jPanel2" type="DbSpinDesignInfo">
+<datamodelElement entityId="124765165128184169" fieldName="WORKKIND"/>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="2" gridx="4" gridy="3" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+<easFont name="Arial Black" size="10" style="2"/>
+</widget>
+<widget name="dbCheck1" parent="jPanel2" type="DbCheckDesignInfo">
+<datamodelElement entityId="124765165128184169" fieldName="WORKKIND"/>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="2" gridx="1" gridy="5" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbCheck2" parent="jPanel2" type="DbCheckDesignInfo">
+<datamodelElement entityId="124765165128184169" fieldName="WORKKIND"/>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="2" gridx="4" gridy="5" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+<easFont name="SansSerif" style="2"/>
+</widget>
+<widget formatString="N###,#.##;-###,#.##" name="dbLabel1" parent="jPanel2" type="DbLabelDesignInfo">
+<datamodelElement entityId="124765165128184169" fieldName="WORKKIND"/>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="2" gridx="1" gridy="6" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget formatString="" name="dbLabel2" parent="jPanel2" type="DbLabelDesignInfo">
+<datamodelElement entityId="124765165128184169" fieldName="WORKKIND"/>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="2" gridx="4" gridy="6" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+<easFont name="Cambria" size="16"/>
+</widget>
+<widget actionPerformed="actionPerformed" name="jButton1" parent="jPanel2" text="Кнопка" type="ButtonDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="1" gridy="8" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget actionPerformed="actionPerformed1" name="jButton2" parent="jPanel2" text="Кнопка" type="ButtonDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="2" gridy="8" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="jPanel3" parent="jPanel2" type="PanelDesignInfo">
+<layout type="GridBagLayoutDesignInfo"/>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="6" gridy="3" type="GridBagLayoutConstraintsDesignInfo" weightx="1.0">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbDate1" parent="jPanel3" type="DbDateDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="2" gridx="1" gridy="1" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<layout type="GridBagLayoutDesignInfo"/>
+</layout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form">
+<widget name="gridMySql" parent="Form" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="3" gridx="2" gridy="4" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget actionPerformed="btnRefresh_actionPerformed" name="btnRefresh" parent="Form" text="Refresh" type="ButtonDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="2" gridy="2" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget actionPerformed="actionPerformed" name="btnTest1" parent="Form" text="Test it" type="ButtonDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="3" gridy="2" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<layout type="GridBagLayoutDesignInfo"/>
+</layout>

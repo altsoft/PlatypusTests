@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel>
+<parameters>
+<parameter description="" name="appElementType" nullable="true" parameterMode="1" precision="0" scale="0" selectionForm="null" signed="true" size="0" type="3" typeName="DECIMAL"/>
+</parameters>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+<entity Name="entities" Title="query from entities1" entityHeight="200" entityIconified="false" entityId="130449980452096" entityLocationX="205" entityLocationY="16" entityWidth="150" queryId="130198481999681" tableName="" tableSchemaName=""/>
+<relation leftEntityFieldName="appElementType" leftEntityId="-1" rightEntityId="130449980452096" rightEntityParameterName="appElementType"/>
+</datamodel>

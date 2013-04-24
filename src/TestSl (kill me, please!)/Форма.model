@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel>
+<parameters>
+<parameter description="" name="keyword" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName="VARCHAR"/>
+</parameters>
+<parametersEntity entityHeight="255" entityIconified="false" entityLocationX="7" entityLocationY="7" entityWidth="205"/>
+<entity Name="" Title="eas_vmtest" entityHeight="200" entityIconified="false" entityId="127685440245410" entityLocationX="309" entityLocationY="7" entityWidth="399" tableName="eas_vmtest" tableSchemaName=""/>
+</datamodel>

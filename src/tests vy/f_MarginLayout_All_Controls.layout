@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="380px" prefWidth="471px">
+<widget name="jMenuItem1" parent="jPopupMenu1" prefHeight="0px" prefWidth="0px" text="jMenuItem1" type="MenuItemDesignInfo"/>
+<widget name="jMenuItem2" parent="jPopupMenu1" prefHeight="0px" prefWidth="0px" text="jMenuItem2" type="MenuItemDesignInfo"/>
+<widget componentPopupMenu="jPopupMenu1" name="jButton1" parent="Form" prefHeight="23px" prefWidth="73px" text="jButton1" type="ButtonDesignInfo">
+<constraints bottom="352px" left="12px" right="386px" top="5px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jToggleButton1" parent="Form" prefHeight="23px" prefWidth="105px" text="jToggleButton1" type="ToggleButtonDesignInfo">
+<constraints bottom="352px" left="90px" right="276px" top="5px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jProgressBar1" parent="Form" prefHeight="14px" prefWidth="146px" string="�" type="ProgressBarDesignInfo">
+<constraints bottom="357px" left="200px" right="125px" top="9px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget caretPosition="11" componentPopupMenu="jPopupMenu1" name="jTextField1" parent="Form" prefHeight="20px" prefWidth="59px" selectionEnd="11" selectionStart="11" text="jTextField1" type="TextFieldDesignInfo">
+<constraints bottom="354px" left="351px" right="61px" top="6px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jLabel1" parent="Form" prefHeight="14px" prefWidth="34px" text="jLabel1" type="LabelDesignInfo">
+<constraints bottom="357px" left="415px" right="22px" top="9px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jCheckBox1" parent="Form" prefHeight="23px" prefWidth="81px" text="jCheckBox1" type="CheckDesignInfo">
+<constraints bottom="324px" left="38px" right="352px" top="33px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jRadioButton1" parent="Form" prefHeight="23px" prefWidth="93px" text="jRadioButton1" type="RadioDesignInfo">
+<constraints bottom="324px" left="124px" right="254px" top="33px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jSlider1" parent="Form" prefHeight="23px" prefWidth="200px" type="SliderDesignInfo">
+<constraints bottom="324px" left="222px" right="49px" top="33px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget caretPosition="20" componentPopupMenu="jPopupMenu1" name="jFormattedTextField1" parent="Form" prefHeight="20px" prefWidth="109px" selectionEnd="20" selectionStart="20" text="jFormattedTextField1" type="FormattedFieldDesignInfo">
+<constraints bottom="298px" left="9px" right="353px" top="62px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget caretPosition="15" componentPopupMenu="jPopupMenu1" name="jPasswordField1" parent="Form" prefHeight="20px" prefWidth="111px" selectionEnd="15" selectionStart="15" text="jPasswordField1" type="PasswordFieldDesignInfo">
+<constraints bottom="298px" left="123px" right="237px" top="62px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget name="jScrollPane1" parent="Form" prefHeight="60px" prefWidth="108px" type="ScrollDesignInfo">
+<constraints bottom="259px" left="239px" right="124px" top="61px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jEditorPane1" parent="jScrollPane1" prefHeight="58px" prefWidth="106px" type="EditorPaneDesignInfo"/>
+<widget backgroundColor="#f0ebe2" componentPopupMenu="jPopupMenu1" foregroundColor="#3c3b37" name="dbCheck1" parent="Form" prefHeight="20px" prefWidth="100px" type="DbCheckDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param2"/>
+<constraints bottom="298px" left="352px" right="19px" top="62px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget backgroundColor="#f0ebe2" componentPopupMenu="jPopupMenu1" foregroundColor="#3c3b37" name="dbCombo1" parent="Form" prefHeight="20px" prefWidth="100px" type="DbComboDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param2"/>
+<constraints bottom="232px" left="23px" right="348px" top="128px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget backgroundColor="#f0ebe2" componentPopupMenu="jPopupMenu1" foregroundColor="#3c3b37" name="dbDate1" parent="Form" prefHeight="20px" prefWidth="100px" type="DbDateDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param3"/>
+<constraints bottom="232px" left="128px" right="243px" top="128px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="dbGrid1" parent="Form" prefHeight="60px" prefWidth="100px" type="DbGridDesignInfo">
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="-1" field="false"/>
+</rowsColumnsDesignInfo>
+<column name="Param1">
+<style>
+<nativeFont name="DejaVu Sans" size="11"/>
+<nativeForeground rGB="-16777216"/>
+<nativeBackground/>
+</style>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="-1" fieldName="Param1"/>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param1"/>
+</controlInfo>
+<headerEasFont/>
+</column>
+<column name="Param2">
+<style>
+<nativeFont name="DejaVu Sans" size="11"/>
+<nativeForeground rGB="-16777216"/>
+<nativeBackground/>
+</style>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="-1" fieldName="Param2"/>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param2"/>
+</controlInfo>
+<headerEasFont/>
+</column>
+<column name="Param3">
+<style>
+<nativeFont name="DejaVu Sans" size="11"/>
+<nativeForeground rGB="-16777216"/>
+<nativeBackground/>
+</style>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="-1" fieldName="Param3"/>
+<controlInfo classHint="DbDateDesignInfo" dateFormat="DD_MM_YYYY_HH_MM_SS">
+<datamodelElement entityId="-1" fieldName="Param3"/>
+</controlInfo>
+<headerEasFont/>
+</column>
+<constraints bottom="192px" left="233px" right="138px" top="128px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget backgroundColor="#f0ebe2" componentPopupMenu="jPopupMenu1" foregroundColor="#3c3b37" name="dbImage1" parent="Form" prefHeight="80px" prefWidth="100px" type="DbImageDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param4"/>
+<constraints bottom="202px" height="80px" left="338px" right="33px" top="98px" type="MarginConstraintsDesignInfo" width="100px"/>
+</widget>
+<widget backgroundColor="#f0ebe2" componentPopupMenu="jPopupMenu1" foregroundColor="#3c3b37" name="dbLabel1" parent="Form" prefHeight="20px" prefWidth="100px" type="DbLabelDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param1"/>
+<constraints bottom="127px" left="15px" right="356px" top="233px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="dbMap1" parent="Form" prefHeight="100px" prefWidth="100px" type="DbMapDesignInfo">
+<constraints bottom="87px" left="120px" right="251px" top="193px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget backgroundColor="#f0ebe2" componentPopupMenu="jPopupMenu1" foregroundColor="#3c3b37" name="dbSpin1" parent="Form" prefHeight="20px" prefWidth="100px" type="DbSpinDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param2"/>
+<constraints bottom="127px" left="225px" right="146px" top="233px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget backgroundColor="#f0ebe2" componentPopupMenu="jPopupMenu1" foregroundColor="#3c3b37" name="dbText1" parent="Form" prefHeight="20px" prefWidth="60px" type="DbTextDesignInfo">
+<datamodelElement entityId="-1" fieldName="Param1"/>
+<constraints bottom="127px" left="330px" right="81px" top="233px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jPanel1" parent="Form" prefHeight="30px" prefWidth="60px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints bottom="120px" left="400px" right="11px" top="230px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget name="jPanel2" parent="jPanel1" prefHeight="23px" prefWidth="20px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints height="23px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="20px"/>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jTabbedPane1" parent="Form" prefHeight="40px" prefWidth="110px" type="TabsDesignInfo">
+<constraints bottom="50px" left="10px" right="351px" top="290px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" leftComponent="jLabel2" name="jSplitPane1" parent="Form" prefHeight="25px" prefWidth="114px" rightComponent="jButton2" type="SplitDesignInfo">
+<constraints bottom="55px" left="130px" right="227px" top="300px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jLabel2" parent="jSplitPane1" prefHeight="25px" prefWidth="84px" text="jLabel2" type="LabelDesignInfo"/>
+<widget componentPopupMenu="jPopupMenu1" name="jButton2" parent="jSplitPane1" prefHeight="25px" prefWidth="25px" text="jButton2" type="ButtonDesignInfo"/>
+<widget componentPopupMenu="jPopupMenu1" name="jScrollPane2" parent="Form" prefHeight="30px" prefWidth="80px" type="ScrollDesignInfo">
+<constraints bottom="50px" left="320px" right="71px" top="300px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jToolBar1" parent="Form" prefHeight="20px" prefWidth="120px" rollover="true" type="ToolbarDesignInfo">
+<constraints bottom="10px" left="10px" right="341px" top="350px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget componentPopupMenu="jPopupMenu1" name="jDesktopPane1" parent="Form" prefHeight="40px" prefWidth="70px" type="DesktopDesignInfo">
+<constraints bottom="0px" left="140px" right="261px" top="340px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget backgroundColor="#f0ebe2" componentPopupMenu="jPopupMenu1" foregroundColor="#3c3b37" name="jLayeredPane1" parent="Form" prefHeight="40px" prefWidth="70px" type="LayersDesignInfo">
+<easFont name="DejaVu Sans" size="11"/>
+<constraints bottom="0px" left="230px" right="171px" top="340px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<nonvisual name="jPopupMenu1" prefHeight="0px" prefWidth="0px" type="PopupDesignInfo"/>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<entity entityHeight="200" entityIconified="false" entityId="129904849025085" entityLocationX="607" entityLocationY="565" entityWidth="150" queryId="null" tableDbId="null" tableName="TR_CHARS_CLIMATE" tableSchemaName="TRANS"/>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="10" entityLocationY="6" entityWidth="150"/>
+<entity entityHeight="200" entityIconified="false" entityId="129904832610982" entityLocationX="175" entityLocationY="75" entityWidth="150" queryId="124928857631201" tableDbId="null" tableName="" tableSchemaName=""/>
+<entity entityHeight="202" entityIconified="false" entityId="129904834709333" entityLocationX="441" entityLocationY="234" entityWidth="150" queryId="128032313214099" tableDbId="null" tableName="" tableSchemaName=""/>
+<entity entityHeight="200" entityIconified="false" entityId="129904833209347" entityLocationX="721" entityLocationY="142" entityWidth="150" queryId="124505954732869424" tableDbId="null" tableName="" tableSchemaName=""/>
+<entity entityHeight="204" entityIconified="false" entityId="129855772054640" entityLocationX="278" entityLocationY="398" entityWidth="150" queryId="null" tableDbId="null" tableName="DELAWARE_ADMINISTRATIVE" tableSchemaName=""/>
+<relation leftEntityId="129904832610982" leftEntityParameterName="Param1" rightEntityId="129904833209347" rightEntityParameterName="Param2"/>
+</datamodel>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="10" entityLocationY="20" entityWidth="150"/>
+<entity Name="dsRaw" Title="Запрос всех записей из таблицы с полем ROW" entityHeight="200" entityIconified="false" entityId="128271355331252" entityLocationX="582" entityLocationY="9" entityWidth="150" queryId="128265849471851" tableDbId="null" tableName="" tableSchemaName=""/>
+<entity Name="dsLong" Title="Запрос всех записей из таблицы с полем LONG" entityHeight="200" entityIconified="false" entityId="128265648078174" entityLocationX="176" entityLocationY="16" entityWidth="150" queryId="128265003892120" tableDbId="null" tableName="" tableSchemaName=""/>
+<entity Name="dsLongRaw" Title="Запрос всех записей из таблицы с полем LONG" entityHeight="200" entityIconified="false" entityId="128265648617185" entityLocationX="370" entityLocationY="12" entityWidth="150" queryId="128265052325031" tableDbId="null" tableName="" tableSchemaName=""/>
+</datamodel>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form">
+<widget name="dbGrid" parent="Form" type="DbGridDesignInfo">
+<column name="CUSTOMER_NAME" title="Заказчик">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField/>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124637024692102088" fieldName="CUSTOMER_NAME"/>
+</controlInfo>
+<datamodelElement entityId="124637024692102088" fieldName="CUSTOMER_NAME"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<column plain="false" title="Пример разворота">
+<style>
+<nativeFont name="Arial" size="10"/>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField entityId="124637024692102088" fieldName="CUSTOMER_NAME"/>
+<cellsDatasource entityId="124637024692102088" field="false"/>
+<columnsDatasource entityId="124637024692102088" field="false"/>
+<cellDesignInfo>
+<cellValueField entityId="124637024692102088" fieldName="CUSTOMER_NAME"/>
+<columnsKeyField entityId="124637024692102088" fieldName="CUSTOMER_ID"/>
+<rowsKeyField entityId="124637024692102088" fieldName="CUSTOMER_ID"/>
+<cellControlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124637024692102088" fieldName="CUSTOMER_NAME"/>
+</cellControlInfo>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<column plain="false" substitute="true" title="Пример разворота1">
+<style>
+<nativeFont name="Arial" size="10"/>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField entityId="124637024692102088" fieldName="CUSTOMER_NAME"/>
+<cellsDatasource entityId="124637024692102088" field="false"/>
+<columnsDatasource entityId="124637024692102088" field="false"/>
+<cellDesignInfo>
+<cellValueField entityId="124637024692102088" fieldName="CUSTOMER_NAME"/>
+<columnsKeyField entityId="124637024692102088" fieldName="CUSTOMER_ID"/>
+<rowsKeyField entityId="124637024692102088" fieldName="CUSTOMER_ID"/>
+<cellControlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124637024692102088" fieldName="CUSTOMER_NAME"/>
+</cellControlInfo>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<treeDesignInfo>
+<unaryLinkField entityId="124637024692102088" fieldName="PARENT"/>
+<param2GetChildren/>
+<paramSourceField/>
+</treeDesignInfo>
+<rowsColumnsDesignInfo fixedColumns="1" fixedRows="1" rowsHeaderType="3">
+<rowsDatasource entityId="124637024692102088" field="false"/>
+</rowsColumnsDesignInfo>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="3" gridx="2" gridy="3" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbGrid1" parent="Form" type="DbGridDesignInfo">
+<column name="CUSTOMER_ID" title="Id Заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField/>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124637024692102088" fieldName="CUSTOMER_ID"/>
+</controlInfo>
+<datamodelElement entityId="124637024692102088" fieldName="CUSTOMER_ID"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<column name="CUSTOMER_NAME" title="Имя заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField/>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124637024692102088" fieldName="CUSTOMER_NAME"/>
+</controlInfo>
+<datamodelElement entityId="124637024692102088" fieldName="CUSTOMER_NAME"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<column name="CUSTOMER_ADDRESS" title="Адрес заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField/>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124637024692102088" fieldName="CUSTOMER_ADDRESS"/>
+</controlInfo>
+<datamodelElement entityId="124637024692102088" fieldName="CUSTOMER_ADDRESS"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<column name="PARENT">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField/>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124637024692102088" fieldName="PARENT"/>
+</controlInfo>
+<datamodelElement entityId="124637024692102088" fieldName="PARENT"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<treeDesignInfo>
+<unaryLinkField/>
+<param2GetChildren/>
+<paramSourceField/>
+</treeDesignInfo>
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="124637024692102088" field="false"/>
+</rowsColumnsDesignInfo>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="4" gridy="5" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbGrid2" parent="Form" type="DbGridDesignInfo">
+<column name="CUSTOMER_ID" title="Id Заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField/>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124645379637524859" fieldName="CUSTOMER_ID"/>
+</controlInfo>
+<datamodelElement entityId="124645379637524859" fieldName="CUSTOMER_ID"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<column name="CUSTOMER_NAME" title="Имя заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField/>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124645379637524859" fieldName="CUSTOMER_NAME"/>
+</controlInfo>
+<datamodelElement entityId="124645379637524859" fieldName="CUSTOMER_NAME"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<column name="CUSTOMER_ADDRESS" title="Адрес заказчика">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField/>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124645379637524859" fieldName="CUSTOMER_ADDRESS"/>
+</controlInfo>
+<datamodelElement entityId="124645379637524859" fieldName="CUSTOMER_ADDRESS"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<column name="PARENT">
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<columnsDisplayField/>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124645379637524859" fieldName="PARENT"/>
+</controlInfo>
+<datamodelElement entityId="124645379637524859" fieldName="PARENT"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<treeDesignInfo>
+<unaryLinkField/>
+<param2GetChildren/>
+<paramSourceField/>
+</treeDesignInfo>
+<rowsColumnsDesignInfo fixedColumns="2" fixedRows="4">
+<rowsDatasource entityId="124645379637524859" field="false"/>
+</rowsColumnsDesignInfo>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="2" gridy="5" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbText" parent="Form" type="DbTextDesignInfo">
+<datamodelElement entityId="124645379637524859" fieldName="CUSTOMER_ADDRESS"/>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="2" gridy="7" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbDate" parent="Form" type="DbDateDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="4" gridy="7" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget list="true" name="dbCombo" parent="Form" type="DbComboDesignInfo">
+<displayField entityId="124645379637524859" fieldName="CUSTOMER_NAME"/>
+<valueField entityId="124645379637524859" fieldName="CUSTOMER_ID"/>
+<datamodelElement entityId="124637024692102088" fieldName="PARENT"/>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="2" gridy="8" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbSpin" parent="Form" type="DbSpinDesignInfo">
+<datamodelElement entityId="124645379637524859" fieldName="CUSTOMER_ID"/>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="4" gridy="8" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbLabel" parent="Form" type="DbLabelDesignInfo">
+<datamodelElement entityId="124645379637524859" fieldName="CUSTOMER_ADDRESS"/>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="2" gridy="9" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+<easFont name="Century" size="20"/>
+</widget>
+<widget name="dbImage" parent="Form" type="DbImageDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="4" gridy="9" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbScheme" parent="Form" type="DbSchemeDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="2" gridy="10" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbCheck" parent="Form" type="DbCheckDesignInfo">
+<datamodelElement entityId="124645379637524859" fieldName="PARENT"/>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="4" gridy="10" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<layout type="GroupLayoutDesignInfo">
+<horizontalGroup childrenAlignment="LEADING" parallel="true" resizeable="true">
+<subgroup resizeable="true">
+<subgroup max="100" min="100" pref="100"/>
+<subgroup component="dbGrid" max="-2" min="-2" pref="200"/>
+</subgroup>
+<subgroup resizeable="true">
+<subgroup max="100" min="100" pref="100"/>
+<subgroup component="dbGrid2" max="-2" min="-2"/>
+<subgroup component="dbGrid1" max="-2" min="-2"/>
+</subgroup>
+<subgroup resizeable="true">
+<subgroup max="100" min="100" pref="100"/>
+<subgroup component="dbText" max="-2" min="-2"/>
+<subgroup component="dbDate" max="-2" min="-2"/>
+</subgroup>
+<subgroup resizeable="true">
+<subgroup max="100" min="100" pref="100"/>
+<subgroup component="dbCombo" max="-2" min="-2"/>
+<subgroup component="dbSpin" max="-2" min="-2"/>
+</subgroup>
+<subgroup resizeable="true">
+<subgroup max="100" min="100" pref="100"/>
+<subgroup component="dbLabel" max="-2" min="-2"/>
+<subgroup component="dbImage" max="-2" min="-2"/>
+</subgroup>
+<subgroup resizeable="true">
+<subgroup max="100" min="100" pref="100"/>
+<subgroup component="dbScheme" max="-2" min="-2"/>
+<subgroup component="dbCheck" max="-2" min="-2"/>
+</subgroup>
+</horizontalGroup>
+<verticalGroup childrenAlignment="LEADING" parallel="true" resizeable="true">
+<subgroup resizeable="true">
+<subgroup max="4" min="4" pref="4"/>
+<subgroup component="dbGrid" max="-2" min="-2"/>
+<subgroup childrenAlignment="LEADING" parallel="true" resizeable="true">
+<subgroup component="dbGrid2" max="-2" min="-2"/>
+<subgroup component="dbGrid1" max="-2" min="-2"/>
+</subgroup>
+<subgroup childrenAlignment="LEADING" parallel="true" resizeable="true">
+<subgroup component="dbText" max="-2" min="-2"/>
+<subgroup component="dbDate" max="-2" min="-2"/>
+</subgroup>
+<subgroup childrenAlignment="LEADING" parallel="true" resizeable="true">
+<subgroup component="dbCombo" max="-2" min="-2"/>
+<subgroup component="dbSpin" max="-2" min="-2"/>
+</subgroup>
+<subgroup childrenAlignment="LEADING" parallel="true" resizeable="true">
+<subgroup component="dbLabel" max="-2" min="-2"/>
+<subgroup component="dbImage" max="-2" min="-2" pref="31"/>
+</subgroup>
+<subgroup childrenAlignment="LEADING" parallel="true" resizeable="true">
+<subgroup component="dbScheme" max="-2" min="-2"/>
+<subgroup component="dbCheck" max="-2" min="-2"/>
+</subgroup>
+</subgroup>
+</verticalGroup>
+</layout>
+</layout>

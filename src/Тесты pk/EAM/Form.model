@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel>
+<parameters>
+<parameter description="Вид значения наработки" name="Param1" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="3" typeName="DECIMAL">
+<primaryKey field="VK_ID" name="" schema="EAS" table="PK_VALUE_KINDS"/>
+</parameter>
+</parameters>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="10" entityLocationY="20" entityWidth="150"/>
+<entity Name="dsWorkouts" Title="Виды значений наработки" entityHeight="140" entityIconified="false" entityId="126856629955961" entityLocationX="12" entityLocationY="236" entityWidth="381" tableName="EAM_OPERATING_VALUE_KINDS" tableSchemaName="EAS"/>
+</datamodel>

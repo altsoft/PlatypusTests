@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel>
+<entity Name="" Title="Перечень заказов" entityHeight="243" entityIconified="false" entityId="128014950440673" entityLocationX="758" entityLocationY="339" entityWidth="206" queryId="124349292311931632" tableName="" tableSchemaName=""/>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="7" entityLocationY="8" entityWidth="150"/>
+<entity Name="" Title="Перечень заказов" entityHeight="243" entityIconified="false" entityId="128015088296893" entityLocationX="1112" entityLocationY="355" entityWidth="206" queryId="124349292311931632" tableName="" tableSchemaName=""/>
+<entity Name="" Title="Перечень заказов" entityHeight="243" entityIconified="false" entityId="128014955584340" entityLocationX="733" entityLocationY="637" entityWidth="206" queryId="124349292311931632" tableName="" tableSchemaName=""/>
+<entity Name="" Title="Перечень заказов" entityHeight="243" entityIconified="false" entityId="128014947915700" entityLocationX="404" entityLocationY="375" entityWidth="206" queryId="124349292311931632" tableName="" tableSchemaName=""/>
+<entity Name="orders" Title="Заказы" entityHeight="200" entityIconified="false" entityId="124651510342145068" entityLocationX="186" entityLocationY="46" entityWidth="150" onBeforeInsert="orders_beforeInsert" tableName="GOODORDER" tableSchemaName="EAS"/>
+<entity Name="" Title="Перечень заказов" entityHeight="243" entityIconified="false" entityId="128014947934368" entityLocationX="838" entityLocationY="67" entityWidth="206" queryId="124349292311931632" tableName="" tableSchemaName=""/>
+<entity Name="ordersList" Title="Перечень заказов" entityHeight="243" entityIconified="false" entityId="124651472342156798" entityLocationX="400" entityLocationY="81" entityWidth="206" queryId="124349292311931632" tableName="" tableSchemaName=""/>
+<relation leftEntityFieldName="AMOUNT" leftEntityId="128014950440673" rightEntityId="128015088296893" rightEntityParameterName="amount"/>
+<relation leftEntityFieldName="AMOUNT" leftEntityId="124651510342145068" rightEntityId="128014947915700" rightEntityParameterName="amount"/>
+<relation leftEntityId="124651472342156798" leftEntityParameterName="amount" rightEntityId="128014955584340" rightEntityParameterName="amount"/>
+<relation leftEntityId="124651472342156798" leftEntityParameterName="amount" rightEntityId="128014947934368" rightEntityParameterName="amount"/>
+<relation leftEntityFieldName="AMOUNT" leftEntityId="124651510342145068" rightEntityId="124651472342156798" rightEntityParameterName="amount"/>
+<relation leftEntityId="128014947915700" leftEntityParameterName="amount" rightEntityId="128014950440673" rightEntityParameterName="amount"/>
+<relation leftEntityFieldName="ORDER_ID" leftEntityId="124651472342156798" rightEntityFieldName="ORDER_ID" rightEntityId="128014947934368"/>
+<relation leftEntityFieldName="ORDER_ID" leftEntityId="128014947915700" rightEntityFieldName="ORDER_ID" rightEntityId="128014955584340"/>
+</datamodel>

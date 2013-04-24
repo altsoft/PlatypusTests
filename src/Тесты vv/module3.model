@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parameters>
+<parameter description="" name="Param1" nullable="true" parameterMode="1" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName="VARCHAR"/>
+</parameters>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+<entity Name="" Title="dual md test" entityHeight="200" entityIconified="false" entityId="131971951330116" entityLocationX="176" entityLocationY="6" entityWidth="150" queryId="131831338017172" tableDbId="null" tableName="" tableSchemaName=""/>
+</datamodel>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="294px" prefWidth="462px">
+<widget name="jTabbedPane1" parent="Form" prefHeight="294px" prefWidth="462px" selectedComponent="jButton2" tabPlacement="4" type="TabsDesignInfo">
+<constraints place="Center" type="BorderLayoutConstraintsDesignInfo"/>
+</widget>
+<widget name="jButton1" parent="jTabbedPane1" prefHeight="282px" prefWidth="413px" text="jButton1" type="ButtonDesignInfo">
+<constraints tabTitle="tab0" type="TabsConstraintsDesignInfo"/>
+</widget>
+<widget name="jButton2" parent="jTabbedPane1" prefHeight="282px" prefWidth="413px" text="jButton2" type="ButtonDesignInfo">
+<constraints tabTitle="tab1" type="TabsConstraintsDesignInfo"/>
+</widget>
+<widget name="jLabel1" parent="jTabbedPane1" prefHeight="282px" prefWidth="413px" text="jLabel1" type="LabelDesignInfo">
+<constraints tabTitle="tab2" type="TabsConstraintsDesignInfo"/>
+</widget>
+<layout type="BorderLayoutDesignInfo"/>
+</layout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget actionPerformed="btnFillActionPerformed" name="btnFill" parent="Form" prefHeight="25px" prefWidth="109px" text="Заполнить" type="ButtonDesignInfo">
+<constraints height="25px" left="58px" top="340px" type="MarginConstraintsDesignInfo" width="109px"/>
+</widget>
+<widget name="label" parent="Form" prefHeight="15px" prefWidth="30px" text="Text" type="LabelDesignInfo">
+<constraints height="15px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="30px"/>
+</widget>
+<widget mouseWheelMoved="dbGrid1MouseWheelMoved" name="dbGrid1" parent="Form" prefHeight="301px" prefWidth="400px" type="DbGridDesignInfo">
+<column name="VAL">
+<columnsDisplayField/>
+<datamodelElement entityId="131727815206944" fieldName="VAL"/>
+<controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+<columnsDatasource/>
+<cellsDatasource/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+</column>
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="131727815206944" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<unaryLinkField/>
+<param2GetChildren/>
+<paramSourceField/>
+</treeDesignInfo>
+<constraints height="301px" left="0px" top="27px" type="MarginConstraintsDesignInfo" width="400px"/>
+</widget>
+<widget actionPerformed="btnClearActionPerformed" name="btnClear" parent="Form" prefHeight="25px" prefWidth="103px" text="Очистить" type="ButtonDesignInfo">
+<constraints height="25px" left="179px" top="340px" type="MarginConstraintsDesignInfo" width="103px"/>
+</widget>
+<widget actionPerformed="jButton1ActionPerformed" name="jButton1" parent="Form" prefHeight="25px" prefWidth="94px" text="jButton1" type="ButtonDesignInfo">
+<constraints height="25px" left="294px" top="340px" type="MarginConstraintsDesignInfo" width="94px"/>
+</widget>
+<widget name="lblCount" parent="Form" prefHeight="15px" prefWidth="5px" text="-" type="LabelDesignInfo">
+<constraints height="15px" left="395px" top="0px" type="MarginConstraintsDesignInfo" width="5px"/>
+</widget>
+<widget actionPerformed="jButton2ActionPerformed" name="jButton2" parent="Form" prefHeight="25px" prefWidth="94px" text="jButton2" type="ButtonDesignInfo">
+<constraints height="25px" left="294px" top="371px" type="MarginConstraintsDesignInfo" width="94px"/>
+</widget>
+<widget actionPerformed="btnRunExcelActionPerformed" name="btnRunExcel" parent="Form" prefHeight="25px" prefWidth="100px" text="Run Excel" type="ButtonDesignInfo">
+<constraints height="25px" left="182px" top="371px" type="MarginConstraintsDesignInfo" width="100px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

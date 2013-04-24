@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+<entity Title="MTD_ENTITIES" entityHeight="200" entityIconified="false" entityId="126276763064683" entityLocationX="179" entityLocationY="57" entityWidth="150" queryId="null" tableAlias="T_MTD_ENTITIES_1" tableName="MTD_ENTITIES" tableSchemaName=""/>
+<entity Title="Список полномочий" entityHeight="200" entityIconified="false" entityId="126276763064664" entityLocationX="578" entityLocationY="33" entityWidth="150" queryId="null" tableAlias="acl" tableName="ACCESS_LIST" tableSchemaName=""/>
+<relation leftEntityFieldName="FORM_ID" leftEntityId="126276763064664" rightEntityFieldName="MDENT_ID" rightEntityId="126276763064683"/>
+</datamodel>

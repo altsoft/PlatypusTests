@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget name="JTF_User" parent="Form" prefHeight="25px" prefWidth="102px" type="TextFieldDesignInfo">
+<constraints height="25px" left="227px" top="90px" type="MarginConstraintsDesignInfo" width="102px"/>
+</widget>
+<widget actionPerformed="btnUser_actionPerformed" name="btnUser" parent="Form" prefHeight="25px" prefWidth="157px" text="Пользователь" type="ButtonDesignInfo">
+<constraints height="25px" left="70px" top="90px" type="MarginConstraintsDesignInfo" width="157px"/>
+</widget>
+<widget actionPerformed="btnAccess_actionPerformed" name="btnAccess" parent="Form" prefHeight="25px" prefWidth="157px" text="Полномочие" type="ButtonDesignInfo">
+<constraints height="25px" left="70px" top="115px" type="MarginConstraintsDesignInfo" width="157px"/>
+</widget>
+<widget name="JTF_Access" parent="Form" prefHeight="25px" prefWidth="102px" type="TextFieldDesignInfo">
+<constraints height="25px" left="227px" top="115px" type="MarginConstraintsDesignInfo" width="102px"/>
+</widget>
+<widget actionPerformed="btnAnswer_actionPerformed" name="btnAnswer" parent="Form" prefHeight="25px" prefWidth="157px" text="Получить ответ" type="ButtonDesignInfo">
+<constraints height="25px" left="70px" top="140px" type="MarginConstraintsDesignInfo" width="157px"/>
+</widget>
+<widget name="jETALabel" parent="Form" prefHeight="0px" prefWidth="0px" type="LabelDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="lbAnswer" parent="Form" prefHeight="15px" prefWidth="157px" text="Ожидание" type="LabelDesignInfo">
+<constraints height="15px" left="70px" top="165px" type="MarginConstraintsDesignInfo" width="157px"/>
+</widget>
+<widget name="jETALabel1" parent="Form" prefHeight="15px" prefWidth="157px" text="Пользователь (ID)" type="LabelDesignInfo">
+<constraints height="15px" left="70px" top="180px" type="MarginConstraintsDesignInfo" width="157px"/>
+</widget>
+<widget name="lbUser" parent="Form" prefHeight="15px" prefWidth="102px" text="Пользователь" type="LabelDesignInfo">
+<constraints height="15px" left="227px" top="180px" type="MarginConstraintsDesignInfo" width="102px"/>
+</widget>
+<widget name="jETALabel2" parent="Form" prefHeight="15px" prefWidth="157px" text="Пользователь (Логин)" type="LabelDesignInfo">
+<constraints height="15px" left="70px" top="195px" type="MarginConstraintsDesignInfo" width="157px"/>
+</widget>
+<widget name="lbLogin" parent="Form" prefHeight="15px" prefWidth="102px" text="Логин" type="LabelDesignInfo">
+<constraints height="15px" left="227px" top="195px" type="MarginConstraintsDesignInfo" width="102px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget name="dbGrid" parent="Form" prefHeight="200px" prefWidth="400px" type="DbGridDesignInfo">
+<treeDesignInfo>
+<unaryLinkField/>
+<param2GetChildren/>
+<paramSourceField/>
+</treeDesignInfo>
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="124651472342156798" field="false"/>
+</rowsColumnsDesignInfo>
+<column name="ORDER_ID" title="Id заказа">
+<controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+<datamodelElement entityId="124651472342156798" fieldName="ORDER_ID"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+</column>
+<column name="GOOD_NAME" title="Наименование товара">
+<controlInfo classHint="DbTextDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+<datamodelElement entityId="124651472342156798" fieldName="GOOD_NAME"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+</column>
+<column name="AMOUNT" title="Количество товара">
+<controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+<datamodelElement entityId="124651472342156798" fieldName="AMOUNT"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+</column>
+<column name="CUSTOMER_NAME" title="Имя заказчика">
+<controlInfo classHint="DbTextDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+<datamodelElement entityId="124651472342156798" fieldName="CUSTOMER_NAME"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+</column>
+<column name="CUSTOMER_ADDRESS" title="Адрес заказчика">
+<controlInfo classHint="DbTextDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+<datamodelElement entityId="124651472342156798" fieldName="CUSTOMER_ADDRESS"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+</column>
+<constraints bottom="100px" height="200px" left="0px" right="0px" top="0px" type="MarginConstraintsDesignInfo" width="400px"/>
+</widget>
+<widget name="dbGrid1" parent="Form" prefHeight="10px" prefWidth="10px" type="DbGridDesignInfo">
+<treeDesignInfo>
+<unaryLinkField/>
+<param2GetChildren/>
+<paramSourceField/>
+</treeDesignInfo>
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="124651510342145068" field="false"/>
+</rowsColumnsDesignInfo>
+<column name="ORDER_ID" title="Id заказа">
+<controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+<datamodelElement entityId="124651510342145068" fieldName="ORDER_ID"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+</column>
+<column name="AMOUNT" title="Количество товара">
+<controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+<datamodelElement entityId="124651510342145068" fieldName="AMOUNT"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+</column>
+<column name="GOOD" title="Заказанный товар">
+<controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+<datamodelElement entityId="124651510342145068" fieldName="GOOD"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+</column>
+<column name="CUSTOMER" title="Заказчик">
+<controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+<datamodelElement entityId="124651510342145068" fieldName="CUSTOMER"/>
+<cellDesignInfo>
+<rowsKeyField/>
+<columnsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<columnsDatasource/>
+<cellsDatasource/>
+<headerStyle>
+<nativeFont name="Tahoma" size="11"/>
+</headerStyle>
+<columnsDisplayField/>
+</column>
+<constraints bottom="10px" height="10px" left="10px" right="10px" top="10px" type="MarginConstraintsDesignInfo" width="10px"/>
+</widget>
+<widget name="jButton" parent="Form" prefHeight="10px" prefWidth="10px" text="Кнопка" type="ButtonDesignInfo">
+<constraints bottom="10px" height="10px" left="10px" right="10px" top="10px" type="MarginConstraintsDesignInfo" width="10px"/>
+</widget>
+<widget floatable="false" name="jToolBar" parent="Form" prefHeight="10px" prefWidth="10px" type="ToolbarDesignInfo">
+<constraints bottom="10px" height="10px" left="10px" right="10px" top="10px" type="MarginConstraintsDesignInfo" width="10px"/>
+</widget>
+<widget actionPerformed="btnNewRecord_onClick" icon="24x24/wand.png" name="btnNewRecord" parent="jToolBar" prefHeight="8px" prefWidth="65px" text="Новая" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnDelRecord_onClick" icon="32x32/arrow-090.png" name="btnDelRecord" parent="jToolBar" prefHeight="8px" prefWidth="87px" text="Удалить" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnRefresh_onClick" icon="refresh/refresh_green_24.png" name="btnRefresh" parent="jToolBar" prefHeight="8px" prefWidth="85px" text="Обновить" type="ButtonDesignInfo"/>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

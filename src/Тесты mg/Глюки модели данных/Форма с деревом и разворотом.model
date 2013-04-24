@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parameters>
+<parameter description="Параметр № 1" name="Param1" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="16" typeName=""/>
+<parameter description="" name="Param6" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName=""/>
+</parameters>
+<parametersEntity entityHeight="242" entityIconified="true" entityLocationX="20" entityLocationY="24" entityWidth="253"/>
+<entity Name="" Title="Перечень заказов" entityHeight="200" entityIconified="false" entityId="124602886967150984" entityLocationX="1350" entityLocationY="836" entityWidth="150" queryId="124349292311931632" tableDbId="null" tableName="" tableSchemaName=""/>
+<entity Name="ds1" Title="Журнал изменений метаданных" entityHeight="356" entityIconified="false" entityId="124602761043765701" entityLocationX="1596" entityLocationY="1689" entityWidth="454" onBeforeScroll="ds1_beforeScroll" queryId="null" tableDbId="null" tableName="MTD_MDCHNGLOG" tableSchemaName="EAS"/>
+<entity Name="" Title="MTD_ENTITIES" entityHeight="295" entityIconified="true" entityId="124575808262509771" entityLocationX="318" entityLocationY="26" entityWidth="342" queryId="null" tableDbId="null" tableName="MTD_ENTITIES" tableSchemaName="EAS"/>
+<entity Name="" Title="Журнал изменений метаданных" entityHeight="356" entityIconified="true" entityId="124602802937583365" entityLocationX="734" entityLocationY="17" entityWidth="454" onBeforeScroll="ds1_beforeScroll" queryId="null" tableDbId="null" tableName="MTD_MDCHNGLOG" tableSchemaName="EAS"/>
+<entity Name="" Title="Журнал изменений метаданных" entityHeight="356" entityIconified="true" entityId="124602802979639376" entityLocationX="24" entityLocationY="247" entityWidth="454" onBeforeScroll="ds1_beforeScroll" queryId="null" tableDbId="null" tableName="MTD_MDCHNGLOG" tableSchemaName="EAS"/>
+<entity Name="" Title="Журнных" entityHeight="170" entityIconified="true" entityId="124602957995305990" entityLocationX="350" entityLocationY="103" entityWidth="248" onBeforeScroll="ds1_beforeScroll" queryId="null" tableDbId="null" tableName="MTD_MDCHNGLOG" tableSchemaName="EAS"/>
+<entity Name="" Title="Журнал изменений метаданных" entityHeight="356" entityIconified="true" entityId="124602802857850685" entityLocationX="490" entityLocationY="370" entityWidth="454" onBeforeScroll="ds1_beforeScroll" queryId="null" tableDbId="null" tableName="MTD_MDCHNGLOG" tableSchemaName="EAS"/>
+<entity Name="" Title="Журнал изменений метаданных" entityHeight="356" entityIconified="false" entityId="124602802923441337" entityLocationX="1637" entityLocationY="318" entityWidth="454" onBeforeScroll="ds1_beforeScroll" queryId="null" tableDbId="null" tableName="MTD_MDCHNGLOG" tableSchemaName="EAS"/>
+<entity Name="" Title="Журнал изменений метаданных" entityHeight="264" entityIconified="true" entityId="124602802965630435" entityLocationX="1005" entityLocationY="439" entityWidth="321" onBeforeScroll="ds1_beforeScroll" queryId="null" tableDbId="null" tableName="MTD_MDCHNGLOG" tableSchemaName="EAS"/>
+<entity Name="" Title="Журнал изменений метаданных" entityHeight="356" entityIconified="true" entityId="124602802989020669" entityLocationX="7" entityLocationY="410" entityWidth="454" onBeforeScroll="ds1_beforeScroll" queryId="null" tableDbId="null" tableName="MTD_MDCHNGLOG" tableSchemaName="EAS"/>
+<entity Name="" Title="Журнал изменений метаданных" entityHeight="223" entityIconified="true" entityId="124602802909319015" entityLocationX="242" entityLocationY="188" entityWidth="454" onBeforeScroll="ds1_beforeScroll" queryId="null" tableDbId="null" tableName="MTD_MDCHNGLOG" tableSchemaName="EAS"/>
+<entity Name="" Title="Журнал изменений метаданных" entityHeight="170" entityIconified="true" entityId="124602802953136944" entityLocationX="1027" entityLocationY="378" entityWidth="248" onBeforeScroll="ds1_beforeScroll" queryId="null" tableDbId="null" tableName="MTD_MDCHNGLOG" tableSchemaName="EAS"/>
+<relation leftEntityFieldName="MDLOG_ID" leftEntityId="124602802953136944" rightEntityFieldName="MDLOG_ID" rightEntityId="124602802923441337"/>
+<relation leftEntityFieldName="MDLOG_ID" leftEntityId="124602802965630435" rightEntityFieldName="OPTYPE" rightEntityId="124602802923441337"/>
+<relation leftEntityFieldName="OPHOST" leftEntityId="124602802953136944" rightEntityFieldName="OP_CLIENT_IP_ADDRESS" rightEntityId="124602802965630435"/>
+<relation leftEntityFieldName="OPHOST" leftEntityId="124602802953136944" rightEntityFieldName="OPOBJNAME" rightEntityId="124602802965630435"/>
+<relation leftEntityFieldName="MDLOG_ID" leftEntityId="124602802953136944" rightEntityId="124602886967150984" rightEntityParameterName="amount"/>
+</datamodel>

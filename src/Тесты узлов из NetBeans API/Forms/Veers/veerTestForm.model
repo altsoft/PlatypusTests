@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel>
+<parametersEntity entityHeight="59" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+<entity Name="" Title="XYData" entityHeight="116" entityIconified="false" entityId="130496069730009" entityLocationX="441" entityLocationY="97" entityWidth="150" queryId="130496063994946" tableName="" tableSchemaName=""/>
+<entity Name="" Title="XData" entityHeight="86" entityIconified="false" entityId="130496068297673" entityLocationX="252" entityLocationY="67" entityWidth="150" queryId="130495994609614" tableName="" tableSchemaName=""/>
+<entity Name="" Title="YData" entityHeight="94" entityIconified="false" entityId="130496069156759" entityLocationX="254" entityLocationY="167" entityWidth="150" queryId="130496062122178" tableName="" tableSchemaName=""/>
+</datamodel>

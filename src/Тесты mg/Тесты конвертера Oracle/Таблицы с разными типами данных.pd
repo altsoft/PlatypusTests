@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel datamodelDbId="null">
+<fieldsEntity entityHeight="200" entityIconified="false" entityId="128265846514097" entityLocationX="513" entityLocationY="22" entityWidth="150" tableName="test_row"/>
+<fieldsEntity entityHeight="200" entityIconified="false" entityId="128264956073468" entityLocationX="10" entityLocationY="20" entityWidth="150" tableName="test_long"/>
+<fieldsEntity entityHeight="200" entityIconified="false" entityId="128265098412553" entityLocationX="187" entityLocationY="19" entityWidth="289" tableName="TEST_LONGRAW"/>
+</datamodel>

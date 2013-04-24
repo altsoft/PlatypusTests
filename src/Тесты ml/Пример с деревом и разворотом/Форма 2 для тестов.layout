@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget name="dbGrid" parent="Form" prefHeight="100px" prefWidth="400px" type="DbGridDesignInfo">
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="NAME" title="Наименование" width="200">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="124645991896838935" fieldName="NAME"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbTextDesignInfo">
+<datamodelElement entityId="124645991896838935" fieldName="NAME"/>
+</controlInfo>
+</column>
+<column plain="false" substitute="true" title="Виды ремонтов">
+<cellDesignInfo>
+<columnsKeyField entityId="124645993037549959" fieldName="MAINTENANCEKIND"/>
+<rowsKeyField entityId="124645993037549959" fieldName="MAINTENANCEEXECUTOR"/>
+<cellControlInfo classHint="DbCheckDesignInfo">
+<easFont name="Tahoma" size="11"/>
+</cellControlInfo>
+<cellValueField entityId="124645993037549959" fieldName="ISEXECUTING"/>
+</cellDesignInfo>
+<cellsDatasource entityId="124645993037549959" field="false"/>
+<columnsDatasource entityId="124645994396897997" field="false"/>
+<columnsDisplayField entityId="124645994396897997" fieldName="NAME"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="Tahoma" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+</column>
+<rowsColumnsDesignInfo fixedColumns="1">
+<rowsDatasource entityId="124645991896838935" field="false"/>
+</rowsColumnsDesignInfo>
+<constraints height="100px" left="0px" top="100px" type="MarginConstraintsDesignInfo" width="400px"/>
+</widget>
+<widget actionPerformed="actionPerformed" name="jButton" parent="Form" prefHeight="100px" prefWidth="400px" text="Сохранить" type="ButtonDesignInfo">
+<constraints height="100px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="400px"/>
+</widget>
+<widget name="dbGrid1" parent="Form" prefHeight="100px" prefWidth="400px" type="DbGridDesignInfo">
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="ID">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="124645993037549959" fieldName="ID"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124645993037549959" fieldName="ID"/>
+</controlInfo>
+</column>
+<column name="MAINTENANCEEXECUTOR" title="Исполнитель ремонтов">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="124645993037549959" fieldName="MAINTENANCEEXECUTOR"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124645993037549959" fieldName="MAINTENANCEEXECUTOR"/>
+</controlInfo>
+</column>
+<column name="MAINTENANCEKIND" title="Вид ремонта">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="124645993037549959" fieldName="MAINTENANCEKIND"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124645993037549959" fieldName="MAINTENANCEKIND"/>
+</controlInfo>
+</column>
+<column name="ISEXECUTING" title="Выполняется">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="124645993037549959" fieldName="ISEXECUTING"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="124645993037549959" fieldName="ISEXECUTING"/>
+</controlInfo>
+</column>
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="124645993037549959" field="false"/>
+</rowsColumnsDesignInfo>
+<constraints height="100px" left="0px" top="200px" type="MarginConstraintsDesignInfo" width="400px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

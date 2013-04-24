@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel datamodelDbId="null" datamodelSchemaName="EAM">
+<fieldsEntity entityHeight="171" entityIconified="false" entityId="125656248807293" entityLocationX="7" entityLocationY="8" entityWidth="320" tableName="EAM_OPC_ITEMS"/>
+<fieldsEntity entityHeight="208" entityIconified="false" entityId="125656250256325" entityLocationX="369" entityLocationY="26" entityWidth="460" tableName="EAM_OPC_GROUPS"/>
+<fieldsEntity entityHeight="181" entityIconified="false" entityId="125656247190568" entityLocationX="381" entityLocationY="277" entityWidth="364" tableName="EAM_OPC_SERVERS"/>
+</datamodel>

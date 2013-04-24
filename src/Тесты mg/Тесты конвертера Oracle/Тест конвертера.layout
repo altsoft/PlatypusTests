@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form">
+<widget name="dbGrid" parent="Form" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="128265648078174" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="TEST_LONG_ID">
+<columnsDisplayField/>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128265648078174" fieldName="TEST_LONG_ID"/>
+</controlInfo>
+<headerEasFont name="Dialog"/>
+<datamodelElement entityId="128265648078174" fieldName="TEST_LONG_ID"/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+</column>
+<column name="LONG_FIELD">
+<columnsDisplayField/>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="128265648078174" fieldName="LONG_FIELD"/>
+</controlInfo>
+<headerEasFont name="Dialog"/>
+<datamodelElement entityId="128265648078174" fieldName="LONG_FIELD"/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+</column>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="1" gridy="3" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbGrid1" parent="Form" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="128265648617185" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="TEST_LONGRAW_ID">
+<columnsDisplayField/>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128265648617185" fieldName="TEST_LONGRAW_ID"/>
+</controlInfo>
+<headerEasFont name="Dialog"/>
+<datamodelElement entityId="128265648617185" fieldName="TEST_LONGRAW_ID"/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+</column>
+<column name="LONGRAW_FIELD">
+<columnsDisplayField/>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbImageDesignInfo">
+<datamodelElement entityId="128265648617185" fieldName="LONGRAW_FIELD"/>
+</controlInfo>
+<headerEasFont name="Dialog"/>
+<datamodelElement entityId="128265648617185" fieldName="LONGRAW_FIELD"/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+</column>
+<column name="RAW_FIELD">
+<columnsDisplayField/>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbImageDesignInfo">
+<datamodelElement entityId="128265648617185" fieldName="RAW_FIELD"/>
+</controlInfo>
+<headerEasFont name="Dialog"/>
+<datamodelElement entityId="128265648617185" fieldName="RAW_FIELD"/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+</column>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="3" gridy="3" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbGrid2" parent="Form" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="128271355331252" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="TEST_ROW_ID">
+<columnsDisplayField/>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="128271355331252" fieldName="TEST_ROW_ID"/>
+</controlInfo>
+<headerEasFont name="Dialog"/>
+<datamodelElement entityId="128271355331252" fieldName="TEST_ROW_ID"/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+</column>
+<column name="FIELD_RAW">
+<columnsDisplayField/>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbImageDesignInfo">
+<datamodelElement entityId="128271355331252" fieldName="FIELD_ROW"/>
+</controlInfo>
+<headerEasFont name="Dialog"/>
+<datamodelElement entityId="128271355331252" fieldName="FIELD_ROW"/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+</column>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="5" gridy="3" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget actionPerformed="btnRAWLoad_actionPerformed" name="btnRAWLoad" parent="Form" text="load to RAW" type="ButtonDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="5" gridy="6" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget actionPerformed="btnLONG_RAWLoad_actionPerformed" name="btnLONG_RAWLoad" parent="Form" text="load to LONG RAW" type="ButtonDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="3" gridy="6" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget actionPerformed="actionPerformed" name="jButton" parent="Form" text="Save" type="ButtonDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="1" gridy="6" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget actionPerformed="btnRAW1Load_actionPerformed" name="btnRAW1Load" parent="Form" text="load to RAW" type="ButtonDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="3" gridy="7" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<layout type="GridBagLayoutDesignInfo"/>
+</layout>

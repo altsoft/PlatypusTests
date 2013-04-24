@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="283px" prefWidth="460px">
+<widget name="jPanelX" parent="Form" prefHeight="25px" prefWidth="132px" type="PanelDesignInfo">
+<layout type="BoxLayoutDesignInfo"/>
+</widget>
+<widget name="jButtonX1" parent="jPanelX" prefHeight="25px" prefWidth="66px" text="jButtonX1" type="ButtonDesignInfo"/>
+<widget name="jButtonX2" parent="jPanelX" prefHeight="25px" prefWidth="66px" text="jButtonX2" type="ButtonDesignInfo"/>
+<widget name="jPanelY" parent="Form" prefHeight="50px" prefWidth="66px" type="PanelDesignInfo">
+<layout type="BoxLayoutDesignInfo"/>
+</widget>
+<widget name="jButtonY1" parent="jPanelY" prefHeight="25px" prefWidth="66px" text="jButtonY1" type="ButtonDesignInfo"/>
+<widget name="jButtonY2" parent="jPanelY" prefHeight="25px" prefWidth="66px" text="jButtonY2" type="ButtonDesignInfo"/>
+<widget name="jPanelLine" parent="Form" prefHeight="25px" prefWidth="164px" type="PanelDesignInfo">
+<layout type="BoxLayoutDesignInfo"/>
+</widget>
+<widget name="jButtonLine1" parent="jPanelLine" prefHeight="25px" prefWidth="82px" text="jButtonLine1" type="ButtonDesignInfo"/>
+<widget name="jButtonLine2" parent="jPanelLine" prefHeight="25px" prefWidth="82px" text="jButtonLine2" type="ButtonDesignInfo"/>
+<widget name="jPanelPage" parent="Form" prefHeight="50px" prefWidth="87px" type="PanelDesignInfo">
+<layout type="BoxLayoutDesignInfo"/>
+</widget>
+<widget name="jButtonPage1" parent="jPanelPage" prefHeight="25px" prefWidth="87px" text="jButtonPage1" type="ButtonDesignInfo"/>
+<widget name="jButtonPage2" parent="jPanelPage" prefHeight="25px" prefWidth="87px" text="jButtonPage2" type="ButtonDesignInfo"/>
+<layout alignment="0" type="FlowLayoutDesignInfo"/>
+</layout>

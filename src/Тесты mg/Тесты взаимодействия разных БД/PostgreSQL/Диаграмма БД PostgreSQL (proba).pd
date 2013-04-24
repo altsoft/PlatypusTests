@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel datamodelDbId="128083706440617">
+<fieldsEntity entityId="128090790160911" tableName="kladr">
+<userData entityLocationX.Integer="347" entityLocationY.Integer="37"/>
+</fieldsEntity>
+<fieldsEntity entityId="128090748612532" tableName="socrbase">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="80" entityLocationY.Integer="45" entityWidth.Integer="150"/>
+</fieldsEntity>
+</datamodel>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel datamodelDbId="128083706440617">
+<parameters>
+<parameter description="" name="parent" nullable="true" precision="0" scale="0" selectionForm="null" signed="true" size="0" type="2" typeName="NUMERIC"/>
+</parameters>
+<parametersEntity>
+<userData Title.String="Параметры" entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="21" entityLocationY.Integer="11" entityWidth.Integer="150"/>
+</parametersEntity>
+<entity entityId="128100715381288" queryId="null" tableName="KLADR" tableSchemaName="">
+<userData Title.String="KLADR" entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="225" entityLocationY.Integer="49" entityWidth.Integer="150" tableAlias.String="KLADR" tableFilter.TableFilter="org.hsqldb.TableFilter@a948c2"/>
+</entity>
+</datamodel>

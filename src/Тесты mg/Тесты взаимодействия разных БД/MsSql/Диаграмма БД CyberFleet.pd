@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel datamodelDbId="128349401051577">
+<fieldsEntity entityId="128809780956299" tableName="FLEET_Task">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="5106" entityLocationY.Integer="256" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781534311" tableName="FLEET_ZoneAction">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="6976" entityLocationY.Integer="536" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809779846889" tableName="FLEET_GrUsersRightRelation">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="1026" entityLocationY.Integer="56" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809779890631" tableName="FLEET_Holiday">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="1196" entityLocationY.Integer="176" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782992169" tableName="SYS_LangForms">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="11566" entityLocationY.Integer="576" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781728116" tableName="SYS_Application">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="7656" entityLocationY.Integer="376" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782687506" tableName="SYS_Icon">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="10716" entityLocationY.Integer="536" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809783456293" tableName="sys_template">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="12926" entityLocationY.Integer="636" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780864039" tableName="FLEET_SmsWork">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="4766" entityLocationY.Integer="236" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780484341" tableName="FLEET_Schedule">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="3746" entityLocationY.Integer="196" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780042185" tableName="FLEET_MarkCar">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="1706" entityLocationY.Integer="96" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780656233" tableName="FLEET_ScheduleException">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="4086" entityLocationY.Integer="356" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780701525" tableName="FLEET_SMS">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="4256" entityLocationY.Integer="216" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780004620" tableName="FLEET_IdentificationEvents">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="1536" entityLocationY.Integer="76" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781385948" tableName="FLEET_UserLogCategory">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="6466" entityLocationY.Integer="316" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782471883" tableName="SYS_DEV_SensorClassification">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="10036" entityLocationY.Integer="496" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782639080" tableName="SYS_GlobalOptions">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="10546" entityLocationY.Integer="516" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809779934317" tableName="FLEET_HolidayType">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="1366" entityLocationY.Integer="76" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781684314" tableName="SYS_AppActionTypes">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="7486" entityLocationY.Integer="376" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809783901539" tableName="SYS_Users">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="13946" entityLocationY.Integer="876" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782154619" tableName="SYS_DEV_Device">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="9016" entityLocationY.Integer="616" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809779806249" tableName="FLEET_Events">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="856" entityLocationY.Integer="56" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809783273451" tableName="SYS_OrgRequisite">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="12416" entityLocationY.Integer="616" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782806280" tableName="SYS_IconTypes">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="11056" entityLocationY.Integer="696" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809783221873" tableName="SYS_Menu">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="12246" entityLocationY.Integer="676" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780223428" tableName="FLEET_ObjectGroupe">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="2556" entityLocationY.Integer="136" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782109355" tableName="SYS_DEV_CurrentText">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="8846" entityLocationY.Integer="436" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780396874" tableName="FLEET_Personal">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="3406" entityLocationY.Integer="176" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782200018" tableName="SYS_DEV_DeviceType">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="9186" entityLocationY.Integer="456" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780129690" tableName="FLEET_ObjectExtStatus">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="2216" entityLocationY.Integer="116" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781071804" tableName="FLEET_TaskControl">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="5616" entityLocationY.Integer="276" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781296842" tableName="FLEET_UserLog">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="6126" entityLocationY.Integer="436" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782329693" tableName="SYS_DEV_DirtyDataMultimedia">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="9526" entityLocationY.Integer="476" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809783150053" tableName="SYS_MapTypes">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="12076" entityLocationY.Integer="596" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782421804" tableName="SYS_DEV_Sensor">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="9866" entityLocationY.Integer="496" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780125017" tableName="FLEET_Object">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="2046" entityLocationY.Integer="276" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781792156" tableName="SYS_DEV_AppDLL">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="7826" entityLocationY.Integer="396" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781442192" tableName="FLEET_WorkPost">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="6636" entityLocationY.Integer="336" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781996829" tableName="SYS_DEV_CurrentData">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="8506" entityLocationY.Integer="416" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809783846850" tableName="SYS_UserProfiles">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="13776" entityLocationY.Integer="676" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809779676539" tableName="FLEET_BasePoints">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="516" entityLocationY.Integer="36" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809779259301" tableName="dtproperties">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="10" entityLocationY.Integer="10" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781581249" tableName="FLEET_ZoneDescript">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="7146" entityLocationY.Integer="356" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809783098408" tableName="SYS_Maps">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="11906" entityLocationY.Integer="596" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780439098" tableName="FLEET_Rights">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="3576" entityLocationY.Integer="176" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780362546" tableName="FLEET_Periods">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="3236" entityLocationY.Integer="256" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780753145" tableName="FLEET_SmsMessages">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="4426" entityLocationY.Integer="236" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782537591" tableName="SYS_DEV_SensorType">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="10206" entityLocationY.Integer="596" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782376547" tableName="SYS_DEV_DirtyText">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="9696" entityLocationY.Integer="476" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780592178" tableName="FLEET_ScheduleDescript">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="3916" entityLocationY.Integer="196" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780175007" tableName="FLEET_ObjectGlobalZone">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="2386" entityLocationY.Integer="156" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780326532" tableName="FLEET_OutCome">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="3066" entityLocationY.Integer="156" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780993755" tableName="FLEET_TaskActivation">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="5276" entityLocationY.Integer="336" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781128128" tableName="FLEET_TaskZone">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="5786" entityLocationY.Integer="296" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809783709329" tableName="SYS_UserActionPermission">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="13436" entityLocationY.Integer="656" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782756239" tableName="SYS_IconPages">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="10886" entityLocationY.Integer="536" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809783328165" tableName="SYS_Protocol">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="12586" entityLocationY.Integer="616" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781840679" tableName="SYS_DEV_ArchiveData">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="7996" entityLocationY.Integer="396" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782585986" tableName="SYS_Form">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="10376" entityLocationY.Integer="516" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780292118" tableName="FLEET_ObjectUserRelation">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="2896" entityLocationY.Integer="156" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809783381215" tableName="SYS_Rights">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="12756" entityLocationY.Integer="636" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781951546" tableName="SYS_DEV_ArchiveText">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="8336" entityLocationY.Integer="416" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781481235" tableName="FLEET_Zone">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="6806" entityLocationY.Integer="336" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809783043791" tableName="SYS_LangMessages">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="11736" entityLocationY.Integer="576" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809783582877" tableName="SYS_tmp">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="13096" entityLocationY.Integer="776" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780079664" tableName="FLEET_MarkCarType">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="1876" entityLocationY.Integer="96" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781171829" tableName="FLEET_TimeInterval">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="5956" entityLocationY.Integer="296" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809779715618" tableName="FLEET_Command">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="686" entityLocationY.Integer="36" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782923423" tableName="SYS_Lang">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="11396" entityLocationY.Integer="576" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780825092" tableName="FLEET_SmsTemp">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="4596" entityLocationY.Integer="236" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809783959374" tableName="SYS_Version">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="14116" entityLocationY.Integer="696" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782246836" tableName="SYS_DEV_DirtyData">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="9356" entityLocationY.Integer="496" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781625081" tableName="SYS_AppActions">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="7316" entityLocationY.Integer="416" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809779523489" tableName="FLEET_AnalogData">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="176" entityLocationY.Integer="16" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781345305" tableName="FLEET_UserLogAction">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="6296" entityLocationY.Integer="316" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780918730" tableName="FLEET_TableSizeParameter">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="4936" entityLocationY.Integer="256" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781907861" tableName="SYS_DEV_ArchiveDataMultimedia">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="8166" entityLocationY.Integer="516" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809779626591" tableName="FLEET_AnalogTarirovka">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="346" entityLocationY.Integer="76" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809780285946" tableName="FLEET_ObjectRelation">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="2726" entityLocationY.Integer="136" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809783653168" tableName="SYS_Toolbar">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="13266" entityLocationY.Integer="656" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809783787571" tableName="SYS_UserProfile">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="13606" entityLocationY.Integer="676" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782873450" tableName="SYS_IconUsed">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="11226" entityLocationY.Integer="556" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809782043723" tableName="SYS_DEV_CurrentDataMultimedia">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="8676" entityLocationY.Integer="436" entityWidth.Integer="150"/>
+</fieldsEntity>
+<fieldsEntity entityId="128809781032867" tableName="FLEET_TaskArchive">
+<userData entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="5446" entityLocationY.Integer="276" entityWidth.Integer="150"/>
+</fieldsEntity>
+</datamodel>

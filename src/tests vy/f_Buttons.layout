@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="308px" prefWidth="419px">
+<widget horizontalTextPosition="4" icon="address-book--arrow.png" name="jButton1" parent="Form" prefHeight="28px" prefWidth="60px" text="text1" type="ButtonDesignInfo"/>
+<widget horizontalTextPosition="0" icon="address-book--arrow.png" name="jButton2" parent="Form" prefHeight="45px" prefWidth="59px" selected="true" text="jButton2" type="ButtonDesignInfo" verticalTextPosition="1"/>
+<widget horizontalTextPosition="0" icon="address-book--arrow.png" name="jButton3" parent="Form" prefHeight="45px" prefWidth="59px" text="jButton3" type="ButtonDesignInfo" verticalTextPosition="3"/>
+<widget buttonGroup="buttonGroup1" horizontalTextPosition="2" icon="address-book--arrow.png" name="jToggleButton1" parent="Form" prefHeight="28px" prefWidth="117px" text="jToggleButton1" type="ToggleButtonDesignInfo"/>
+<widget buttonGroup="buttonGroup1" name="jToggleButton2" parent="Form" prefHeight="25px" prefWidth="97px" selected="true" text="jToggleButton2" type="ToggleButtonDesignInfo"/>
+<nonvisual name="buttonGroup1" type="ButtonGroupDesignInfo"/>
+<layout type="FlowLayoutDesignInfo"/>
+</layout>

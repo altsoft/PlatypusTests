@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parameters>
+<parameter description="Пользователь" name="User_ID" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="0" type="2" typeName=""/>
+<parameter description="Ключевое слово полномочия" name="Key_Word" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName=""/>
+<parameter description="Форма" name="Form_ID" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="0" type="2" typeName=""/>
+</parameters>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="7" entityLocationY="82" entityWidth="148"/>
+<entity Title="Полномочия роли" entityHeight="200" entityIconified="false" entityId="126278958100478" entityLocationX="178" entityLocationY="89" entityWidth="150" queryId="null" tableAlias="roleAcl" tableName="ROLE_ACCESS_LIST" tableSchemaName=""/>
+<entity Title="Роли пользователей" entityHeight="200" entityIconified="false" entityId="126278958100477" entityLocationX="561" entityLocationY="25" entityWidth="150" queryId="null" tableAlias="roles" tableName="USER_ROLES" tableSchemaName=""/>
+<entity Title="Список полномочий" entityHeight="200" entityIconified="false" entityId="126278958100499" entityLocationX="641" entityLocationY="242" entityWidth="150" queryId="null" tableAlias="acl" tableName="ACCESS_LIST" tableSchemaName=""/>
+<relation leftEntityFieldName="User_ID" leftEntityId="-1" rightEntityFieldName="USER_PK" rightEntityId="126278958100477"/>
+<relation leftEntityFieldName="Key_Word" leftEntityId="-1" rightEntityFieldName="KEY_WORD" rightEntityId="126278958100499"/>
+<relation leftEntityFieldName="ACCESS_ID" leftEntityId="126278958100478" rightEntityFieldName="ACCESS_LIST_ID" rightEntityId="126278958100499"/>
+<relation leftEntityFieldName="ROLE_ID" leftEntityId="126278958100477" rightEntityFieldName="ROLE_ID" rightEntityId="126278958100478"/>
+</datamodel>

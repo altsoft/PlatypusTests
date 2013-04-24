@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form">
+<widget name="jETALabel" parent="Form" text="Инструкция по работе с Oracle XE" type="LabelDesignInfo">
+<constraints anchor="10" fill="1" gridheight="18" gridwidth="4" gridx="2" gridy="2" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<layout type="GridBagLayoutDesignInfo"/>
+</layout>

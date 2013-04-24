@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+<entity Name="" Title="Заказчик(Главный)" entityHeight="200" entityIconified="false" entityId="124645379637524859" entityLocationX="182" entityLocationY="36" entityWidth="150" tableName="CUSTOMER" tableSchemaName="EAS"/>
+<entity Name="" Title="Заказчик" entityHeight="200" entityIconified="false" entityId="124637024692102088" entityLocationX="427" entityLocationY="229" entityWidth="150" tableName="CUSTOMER" tableSchemaName="EAS"/>
+<relation leftEntityFieldName="CUSTOMER_ID" leftEntityId="124645379637524859" rightEntityFieldName="PARENT" rightEntityId="124637024692102088"/>
+</datamodel>

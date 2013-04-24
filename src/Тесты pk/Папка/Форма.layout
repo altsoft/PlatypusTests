@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget actionPerformed="btnRunModule_actionPerformed" name="btnRunModule" parent="Form" prefHeight="25px" prefWidth="86px" text="Кнопка" type="ButtonDesignInfo">
+<constraints height="25px" left="157px" top="137px" type="MarginConstraintsDesignInfo" width="86px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

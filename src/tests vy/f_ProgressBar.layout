@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="309px" prefWidth="413px">
+<widget maximum="160" minimum="40" name="jProgressBar1" parent="Form" prefHeight="20px" prefWidth="150px" string="text" type="ProgressBarDesignInfo" value="71"/>
+<widget maximum="300" name="jProgressBar2" orientation="1" parent="Form" prefHeight="80px" prefWidth="22px" string="11%" type="ProgressBarDesignInfo" value="32"/>
+<widget name="jProgressBar3" parent="Form" prefHeight="20px" prefWidth="150px" string="�" type="ProgressBarDesignInfo"/>
+<layout type="FlowLayoutDesignInfo"/>
+</layout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parameters>
+<parameter description="" name="Param1" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName="VARCHAR"/>
+</parameters>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="136" entityLocationY="14" entityWidth="150"/>
+<entity Title="delaware_highways" entityHeight="200" entityIconified="false" entityId="127194357119142" entityLocationX="714" entityLocationY="43" entityWidth="150" queryId="null" tableAlias="highways" tableName="delaware_highways" tableSchemaName=""/>
+<entity Title="delaware_administrative" entityHeight="200" entityIconified="false" entityId="127194356323773" entityLocationX="371" entityLocationY="20" entityWidth="150" queryId="null" tableAlias="administrative" tableName="delaware_administrative" tableSchemaName=""/>
+<relation leftEntityFieldName="Param1" leftEntityId="-1" rightEntityFieldName="ADMIN_LEVE" rightEntityId="127194356323773"/>
+<relation leftEntityFieldName="NAME" leftEntityId="127194356323773" rightEntityFieldName="NAME" rightEntityId="127194357119142"/>
+<relation leftEntityFieldName="Param1" leftEntityId="-1" rightEntityFieldName="ONEWAY" rightEntityId="127194357119142"/>
+</datamodel>

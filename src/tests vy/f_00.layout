@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="356px" prefWidth="462px">
+<widget actionPerformed="jButton1ActionPerformed" name="jButton1" parent="Form" prefHeight="0px" prefWidth="0px" text="jButton1" type="ButtonDesignInfo"/>
+<widget name="jLabel1" parent="Form" prefHeight="0px" prefWidth="0px" text="jLabel1" type="LabelDesignInfo"/>
+<widget actionPerformed="jButton2ActionPerformed" name="jButton2" parent="Form" prefHeight="0px" prefWidth="0px" text="xxjButton2" type="ButtonDesignInfo"/>
+<widget caretPosition="15" name="jPasswordField1" parent="Form" prefHeight="0px" prefWidth="0px" selectionEnd="15" selectionStart="15" text="jPasswordField1" type="PasswordFieldDesignInfo"/>
+<widget name="jCheckBox1" parent="Form" prefHeight="0px" prefWidth="0px" text="jCheckBox1" type="CheckDesignInfo"/>
+<widget actionPerformed="jButton3ActionPerformed2" name="jButton3" parent="Form" prefHeight="0px" prefWidth="0px" text="jButton3" type="ButtonDesignInfo"/>
+<widget actionPerformed="jButton4ActionPerformed" name="jButton4" parent="Form" prefHeight="0px" prefWidth="0px" text="jButton4" type="ButtonDesignInfo"/>
+<widget caretPosition="11" name="jTextField1" parent="Form" prefHeight="0px" prefWidth="0px" selectionEnd="11" selectionStart="11" text="jTextField1" type="TextFieldDesignInfo"/>
+<widget name="jPanel1" parent="Form" prefHeight="0px" prefWidth="0px" type="PanelDesignInfo">
+<layout type="FlowLayoutDesignInfo"/>
+</widget>
+<widget name="jLabel2" parent="jPanel1" prefHeight="0px" prefWidth="0px" text="jLabel2" type="LabelDesignInfo"/>
+<widget name="jLabel3" parent="jPanel1" prefHeight="0px" prefWidth="0px" text="jLabel3" type="LabelDesignInfo"/>
+<layout columns="10" type="GridLayoutDesignInfo"/>
+</layout>

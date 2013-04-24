@@ -1,0 +1,17 @@
+/**
+ * @name 128091902151517
+*/
+with recursive 
+parents(kladr_id, name, socr, code, index, gninmb, uno, ocatd, status, parent )
+as (
+/*
+Это часть запроса, которая отвечает за начальную выборку
+*/
+select m1.* from kladr m1 where m1.kladr_id = :parent 
+union all 
+/*
+Это часть запроса, которая отвечает за рекурсивную часть обработки
+*/
+select m2.* from parents p, kladr m2 where m2.parent = p.kladr_id
+)
+select * from parents order by kladr_id

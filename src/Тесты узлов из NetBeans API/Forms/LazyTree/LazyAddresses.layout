@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget actionPerformed="btnCloseActionPerformed" name="btnClose" parent="Form" prefHeight="25px" prefWidth="73px" text="Close" type="ButtonDesignInfo">
+<constraints height="25px" left="315px" top="263px" type="MarginConstraintsDesignInfo" width="73px"/>
+</widget>
+<widget name="dbGrid1" parent="Form" prefHeight="257px" prefWidth="400px" type="DbGridDesignInfo">
+<treeDesignInfo treeKind="2">
+<param2GetChildren entityId="130518590109308" field="false" fieldName="parent"/>
+<paramSourceField entityId="130518590109308" fieldName="ADRESSES_ID"/>
+<unaryLinkField entityId="130518590109308" fieldName="PARENT"/>
+</treeDesignInfo>
+<column name="ADRESSES_ID">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="130518590109308" fieldName="ADRESSES_ID"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="130518590109308" fieldName="ADRESSES_ID"/>
+</controlInfo>
+</column>
+<column name="NAME" title="Наименование">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="130518590109308" fieldName="NAME"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="130518590109308" fieldName="NAME"/>
+</controlInfo>
+</column>
+<column name="PARENT" title="Родительский адресный объект">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="130518590109308" fieldName="PARENT"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="130518590109308" fieldName="PARENT"/>
+</controlInfo>
+</column>
+<column name="KLADRKOD" title="Код КЛАДР">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="130518590109308" fieldName="KLADRKOD"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="130518590109308" fieldName="KLADRKOD"/>
+</controlInfo>
+</column>
+<column name="SOCR">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="130518590109308" fieldName="SOCR"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="130518590109308" fieldName="SOCR"/>
+</controlInfo>
+</column>
+<column name="INDX">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="130518590109308" fieldName="INDX"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="130518590109308" fieldName="INDX"/>
+</controlInfo>
+</column>
+<column name="GNINMB">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="130518590109308" fieldName="GNINMB"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="130518590109308" fieldName="GNINMB"/>
+</controlInfo>
+</column>
+<column name="UNO">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="130518590109308" fieldName="UNO"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="130518590109308" fieldName="UNO"/>
+</controlInfo>
+</column>
+<column name="STATUS">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="130518590109308" fieldName="STATUS"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="130518590109308" fieldName="STATUS"/>
+</controlInfo>
+</column>
+<column name="OCATD">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="130518590109308" fieldName="OCATD"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="130518590109308" fieldName="OCATD"/>
+</controlInfo>
+</column>
+<column name="LAT">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="130518590109308" fieldName="LAT"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="130518590109308" fieldName="LAT"/>
+</controlInfo>
+</column>
+<column name="LNG">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="130518590109308" fieldName="LNG"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="130518590109308" fieldName="LNG"/>
+</controlInfo>
+</column>
+<column name="TYPE" title="Тип адресного объекта">
+<cellDesignInfo>
+<columnsKeyField/>
+<rowsKeyField/>
+<cellValueField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="130518590109308" fieldName="TYPE"/>
+<headerEasFont/>
+<style>
+<nativeBackground/>
+<nativeFont name="SansSerif" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="130518590109308" fieldName="TYPE"/>
+</controlInfo>
+</column>
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="130518590109308" field="false"/>
+</rowsColumnsDesignInfo>
+<constraints height="257px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="400px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="305px" prefWidth="565px">
+<widget name="jPanel1" parent="Form" prefHeight="28px" prefWidth="119px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<border title="" titleJustification="0" type="TitledBorderDesignInfo"/>
+<constraints bottom="15px" height="157px" left="50px" right="367px" top="139px" type="MarginConstraintsDesignInfo" width="155px"/>
+</widget>
+<widget name="jPasswordField1" parent="jPanel1" prefHeight="20px" prefWidth="111px" text="jPasswordField1" type="PasswordFieldDesignInfo">
+<constraints bottom="59px" height="38px" left="50px" right="24px" top="60px" type="MarginConstraintsDesignInfo" width="81px"/>
+</widget>
+<widget actionPerformed="jTextField1ActionPerformed" name="jTextField1" parent="Form" prefHeight="20px" prefWidth="59px" text="jTextField1" type="TextFieldDesignInfo">
+<constraints bottom="65px" left="293px" right="212px" top="200px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget name="jButton2" parent="Form" prefHeight="23px" prefWidth="73px" text="jButton2" type="ButtonDesignInfo">
+<constraints bottom="175px" left="170px" right="335px" top="70px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget name="jButton3" parent="Form" prefHeight="23px" prefWidth="79px" text="jButton31" type="ButtonDesignInfo">
+<constraints bottom="175px" left="362px" right="23px" top="40px" type="MarginConstraintsDesignInfo" width="180px"/>
+</widget>
+<widget name="jButton4" parent="Form" prefHeight="23px" prefWidth="73px" text="jButton4" type="ButtonDesignInfo">
+<constraints height="30px" left="40px" top="80px" type="MarginConstraintsDesignInfo" width="74px"/>
+</widget>
+<widget name="jTextField2" parent="Form" prefHeight="20px" prefWidth="59px" text="jTextField2" type="TextFieldDesignInfo">
+<constraints height="50px" right="65px" top="238px" type="MarginConstraintsDesignInfo" width="130px"/>
+</widget>
+<widget name="jProgressBar1" parent="Form" prefHeight="19px" prefWidth="146px" type="ProgressBarDesignInfo">
+<constraints bottom="175px" height="50px" left="243px" right="232px" top="80px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget name="jSlider1" parent="Form" prefHeight="25px" prefWidth="200px" type="SliderDesignInfo">
+<constraints height="23px" left="360px" top="190px" type="MarginConstraintsDesignInfo" width="73px"/>
+</widget>
+<widget name="jCheckBox1" parent="Form" prefHeight="23px" prefWidth="81px" text="jCheckBox1" type="CheckDesignInfo">
+<constraints bottom="144px" left="380px" right="118px" top="140px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget name="jCheckBox2" parent="Form" prefHeight="23px" prefWidth="81px" text="jCheckBox2" type="CheckDesignInfo">
+<constraints bottom="5px" right="235px" top="250px" type="MarginConstraintsDesignInfo" width="110px"/>
+</widget>
+<widget name="jPasswordField2" parent="Form" prefHeight="20px" prefWidth="111px" text="jPasswordField2" type="PasswordFieldDesignInfo">
+<constraints height="23px" left="420px" top="170px" type="MarginConstraintsDesignInfo" width="73px"/>
+</widget>
+<widget name="jButton1" parent="Form" prefHeight="23px" prefWidth="73px" text="jButton1" type="ButtonDesignInfo">
+<constraints bottom="125px" left="230px" right="245px" top="140px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

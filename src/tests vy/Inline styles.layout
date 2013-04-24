@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout backgroundColor="#ffcccc" name="Form" prefHeight="300px" prefWidth="400px">
+<widget backgroundColor="#ffccff" name="jPanel1" parent="Form" prefHeight="90px" prefWidth="110px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints height="90px" left="20px" top="10px" type="MarginConstraintsDesignInfo" width="110px"/>
+</widget>
+<widget backgroundColor="#ffffcc" name="jPanel2" parent="Form" prefHeight="80px" prefWidth="110px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints height="80px" left="190px" top="20px" type="MarginConstraintsDesignInfo" width="110px"/>
+</widget>
+<widget backgroundColor="#33ccff" foregroundColor="#006633" name="jLabel1" opaque="true" parent="Form" prefHeight="23px" prefWidth="180px" text="jLabel1" type="LabelDesignInfo">
+<easFont name="Cambria" size="18" style="2"/>
+<constraints height="23px" left="200px" top="120px" type="MarginConstraintsDesignInfo" width="180px"/>
+</widget>
+<widget actionPerformed="jButton1ActionPerformed" name="jButton1" parent="Form" prefHeight="23px" prefWidth="73px" text="jButton1" type="ButtonDesignInfo">
+<constraints height="23px" left="10px" top="200px" type="MarginConstraintsDesignInfo" width="73px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

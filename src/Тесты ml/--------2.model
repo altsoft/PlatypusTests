@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parametersEntity>
+<userData Title.String="Параметры" entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="10" entityLocationY.Integer="20" entityWidth.Integer="150"/>
+</parametersEntity>
+</datamodel>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parameters>
+<parameter description="Родительский элемент приложения" name="PARENT_ENTITY_ID" nullable="true" parameterMode="1" precision="0" scale="0" selectionForm="null" signed="true" size="0" type="3" typeName="DECIMAL"/>
+</parameters>
+<entity Title="Элементы приложения" entityHeight="200" entityIconified="false" entityId="131408500445516" entityLocationX="276" entityLocationY="59" entityWidth="150" queryId="null" tableAlias="t" tableName="MTD_ENTITIES" tableSchemaName=""/>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
+<relation leftEntityFieldName="PARENT_ENTITY_ID" leftEntityId="-1" rightEntityFieldName="MDENT_PARENT_ID" rightEntityId="131408500445516"/>
+</datamodel>

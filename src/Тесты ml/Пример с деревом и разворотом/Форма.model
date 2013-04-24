@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+<entity Name="dsTechPlaces" Title="Технические места" entityHeight="200" entityIconified="false" entityId="124747183275026245" entityLocationX="175" entityLocationY="12" entityWidth="226" tableName="TECH_PLACES" tableSchemaName="EAS"/>
+</datamodel>

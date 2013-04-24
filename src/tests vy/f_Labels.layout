@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="291px" prefWidth="400px">
+<widget icon="mail.png" name="jLabel1" parent="Form" prefHeight="16px" prefWidth="44px" text="text1" type="LabelDesignInfo"/>
+<widget horizontalTextPosition="2" icon="car.png" name="jLabel2" parent="Form" prefHeight="16px" prefWidth="56px" text="jLabel2" type="LabelDesignInfo"/>
+<widget horizontalTextPosition="10" icon="mails.png" labelFor="jTextField1" name="jLabel3" parent="Form" prefHeight="16px" prefWidth="56px" text="jLabel3" type="LabelDesignInfo"/>
+<widget caretPosition="11" name="jTextField1" parent="Form" prefHeight="23px" prefWidth="70px" selectionEnd="11" selectionStart="11" text="jTextField1" type="TextFieldDesignInfo"/>
+<widget icon="navigation-090.png" iconTextGap="15" mouseClicked="jLabel4MouseClicked" name="jLabel4" parent="Form" prefHeight="16px" prefWidth="71px" text="jLabel2" type="LabelDesignInfo"/>
+<layout type="FlowLayoutDesignInfo"/>
+</layout>

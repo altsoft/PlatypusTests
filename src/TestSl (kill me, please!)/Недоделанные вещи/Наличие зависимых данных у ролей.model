@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parameters>
+<parameter description="Роль" name="Param_Role_ID" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="0" type="2" typeName=""/>
+</parameters>
+<entity Title="Роли пользователей" entityHeight="200" entityIconified="false" entityId="126278431992791" entityLocationX="12" entityLocationY="12" entityWidth="150" queryId="null" tableAlias="userRoles" tableName="USER_ROLES" tableSchemaName=""/>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="173" entityLocationY="373" entityWidth="150"/>
+<entity Title="Список ролей" entityHeight="200" entityIconified="false" entityId="126278431992750" entityLocationX="344" entityLocationY="77" entityWidth="150" queryId="null" tableAlias="roles" tableName="EAS_ROLES" tableSchemaName=""/>
+<entity Title="Полномочия роли" entityHeight="200" entityIconified="false" entityId="126278431992792" entityLocationX="633" entityLocationY="24" entityWidth="150" queryId="null" tableAlias="roleAcls" tableName="ROLE_ACCESS_LIST" tableSchemaName=""/>
+<lightRelation leftEntityId="126278431992750" rightEntityId="126278431992791"/>
+<relation leftEntityFieldName="EAS_ROLES_ID" leftEntityId="126278431992750" rightEntityFieldName="ROLE_ID" rightEntityId="126278431992791"/>
+<lightRelation leftEntityId="126278431992791" rightEntityId="126278431992792"/>
+<relation leftEntityFieldName="EAS_ROLES_ID" leftEntityId="126278431992750" rightEntityFieldName="ROLE_ID" rightEntityId="126278431992792"/>
+<relation leftEntityFieldName="Param_Role_ID" leftEntityId="-1" rightEntityFieldName="EAS_ROLES_ID" rightEntityId="126278431992750"/>
+</datamodel>

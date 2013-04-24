@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel datamodelDbId="null">
+<fieldsEntity entityHeight="200" entityIconified="false" entityId="126622518641473" entityLocationX="496" entityLocationY="75" entityWidth="150" tableName="MTD_ENTITIES"/>
+<fieldsEntity entityHeight="200" entityIconified="false" entityId="128031485096864" entityLocationX="256" entityLocationY="74" entityWidth="150" tableName="SQUID_LOG"/>
+<fieldsEntity entityHeight="200" entityIconified="false" entityId="127184533875666" entityLocationX="31" entityLocationY="35" entityWidth="150" tableName="ASSETS"/>
+</datamodel>

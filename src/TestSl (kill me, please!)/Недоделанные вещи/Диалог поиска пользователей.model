@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel>
+<parameters>
+<parameter description="%a" name="Entering1" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName=""/>
+<parameter description="a%" name="Entering2" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName=""/>
+<parameter description="%a%" name="Entering3" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName=""/>
+<parameter description="a(точное совпадение)" name="Entering4" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName=""/>
+</parameters>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+<entity Name="" Title="Поиск пользователей по вхождению" entityHeight="230" entityIconified="false" entityId="126295931048563" entityLocationX="473" entityLocationY="35" entityWidth="315" queryId="126295780479277" tableName="" tableSchemaName=""/>
+<relation leftEntityFieldName="Entering1" leftEntityId="-1" rightEntityId="126295931048563" rightEntityParameterName="Entering1"/>
+<relation leftEntityFieldName="Entering3" leftEntityId="-1" rightEntityId="126295931048563" rightEntityParameterName="Entering3"/>
+<relation leftEntityFieldName="Entering4" leftEntityId="-1" rightEntityId="126295931048563" rightEntityParameterName="Entering4"/>
+<relation leftEntityFieldName="Entering2" leftEntityId="-1" rightEntityId="126295931048563" rightEntityParameterName="Entering2"/>
+</datamodel>

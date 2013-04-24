@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget name="dbGrid" parent="Form" prefHeight="100px" prefWidth="190px" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="126217784179427" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="ROLE_NAME" title="Роли" width="400">
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="126217784179427" fieldName="ROLE_NAME"/>
+<headerEasFont name="Dialog"/>
+<style>
+<nativeBackground/>
+<nativeFont name="Dialog"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="126217784179427" fieldName="ROLE_NAME"/>
+</controlInfo>
+</column>
+<constraints height="100px" left="105px" top="103px" type="MarginConstraintsDesignInfo" width="190px"/>
+</widget>
+<widget floatable="false" name="jToolBar" parent="Form" prefHeight="32px" prefWidth="190px" type="ToolbarDesignInfo">
+<constraints height="32px" left="105px" top="71px" type="MarginConstraintsDesignInfo" width="190px"/>
+</widget>
+<widget actionPerformed="" icon="plus.png" name="btnAdd" parent="jToolBar" prefHeight="28px" prefWidth="28px" toolTipText="Добавить роль" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnDelete_onClick" icon="cross.png" name="btnDelete" parent="jToolBar" prefHeight="28px" prefWidth="28px" toolTipText="Удалить роль" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnSave_onClick" name="btnSave" parent="jToolBar" prefHeight="12px" prefWidth="12px" toolTipText="Сохранить сделанные изменения" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnRefresh_onClick" icon="refresh/refresh.png" name="btnRefresh" parent="jToolBar" prefHeight="28px" prefWidth="28px" toolTipText="Обновить" type="ButtonDesignInfo"/>
+<widget actionPerformed="" icon="binocular.png" name="btnFind" parent="jToolBar" prefHeight="28px" prefWidth="28px" toolTipText="Найти" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnClose_actionPerformed" name="btnClose" parent="Form" prefHeight="25px" prefWidth="95px" text="Закрыть" type="ButtonDesignInfo">
+<constraints height="25px" left="200px" top="203px" type="MarginConstraintsDesignInfo" width="95px"/>
+</widget>
+<widget actionPerformed="actionPerformed" name="jButton" parent="Form" prefHeight="25px" prefWidth="95px" text="Выбрать" type="ButtonDesignInfo">
+<constraints height="25px" left="105px" top="203px" type="MarginConstraintsDesignInfo" width="95px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="364px" prefWidth="519px">
+<widget name="jButton1" parent="Form" prefHeight="23px" prefWidth="73px" text="jButton1" type="ButtonDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easSize height="-1" width="-1"/>
+<easLocation x="110" y="260"/>
+</constraints>
+</widget>
+<widget cursor="13" formatString="*dddkj&#10;" handleFunction="dbCheck2HandleValue" multiline="true" name="dbLabel1" parent="Form" prefHeight="20px" prefWidth="100px" selectFunction="dbCheck2HandleValue" type="DbLabelDesignInfo">
+<datamodelElement entityId="134676227443747" fieldName="MEASURAND"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easSize height="-1" width="-1"/>
+<easLocation x="100" y="10"/>
+</constraints>
+</widget>
+<widget handleFunction="dbCheck2HandleValue" name="dbCheck2" parent="Form" prefHeight="20px" prefWidth="100px" type="DbCheckDesignInfo">
+<datamodelElement entityId="134676227443747" fieldName="NAME"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easSize height="-1" width="-1"/>
+<easLocation x="20" y="40"/>
+</constraints>
+</widget>
+<widget name="dbCombo1" parent="Form" prefHeight="20px" prefWidth="100px" selectFunction="dbCheck2HandleValue" type="DbComboDesignInfo">
+<displayField entityId="134667578982828" fieldName="USER_NAME"/>
+<valueField entityId="134676227443747" fieldName="SYMBOL_INT"/>
+<datamodelElement entityId="134667578982828" fieldName="USER_NAME"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easSize height="-1" width="-1"/>
+<easLocation x="20" y="70"/>
+</constraints>
+</widget>
+<widget dateFormat="ГГГГ" expanded="true" handleFunction="dbCheck2HandleValue" name="dbDate1" parent="Form" prefHeight="20px" prefWidth="100px" selectFunction="dbText1SelectValue" type="DbDateDesignInfo">
+<datamodelElement entityId="134676227443747" fieldName="ID"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easSize height="-1" width="-1"/>
+<easLocation x="20" y="100"/>
+</constraints>
+</widget>
+<widget name="dbImage1" parent="Form" prefHeight="20px" prefWidth="100px" selectFunction="dbText1SelectValue" type="DbImageDesignInfo">
+<datamodelElement entityId="134676227443747" fieldName="NAME"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easSize height="-1" width="-1"/>
+<easLocation x="20" y="150"/>
+</constraints>
+</widget>
+<widget max="10.0" min="1.0" name="dbSpin1" parent="Form" prefHeight="20px" prefWidth="100px" selectFunction="dbCheck2HandleValue" step="3.0" type="DbSpinDesignInfo">
+<datamodelElement entityId="134676227443747" fieldName="ID"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easSize height="-1" width="-1"/>
+<easLocation x="20" y="190"/>
+</constraints>
+</widget>
+<widget formatString="fbtnrtnt5nn" handleFunction="dbText1SelectValue" multiline="true" name="dbText1" parent="Form" prefHeight="20px" prefWidth="100px" selectFunction="dbText1SelectValue" type="DbTextDesignInfo">
+<datamodelElement entityId="134667578982828" fieldName="USER_NAME"/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easSize height="-1" width="-1"/>
+<easLocation x="20" y="220"/>
+</constraints>
+</widget>
+<widget name="dbGrid1" parent="Form" prefHeight="100px" prefWidth="100px" type="DbGridDesignInfo">
+<treeDesignInfo treeKind="2">
+<unaryLinkField entityId="134676227443747"/>
+<param2GetChildren/>
+<paramSourceField entityId="134676227443747" fieldName="SYMBOL_INT"/>
+</treeDesignInfo>
+<rowsColumnsDesignInfo fixedColumns="123" fixedRows="3" rowsHeaderType="0">
+<rowsDatasource entityId="134676227443747" field="false"/>
+</rowsColumnsDesignInfo>
+<column name="NAME" title="Наименование">
+<column name="col1" title="Наименование">
+<column name="col11" width="39">
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<column>
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="134676227443747" fieldName="NAME"/>
+</controlInfo>
+<datamodelElement entityId="134676227443747" fieldName="NAME"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<column>
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="134676227443747" fieldName="NAME"/>
+</controlInfo>
+<datamodelElement entityId="134676227443747" fieldName="NAME"/>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<column>
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<column>
+<style>
+<nativeFont name="Tahoma" size="11"/>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<headerEasFont/>
+</column>
+<datamodelElement/>
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easSize height="-1" width="-1"/>
+<easLocation x="240" y="40"/>
+</constraints>
+</widget>
+<nonvisual name="dbImage2" prefHeight="20px" prefWidth="100px" type="DbImageDesignInfo"/>
+<layout type="AbsoluteLayoutDesignInfo"/>
+</layout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="296px" prefWidth="394px">
+<widget actionPerformed="jButton1ActionPerformed" name="jButton1" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton1" toolTipText="toolTipText_jButton1" type="ButtonDesignInfo"/>
+<widget name="jButton2" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton2" toolTipText="toolTipText_jButton2" type="ButtonDesignInfo"/>
+<widget enabled="false" name="jButton3" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton3" toolTipText="toolTipText_jButton3" type="ButtonDesignInfo"/>
+<widget name="jPanel1" parent="Form" prefHeight="0px" prefWidth="0px" toolTipText="toolTipText_jPanel1" type="PanelDesignInfo">
+<layout type="AbsoluteLayoutDesignInfo"/>
+<border type="EtchedBorderDesignInfo"/>
+</widget>
+<layout type="FlowLayoutDesignInfo"/>
+</layout>

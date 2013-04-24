@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget name="jETALabel" parent="Form" prefHeight="19px" prefWidth="159px" text="Искать текст в логине" type="LabelDesignInfo">
+<constraints height="19px" left="79px" top="78px" type="MarginConstraintsDesignInfo" width="159px"/>
+</widget>
+<widget name="JTF_Key" parent="Form" prefHeight="19px" prefWidth="83px" type="TextFieldDesignInfo">
+<constraints height="19px" left="238px" top="78px" type="MarginConstraintsDesignInfo" width="83px"/>
+</widget>
+<widget name="jCheckBox" parent="Form" prefHeight="25px" prefWidth="159px" text="Учитывать регистр" type="CheckDesignInfo">
+<constraints height="25px" left="79px" top="97px" type="MarginConstraintsDesignInfo" width="159px"/>
+</widget>
+<widget name="dbGrid" parent="Form" prefHeight="100px" prefWidth="242px" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="126295931048563" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="USER_NAME" title="Название группы" width="250">
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="126295931048563" fieldName="USER_NAME"/>
+<headerEasFont name="Dialog"/>
+<style>
+<nativeBackground/>
+<nativeFont name="Dialog"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="126295931048563" fieldName="USER_NAME"/>
+</controlInfo>
+</column>
+<column name="USR_NAME" title="Логин пользователя" width="250">
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="126295931048563" fieldName="USR_NAME"/>
+<headerEasFont name="Dialog"/>
+<style>
+<nativeBackground/>
+<nativeFont name="Dialog"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="126295931048563" fieldName="USR_NAME"/>
+</controlInfo>
+</column>
+<constraints height="100px" left="79px" top="122px" type="MarginConstraintsDesignInfo" width="242px"/>
+</widget>
+<widget actionPerformed="actionPerformed" name="jButton" parent="Form" prefHeight="25px" prefWidth="83px" text="Искать" type="ButtonDesignInfo">
+<constraints height="25px" left="238px" top="97px" type="MarginConstraintsDesignInfo" width="83px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

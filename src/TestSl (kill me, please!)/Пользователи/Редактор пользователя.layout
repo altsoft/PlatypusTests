@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget name="jETALabel" parent="Form" prefHeight="19px" prefWidth="174px" text="ФИО пользователя" type="LabelDesignInfo">
+<constraints height="19px" left="38px" top="109px" type="MarginConstraintsDesignInfo" width="174px"/>
+</widget>
+<widget name="JTF_EditUserName" parent="Form" prefHeight="19px" prefWidth="54px" type="TextFieldDesignInfo">
+<constraints height="19px" left="212px" top="109px" type="MarginConstraintsDesignInfo" width="54px"/>
+</widget>
+<widget name="jETALabel1" parent="Form" prefHeight="19px" prefWidth="174px" text="Пароль" type="LabelDesignInfo">
+<constraints height="19px" left="38px" top="128px" type="MarginConstraintsDesignInfo" width="174px"/>
+</widget>
+<widget name="JPF_EditUserPassword" parent="Form" prefHeight="19px" prefWidth="54px" type="PasswordFieldDesignInfo">
+<constraints height="19px" left="212px" top="128px" type="MarginConstraintsDesignInfo" width="54px"/>
+</widget>
+<widget name="jETALabel2" parent="Form" prefHeight="19px" prefWidth="174px" text="Подтверждение пароля" type="LabelDesignInfo">
+<constraints height="19px" left="38px" top="147px" type="MarginConstraintsDesignInfo" width="174px"/>
+</widget>
+<widget name="JPF_PasswordConfirm" parent="Form" prefHeight="19px" prefWidth="54px" type="PasswordFieldDesignInfo">
+<constraints height="19px" left="212px" top="147px" type="MarginConstraintsDesignInfo" width="54px"/>
+</widget>
+<widget actionPerformed="actionPerformed" name="btnOK" parent="Form" prefHeight="25px" prefWidth="54px" text="OK" type="ButtonDesignInfo">
+<constraints height="25px" left="212px" top="166px" type="MarginConstraintsDesignInfo" width="54px"/>
+</widget>
+<widget actionPerformed="btnClose_actionPerformed" name="btnClose" parent="Form" prefHeight="25px" prefWidth="95px" text="Закрыть" type="ButtonDesignInfo">
+<constraints height="25px" left="266px" top="166px" type="MarginConstraintsDesignInfo" width="95px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

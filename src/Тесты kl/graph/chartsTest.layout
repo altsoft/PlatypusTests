@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout defaultCloseOperation="2" name="Form" prefHeight="495px" prefWidth="711px" title="Charts test">
+<widget name="pnlChart" opaque="false" parent="Form" prefHeight="450px" prefWidth="711px" type="PanelDesignInfo">
+<layout type="BorderLayoutDesignInfo"/>
+<constraints bottom="0px" left="0px" right="0px" top="45px" type="MarginConstraintsDesignInfo"/>
+</widget>
+<widget actionPerformed="btnCreateChartActionPerformed" name="btnCreateChart" parent="Form" prefHeight="23px" prefWidth="220px" text="Create It!" type="ButtonDesignInfo">
+<constraints height="23px" left="10px" top="10px" type="MarginConstraintsDesignInfo" width="220px"/>
+</widget>
+<widget actionPerformed="btnRequeryActionPerformed" name="btnRequery" parent="Form" prefHeight="23px" prefWidth="130px" text="requery" type="ButtonDesignInfo">
+<constraints height="23px" left="350px" top="10px" type="MarginConstraintsDesignInfo" width="130px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

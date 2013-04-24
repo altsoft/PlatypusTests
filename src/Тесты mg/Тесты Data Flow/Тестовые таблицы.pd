@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel datamodelDbId="null">
+<fieldsEntity entityHeight="200" entityIconified="false" entityId="131158188485918" entityLocationX="38" entityLocationY="57" entityWidth="150" tableName="GOODORDER"/>
+<fieldsEntity entityHeight="200" entityIconified="false" entityId="131158275303106" entityLocationX="541" entityLocationY="25" entityWidth="150" tableName="CUSTOMER"/>
+<fieldsEntity entityHeight="200" entityIconified="false" entityId="131158191753151" entityLocationX="326" entityLocationY="66" entityWidth="144" tableName="GOOD"/>
+</datamodel>

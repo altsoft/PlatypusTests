@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parametersEntity>
+<userData Title.String="Параметры" entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="10" entityLocationY.Integer="20" entityWidth.Integer="150"/>
+</parametersEntity>
+<entity entityId="128254953296838" queryId="128254898143766" tableDbId="null" tableName="" tableSchemaName="">
+<userData Name.String="dsTest" Title.String="Тестовый запрос" entityHeight.Integer="196" entityIconified.Boolean="false" entityLocationX.Integer="32" entityLocationY.Integer="325" entityWidth.Integer="150"/>
+</entity>
+</datamodel>

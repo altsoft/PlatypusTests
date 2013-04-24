@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parameters>
+<parameter description="" name="Param1" nullable="true" parameterMode="1" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName="VARCHAR"/>
+<parameter description="" name="Param2" nullable="true" parameterMode="1" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName="VARCHAR"/>
+</parameters>
+<entity Title="Вид объекта ремонта" entityHeight="200" entityIconified="false" entityId="130267658979939" entityLocationX="204" entityLocationY="12" entityWidth="150" queryId="null" tableAlias="t" tableName="ASSET_KINDS" tableSchemaName=""/>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
+<entity Title="Заказчик" entityHeight="200" entityIconified="false" entityId="130269744379414" entityLocationX="482" entityLocationY="52" entityWidth="150" queryId="null" tableAlias="t1" tableName="CUSTOMER" tableSchemaName=""/>
+<relation leftEntityFieldName="Param1" leftEntityId="-1" rightEntityFieldName="NAME" rightEntityId="130267658979939"/>
+</datamodel>

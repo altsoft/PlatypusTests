@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form">
+<widget actionPerformed="actionPerformed" name="jButton" parent="Form" text="Тест модуля" type="ButtonDesignInfo">
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="2" gridy="8" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<widget name="dbGrid" parent="Form" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="-1" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column>
+<columnsDisplayField/>
+<style>
+<nativeBackground/>
+<nativeFont name="Tahoma" size="11"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<headerEasFont name="Dialog"/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+</column>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="2" gridy="4" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<layout type="GridBagLayoutDesignInfo"/>
+</layout>

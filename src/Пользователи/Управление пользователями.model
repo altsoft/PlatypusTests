@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="10" entityLocationY="20" entityWidth="150"/>
+<entity Name="dsMtdUsers" Title="Пользователи" entityHeight="200" entityIconified="false" entityId="132124933620063" entityLocationX="210" entityLocationY="21" entityWidth="150" queryId="132124811462367" tableName="" tableSchemaName=""/>
+</datamodel>

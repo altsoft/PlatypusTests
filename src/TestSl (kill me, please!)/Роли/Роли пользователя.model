@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<datamodel>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+<entity Name="DS_UserRoles" Title="Роли пользователей" entityHeight="133" entityIconified="false" entityId="126259593353507" entityLocationX="598" entityLocationY="64" entityWidth="361" tableName="USER_ROLES" tableSchemaName=""/>
+<entity Name="DS_RoleList" Title="Список ролей" entityHeight="91" entityIconified="false" entityId="126224889068651" entityLocationX="228" entityLocationY="262" entityWidth="291" tableName="eas_Roles" tableSchemaName=""/>
+<entity Name="DS_Users" Title="MTD_USERS" entityHeight="103" entityIconified="false" entityId="126224877209478" entityLocationX="175" entityLocationY="89" entityWidth="269" tableName="MTD_USERS" tableSchemaName=""/>
+<relation leftEntityFieldName="USR_ID" leftEntityId="126224877209478" rightEntityFieldName="USER_PK" rightEntityId="126259593353507"/>
+</datamodel>

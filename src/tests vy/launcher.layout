@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget actionPerformed="btnLaunchActionPerformed" name="btnLaunch" parent="Form" prefHeight="23px" prefWidth="140px" text="Click me!" type="ButtonDesignInfo">
+<constraints height="23px" left="130px" top="130px" type="MarginConstraintsDesignInfo" width="140px"/>
+</widget>
+<widget name="jMenuBar" parent="Form" prefHeight="13px" prefWidth="400px" type="MenubarDesignInfo"/>
+<widget name="mnuFile" parent="jMenuBar" prefHeight="13px" prefWidth="39px" text="Файл" type="MenuDesignInfo"/>
+<widget name="mnuEdit" parent="jMenuBar" prefHeight="13px" prefWidth="105px" text="Редактирование" type="MenuDesignInfo"/>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

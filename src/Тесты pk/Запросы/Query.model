@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datamodel>
+<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+<entity Title="Справочник перечислений" entityHeight="200" entityIconified="false" entityId="124879195264043" entityLocationX="594" entityLocationY="13" entityWidth="234" queryId="null" tableAlias="enumerations2" tableName="ENUMERATIONS" tableSchemaName="EAS"/>
+<entity Title="Справочник перечислений" entityHeight="225" entityIconified="false" entityId="124879194202753" entityLocationX="237" entityLocationY="9" entityWidth="250" queryId="null" tableAlias="enumerations" tableName="ENUMERATIONS" tableSchemaName="EAS"/>
+<relation leftEntityFieldName="GROUP_ID" leftEntityId="124879194202753" rightEntityFieldName="ID" rightEntityId="124879195264043"/>
+</datamodel>

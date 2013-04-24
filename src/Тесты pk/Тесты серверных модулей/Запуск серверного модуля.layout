@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget actionPerformed="btnRemote_actionPerformed" name="btnRemote" parent="Form" prefHeight="25px" prefWidth="235px" text="Создание файла" type="ButtonDesignInfo">
+<constraints height="25px" left="82px" top="100px" type="MarginConstraintsDesignInfo" width="235px"/>
+</widget>
+<widget actionPerformed="btnAddition_actionPerformed" name="btnAddition" parent="Form" prefHeight="25px" prefWidth="235px" text="Тест сложения" type="ButtonDesignInfo">
+<constraints height="25px" left="82px" top="125px" type="MarginConstraintsDesignInfo" width="235px"/>
+</widget>
+<widget actionPerformed="btnUnknown_actionPerformed" name="btnUnknown" parent="Form" prefHeight="25px" prefWidth="235px" text="Вызов неизвестного метода" type="ButtonDesignInfo">
+<constraints height="25px" left="82px" top="150px" type="MarginConstraintsDesignInfo" width="235px"/>
+</widget>
+<widget actionPerformed="btnBgTask1_actionPerformed" name="btnBgTask1" parent="Form" prefHeight="25px" prefWidth="235px" text="Фоновая задача" type="ButtonDesignInfo">
+<constraints height="25px" left="82px" top="175px" type="MarginConstraintsDesignInfo" width="235px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

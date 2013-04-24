@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<widget dividerLocation="344" foregroundColor="#333333" leftComponent="jPanel" name="jSplitPane" parent="Form" prefHeight="134px" prefWidth="207px" rightComponent="jPanel1" type="SplitDesignInfo">
+<easFont name="Dialog"/>
+<constraints height="134px" left="96px" top="70px" type="MarginConstraintsDesignInfo" width="207px"/>
+</widget>
+<widget name="jPanel" parent="jSplitPane" prefHeight="132px" prefWidth="200px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+</widget>
+<widget floatable="false" name="jToolBar" parent="jPanel" prefHeight="32px" prefWidth="200px" type="ToolbarDesignInfo">
+<constraints height="32px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="200px"/>
+</widget>
+<widget actionPerformed="" icon="plus.png" name="btnAddRole" parent="jToolBar" prefHeight="28px" prefWidth="28px" toolTipText="Добавить роль" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnDeleteRole_onClick" icon="cross.png" name="btnDeleteRole" parent="jToolBar" prefHeight="28px" prefWidth="28px" toolTipText="Удалить роль" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnSaveRole_onClick" name="btnSaveRole" parent="jToolBar" prefHeight="12px" prefWidth="12px" toolTipText="Сохранить" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnRefreshRole_onClick" icon="refresh/refresh.png" name="btnRefreshRole" parent="jToolBar" prefHeight="28px" prefWidth="28px" toolTipText="Обновить" type="ButtonDesignInfo"/>
+<widget name="dbgRoles" parent="jPanel" prefHeight="100px" prefWidth="200px" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="126218206765811" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="ROLE_NAME" title="Роли" width="300">
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="126218206765811" fieldName="ROLE_NAME"/>
+<headerEasFont name="Dialog"/>
+<style>
+<nativeBackground/>
+<nativeFont name="Dialog"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="126218206765811" fieldName="ROLE_NAME"/>
+</controlInfo>
+</column>
+<constraints height="100px" left="0px" top="32px" type="MarginConstraintsDesignInfo" width="200px"/>
+</widget>
+<widget name="jPanel1" parent="jSplitPane" prefHeight="132px" prefWidth="0px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+</widget>
+<widget floatable="false" name="jToolBar1" parent="jPanel1" prefHeight="0px" prefWidth="0px" type="ToolbarDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget actionPerformed="btnAddAccess_onClick" icon="plus.png" name="btnAddAccess" parent="jToolBar1" prefHeight="-4px" prefWidth="28px" toolTipText="Добавить полномочие" type="ButtonDesignInfo"/>
+<widget actionPerformed="" icon="cross.png" name="btnDeleteAccess" parent="jToolBar1" prefHeight="-4px" prefWidth="28px" toolTipText="Удалить полномочие" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnSaveAccess_onClick" name="btnSaveAccess" parent="jToolBar1" prefHeight="-4px" prefWidth="12px" toolTipText="Сохранить" type="ButtonDesignInfo"/>
+<widget actionPerformed="btnRefreshAccess_onClick" icon="refresh/refresh.png" name="btnRefreshAccess" parent="jToolBar1" prefHeight="-4px" prefWidth="28px" toolTipText="Обновить" type="ButtonDesignInfo"/>
+<widget name="dbgAccess" parent="jPanel1" prefHeight="0px" prefWidth="0px" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="126224194455963" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="ACCESS_ID" title="Полномочия доступа" width="400">
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="126224194455963" fieldName="ACCESS_ID"/>
+<headerEasFont name="Dialog"/>
+<style>
+<nativeBackground/>
+<nativeFont name="Dialog"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbComboDesignInfo">
+<displayField entityId="126224637177699" fieldName="ACCESS_NAME"/>
+<valueField entityId="126224637177699" fieldName="ACCESS_LIST_ID"/>
+<datamodelElement entityId="126224194455963" fieldName="ACCESS_ID"/>
+</controlInfo>
+</column>
+<column name="KEY_WORD" title="Ключевое слово" width="200">
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="126224194455963" fieldName="ACCESS_ID"/>
+<headerEasFont name="Dialog"/>
+<style>
+<nativeBackground/>
+<nativeFont name="Dialog"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbComboDesignInfo">
+<displayField entityId="126224637177699" fieldName="KEY_WORD"/>
+<valueField entityId="126224637177699" fieldName="ACCESS_LIST_ID"/>
+<datamodelElement entityId="126224194455963" fieldName="ACCESS_ID"/>
+</controlInfo>
+</column>
+<column name="FORM_ID" title="Форма" width="300">
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+<columnsDisplayField/>
+<datamodelElement entityId="126224194455963" fieldName="ACCESS_ID"/>
+<headerEasFont name="Dialog"/>
+<style>
+<nativeBackground/>
+<nativeFont name="Dialog"/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbComboDesignInfo">
+<displayField entityId="126276738450986" fieldName="MDENT_NAME"/>
+<valueField entityId="126276738450986" fieldName="ACCESS_LIST_ID"/>
+<datamodelElement entityId="126224194455963" fieldName="ACCESS_ID"/>
+</controlInfo>
+</column>
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget actionPerformed="actionPerformed" name="jButton" parent="Form" prefHeight="25px" prefWidth="207px" text="Закрыть" type="ButtonDesignInfo">
+<constraints height="25px" left="96px" top="204px" type="MarginConstraintsDesignInfo" width="207px"/>
+</widget>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

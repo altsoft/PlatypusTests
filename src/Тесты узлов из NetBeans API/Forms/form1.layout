@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form" prefHeight="300px" prefWidth="400px">
+<nonvisual name="buttonGroup1" type="ButtonGroupDesignInfo"/>
+<nonvisual name="jPopupMenu1" type="PopupDesignInfo"/>
+<widget name="jMenu1" parent="jPopupMenu1" text="jMenu1" type="MenuDesignInfo"/>
+<widget name="jMenuItem1" parent="jMenu1" text="jMenuItem1" type="MenuItemDesignInfo"/>
+<widget name="jCheckBoxMenuItem1" parent="jMenu1" selected="true" text="jCheckBoxMenuItem1" type="MenuCheckItemDesignInfo"/>
+<widget name="jSeparator2" parent="jMenu1" type="MenuSeparatorDesignInfo">
+<easFont name="Dialog" style="1"/>
+</widget>
+<widget buttonGroup="buttonGroup1" name="jRadioButtonMenuItem1" parent="jMenu1" text="jRadioButtonMenuItem1" type="MenuRadioItemDesignInfo"/>
+<widget name="jMenu6" parent="jMenu1" text="jMenu6" type="MenuDesignInfo"/>
+<widget name="jCheckBoxMenuItem3" parent="jMenu6" selected="true" text="jCheckBoxMenuItem3" type="MenuCheckItemDesignInfo"/>
+<widget name="jRadioButtonMenuItem5" parent="jMenu6" selected="true" text="jRadioButtonMenuItem5" type="MenuRadioItemDesignInfo"/>
+<widget buttonGroup="buttonGroup1" name="jRadioButtonMenuItem2" parent="jMenu1" text="jRadioButtonMenuItem2" type="MenuRadioItemDesignInfo"/>
+<widget name="jSeparator3" parent="jMenu1" type="MenuSeparatorDesignInfo">
+<easFont name="Dialog" style="1"/>
+</widget>
+<widget name="jMenuItem2" parent="jMenu1" text="jMenuItem2" type="MenuItemDesignInfo"/>
+<widget name="jMenu2" parent="jPopupMenu1" text="jMenu2" type="MenuDesignInfo"/>
+<widget buttonGroup="buttonGroup1" name="jToggleButton1" parent="Form" prefHeight="25px" prefWidth="129px" text="jToggleButton1" type="ToggleButtonDesignInfo">
+<constraints height="25px" left="164px" top="124px" type="MarginConstraintsDesignInfo" width="129px"/>
+</widget>
+<widget actionPerformed="jButton1ActionPerformed" name="jButton1" parent="Form" prefHeight="25px" prefWidth="102px" text="jButton1" type="ButtonDesignInfo">
+<constraints height="25px" left="12px" top="12px" type="MarginConstraintsDesignInfo" width="102px"/>
+</widget>
+<widget name="jPanel1" parent="Form" prefHeight="100px" prefWidth="100px" type="PanelDesignInfo">
+<layout type="FlowLayoutDesignInfo" vgap="7"/>
+<constraints height="100px" left="12px" top="49px" type="MarginConstraintsDesignInfo" width="100px"/>
+</widget>
+<widget name="jLabel3" parent="jPanel1" prefHeight="15px" prefWidth="51px" text="jLabel3" type="LabelDesignInfo"/>
+<widget name="jLabel4" parent="jPanel1" prefHeight="15px" prefWidth="51px" text="jLabel4" type="LabelDesignInfo"/>
+<widget name="jPanel2" parent="Form" prefHeight="62px" prefWidth="281px" type="PanelDesignInfo">
+<layout type="FlowLayoutDesignInfo"/>
+<constraints height="62px" left="12px" top="178px" type="MarginConstraintsDesignInfo" width="281px"/>
+</widget>
+<widget caretPosition="15" name="jPasswordField1" parent="jPanel2" prefHeight="19px" prefWidth="109px" selectionEnd="15" selectionStart="15" text="jPasswordField1" type="PasswordFieldDesignInfo"/>
+<widget name="jProgressBar1" parent="jPanel2" prefHeight="14px" prefWidth="148px" string="�" type="ProgressBarDesignInfo"/>
+<widget buttonGroup="buttonGroup1" name="jToggleButton2" parent="Form" prefHeight="25px" prefWidth="129px" text="jToggleButton2" type="ToggleButtonDesignInfo">
+<constraints height="25px" left="164px" top="97px" type="MarginConstraintsDesignInfo" width="129px"/>
+</widget>
+<widget name="jLabel1" parent="Form" prefHeight="15px" prefWidth="51px" text="jLabel1" type="LabelDesignInfo">
+<constraints height="15px" left="164px" top="161px" type="MarginConstraintsDesignInfo" width="51px"/>
+</widget>
+<widget name="jScrollPane1" parent="Form" prefHeight="100px" prefWidth="100px" type="ScrollDesignInfo">
+<constraints height="100px" left="305px" top="44px" type="MarginConstraintsDesignInfo" width="100px"/>
+</widget>
+<widget name="jEditorPane1" parent="jScrollPane1" prefHeight="82px" prefWidth="106px" type="EditorPaneDesignInfo"/>
+<widget name="jToolBar1" parent="Form" prefHeight="25px" prefWidth="196px" rollover="true" type="ToolbarDesignInfo">
+<constraints height="25px" left="305px" top="156px" type="MarginConstraintsDesignInfo" width="196px"/>
+</widget>
+<widget name="jLabel7" parent="jToolBar1" prefHeight="15px" prefWidth="51px" text="jLabel7" type="LabelDesignInfo"/>
+<widget focusable="false" horizontalTextPosition="0" name="jButton2" parent="jToolBar1" prefHeight="21px" prefWidth="72px" text="jButton2" type="ButtonDesignInfo" verticalTextPosition="3"/>
+<widget name="jLabel2" parent="jToolBar1" prefHeight="15px" prefWidth="51px" text="jLabel2" type="LabelDesignInfo"/>
+<widget name="jPanel3" parent="Form" prefHeight="100px" prefWidth="119px" type="PanelDesignInfo">
+<layout type="BorderLayoutDesignInfo" vgap="5"/>
+<constraints height="100px" left="417px" top="44px" type="MarginConstraintsDesignInfo" width="119px"/>
+</widget>
+<widget name="jButton3" parent="jPanel3" prefHeight="70px" prefWidth="119px" text="jButton3" type="ButtonDesignInfo">
+<constraints place="Center" type="BorderLayoutConstraintsDesignInfo"/>
+</widget>
+<widget name="jButton4" parent="jPanel3" prefHeight="25px" prefWidth="119px" text="jButton4" type="ButtonDesignInfo">
+<constraints place="Last" type="BorderLayoutConstraintsDesignInfo"/>
+</widget>
+<widget name="jTabbedPane1" parent="Form" prefHeight="100px" prefWidth="118px" type="TabsDesignInfo">
+<constraints height="100px" left="305px" top="187px" type="MarginConstraintsDesignInfo" width="118px"/>
+</widget>
+<widget name="jPanel4" parent="jTabbedPane1" prefHeight="73px" prefWidth="113px" type="PanelDesignInfo">
+<layout type="FlowLayoutDesignInfo"/>
+<constraints tabTitle="tab0" type="TabsConstraintsDesignInfo"/>
+</widget>
+<widget name="jPanel5" parent="jTabbedPane1" prefHeight="73px" prefWidth="113px" type="PanelDesignInfo">
+<layout type="FlowLayoutDesignInfo"/>
+<constraints tabTitle="tab1" type="TabsConstraintsDesignInfo"/>
+</widget>
+<widget foregroundColor="#333333" leftComponent="jPanel6" name="jSplitPane1" parent="Form" prefHeight="100px" prefWidth="101px" rightComponent="jPanel7" type="SplitDesignInfo">
+<easFont name="Dialog"/>
+<constraints height="100px" left="435px" top="187px" type="MarginConstraintsDesignInfo" width="101px"/>
+</widget>
+<widget name="jPanel6" parent="jSplitPane1" prefHeight="98px" prefWidth="83px" type="PanelDesignInfo">
+<layout type="FlowLayoutDesignInfo"/>
+</widget>
+<widget name="jPanel7" parent="jSplitPane1" prefHeight="98px" prefWidth="11px" type="PanelDesignInfo">
+<layout type="FlowLayoutDesignInfo"/>
+</widget>
+<widget backgroundColor="#eeeeee" foregroundColor="#333333" name="jLayeredPane1" parent="Form" prefHeight="100px" prefWidth="100px" type="LayersDesignInfo">
+<easFont name="Dialog"/>
+<constraints height="100px" left="542px" top="44px" type="MarginConstraintsDesignInfo" width="100px"/>
+</widget>
+<widget name="jCheckBox1" parent="jLayeredPane1" prefHeight="23px" prefWidth="104px" text="jCheckBox1" type="CheckDesignInfo">
+<constraints type="LayersLayoutConstraintsDesignInfo">
+<easSize height="-1" width="-1"/>
+<easLocation x="10" y="20"/>
+</constraints>
+</widget>
+<widget caretPosition="11" name="jTextField1" parent="jLayeredPane1" prefHeight="19px" prefWidth="70px" scrollOffset="1" selectionEnd="11" selectionStart="11" text="jTextField1" type="TextFieldDesignInfo">
+<constraints type="LayersLayoutConstraintsDesignInfo">
+<easSize height="-1" width="-1"/>
+<easLocation x="10" y="60"/>
+</constraints>
+</widget>
+<widget foregroundColor="#333333" name="jDesktopPane1" parent="Form" prefHeight="100px" prefWidth="100px" type="DesktopDesignInfo">
+<easFont name="Dialog"/>
+<constraints height="100px" left="542px" top="187px" type="MarginConstraintsDesignInfo" width="100px"/>
+</widget>
+<widget name="jToolBar2" parent="jDesktopPane1" prefHeight="20px" prefWidth="50px" rollover="true" type="ToolbarDesignInfo">
+<constraints type="LayersLayoutConstraintsDesignInfo">
+<easSize height="20" width="50"/>
+<easLocation y="10"/>
+</constraints>
+</widget>
+<widget name="jLabel5" parent="jToolBar2" prefHeight="15px" prefWidth="51px" text="jLabel5" type="LabelDesignInfo"/>
+<widget name="jRadioButton1" parent="jDesktopPane1" prefHeight="23px" prefWidth="125px" text="jRadioButton1" type="RadioDesignInfo">
+<constraints type="LayersLayoutConstraintsDesignInfo">
+<easSize height="-1" width="-1"/>
+<easLocation y="50"/>
+</constraints>
+</widget>
+<widget name="jLabel6" parent="Form" prefHeight="15px" prefWidth="51px" text="jLabel6" type="LabelDesignInfo">
+<constraints height="15px" left="12px" top="299px" type="MarginConstraintsDesignInfo" width="51px"/>
+</widget>
+<widget name="jButton5" parent="Form" prefHeight="25px" prefWidth="94px" text="jButton5" type="ButtonDesignInfo">
+<constraints height="25px" left="165px" top="289px" type="MarginConstraintsDesignInfo" width="94px"/>
+</widget>
+<widget name="jToggleButton3" parent="Form" prefHeight="25px" prefWidth="142px" text="jToggleButton3" type="ToggleButtonDesignInfo">
+<constraints height="25px" left="0px" top="326px" type="MarginConstraintsDesignInfo" width="142px"/>
+</widget>
+<widget name="jCheckBox2" parent="Form" prefHeight="23px" prefWidth="104px" text="jCheckBox2" type="CheckDesignInfo">
+<constraints height="23px" left="165px" top="328px" type="MarginConstraintsDesignInfo" width="104px"/>
+</widget>
+<widget name="jRadioButton2" parent="Form" prefHeight="23px" prefWidth="125px" text="jRadioButton2" type="RadioDesignInfo">
+<constraints height="23px" left="0px" top="359px" type="MarginConstraintsDesignInfo" width="125px"/>
+</widget>
+<widget caretPosition="11" name="jTextField2" parent="Form" prefHeight="19px" prefWidth="70px" selectionEnd="11" selectionStart="11" text="jTextField2" type="TextFieldDesignInfo">
+<constraints height="19px" left="0px" top="390px" type="MarginConstraintsDesignInfo" width="70px"/>
+</widget>
+<widget name="jSlider1" parent="Form" prefHeight="16px" prefWidth="200px" type="SliderDesignInfo">
+<constraints height="16px" left="0px" top="415px" type="MarginConstraintsDesignInfo" width="200px"/>
+</widget>
+<widget name="jProgressBar2" parent="Form" prefHeight="14px" prefWidth="148px" string="�" type="ProgressBarDesignInfo">
+<constraints height="14px" left="0px" top="442px" type="MarginConstraintsDesignInfo" width="148px"/>
+</widget>
+<widget caretPosition="20" name="jFormattedTextField1" parent="Form" prefHeight="19px" prefWidth="92px" selectionEnd="20" selectionStart="20" text="jFormattedTextField1" type="FormattedFieldDesignInfo">
+<constraints height="19px" left="160px" top="437px" type="MarginConstraintsDesignInfo" width="92px"/>
+</widget>
+<widget caretPosition="15" name="jPasswordField2" parent="Form" prefHeight="19px" prefWidth="109px" selectionEnd="15" selectionStart="15" text="jPasswordField2" type="PasswordFieldDesignInfo">
+<constraints height="19px" left="0px" top="468px" type="MarginConstraintsDesignInfo" width="109px"/>
+</widget>
+<widget name="jSeparator1" parent="Form" prefHeight="10px" prefWidth="50px" type="MenuSeparatorDesignInfo">
+<easFont name="Dialog"/>
+<constraints height="10px" left="160px" top="468px" type="MarginConstraintsDesignInfo" width="50px"/>
+</widget>
+<widget name="jScrollPane2" parent="Form" prefHeight="22px" prefWidth="109px" type="ScrollDesignInfo">
+<constraints height="22px" left="0px" top="499px" type="MarginConstraintsDesignInfo" width="109px"/>
+</widget>
+<widget name="jEditorPane2" parent="jScrollPane2" prefHeight="21px" prefWidth="106px" type="EditorPaneDesignInfo"/>
+<widget name="jPanel8" parent="Form" prefHeight="102px" prefWidth="118px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints height="102px" left="305px" top="307px" type="MarginConstraintsDesignInfo" width="118px"/>
+</widget>
+<widget name="jLabel8" parent="jPanel8" prefHeight="15px" prefWidth="55px" text="Group L" type="LabelDesignInfo">
+<constraints height="15px" left="0px" top="12px" type="MarginConstraintsDesignInfo" width="55px"/>
+</widget>
+<widget name="jPanel9" parent="Form" prefHeight="100px" prefWidth="100px" type="PanelDesignInfo">
+<layout type="BorderLayoutDesignInfo"/>
+<constraints height="100px" left="435px" top="309px" type="MarginConstraintsDesignInfo" width="100px"/>
+</widget>
+<widget name="jLabel9" parent="jPanel9" prefHeight="70px" prefWidth="100px" text="Border L (Center)" type="LabelDesignInfo">
+<constraints place="Center" type="BorderLayoutConstraintsDesignInfo"/>
+</widget>
+<widget name="jLabel10" parent="jPanel9" prefHeight="15px" prefWidth="100px" text="Border L (Last)" type="LabelDesignInfo">
+<constraints place="Last" type="BorderLayoutConstraintsDesignInfo"/>
+</widget>
+<widget name="jLabel11" parent="jPanel9" prefHeight="15px" prefWidth="100px" text="Border L (First)" type="LabelDesignInfo">
+<constraints place="First" type="BorderLayoutConstraintsDesignInfo"/>
+</widget>
+<widget name="jPanel10" parent="Form" prefHeight="100px" prefWidth="100px" type="PanelDesignInfo">
+<layout type="BoxLayoutDesignInfo"/>
+<constraints height="100px" left="542px" top="309px" type="MarginConstraintsDesignInfo" width="100px"/>
+</widget>
+<widget name="jButton6" parent="jPanel10" prefHeight="25px" prefWidth="100px" text="Box L (Y-1)" type="ButtonDesignInfo"/>
+<widget name="jButton7" parent="jPanel10" prefHeight="25px" prefWidth="100px" text="Box L (Y-2)" type="ButtonDesignInfo"/>
+<widget name="jPanel11" parent="Form" prefHeight="100px" prefWidth="100px" type="PanelDesignInfo">
+<layout type="CardLayoutDesignInfo"/>
+<constraints height="100px" left="305px" top="415px" type="MarginConstraintsDesignInfo" width="100px"/>
+</widget>
+<widget name="jToggleButton4" parent="jPanel11" prefHeight="100px" prefWidth="100px" text="Card L (card1)" type="ToggleButtonDesignInfo">
+<constraints cardName="card1" type="CardLayoutConstraintsDesignInfo"/>
+</widget>
+<widget name="jLabel12" parent="jPanel11" prefHeight="100px" prefWidth="100px" text="Card L (card2)" type="LabelDesignInfo">
+<constraints cardName="card2" type="CardLayoutConstraintsDesignInfo"/>
+</widget>
+<widget name="jPanel12" parent="Form" prefHeight="100px" prefWidth="100px" type="PanelDesignInfo">
+<layout type="FlowLayoutDesignInfo"/>
+<constraints height="100px" left="411px" top="415px" type="MarginConstraintsDesignInfo" width="100px"/>
+</widget>
+<widget caretPosition="10" name="jTextField3" parent="jPanel12" prefHeight="19px" prefWidth="63px" selectionEnd="10" selectionStart="10" text="Flow L (1)" type="TextFieldDesignInfo"/>
+<widget name="jCheckBox3" parent="jPanel12" prefHeight="23px" prefWidth="92px" text="Flow L (2)" type="CheckDesignInfo"/>
+<widget name="jPanel13" parent="Form" prefHeight="100px" prefWidth="100px" type="PanelDesignInfo">
+<layout type="MarginLayoutDesignInfo"/>
+<constraints height="100px" left="517px" top="415px" type="MarginConstraintsDesignInfo" width="100px"/>
+</widget>
+<widget name="jLabel13" parent="jPanel13" prefHeight="15px" prefWidth="104px" text="GridBag L (w-0)" type="LabelDesignInfo">
+<constraints height="15px" left="0px" top="31px" type="MarginConstraintsDesignInfo" width="104px"/>
+</widget>
+<widget name="jRadioButton3" parent="jPanel13" prefHeight="0px" prefWidth="0px" text="GridBag L (w-1)" type="RadioDesignInfo">
+<constraints height="0px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="0px"/>
+</widget>
+<widget name="jPanel14" parent="Form" prefHeight="100px" prefWidth="170px" type="PanelDesignInfo">
+<layout rows="2" type="GridLayoutDesignInfo"/>
+<constraints height="100px" left="305px" top="521px" type="MarginConstraintsDesignInfo" width="170px"/>
+</widget>
+<widget name="jToggleButton5" parent="jPanel14" prefHeight="50px" prefWidth="85px" text="Grid L 1,1" type="ToggleButtonDesignInfo"/>
+<widget name="jRadioButton4" parent="jPanel14" prefHeight="50px" prefWidth="85px" text="Grid L 1,2" type="RadioDesignInfo"/>
+<widget name="jButton8" parent="jPanel14" prefHeight="50px" prefWidth="85px" text="Grid L 2,1" type="ButtonDesignInfo"/>
+<widget name="jPanel15" parent="Form" prefHeight="113px" prefWidth="136px" type="PanelDesignInfo">
+<layout type="AbsoluteLayoutDesignInfo"/>
+<constraints height="113px" left="481px" top="521px" type="MarginConstraintsDesignInfo" width="136px"/>
+</widget>
+<widget name="jLabel14" parent="jPanel15" prefHeight="15px" prefWidth="59px" text="jLabel14" type="LabelDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easSize height="-1" width="-1"/>
+<easLocation x="30" y="20"/>
+</constraints>
+</widget>
+<widget name="jProgressBar3" parent="jPanel15" prefHeight="14px" prefWidth="110px" string="�" type="ProgressBarDesignInfo">
+<constraints type="AbsoluteConstraintsDesignInfo">
+<easSize height="-1" width="110"/>
+<easLocation x="10" y="70"/>
+</constraints>
+</widget>
+<widget name="jMenuBar1" parent="Form" prefHeight="21px" prefWidth="400px" type="MenubarDesignInfo"/>
+<widget name="jMenu3" parent="jMenuBar1" prefHeight="19px" prefWidth="37px" text="File" type="MenuDesignInfo"/>
+<widget name="jMenu5" parent="jMenu3" prefHeight="0px" prefWidth="0px" text="jMenu1" type="MenuDesignInfo"/>
+<widget name="jMenuItem3" parent="jMenu5" prefHeight="0px" prefWidth="0px" text="jMenuItem1" type="MenuItemDesignInfo"/>
+<widget name="jCheckBoxMenuItem2" parent="jMenu5" prefHeight="0px" prefWidth="0px" selected="true" text="jCheckBoxMenuItem1" type="MenuCheckItemDesignInfo"/>
+<widget name="jSeparator4" parent="jMenu5" prefHeight="0px" prefWidth="0px" type="MenuSeparatorDesignInfo">
+<easFont name="Dialog" style="1"/>
+</widget>
+<widget buttonGroup="buttonGroup1" name="jRadioButtonMenuItem3" parent="jMenu5" prefHeight="0px" prefWidth="0px" selected="true" text="jRadioButtonMenuItem1" type="MenuRadioItemDesignInfo"/>
+<widget buttonGroup="buttonGroup1" name="jRadioButtonMenuItem4" parent="jMenu5" prefHeight="0px" prefWidth="0px" text="jRadioButtonMenuItem2" type="MenuRadioItemDesignInfo"/>
+<widget name="jSeparator5" parent="jMenu5" prefHeight="0px" prefWidth="0px" type="MenuSeparatorDesignInfo">
+<easFont name="Dialog" style="1"/>
+</widget>
+<widget name="jMenuItem4" parent="jMenu5" prefHeight="0px" prefWidth="0px" text="jMenuItem2" type="MenuItemDesignInfo"/>
+<widget name="jMenu4" parent="jMenuBar1" prefHeight="19px" prefWidth="39px" text="Edit" type="MenuDesignInfo"/>
+<layout type="MarginLayoutDesignInfo"/>
+</layout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout name="Form">
+<widget name="dbGrid" parent="Form" type="DbGridDesignInfo">
+<rowsColumnsDesignInfo>
+<rowsDatasource entityId="129362824818719" field="false"/>
+</rowsColumnsDesignInfo>
+<treeDesignInfo>
+<param2GetChildren/>
+<paramSourceField/>
+<unaryLinkField/>
+</treeDesignInfo>
+<column name="UPDATE_TEST_ID">
+<columnsDisplayField/>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbSpinDesignInfo">
+<datamodelElement entityId="129362824818719" fieldName="UPDATE_TEST_ID"/>
+</controlInfo>
+<headerEasFont name="Dialog"/>
+<datamodelElement entityId="129362824818719" fieldName="UPDATE_TEST_ID"/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+</column>
+<column name="FIELD1">
+<columnsDisplayField/>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="129362824818719" fieldName="FIELD1"/>
+</controlInfo>
+<headerEasFont name="Dialog"/>
+<datamodelElement entityId="129362824818719" fieldName="FIELD1"/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+</column>
+<column name="FIELD2">
+<columnsDisplayField/>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="129362824818719" fieldName="FIELD2"/>
+</controlInfo>
+<headerEasFont name="Dialog"/>
+<datamodelElement entityId="129362824818719" fieldName="FIELD2"/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+</column>
+<column name="FIELD3">
+<columnsDisplayField/>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="129362824818719" fieldName="FIELD3"/>
+</controlInfo>
+<headerEasFont name="Dialog"/>
+<datamodelElement entityId="129362824818719" fieldName="FIELD3"/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+</column>
+<column name="FIELD4">
+<columnsDisplayField/>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="129362824818719" fieldName="FIELD4"/>
+</controlInfo>
+<headerEasFont name="Dialog"/>
+<datamodelElement entityId="129362824818719" fieldName="FIELD4"/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+</column>
+<column name="FIELD5">
+<columnsDisplayField/>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="129362824818719" fieldName="FIELD5"/>
+</controlInfo>
+<headerEasFont name="Dialog"/>
+<datamodelElement entityId="129362824818719" fieldName="FIELD5"/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+</column>
+<column name="FIELD6">
+<columnsDisplayField/>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="129362824818719"/>
+</controlInfo>
+<headerEasFont name="Dialog"/>
+<datamodelElement entityId="129362824818719"/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+</column>
+<column name="FIELD7">
+<columnsDisplayField/>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="129362824818719"/>
+</controlInfo>
+<headerEasFont name="Dialog"/>
+<datamodelElement entityId="129362824818719"/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+</column>
+<column name="FIELD8">
+<columnsDisplayField/>
+<style>
+<nativeBackground/>
+<nativeForeground rGB="-16777216"/>
+</style>
+<controlInfo classHint="DbLabelDesignInfo">
+<datamodelElement entityId="129362824818719"/>
+</controlInfo>
+<headerEasFont name="Dialog"/>
+<datamodelElement entityId="129362824818719"/>
+<cellDesignInfo>
+<cellValueField/>
+<columnsKeyField/>
+<rowsKeyField/>
+</cellDesignInfo>
+<cellsDatasource/>
+<columnsDatasource/>
+</column>
+<constraints anchor="10" fill="1" gridheight="1" gridwidth="1" gridx="2" gridy="2" type="GridBagLayoutConstraintsDesignInfo">
+<easInsets/>
+</constraints>
+</widget>
+<layout type="GridBagLayoutDesignInfo"/>
+</layout>
