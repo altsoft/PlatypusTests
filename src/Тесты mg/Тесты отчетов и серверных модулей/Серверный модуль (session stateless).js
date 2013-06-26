@@ -1,10 +1,17 @@
 /**
  * 
  * @author mg
- * @name TestServerModule
+ * @name TestStatelessServerModule
+ * @stateless
  * @public
  */
 
+
+var stateCounter = 0;
+function testCounter(aDelta){
+    stateCounter += aDelta;
+    return stateCounter;
+}
 
 function testSum(a, b){
     return a + b;

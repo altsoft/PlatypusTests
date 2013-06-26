@@ -19,7 +19,7 @@ function btnShowClientReportActionPerformed(evt) {//GEN-FIRST:event_btnShowClien
 }//GEN-LAST:event_btnShowClientReportActionPerformed
 
 function btnCallServerModuleActionPerformed(evt) {//GEN-FIRST:event_btnCallServerModuleActionPerformed
-    var sm = new ServerModule("TestServerModule");
+    var sm = new ServerModule("TestStatefullServerModule");
     
     // Synchronous calls...
     Logger.info("sm.testSum(...) returned: " + sm.testSum(5, 10) );

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<platypusProject displayName="platformtest">
-    <run password="test" protocol="platypus" serverPort="8500" user="testuser0"/>
-    <debug clientPort="8900" serverPort="8901"/>
-    <dbSettings name="" password="eas" schema="eas" url="jdbc:oracle:thin:@192.168.10.1:1521/adb" user="eas"/>
-</platypusProject>
+<context>
+  <run appElement=""/>
+  <dbSettings name="" password="eas" schema="eas" url="jdbc:oracle:thin:@192.168.10.1:1521/adb" user="eas"/>
+</context>
