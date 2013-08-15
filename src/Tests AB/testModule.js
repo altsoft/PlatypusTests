@@ -16,7 +16,7 @@
  */
 
 
-const testConst = 100000;
+var testConst = 100000;
 var testPropertyString = "testValue";
 var testPropertyDate = new Date(2012,1,1);
 var testPropertyInt = 100;

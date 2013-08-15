@@ -39,7 +39,7 @@ var answersQueues = new Array();
  * If the packet is string answer, it should be placed in answers queue for further polling by client.
  * If the packet is data packet with coordinates and in-values, it should be saved in database.
  */
-function received(p)
+function recieved(p)
 {
     if(p.valid)
     {
