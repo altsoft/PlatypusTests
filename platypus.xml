@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <context>
-  <run appElement=""/>
-  <dbSettings name="" password="eas" schema="eas" url="jdbc:oracle:thin:@192.168.10.1:1521/adb" user="eas"/>
+  <run/>
+  <dbSettings name="" password="eas" url="jdbc:oracle:thin:@asvr:1521/adb" user="eas"/>
 </context>

@@ -5,14 +5,14 @@
  */
 
 function AMOUNTSelectValue(aEditor) {//GEN-FIRST:event_AMOUNTSelectValue
-    var amountSelector = new Form("134209460717733");
+    var amountSelector = new AmountSelector();
     amountSelector.showModal(function(aValue){
         aEditor.value = aValue;
     });
 }//GEN-LAST:event_AMOUNTSelectValue
 
 function dbCombo1SelectValue(aEditor) {//GEN-FIRST:event_dbCombo1SelectValue
-    var amountSelector = new Form("134209460717733");
+    var amountSelector = new AmountSelector();
     amountSelector.showModal(function(aValue){
         aEditor.value = aValue;
     });

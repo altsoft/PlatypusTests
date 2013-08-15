@@ -6,7 +6,7 @@
 
 /**
  *
- * @name 134209460717733
+ * @name AmountSelector
  * @author mg
  */
 
