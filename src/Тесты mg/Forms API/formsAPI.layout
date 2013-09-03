@@ -13,7 +13,6 @@
     </rowsColumnsDesignInfo>
     <column name="param11" selectFunction="param11OnSelect">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="-1" fieldName="Param1"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -24,11 +23,11 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="-1" fieldName="Param1"/>
       <columnsDisplayField/>
     </column>
     <column name="param21" selectFunction="param21OnSelect">
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="-1" fieldName="Param2"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -39,11 +38,11 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="-1" fieldName="Param2"/>
       <columnsDisplayField/>
     </column>
     <column name="param41" selectFunction="param41OnSelect">
       <controlInfo classHint="DbDateDesignInfo" dateFormat="dd.MM.yyyy" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="-1" fieldName="Param4"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -54,11 +53,11 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="-1" fieldName="Param4"/>
       <columnsDisplayField/>
     </column>
     <column name="param61" selectFunction="param61OnSelect">
       <controlInfo classHint="DbImageDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="-1" fieldName="Param4"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -69,6 +68,22 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="-1" fieldName="Param4"/>
+      <columnsDisplayField/>
+    </column>
+    <column name="param71">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <cellDesignInfo>
+        <cellValueField/>
+        <columnsKeyField/>
+        <rowsKeyField/>
+      </cellDesignInfo>
+      <cellsDatasource/>
+      <columnsDatasource/>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <datamodelElement entityId="-1" fieldName="Param7"/>
       <columnsDisplayField/>
     </column>
     <treeDesignInfo>
@@ -137,20 +152,20 @@
   </widget>
   <widget actionPerformed="btnAdd2AbsoltueActionPerformed" name="btnAdd2Absoltue" parent="pnlAbsolute" prefHeight="23px" prefWidth="80px" text="add new" type="ButtonDesignInfo">
     <constraints type="AbsoluteConstraintsDesignInfo">
-      <easSize height="-1" width="80"/>
       <easLocation x="20" y="20"/>
+      <easSize height="-1" width="80"/>
     </constraints>
   </widget>
   <widget name="jCheckBox" parent="pnlAbsolute" prefHeight="23px" prefWidth="75px" text="jCheckBox" type="CheckDesignInfo">
     <constraints type="AbsoluteConstraintsDesignInfo">
-      <easSize height="-1" width="-1"/>
       <easLocation x="30" y="80"/>
+      <easSize height="-1" width="-1"/>
     </constraints>
   </widget>
   <widget actionPerformed="btnSizeDebugActionPerformed" name="btnSizeDebug" parent="pnlAbsolute" prefHeight="23px" prefWidth="81px" text="debugSize" type="ButtonDesignInfo">
     <constraints type="AbsoluteConstraintsDesignInfo">
-      <easSize height="-1" width="-1"/>
       <easLocation x="110" y="20"/>
+      <easSize height="-1" width="-1"/>
     </constraints>
   </widget>
   <widget name="pnlGrid" parent="Form" prefHeight="150px" prefWidth="270px" type="PanelDesignInfo">
@@ -247,7 +262,6 @@
     </rowsColumnsDesignInfo>
     <column cellFunction="colFirstOnRender" name="colFirst" selectFunction="colFirstOnSelect" selectOnly="true" title="Первый">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="135151532000209" fieldName="NAME"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -258,11 +272,11 @@
       <headerStyle>
         <nativeFont name="SansSerif"/>
       </headerStyle>
+      <datamodelElement entityId="135151532000209" fieldName="NAME"/>
       <columnsDisplayField/>
     </column>
     <column name="SYMBOL_INT" title="Обозначение(межд.)">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="135151532000209" fieldName="SYMBOL_INT"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -273,11 +287,11 @@
       <headerStyle>
         <nativeFont name="SansSerif"/>
       </headerStyle>
+      <datamodelElement entityId="135151532000209" fieldName="SYMBOL_INT"/>
       <columnsDisplayField/>
     </column>
     <column name="SYMBOL_RUS" readonly="true" title="Обозначение(рус.)">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="135151532000209" fieldName="SYMBOL_RUS"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -288,6 +302,7 @@
       <headerStyle>
         <nativeFont name="SansSerif"/>
       </headerStyle>
+      <datamodelElement entityId="135151532000209" fieldName="SYMBOL_RUS"/>
       <columnsDisplayField/>
     </column>
     <treeDesignInfo>
@@ -337,7 +352,6 @@
     </rowsColumnsDesignInfo>
     <column name="param1" selectFunction="param1OnSelect" width="100">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="-1" fieldName="Param1"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -348,11 +362,11 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="-1" fieldName="Param1"/>
       <columnsDisplayField/>
     </column>
     <column name="param2" selectFunction="param2OnSelect" width="100">
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="-1" fieldName="Param2"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -363,11 +377,11 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="-1" fieldName="Param2"/>
       <columnsDisplayField/>
     </column>
-    <column name="param4" selectFunction="param4OnSelect" width="100">
-      <controlInfo classHint="DbDateDesignInfo" dateFormat="dd.MM.yyyy HH:mm:ss" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="-1" fieldName="Param4"/>
+    <column cellFunction="param7OnRender" name="param4" selectFunction="param4OnSelect" width="100">
+      <controlInfo classHint="DbDateDesignInfo" dateFormat="dd.MM.yyyy HH:mm:ss.SSS" name="view" prefHeight="0px" prefWidth="0px"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -378,11 +392,11 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="-1" fieldName="Param4"/>
       <columnsDisplayField/>
     </column>
     <column name="param6" selectFunction="param6OnSelect" width="100">
       <controlInfo classHint="DbImageDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="-1" fieldName="Param6"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -393,11 +407,11 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="-1" fieldName="Param6"/>
       <columnsDisplayField/>
     </column>
-    <column name="param7" selectFunction="param7OnSelect" width="100">
+    <column cellFunction="param7OnRender" name="param7" selectFunction="param7OnSelect" width="100">
       <controlInfo classHint="DbCheckDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="-1" fieldName="Param7"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -408,6 +422,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="-1" fieldName="Param7"/>
       <columnsDisplayField/>
     </column>
     <column name="column" selectFunction="columnOnSelect" width="100">
@@ -415,7 +430,6 @@
         <displayField entityId="135151532000209" fieldName="NAME"/>
         <valueField entityId="135151532000209" fieldName="ID"/>
       </controlInfo>
-      <datamodelElement entityId="-1" fieldName="Param2"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -426,6 +440,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="-1" fieldName="Param2"/>
       <columnsDisplayField/>
     </column>
     <column name="column1" width="100">
@@ -433,7 +448,6 @@
         <displayField entityId="135963425539283" fieldName="MDENT_NAME"/>
         <valueField entityId="135963425539283" fieldName="MDENT_ID"/>
       </controlInfo>
-      <datamodelElement entityId="-1" fieldName="Param5"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -444,6 +458,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="-1" fieldName="Param5"/>
       <columnsDisplayField/>
     </column>
     <treeDesignInfo>
@@ -516,13 +531,12 @@
   <widget actionPerformed="btnUnitsRequeryActionPerformed" name="btnUnitsRequery" parent="Form" prefHeight="23px" prefWidth="91px" text="requery" type="ButtonDesignInfo">
     <constraints height="23px" left="310px" top="560px" type="MarginConstraintsDesignInfo" width="91px"/>
   </widget>
-  <widget name="modelGrid2" parent="Form" prefHeight="160px" prefWidth="260px" type="DbGridDesignInfo">
+  <widget name="grdAddresses" parent="Form" prefHeight="160px" prefWidth="260px" type="DbGridDesignInfo">
     <rowsColumnsDesignInfo>
       <rowsDatasource entityId="136091764773245" field="false"/>
     </rowsColumnsDesignInfo>
     <column name="mDENT_ID">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="136091764773245" fieldName="MDENT_ID"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -533,11 +547,11 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="136091764773245" fieldName="MDENT_ID"/>
       <columnsDisplayField/>
     </column>
     <column name="mDENT_NAME">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="136091764773245" fieldName="MDENT_NAME"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -548,11 +562,11 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="136091764773245" fieldName="MDENT_NAME"/>
       <columnsDisplayField/>
     </column>
     <column name="mDENT_TYPE">
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="136091764773245" fieldName="MDENT_TYPE"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -563,11 +577,11 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="136091764773245" fieldName="MDENT_TYPE"/>
       <columnsDisplayField/>
     </column>
     <column name="tAG1">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="136091764773245" fieldName="TAG1"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -578,11 +592,11 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="136091764773245" fieldName="TAG1"/>
       <columnsDisplayField/>
     </column>
     <column name="tAG2">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="136091764773245" fieldName="TAG2"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -593,11 +607,11 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="136091764773245" fieldName="TAG2"/>
       <columnsDisplayField/>
     </column>
     <column name="tAG3">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="136091764773245" fieldName="TAG3"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -608,11 +622,11 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="136091764773245" fieldName="TAG3"/>
       <columnsDisplayField/>
     </column>
     <column name="mDENT_PARENT_ID">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="136091764773245" fieldName="MDENT_PARENT_ID"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -623,11 +637,11 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="136091764773245" fieldName="MDENT_PARENT_ID"/>
       <columnsDisplayField/>
     </column>
     <column name="mDENT_ORDER">
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="136091764773245" fieldName="MDENT_ORDER"/>
       <cellDesignInfo>
         <cellValueField/>
         <columnsKeyField/>
@@ -638,6 +652,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="136091764773245" fieldName="MDENT_ORDER"/>
       <columnsDisplayField/>
     </column>
     <treeDesignInfo>
@@ -658,6 +673,9 @@
   </widget>
   <widget actionPerformed="btnTryToLeakActionPerformed" name="btnTryToLeak" parent="Form" prefHeight="23px" prefWidth="96px" text="Leaks Test" type="ButtonDesignInfo">
     <constraints height="23px" right="74px" top="84px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget actionPerformed="btnGridAddressesFindActionPerformed" name="btnGridAddressesFind" parent="Form" prefHeight="23px" prefWidth="71px" text="find" type="ButtonDesignInfo">
+    <constraints bottom="168px" height="23px" right="171px" type="MarginConstraintsDesignInfo" width="71px"/>
   </widget>
   <nonvisual name="buttonGroup" type="ButtonGroupDesignInfo"/>
   <nonvisual name="jPopupMenu" prefHeight="0px" prefWidth="0px" type="PopupDesignInfo"/>

@@ -1,5 +1,5 @@
 /**
- * @name AttainabilityTestView
+ * @name AttainabilityTestView_1
 */
 
 function ds11OnRequeried(evt) {//GEN-FIRST:event_ds11OnRequeried
@@ -50,10 +50,47 @@ function ds33OnFiltered(evt) {//GEN-FIRST:event_ds33OnFiltered
     Logger.info("ds33OnFiltered");
 }//GEN-LAST:event_ds33OnFiltered
 
+function ds41OnFiltered(evt) {//GEN-FIRST:event_ds41OnFiltered
+    Logger.info("ds41OnFiltered");
+}//GEN-LAST:event_ds41OnFiltered
+
 function ds41OnRequeried(evt) {//GEN-FIRST:event_ds41OnRequeried
     Logger.info("ds41OnRequeried");
 }//GEN-LAST:event_ds41OnRequeried
 
-function ds41OnFiltered(evt) {//GEN-FIRST:event_ds41OnFiltered
-    Logger.info("ds41OnFiltered");
-}//GEN-LAST:event_ds41OnFiltered
+function btnModelRequeryActionPerformed(evt) {//GEN-FIRST:event_btnModelRequeryActionPerformed
+    model.requery(function(){
+        Logger.info("model.requery succeded");
+    }, function(aError){
+        Logger.info("model.requery failed: " + aError);
+    });
+    //Logger.info("model.requery succeded");    
+}//GEN-LAST:event_btnModelRequeryActionPerformed
+
+function btnRequery1ActionPerformed(evt) {//GEN-FIRST:event_btnRequery1ActionPerformed
+}//GEN-LAST:event_btnRequery1ActionPerformed
+
+function btnEntityRequeryActionPerformed(evt) {//GEN-FIRST:event_btnEntityRequeryActionPerformed
+    ds21.requery(function(){
+        Logger.info("ds21.requery Succeded");
+    }, function(aError){
+        Logger.info("ds21.requery Failed: " + aError);
+    });
+    //Logger.info("ds21.requery Succeded");
+}//GEN-LAST:event_btnEntityRequeryActionPerformed
+
+function btnModelExecuteActionPerformed(evt) {//GEN-FIRST:event_btnModelExecuteActionPerformed
+    model.execute(function(){
+        Logger.info("model.execute succeded");
+    }, function(aError){
+        Logger.info("model.execute failed: " + aError);
+    });
+}//GEN-LAST:event_btnModelExecuteActionPerformed
+
+function btnEntityExecuteActionPerformed(evt) {//GEN-FIRST:event_btnEntityExecuteActionPerformed
+    ds21.execute(function(){
+        Logger.info("ds21.execute Succeded");
+    }, function(aError){
+        Logger.info("ds21.execute Failed: " + aError);
+    });
+}//GEN-LAST:event_btnEntityExecuteActionPerformed

@@ -154,7 +154,7 @@ function btnMakeVisibleActionPerformed(evt) {//GEN-FIRST:event_btnMakeVisibleAct
 }//GEN-LAST:event_btnMakeVisibleActionPerformed
 
 function btnFindSomethingActionPerformed(evt) {//GEN-FIRST:event_btnFindSomethingActionPerformed
-    dbGrid.findSomething();
+    dbGrid.find();
 }//GEN-LAST:event_btnFindSomethingActionPerformed
 
 function btnSelectionActionPerformed(evt) {//GEN-FIRST:event_btnSelectionActionPerformed
@@ -561,5 +561,14 @@ function jTextFieldKeyPressed(evt) {//GEN-FIRST:event_jTextFieldKeyPressed
     var isEnter = evt.key == VK_ENTER;
     Logger.info("isEnter: "+isEnter);
 }//GEN-LAST:event_jTextFieldKeyPressed
+
+function param7OnRender(evt) {//GEN-FIRST:event_param7OnRender
+    evt.cell.style.align = HorizontalPosition.RIGHT;
+    return true;
+}//GEN-LAST:event_param7OnRender
+
+function btnGridAddressesFindActionPerformed(evt) {//GEN-FIRST:event_btnGridAddressesFindActionPerformed
+    grdAddresses.find();
+}//GEN-LAST:event_btnGridAddressesFindActionPerformed
 
 

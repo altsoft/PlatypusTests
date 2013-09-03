@@ -1,8 +1,8 @@
 /**
  * @name 128654051192166
 */
-const dbId = 128654065284309;
-const sqlText = "select * from command_archive where id=:p1 or id=:p1+1 and id=:p2";
+var dbId = 128654065284309;
+var sqlText = "select * from command_archive where id=:p1 or id=:p1+1 and id=:p2";
 var Params = com.bearsoft.rowset.metadata.Parameters;
 var Param = com.bearsoft.rowset.metadata.Parameter;
 var DataTypeInfo = com.bearsoft.rowset.metadata.DataTypeInfo;
