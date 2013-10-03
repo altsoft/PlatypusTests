@@ -5,6 +5,14 @@
     <param-value>C:/projects/platypus-tests</param-value>
   </context-param>
   <context-param>
+    <param-name>appelement</param-name>
+    <param-value>FormsAPI</param-value>
+  </context-param>
+  <context-param>
+    <param-name>tasks</param-name>
+    <param-value>TestServerTaskModule</param-value>
+  </context-param>
+  <context-param>
     <param-name>url</param-name>
     <param-value>jdbc/main</param-value>
   </context-param>
@@ -34,14 +42,14 @@
   </resource-ref>
   <security-constraint>
     <web-resource-collection>
-      <url-pattern>/application-start.html</url-pattern>
+      <url-pattern>/application/*</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>*</role-name>
     </auth-constraint>
   </security-constraint>
   <login-config>
-    <auth-method>FORM</auth-method>
+    <auth-method>BASIC</auth-method>
     <form-login-config>
       <form-login-page>/login.html</form-login-page>
       <form-error-page>/login-failed.html</form-error-page>
