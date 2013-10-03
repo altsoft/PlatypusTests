@@ -3,5 +3,52 @@
   <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="23px" prefWidth="65px" text="test it" type="ButtonDesignInfo">
     <constraints height="23px" left="108px" top="72px" type="MarginConstraintsDesignInfo" width="65px"/>
   </widget>
+  <widget name="formattedField" parent="Form" prefHeight="20px" prefWidth="76px" selectionEnd="14" selectionStart="14" text="formattedField" type="FormattedFieldDesignInfo">
+    <constraints height="20px" left="24px" top="192px" type="MarginConstraintsDesignInfo" width="76px"/>
+  </widget>
+  <widget name="progressBar" parent="Form" prefHeight="14px" prefWidth="146px" type="ProgressBarDesignInfo">
+    <constraints height="14px" left="24px" top="168px" type="MarginConstraintsDesignInfo" width="146px"/>
+  </widget>
+  <widget name="radioButton" parent="Form" prefHeight="23px" prefWidth="81px" text="radioButton" type="RadioDesignInfo">
+    <constraints height="23px" left="180px" top="144px" type="MarginConstraintsDesignInfo" width="81px"/>
+  </widget>
+  <widget name="toggleButton" parent="Form" prefHeight="23px" prefWidth="95px" text="toggleButton" type="ToggleButtonDesignInfo">
+    <constraints bottom="61px" height="23px" left="204px" type="MarginConstraintsDesignInfo" width="95px"/>
+  </widget>
+  <widget name="slider" parent="Form" prefHeight="23px" prefWidth="200px" type="SliderDesignInfo">
+    <constraints height="23px" left="12px" top="108px" type="MarginConstraintsDesignInfo" width="200px"/>
+  </widget>
+  <widget name="scrollPane" parent="Form" prefHeight="100px" prefWidth="100px" type="ScrollDesignInfo">
+    <constraints height="100px" left="228px" top="24px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="textArea" parent="scrollPane" prefHeight="98px" prefWidth="98px" type="TextPaneDesignInfo"/>
+  <widget name="modelCheckBox" parent="Form" prefHeight="20px" prefWidth="100px" type="DbCheckDesignInfo">
+    <constraints height="20px" left="228px" top="180px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="panel" parent="Form" prefHeight="100px" prefWidth="100px" type="PanelDesignInfo">
+    <layout type="MarginLayoutDesignInfo"/>
+    <constraints height="100px" left="72px" top="192px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="tabbedPane" parent="Form" prefHeight="100px" prefWidth="100px" type="TabsDesignInfo">
+    <constraints height="100px" right="0px" top="168px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="splitPane" parent="Form" prefHeight="100px" prefWidth="100px" type="SplitDesignInfo">
+    <constraints height="100px" left="12px" top="0px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="scrollPane1" parent="Form" prefHeight="100px" prefWidth="100px" type="ScrollDesignInfo">
+    <constraints bottom="-16px" height="100px" left="12px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="toolBar" parent="Form" prefHeight="25px" prefWidth="100px" rollover="true" type="ToolbarDesignInfo">
+    <constraints height="25px" left="132px" top="12px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="menuBar" parent="Form" prefHeight="25px" prefWidth="100px" type="MenubarDesignInfo">
+    <constraints bottom="11px" height="25px" left="180px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="mnuFile" parent="menuBar" prefHeight="23px" prefWidth="27px" text="Файл" type="MenuDesignInfo"/>
+  <widget name="mnuEdit" parent="menuBar" prefHeight="23px" prefWidth="72px" text="Редактирование" type="MenuDesignInfo"/>
+  <widget name="menu" parent="mnuEdit" prefHeight="22px" prefWidth="79px" text="menu" type="MenuDesignInfo"/>
+  <nonvisual name="desktopPane" prefHeight="100px" prefWidth="100px" type="DesktopDesignInfo"/>
+  <nonvisual name="jSeparator" prefHeight="10px" prefWidth="50px" type="MenuSeparatorDesignInfo"/>
+  <nonvisual name="popupMenu" prefHeight="0px" prefWidth="0px" type="PopupDesignInfo"/>
   <layout type="MarginLayoutDesignInfo"/>
 </layout>

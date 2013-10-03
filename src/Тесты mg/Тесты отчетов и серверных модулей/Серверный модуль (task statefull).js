@@ -2,6 +2,7 @@
  * 
  * @author mg
  * @name TestServerTaskModule
+ * @resident
  * @public
  */
 
