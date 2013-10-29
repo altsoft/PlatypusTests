@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <layout name="Form" prefHeight="300px" prefWidth="400px">
-<widget foregroundColor="#333333" name="desktop" parent="Form" prefHeight="125px" prefWidth="1px" type="DesktopDesignInfo">
-<easFont name="Dialog"/>
-<constraints height="125px" left="282px" top="87px" type="MarginConstraintsDesignInfo" width="1px"/>
-</widget>
-<widget actionPerformed="btnCreateEmpty_actionPerformed" name="btnCreateEmpty" parent="Form" prefHeight="25px" prefWidth="166px" text="JButton" type="ButtonDesignInfo">
-<constraints height="25px" left="116px" top="112px" type="MarginConstraintsDesignInfo" width="166px"/>
-</widget>
-<widget actionPerformed="btnAddFrame_actionPerformed" name="btnAddFrame" parent="Form" prefHeight="25px" prefWidth="166px" text="Add Internal frame" type="ButtonDesignInfo">
-<constraints height="25px" left="116px" top="87px" type="MarginConstraintsDesignInfo" width="166px"/>
-</widget>
-<widget actionPerformed="btnRestoreSize_actionPerformed" name="btnRestoreSize" parent="Form" prefHeight="25px" prefWidth="166px" text="JButton" type="ButtonDesignInfo">
-<constraints height="25px" left="116px" top="137px" type="MarginConstraintsDesignInfo" width="166px"/>
-</widget>
-<widget actionPerformed="btnDialog_actionPerformed" name="btnDialog" parent="Form" prefHeight="25px" prefWidth="166px" text="Диалог" type="ButtonDesignInfo">
-<constraints height="25px" left="116px" top="162px" type="MarginConstraintsDesignInfo" width="166px"/>
-</widget>
-<widget actionPerformed="btnFrame_actionPerformed" name="btnFrame" parent="Form" prefHeight="25px" prefWidth="166px" text="Простая форма" type="ButtonDesignInfo">
-<constraints height="25px" left="116px" top="187px" type="MarginConstraintsDesignInfo" width="166px"/>
-</widget>
-<layout type="MarginLayoutDesignInfo"/>
+  <widget foregroundColor="#333333" name="desktop" parent="Form" prefHeight="125px" prefWidth="1px" type="DesktopDesignInfo">
+    <easFont name="Dialog"/>
+    <constraints height="125px" left="282px" top="87px" type="MarginConstraintsDesignInfo" width="1px"/>
+  </widget>
+  <widget actionPerformed="btnCreateEmpty_actionPerformed" name="btnCreateEmpty" parent="Form" prefHeight="25px" prefWidth="166px" text="JButton" type="ButtonDesignInfo">
+    <constraints height="25px" left="116px" top="112px" type="MarginConstraintsDesignInfo" width="166px"/>
+  </widget>
+  <widget actionPerformed="btnAddFrame_actionPerformed" name="btnAddFrame" parent="Form" prefHeight="25px" prefWidth="166px" text="Add Internal frame" type="ButtonDesignInfo">
+    <constraints height="25px" left="116px" top="87px" type="MarginConstraintsDesignInfo" width="166px"/>
+  </widget>
+  <widget actionPerformed="btnRestoreSize_actionPerformed" name="btnRestoreSize" parent="Form" prefHeight="25px" prefWidth="166px" text="JButton" type="ButtonDesignInfo">
+    <constraints height="25px" left="116px" top="137px" type="MarginConstraintsDesignInfo" width="166px"/>
+  </widget>
+  <widget actionPerformed="btnDialog_actionPerformed" name="btnDialog" parent="Form" prefHeight="25px" prefWidth="166px" text="Диалог" type="ButtonDesignInfo">
+    <constraints height="25px" left="116px" top="162px" type="MarginConstraintsDesignInfo" width="166px"/>
+  </widget>
+  <widget actionPerformed="btnFrame_actionPerformed" name="btnFrame" parent="Form" prefHeight="25px" prefWidth="166px" text="Простая форма" type="ButtonDesignInfo">
+    <constraints height="25px" left="116px" top="187px" type="MarginConstraintsDesignInfo" width="166px"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
 </layout>

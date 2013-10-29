@@ -8,7 +8,7 @@ var empty;
 /**
  * Other field variable 
  */
-const otherField = 'Some other data'; 
+var otherField = 'Some other data'; 
 
 /** 
  * Функция

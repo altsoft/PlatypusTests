@@ -1,5 +1,5 @@
 /**
- * @name _24832514140608864
+ * @name _24832514140608864 
  * @public
 */ 
 Select entities.MDENT_ID, entities.MDENT_NAME, entities.MDENT_TYPE

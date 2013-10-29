@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<layout name="Form" prefHeight="300px" prefWidth="400px">
-<widget name="jETALabel" parent="Form" prefHeight="15px" prefWidth="205px" text="У этой формы нет заголовка" type="LabelDesignInfo">
-<constraints height="15px" left="97px" top="142px" type="MarginConstraintsDesignInfo" width="205px"/>
-</widget>
-<layout type="MarginLayoutDesignInfo"/>
-</layout>

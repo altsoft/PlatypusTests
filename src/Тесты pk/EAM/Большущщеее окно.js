@@ -1,7 +1,7 @@
 /**
  * @name 125189598371298
 */
-const FORM_ID = 124748782000516435;
+var FORM_ID = 124748782000516435;
 var internalFrame = null;
 function btnAddFrame_actionPerformed(ev)
 {

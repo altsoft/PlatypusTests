@@ -1,9 +1,9 @@
 /**
  * @name 126779515285139
 */
-const MapActions = JavaImporter(org.geotools.swing.action, com.eas.dbcontrols.map);
-const JTS = JavaImporter(com.vividsolutions.jts.geom);
-const MAX_DETALIZATION_LEVEL = 50000; // in meters, because projected features measure coordinates in meters.
+var MapActions = JavaImporter(org.geotools.swing.action, com.eas.dbcontrols.map);
+var JTS = JavaImporter(com.vividsolutions.jts.geom);
+var MAX_DETALIZATION_LEVEL = 50000; // in meters, because projected features measure coordinates in meters.
 
 //these will be initialized lazily.
 var coordinatesTransform = null,

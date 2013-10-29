@@ -1,8 +1,8 @@
 /**
  * @name 126105722210448
 */
-const MapActions = JavaImporter(org.geotools.swing.action);
-const EPSGFactory = org.geotools.referencing.crs.EPSGCRSAuthorityFactory.getDefault();
+var MapActions = JavaImporter(org.geotools.swing.action);
+var EPSGFactory = org.geotools.referencing.crs.EPSGCRSAuthorityFactory.getDefault();
 
 function btnRefresh_onClick(ev)
 {

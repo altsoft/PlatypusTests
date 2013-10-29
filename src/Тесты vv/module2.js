@@ -20,7 +20,7 @@ var o = new Clazz2();
 
 var m0 = new Module(131479777012136);
 m0.getJSON();
-const test = 1;
+var test = 1;
 m0.getParam(o);
 function f1(args) {
     return 'text1'; 

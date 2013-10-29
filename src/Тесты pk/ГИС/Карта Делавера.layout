@@ -1,90 +1,62 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <layout name="Form" prefHeight="300px" prefWidth="400px">
-<widget mapEventListener="mapControl_onMapEvent" mapTitle="Карта Делавера" name="mapControl" parent="Form" prefHeight="100px" prefWidth="151px" projectionName="Stereographic_North_Pole" type="DbMapDesignInfo">
-<projectionParameter>
-<key data="false_northing"/>
-<value data="0.0"/>
-</projectionParameter>
-<projectionParameter>
-<key data="semi_minor"/>
-<value/>
-</projectionParameter>
-<projectionParameter>
-<key data="standard_parallel_1"/>
-<value data="90.0"/>
-</projectionParameter>
-<projectionParameter>
-<key data="scale_factor"/>
-<value data="1.0"/>
-</projectionParameter>
-<projectionParameter>
-<key data="false_easting"/>
-<value data="0.0"/>
-</projectionParameter>
-<projectionParameter>
-<key data="central_meridian"/>
-<value data="0.0"/>
-</projectionParameter>
-<projectionParameter>
-<key data="semi_major"/>
-<value/>
-</projectionParameter>
-<feature typeName="Административные границы">
-<style>
-<serialFillColor rGB="-3342388"/>
-<labelField entityId="126779520167226" fieldName="NAME"/>
-</style>
-<ref entityId="126779520167226" field="false"/>
-</feature>
-<feature geometryBinding="com.vividsolutions.jts.geom.MultiLineString" typeName="Береговые линии">
-<style size="2.0">
-<serialLineColor rGB="-16776961"/>
-<serialFillColor rGB="-16776961"/>
-</style>
-<ref entityId="126780040154519" field="false"/>
-</feature>
-<feature typeName="Леса">
-<style>
-<serialLineColor rGB="-16751104"/>
-<serialFillColor rGB="-16751104"/>
-</style>
-<ref entityId="126780211035620" field="false"/>
-</feature>
-<feature typeName="Водоемы">
-<style>
-<serialLineColor rGB="-16776961"/>
-<serialFillColor rGB="-16776961"/>
-</style>
-<ref entityId="126780212860933" field="false"/>
-</feature>
-<feature typeName="delaware_water">
-<style>
-<serialLineColor rGB="-16776961"/>
-<serialFillColor rGB="-16776961"/>
-</style>
-<ref entityId="126779859988081" field="false"/>
-</feature>
-<feature geometryBinding="com.vividsolutions.jts.geom.MultiLineString" typeName="Дороги Делавера">
-<style size="2.0">
-<serialLineColor rGB="-3368704"/>
-</style>
-<ref entityId="126875052775701" field="false"/>
-</feature>
-<feature geometryBinding="com.vividsolutions.jts.geom.Point" typeName="Пивные ларьки">
-<style pointSymbolName="STAR" size="10.0">
-<serialLineColor rGB="-3407872"/>
-</style>
-<ref entityId="126872855833310" field="false"/>
-</feature>
-<constraints height="100px" left="124px" top="116px" type="MarginConstraintsDesignInfo" width="151px"/>
-</widget>
-<widget floatable="false" name="jToolBar" parent="Form" prefHeight="32px" prefWidth="151px" type="ToolbarDesignInfo">
-<constraints height="32px" left="124px" top="84px" type="MarginConstraintsDesignInfo" width="151px"/>
-</widget>
-<widget actionPerformed="btnRefresh_onClick" icon="refresh/refresh.png" name="btnRefresh" parent="jToolBar" prefHeight="28px" prefWidth="99px" text="Обновить" type="ButtonDesignInfo"/>
-<widget actionPerformed="" name="btnSelect" parent="jToolBar" prefHeight="12px" prefWidth="12px" type="ButtonDesignInfo"/>
-<widget actionPerformed="" name="btnZoomIn" parent="jToolBar" prefHeight="12px" prefWidth="12px" type="ButtonDesignInfo"/>
-<widget actionPerformed="" name="btnZoomOut" parent="jToolBar" prefHeight="12px" prefWidth="12px" type="ButtonDesignInfo"/>
-<widget actionPerformed="" name="btnPan" parent="jToolBar" prefHeight="12px" prefWidth="12px" type="ButtonDesignInfo"/>
-<layout type="MarginLayoutDesignInfo"/>
+  <widget mapEventListener="mapControl_onMapEvent" mapTitle="Карта Делавера" name="mapControl" parent="Form" prefHeight="100px" prefWidth="151px" type="DbMapDesignInfo">
+    <feature typeName="Административные границы">
+      <ref entityId="126779520167226" field="false"/>
+      <style>
+        <serialFillColor rGB="-3342388"/>
+        <labelField entityId="126779520167226" fieldName="NAME"/>
+      </style>
+    </feature>
+    <feature geometryBinding="com.vividsolutions.jts.geom.MultiLineString" typeName="Береговые линии">
+      <ref entityId="126780040154519" field="false"/>
+      <style size="2.0">
+        <serialFillColor rGB="-16776961"/>
+        <serialLineColor rGB="-16776961"/>
+      </style>
+    </feature>
+    <feature typeName="Леса">
+      <ref entityId="126780211035620" field="false"/>
+      <style>
+        <serialFillColor rGB="-16751104"/>
+        <serialLineColor rGB="-16751104"/>
+      </style>
+    </feature>
+    <feature typeName="Водоемы">
+      <ref entityId="126780212860933" field="false"/>
+      <style>
+        <serialFillColor rGB="-16776961"/>
+        <serialLineColor rGB="-16776961"/>
+      </style>
+    </feature>
+    <feature typeName="delaware_water">
+      <ref entityId="126779859988081" field="false"/>
+      <style>
+        <serialFillColor rGB="-16776961"/>
+        <serialLineColor rGB="-16776961"/>
+      </style>
+    </feature>
+    <feature geometryBinding="com.vividsolutions.jts.geom.MultiLineString" typeName="Дороги Делавера">
+      <ref entityId="126875052775701" field="false"/>
+      <style size="2.0">
+        <serialLineColor rGB="-3368704"/>
+      </style>
+    </feature>
+    <feature geometryBinding="com.vividsolutions.jts.geom.Point" typeName="Пивные ларьки">
+      <ref entityId="126872855833310" field="false"/>
+      <style pointSymbolName="STAR" size="10.0">
+        <serialLineColor rGB="-3407872"/>
+      </style>
+    </feature>
+    <constraints height="100px" left="124px" top="116px" type="MarginConstraintsDesignInfo" width="151px"/>
+  </widget>
+  <widget floatable="false" name="jToolBar" parent="Form" prefHeight="32px" prefWidth="151px" type="ToolbarDesignInfo">
+    <constraints height="32px" left="124px" top="84px" type="MarginConstraintsDesignInfo" width="151px"/>
+  </widget>
+  <widget actionPerformed="btnRefresh_onClick" icon="refresh/refresh.png" name="btnRefresh" parent="jToolBar" prefHeight="23px" prefWidth="77px" text="Обновить" type="ButtonDesignInfo"/>
+  <widget name="btnSelect" parent="jToolBar" prefHeight="7px" prefWidth="7px" type="ButtonDesignInfo"/>
+  <widget name="btnZoomIn" parent="jToolBar" prefHeight="7px" prefWidth="7px" type="ButtonDesignInfo"/>
+  <widget name="btnZoomOut" parent="jToolBar" prefHeight="7px" prefWidth="7px" type="ButtonDesignInfo"/>
+  <widget name="btnPan" parent="jToolBar" prefHeight="7px" prefWidth="7px" type="ButtonDesignInfo"/>
+  <layout type="MarginLayoutDesignInfo"/>
 </layout>

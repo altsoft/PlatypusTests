@@ -1,7 +1,7 @@
 /**
  * @name 124929541023460
 */
-const REPORT_ID = 124876838492163184,
+var REPORT_ID = 124876838492163184,
             Filter_Form_ID = 124904892981268;
             
 var filter = null;

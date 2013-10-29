@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<layout name="Form" prefHeight="300px" prefWidth="428px">
-<widget name="jButton1" parent="Form" prefHeight="23px" prefWidth="73px" text="jButton1" type="ButtonDesignInfo">
-<constraints bottom="120px" left="90px" right="188px" top="70px" type="MarginConstraintsDesignInfo"/>
-</widget>
-<layout type="MarginLayoutDesignInfo"/>
-</layout>

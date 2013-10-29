@@ -1,7 +1,7 @@
 /**
  * @name 124869931200036384
 */
-const REPORT_ID = 124876838492163184,
+var REPORT_ID = 124876838492163184,
             Filter_Form_ID = 124904892981268;
 
 function btnAdd_onClick(ev)

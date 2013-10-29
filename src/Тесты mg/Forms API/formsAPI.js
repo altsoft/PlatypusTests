@@ -72,12 +72,12 @@ function btnAddNewActionPerformed(evt) {//GEN-FIRST:event_btnAddNewActionPerform
     var mc = new ModelCombo();
     mc.onSelect = function(aEditor){
         aEditor.value = dsUnits[3].ID;
-    }
+    };
     mc.onRender = function(evt){
-        evt.cell.display += ''+evt.object.Param1;
+        evt.cell.display = evt.object.NAME;
         evt.cell.style = s;
         return true;
-    }
+    };
     mc.field = md.Param2;
     mc.valueField = dsUnits.md.ID;
     mc.displayField = dsUnits.md.NAME;
