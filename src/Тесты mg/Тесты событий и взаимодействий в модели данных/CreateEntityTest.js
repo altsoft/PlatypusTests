@@ -15,6 +15,6 @@ created.requery(function(){
         throw "entity's .MDENT_TYPE is not accessible";
     Logger.info("created.length: " + created.length);
 });
-// inslude save tests
-// inslude leaks tests
-// inslude right and mad use cases of model's entities in constructor
+// include save tests
+// include leaks tests
+// include right and mad use cases of model's entities in constructor
