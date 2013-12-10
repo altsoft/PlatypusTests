@@ -7,6 +7,12 @@
  * @author vv
  */
 
-function test() {
-    return "test";
+function SecureModule() {
+
+    var self = this;
+
+    self.test = function() {
+        return "test";
+    };
+
 }

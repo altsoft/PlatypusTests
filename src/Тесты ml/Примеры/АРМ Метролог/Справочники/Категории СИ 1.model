@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="11" entityWidth="150"/>
-<entity Name="DsMTCategory" Title="Категории СИ" entityHeight="200" entityIconified="false" entityId="124765165128184169" entityLocationX="184" entityLocationY="145" entityWidth="150" tableName="MT_CATEGORIES" tableSchemaName="EAS"/>
-<entity Name="DsMSKinds1" Title="Виды метрологического обслуживания" entityHeight="95" entityIconified="false" entityId="124765153484301457" entityLocationX="182" entityLocationY="25" entityWidth="297" tableName="MS_KINDS" tableSchemaName="EAS"/>
-<relation leftEntityFieldName="ID" leftEntityId="124765153484301457" rightEntityFieldName="WORKKIND" rightEntityId="124765165128184169"/>
-</datamodel>

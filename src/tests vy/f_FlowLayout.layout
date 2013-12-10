@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<layout name="Form" prefHeight="307px" prefWidth="327px">
-<widget name="jButton1" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton1" type="ButtonDesignInfo"/>
-<widget name="jButton2" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton2" type="ButtonDesignInfo"/>
-<widget name="jButton3" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton3" type="ButtonDesignInfo"/>
-<widget name="jButton4" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton4" type="ButtonDesignInfo"/>
-<widget name="jButton5" parent="Form" prefHeight="25px" prefWidth="59px" text="jButton5" type="ButtonDesignInfo"/>
-<layout alignment="0" hgap="50" type="FlowLayoutDesignInfo" vgap="11"/>
-</layout>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-<entity Name="dsRepairKindByExecutors" Title="Виды ремонтов по исполнителям" entityHeight="200" entityIconified="false" entityId="124645993037549959" entityLocationX="292" entityLocationY="76" entityWidth="262" tableName="MAINT_KINDS_4_EXECUTORS" tableSchemaName="EAS"/>
-<entity Name="dsRepairExecutors" Title="Исполнители ремонтов" entityHeight="200" entityIconified="false" entityId="124645991896838935" entityLocationX="180" entityLocationY="308" entityWidth="155" tableName="MAINTENANCE_EXECUTORS" tableSchemaName="EAS"/>
-<entity Name="dsRepairKinds" Title="Виды ремонтов и ТО" entityHeight="200" entityIconified="false" entityId="124645994396897997" entityLocationX="492" entityLocationY="327" entityWidth="195" onBeforeChange="dsRepairKindsWillChangeRow" tableName="MAINTENANCE_KINDS" tableSchemaName="EAS"/>
-</datamodel>

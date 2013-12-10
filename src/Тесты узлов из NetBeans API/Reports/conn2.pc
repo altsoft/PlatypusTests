@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dbSettings name="130146778146250" password="trans" schema="BI" title="conn2_0" url="jdbc:oracle:thin:@//olympic.altsoft.biz:1521/adb" user="trans"/>

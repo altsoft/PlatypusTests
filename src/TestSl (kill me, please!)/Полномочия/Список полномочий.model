@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-<entity Name="DS_Access" Title="Список полномочий" entityHeight="108" entityIconified="false" entityId="126226109864329" entityLocationX="178" entityLocationY="12" entityWidth="312" tableName="Access_List" tableSchemaName=""/>
-<entity Name="" Title="MTD_ENTITIES" entityHeight="244" entityIconified="false" entityId="126267659398618" entityLocationX="18" entityLocationY="236" entityWidth="273" tableName="MTD_ENTITIES" tableSchemaName=""/>
-</datamodel>

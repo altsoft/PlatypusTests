@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dbSettings name="128654065284309" password="test" schema="sakila" title="Соединение c MySql" url="jdbc:mysql://192.168.10.144:3306/test" user="test"/>

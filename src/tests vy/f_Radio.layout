@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<layout name="Form" prefHeight="296px" prefWidth="404px">
-<widget buttonGroup="buttonGroup1" name="jRadioButton1" parent="Form" prefHeight="22px" prefWidth="52px" text="text1" type="RadioDesignInfo"/>
-<widget buttonGroup="buttonGroup1" name="jRadioButton2" parent="Form" prefHeight="22px" prefWidth="102px" selected="true" text="jRadioButton2" type="RadioDesignInfo"/>
-<widget enabled="false" name="jRadioButton3" parent="Form" prefHeight="22px" prefWidth="102px" text="jRadioButton3" type="RadioDesignInfo"/>
-<nonvisual name="buttonGroup1" type="ButtonGroupDesignInfo"/>
-<layout type="FlowLayoutDesignInfo"/>
-</layout>

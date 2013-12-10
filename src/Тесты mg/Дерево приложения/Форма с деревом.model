@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="true" entityLocationX="7" entityLocationY="9" entityWidth="162"/>
-<entity Name="" Title="Запрос" entityHeight="200" entityIconified="false" entityId="127194415914744" entityLocationX="86" entityLocationY="156" entityWidth="150" queryId="124928857631201" tableName="" tableSchemaName=""/>
-<entity Name="" Title="Запрос для сетки" entityHeight="200" entityIconified="false" entityId="127194415244434" entityLocationX="346" entityLocationY="76" entityWidth="150" queryId="124505954732869424" tableName="" tableSchemaName=""/>
-<entity Name="dsAppEntitiesTypes" Title="Типы элементов приложения" entityHeight="71" entityIconified="false" entityId="124843847585946071" entityLocationX="175" entityLocationY="56" entityWidth="150" onAfterScroll="dsAppEntitiesTypes_afterScroll" queryId="124843689887589392" tableName="" tableSchemaName=""/>
-</datamodel>

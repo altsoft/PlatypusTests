@@ -1,4 +1,0 @@
-/**
- * @name 129164451518797
-*/
-Select * From POS_ANALOG_DATA T_POS_ANALOG_DATA_1 Where 1=0

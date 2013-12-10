@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-<entity Name="dsMeasurands" Title="Измеряемые величины" entityHeight="200" entityIconified="false" entityId="124766327118761974" entityLocationX="10" entityLocationY="235" entityWidth="209" tableName="MEASURANDS" tableSchemaName="EAS"/>
-<entity Name="dsUnits" Title="Единицы измерения" entityHeight="200" entityIconified="false" entityId="124766328062591854" entityLocationX="349" entityLocationY="234" entityWidth="218" tableName="UNIT_OF_MEASUREMEN" tableSchemaName="EAS"/>
-<relation leftEntityFieldName="ID" leftEntityId="124766327118761974" rightEntityFieldName="MEASURAND" rightEntityId="124766328062591854"/>
-</datamodel>

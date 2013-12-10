@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<datamodel>
-<parameters>
-<parameter description="" name="appElementType" nullable="true" parameterMode="1" precision="0" scale="0" selectionForm="null" signed="true" size="0" type="3" typeName="DECIMAL"/>
-</parameters>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
-<entity Title="Элементы приложения" entityHeight="301" entityIconified="false" entityId="124645078104169770" entityLocationX="246" entityLocationY="9" entityWidth="340" queryId="null" tableAlias="entities" tableName="MTD_ENTITIES" tableSchemaName=""/>
-<relation leftEntityFieldName="appElementType" leftEntityId="-1" rightEntityFieldName="MDENT_TYPE" rightEntityId="124645078104169770"/>
-</datamodel>

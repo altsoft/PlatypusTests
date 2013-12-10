@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<datamodel datamodelDbId="128083706440617">
-<parameters>
-<parameter description="" name="parent" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="0" type="3" typeName="DECIMAL"/>
-</parameters>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="10" entityLocationY="20" entityWidth="150"/>
-<entity Title="KLADR" entityHeight="200" entityIconified="false" entityId="128255857350082" entityLocationX="298" entityLocationY="19" entityWidth="150" queryId="null" tableAlias="T_KLADR_1" tableName="KLADR" tableSchemaName=""/>
-<relation leftEntityFieldName="parent" leftEntityId="-1" rightEntityFieldName="parent" rightEntityId="128255857350082"/>
-</datamodel>

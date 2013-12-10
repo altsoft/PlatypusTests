@@ -5,34 +5,38 @@
  * @stateless
  * @public
  */
+function TestStatelessServerModule() {
 
+    var self = this;
 
-var stateCounter = 0;
-function testCounter(aDelta){
-    stateCounter += aDelta;
-    return stateCounter;
-}
+    var stateCounter = 0;
+    
+    self.testCounter = function(aDelta) {
+        stateCounter += aDelta;
+        return stateCounter;
+    };
 
-function testSum(a, b){
-    return a + b;
-}
+    self.testSum = function(a, b) {
+        return a + b;
+    };
 
-function testDate(){
-    return new Date();
-}
+    self.testDate = function() {
+        return new Date();
+    };
 
-function testString(){
-    return "Sample string";
-}
+    self.testString = function() {
+        return "Sample string";
+    };
 
-function testBoolean(){
-    return false;
-}
+    self.testBoolean = function() {
+        return false;
+    };
 
-function testNull(){
-    return null;
-}
+    self.testNull = function() {
+        return null;
+    };
 
-function testUndefined(){
-    return undefined;
+    self.testUndefined = function() {
+        return undefined;
+    };
 }

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-<entity Name="" Title="Объекты ремонта" entityHeight="156" entityIconified="false" entityId="124662412732861126" entityLocationX="209" entityLocationY="25" entityWidth="272" tableName="ASSETS" tableSchemaName="EAS"/>
-</datamodel>

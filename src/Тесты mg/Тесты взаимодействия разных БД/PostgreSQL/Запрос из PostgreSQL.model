@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<datamodel datamodelDbId="128083706440617">
-<parametersEntity>
-<userData Title.String="Параметры" entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="40" entityLocationY.Integer="32" entityWidth.Integer="150"/>
-</parametersEntity>
-<entity entityId="128090944687529" queryId="null" tableName="doma" tableSchemaName="">
-<userData Title.String="doma" entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="293" entityLocationY.Integer="40" entityWidth.Integer="150" tableAlias.String="T_doma_1" tableFilter.TableFilter="org.hsqldb.TableFilter@1f90a55"/>
-</entity>
-</datamodel>

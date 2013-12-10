@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="9" entityLocationY="6" entityWidth="150"/>
-<entity Title="Fake" entityHeight="200" entityIconified="false" entityId="124645078104169770" entityLocationX="172" entityLocationY="12" entityWidth="340" queryId="null" tableAlias="t" tableName="dual" tableSchemaName=""/>
-</datamodel>

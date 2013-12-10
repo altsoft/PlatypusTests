@@ -5,12 +5,16 @@
  * @public
  * @stateless
  */
+function StoredProcedureCaller() {
 
-var d = 0;
+    var self = this;
 
-function achiveResult(aEmpId, aSalary){
-    procedureSample.params.emp_id = aEmpId;
-    procedureSample.params.salary = aSalary;
-    procedureSample.requery();
-    return procedureSample.params.res + d++;
+    var d = 0;
+
+    function achiveResult(aEmpId, aSalary) {
+        self.procedureSample.params.emp_id = aEmpId;
+        self.procedureSample.params.salary = aSalary;
+        self.procedureSample.requery();
+        return self.procedureSample.params.res + d++;
+    }
 }

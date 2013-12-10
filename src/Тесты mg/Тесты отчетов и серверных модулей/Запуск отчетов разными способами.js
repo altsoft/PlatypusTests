@@ -4,6 +4,12 @@
  * @name ReportsAPI
  */
 
+function ReportsAPI() {
+
+
+var self = this;
+
+
 function btnShowServerReportActionPerformed(evt) {//GEN-FIRST:event_btnShowServerReportActionPerformed
     var sr = new ServerReport("TestServerReport");
     sr.Param1 = 45;
@@ -49,3 +55,5 @@ function btnCallServerModuleActionPerformed(evt) {//GEN-FIRST:event_btnCallServe
         Logger.info("sm.testUndefined(...) returned: " + res);
     });    
 }//GEN-LAST:event_btnCallServerModuleActionPerformed
+
+}

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<datamodel>
-<parameters>
-<parameter description="" name="name1" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName="VARCHAR"/>
-</parameters>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="56" entityLocationY="34" entityWidth="150"/>
-<entity Title="EAS.COLA_MARKETS" entityHeight="164" entityIconified="false" entityId="126648265093983" entityLocationX="400" entityLocationY="7" entityWidth="338" queryId="null" tableAlias="T_COLA_MARKETS_1" tableName="COLA_MARKETS" tableSchemaName="EAS"/>
-<relation leftEntityFieldName="name1" leftEntityId="-1" rightEntityFieldName="NAME" rightEntityId="126648265093983"/>
-</datamodel>

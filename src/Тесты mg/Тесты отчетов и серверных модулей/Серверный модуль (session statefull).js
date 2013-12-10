@@ -5,33 +5,37 @@
  * @public
  */
 
+function TestStatefullServerModule() {
 
-var stateCounter = 0;
-function testCounter(aDelta){
-    stateCounter += aDelta;
-    return stateCounter;
-}
+    var self = this;
 
-function testSum(a, b){
-    return a + b;
-}
+    var stateCounter = 0;
+    self.testCounter = function(aDelta) {
+        stateCounter += aDelta;
+        return stateCounter;
+    };
 
-function testDate(){
-    return new Date();
-}
+    self.testSum = function(a, b) {
+        return a + b;
+    };
 
-function testString(){
-    return "Sample string";
-}
+    self.testDate = function() {
+        return new Date();
+    };
 
-function testBoolean(){
-    return false;
-}
+    self.testString = function() {
+        return "Sample string";
+    };
 
-function testNull(){
-    return null;
-}
+    self.testBoolean = function() {
+        return false;
+    };
 
-function testUndefined(){
-    return undefined;
+    self.testNull = function() {
+        return null;
+    };
+
+    self.testUndefined = function() {
+        return undefined;
+    };
 }

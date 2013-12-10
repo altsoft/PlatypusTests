@@ -4,123 +4,123 @@
     <rowsColumnsDesignInfo generalRowFunction="dbGrid1OnRender" rowsHeaderType="2">
       <rowsDatasource entityId="134174204786703" field="false"/>
     </rowsColumnsDesignInfo>
-    <column name="ORDER_ID" title="Id заказа">
-      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="134174204786703" fieldName="ORDER_ID"/>
-      <cellDesignInfo>
-        <cellValueField/>
-        <columnsKeyField/>
-        <rowsKeyField/>
-      </cellDesignInfo>
-      <cellsDatasource/>
-      <columnsDatasource/>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-      <columnsDisplayField/>
-    </column>
-    <column name="AMOUNT" selectFunction="AMOUNTSelectValue" title="Количество товара">
-      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="134174204786703" fieldName="AMOUNT"/>
-      <cellDesignInfo>
-        <cellValueField/>
-        <columnsKeyField/>
-        <rowsKeyField/>
-      </cellDesignInfo>
-      <cellsDatasource/>
-      <columnsDatasource/>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-      <columnsDisplayField/>
-    </column>
-    <column cellFunction="GOODOnRender" name="GOOD" title="Заказанный товар">
-      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="134174204786703" fieldName="GOOD"/>
-      <cellDesignInfo>
-        <cellValueField/>
-        <columnsKeyField/>
-        <rowsKeyField/>
-      </cellDesignInfo>
-      <cellsDatasource/>
-      <columnsDatasource/>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-      <columnsDisplayField/>
-    </column>
-    <column name="CUSTOMER" selectFunction="dbCombo1SelectValue" title="Заказчик">
-      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
-        <displayField entityId="134174205006299" fieldName="CUSTOMER_NAME"/>
-        <valueField entityId="134174205006299" fieldName="CUSTOMER_ID"/>
-      </controlInfo>
-      <datamodelElement entityId="134174204786703" fieldName="CUSTOMER"/>
-      <cellDesignInfo>
-        <cellValueField/>
-        <columnsKeyField/>
-        <rowsKeyField/>
-      </cellDesignInfo>
-      <cellsDatasource/>
-      <columnsDatasource/>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-      <columnsDisplayField/>
-    </column>
-    <column name="GOOD_ID" title="Id товара">
-      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="134174204786703" fieldName="GOOD_ID"/>
-      <cellDesignInfo>
-        <cellValueField/>
-        <columnsKeyField/>
-        <rowsKeyField/>
-      </cellDesignInfo>
-      <cellsDatasource/>
-      <columnsDatasource/>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-      <columnsDisplayField/>
-    </column>
-    <column name="GOOD_NAME" title="Наименование товара">
-      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="134174204786703" fieldName="GOOD_NAME"/>
-      <cellDesignInfo>
-        <cellValueField/>
-        <columnsKeyField/>
-        <rowsKeyField/>
-      </cellDesignInfo>
-      <cellsDatasource/>
-      <columnsDatasource/>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-      <columnsDisplayField/>
-    </column>
-    <column cellFunction="fake1OnRender" name="fake1">
-      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <cellDesignInfo>
-        <cellValueField/>
-        <columnsKeyField/>
-        <rowsKeyField/>
-      </cellDesignInfo>
-      <cellsDatasource/>
-      <columnsDatasource/>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-      <columnsDisplayField/>
-    </column>
     <treeDesignInfo>
+      <unaryLinkField/>
       <param2GetChildren/>
       <paramSourceField/>
-      <unaryLinkField/>
     </treeDesignInfo>
+    <column name="ORDER_ID" title="Id заказа">
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <datamodelElement entityId="134174204786703" fieldName="ORDER_ID"/>
+      <columnsDisplayField/>
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+    </column>
+    <column name="AMOUNT" selectFunction="AMOUNTSelectValue" title="Количество товара">
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <datamodelElement entityId="134174204786703" fieldName="AMOUNT"/>
+      <columnsDisplayField/>
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+    </column>
+    <column cellFunction="GOODOnRender" name="GOOD" title="Заказанный товар">
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <datamodelElement entityId="134174204786703" fieldName="GOOD"/>
+      <columnsDisplayField/>
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+    </column>
+    <column name="CUSTOMER" selectFunction="dbCombo1SelectValue" title="Заказчик">
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <datamodelElement entityId="134174204786703" fieldName="CUSTOMER"/>
+      <columnsDisplayField/>
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="134174205006299" fieldName="CUSTOMER_ID"/>
+        <displayField entityId="134174205006299" fieldName="CUSTOMER_NAME"/>
+      </controlInfo>
+    </column>
+    <column name="GOOD_ID" title="Id товара">
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <datamodelElement entityId="134174204786703" fieldName="GOOD_ID"/>
+      <columnsDisplayField/>
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+    </column>
+    <column name="GOOD_NAME" title="Наименование товара">
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <datamodelElement entityId="134174204786703" fieldName="GOOD_NAME"/>
+      <columnsDisplayField/>
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+    </column>
+    <column cellFunction="fake1OnRender" name="fake1">
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <columnsDisplayField/>
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+    </column>
     <constraints bottom="35px" left="0px" right="0px" top="60px" type="MarginConstraintsDesignInfo"/>
   </widget>
   <widget backgroundColor="#f0f0f0" foregroundColor="#000000" handleFunction="dbCombo1OnRender" name="dbCombo1" parent="Form" prefHeight="20px" prefWidth="460px" selectFunction="dbCombo1SelectValue" type="DbComboDesignInfo">
-    <displayField entityId="134174205006299" fieldName="CUSTOMER_NAME"/>
     <valueField entityId="134174205006299" fieldName="CUSTOMER_ID"/>
+    <displayField entityId="134174205006299" fieldName="CUSTOMER_NAME"/>
     <datamodelElement entityId="134174204786703" fieldName="CUSTOMER"/>
     <constraints bottom="5px" height="20px" left="0px" type="MarginConstraintsDesignInfo" width="460px"/>
   </widget>

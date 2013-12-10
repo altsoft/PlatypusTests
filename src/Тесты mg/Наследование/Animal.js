@@ -4,5 +4,10 @@
  * @name Animal
  */
 
-require("Тесты mg/Наследование/plain-start.js");
-j();
+function Animal() {
+
+    var self = this;
+
+    require("Тесты mg/Наследование/plain-start.js");
+    j();
+}

@@ -7,12 +7,12 @@
  * @rolesAllowed role1, role2
  */
 
-/**
- *
- * @author vv
- */
+function SecureReport() {
 
-function test() {
-    java.lang.System.out.println("test");
-    return "test";
+    var self = this;
+
+    self.test = function() {
+        java.lang.System.out.println("test");
+        return "test";
+    };
 }

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="11" entityLocationY="9" entityWidth="150"/>
-<entity Name="DS_RoleAccess" Title="Полномочия роли" entityHeight="116" entityIconified="false" entityId="126224194455963" entityLocationX="623" entityLocationY="51" entityWidth="352" tableName="Role_Access_List" tableSchemaName=""/>
-<entity Name="Role_List" Title="Список ролей" entityHeight="108" entityIconified="false" entityId="126218206765811" entityLocationX="174" entityLocationY="15" entityWidth="362" tableName="eas_Roles" tableSchemaName=""/>
-<entity Name="dsFormName" Title="Название формы по ID полномочия" entityHeight="200" entityIconified="false" entityId="126276738450986" entityLocationX="578" entityLocationY="197" entityWidth="268" queryId="126276704955622" tableName="" tableSchemaName=""/>
-<entity Name="dsAccessList" Title="Список полномочий" entityHeight="118" entityIconified="false" entityId="126224637177699" entityLocationX="217" entityLocationY="212" entityWidth="313" tableName="Access_List" tableSchemaName=""/>
-<relation leftEntityFieldName="EAS_ROLES_ID" leftEntityId="126218206765811" rightEntityFieldName="ROLE_ID" rightEntityId="126224194455963"/>
-</datamodel>

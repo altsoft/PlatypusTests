@@ -5,7 +5,12 @@
  * @rolesAllowed role1, role2
  */
 
-function test() {
-    java.lang.System.out.println("test");
-    return "test";
+function SecureForm() {
+
+    var self = this;
+
+    self.test = function () {
+        java.lang.System.out.println("test");
+        return "test";
+    };
 }

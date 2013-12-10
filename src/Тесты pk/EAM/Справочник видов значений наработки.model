@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-<entity Name="dsNNN" Title="Виды значений наработки" entityHeight="203" entityIconified="false" entityId="125006170648934" entityLocationX="12" entityLocationY="236" entityWidth="421" onAfterScroll="dm_afterScroll" tableName="PK_VALUE_KINDS" tableSchemaName="EAS"/>
-</datamodel>

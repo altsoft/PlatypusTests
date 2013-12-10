@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="10" entityLocationY="20" entityWidth="150"/>
-<entity Name="" Title="Первые 50 записей КЛАДР" entityHeight="200" entityIconified="false" entityId="128099605179654" entityLocationX="176" entityLocationY="16" entityWidth="150" queryId="128099552570374" tableDbId="null" tableName="" tableSchemaName=""/>
-<entity Name="" Title="Фонды" entityHeight="200" entityIconified="false" entityId="128099611196866" entityLocationX="346" entityLocationY="76" entityWidth="150" queryId="128015347915605" tableDbId="null" tableName="" tableSchemaName=""/>
-</datamodel>

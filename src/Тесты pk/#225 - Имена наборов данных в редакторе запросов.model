@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="10" entityLocationY="20" entityWidth="150"/>
-<entity Title="Список полномочий" entityHeight="200" entityIconified="false" entityId="126882647718062" entityLocationX="200" entityLocationY="9" entityWidth="259" queryId="null" tableAlias="T_ACCESS_LIST_1" tableName="ACCESS_LIST" tableSchemaName="EAS"/>
-<entity Title="Список полномочий 1" entityHeight="175" entityIconified="false" entityId="126882649794613" entityLocationX="544" entityLocationY="14" entityWidth="299" queryId="null" tableAlias="acl2" tableName="ACCESS_LIST" tableSchemaName="EAS"/>
-<relation leftEntityFieldName="ACCESS_NAME" leftEntityId="126882647718062" rightEntityFieldName="ACCESS_NAME" rightEntityId="126882649794613"/>
-</datamodel>

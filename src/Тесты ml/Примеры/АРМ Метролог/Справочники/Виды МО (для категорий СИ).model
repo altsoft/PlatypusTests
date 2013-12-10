@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="true" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-<entity Name="DsMSKinds" Title="Виды метрологического обслуживания" entityHeight="95" entityIconified="false" entityId="124757792276544239" entityLocationX="221" entityLocationY="51" entityWidth="150" tableName="MS_KINDS" tableSchemaName="EAS"/>
-</datamodel>

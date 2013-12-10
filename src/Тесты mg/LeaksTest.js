@@ -3,17 +3,21 @@
  * @author mg
  * @name LeaksTest
  */
+function LeaksTest() {
 
-var tries = 0;
+    var self = this;
 
-function start(){
-    if(tries++ < 1000) {
-        var f = new FormsAPI();
-        f.show();
-        (function(){
-            f.close();
-            f = null;
-            start.invokeLater();
-        }).invokeLater();
+    var tries = 0;
+
+    function start() {
+        if (tries++ < 1000) {
+            var f = new FormsAPI();
+            f.show();
+            (function() {
+                f.close();
+                f = null;
+                start.invokeLater();
+            }).invokeLater();
+        }
     }
 }

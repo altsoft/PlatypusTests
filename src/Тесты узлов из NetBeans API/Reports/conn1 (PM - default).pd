@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<datamodel datamodelDbId="130113304554061" datamodelSchemaName="PM">
-<fieldsEntity entityHeight="200" entityIconified="false" entityId="130149568430546" entityLocationX="287" entityLocationY="49" entityWidth="316" tableName="TEST_TABLE2"/>
-<fieldsEntity entityHeight="200" entityIconified="false" entityId="130148159524186" entityLocationX="53" entityLocationY="31" entityWidth="150" tableName="TEST_TABLE1"/>
-<fieldsEntity entityHeight="200" entityIconified="false" entityId="130149763568730" entityLocationX="384" entityLocationY="270" entityWidth="150" tableName="test_table3"/>
-</datamodel>

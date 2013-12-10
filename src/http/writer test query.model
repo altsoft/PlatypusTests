@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
-<entity Title="DUMMY_WEB_DATA" entityHeight="200" entityIconified="false" entityId="131555742442245" entityLocationX="303" entityLocationY="16" entityWidth="150" queryId="null" tableAlias="t" tableName="DUMMY_WEB_DATA" tableSchemaName=""/>
-</datamodel>

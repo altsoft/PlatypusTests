@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout defaultCloseOperation="2" name="Form" prefHeight="132px" prefWidth="304px" title="Тест столбцов">
   <widget name="modelGrid" parent="Form" prefHeight="132px" prefWidth="300px" type="DbGridDesignInfo">
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="135151532000209" field="false"/>
+    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
     <column name="iD">
       <columnsDatasource/>
       <cellsDatasource/>
@@ -12,9 +16,9 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="135151532000209" fieldName="ID"/>
       <columnsDisplayField/>
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="135151532000209" fieldName="ID"/>
     </column>
     <column fixed="true" name="nAME" title="Наименование" width="80">
       <columnsDatasource/>
@@ -27,9 +31,9 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="135151532000209" fieldName="NAME"/>
       <columnsDisplayField/>
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="135151532000209" fieldName="NAME"/>
     </column>
     <column name="mEASURAND" title="Измеряемая величина">
       <columnsDatasource/>
@@ -42,9 +46,9 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="135151532000209" fieldName="MEASURAND"/>
       <columnsDisplayField/>
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="135151532000209" fieldName="MEASURAND"/>
     </column>
     <column name="sYMBOL_RUS" title="Обозначение(рус.)">
       <columnsDatasource/>
@@ -57,9 +61,9 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="135151532000209" fieldName="SYMBOL_RUS"/>
       <columnsDisplayField/>
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="135151532000209" fieldName="SYMBOL_RUS"/>
     </column>
     <column name="sYMBOL_INT" title="Обозначение(межд.)">
       <columnsDatasource/>
@@ -72,9 +76,9 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="135151532000209" fieldName="SYMBOL_INT"/>
       <columnsDisplayField/>
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="135151532000209" fieldName="SYMBOL_INT"/>
     </column>
     <column name="iSBASIC" title="Основная">
       <columnsDatasource/>
@@ -87,9 +91,9 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="135151532000209" fieldName="ISBASIC"/>
       <columnsDisplayField/>
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="135151532000209" fieldName="ISBASIC"/>
     </column>
     <column name="sI" title="СИ">
       <columnsDatasource/>
@@ -102,9 +106,9 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="135151532000209" fieldName="SI"/>
       <columnsDisplayField/>
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="135151532000209" fieldName="SI"/>
     </column>
     <column name="tEMPPERMITTED" title="Временно разрешенная">
       <columnsDatasource/>
@@ -117,9 +121,9 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="135151532000209" fieldName="TEMPPERMITTED"/>
       <columnsDisplayField/>
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="135151532000209" fieldName="TEMPPERMITTED"/>
     </column>
     <column name="dEFINITION" title="Определение">
       <columnsDatasource/>
@@ -132,9 +136,9 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="135151532000209" fieldName="DEFINITION"/>
       <columnsDisplayField/>
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="135151532000209" fieldName="DEFINITION"/>
     </column>
     <column name="fOUNDATION">
       <columnsDatasource/>
@@ -147,14 +151,10 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="135151532000209" fieldName="FOUNDATION"/>
       <columnsDisplayField/>
       <controlInfo classHint="DbDateDesignInfo" dateFormat="dd.MM.yyyy HH:mm:ss" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="135151532000209" fieldName="FOUNDATION"/>
     </column>
-    <treeDesignInfo/>
-    <rowsColumnsDesignInfo>
-      <rowsDatasource entityId="135151532000209" field="false"/>
-    </rowsColumnsDesignInfo>
     <constraints bottom="0px" left="0px" right="4px" top="0px" type="MarginConstraintsDesignInfo"/>
   </widget>
   <layout type="MarginLayoutDesignInfo"/>

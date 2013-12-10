@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-<entity Name="dsCells" Title="Виды ремонтов по исполнителям" entityHeight="200" entityIconified="false" entityId="124645993037549959" entityLocationX="247" entityLocationY="23" entityWidth="262" tableName="MAINT_KINDS_4_EXECUTORS" tableSchemaName="EAS"/>
-<entity Name="" Title="Исполнители ремонтов" entityHeight="200" entityIconified="false" entityId="124645991896838935" entityLocationX="114" entityLocationY="256" entityWidth="155" tableName="MAINTENANCE_EXECUTORS" tableSchemaName="EAS"/>
-<entity Name="" Title="Виды ремонтов и ТО" entityHeight="200" entityIconified="false" entityId="124645994396897997" entityLocationX="374" entityLocationY="236" entityWidth="150" tableName="MAINTENANCE_KINDS" tableSchemaName="EAS"/>
-</datamodel>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="10" entityLocationY="20" entityWidth="150"/>
-<entity Name="" Title="Запрос" entityHeight="200" entityIconified="false" entityId="128255567171878" entityLocationX="191" entityLocationY="32" entityWidth="150" queryId="128255522543752" tableDbId="null" tableName="" tableSchemaName=""/>
-</datamodel>

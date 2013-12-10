@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<layout name="Form" prefHeight="628px" prefWidth="579px">
-<widget name="jScrollPane1" parent="Form" prefHeight="21px" prefWidth="108px" type="ScrollDesignInfo"/>
-<widget caretPosition="5" name="jEditorPane1" parent="jScrollPane1" prefHeight="19px" prefWidth="106px" selectionEnd="5" selectionStart="5" text="text1" type="EditorPaneDesignInfo"/>
-<widget name="jScrollPane2" parent="Form" prefHeight="21px" prefWidth="108px" type="ScrollDesignInfo"/>
-<widget editable="false" name="jEditorPane2" parent="jScrollPane2" prefHeight="19px" prefWidth="106px" type="EditorPaneDesignInfo"/>
-<layout alignment="0" type="FlowLayoutDesignInfo"/>
-</layout>

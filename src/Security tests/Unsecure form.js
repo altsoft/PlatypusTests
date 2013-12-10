@@ -4,7 +4,13 @@
  * @author vv
  */
 
-function test() {
-    java.lang.System.out.println("test");
-    return "test";
+function UnsecureForm() {
+
+    var self = this;
+
+    self.test = function() {
+        Logger.info("test");
+        return "test";
+    };
+
 }

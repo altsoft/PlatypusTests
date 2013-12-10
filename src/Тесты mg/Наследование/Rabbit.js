@@ -4,7 +4,13 @@
  * @name Rabbit
  */
 
-var o1 = arguments[0];
-var o2 = arguments[1];
+function Rabbit() {
 
-Animal();// won't work because of resource nature of Rabbit (data model with javascript interface);
+    var self = this;
+
+    var o1 = arguments[0];
+    var o2 = arguments[1];
+
+    Animal();// won't work because of resource nature of Rabbit (data self.model with javascript interface);
+
+}

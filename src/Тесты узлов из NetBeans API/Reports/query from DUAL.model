@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<datamodel>
-<parameters>
-<parameter description="" name="Param2" nullable="true" parameterMode="4" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName="VARCHAR"/>
-</parameters>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="421" entityLocationY="8" entityWidth="150"/>
-<entity Title="Таблица" entityHeight="119" entityIconified="false" entityId="124645078104169770" entityLocationX="105" entityLocationY="21" entityWidth="159" queryId="null" tableAlias="DUAL" tableName="DUAL" tableSchemaName=""/>
-</datamodel>

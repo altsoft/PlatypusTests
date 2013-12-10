@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="10" entityLocationY="20" entityWidth="150"/>
-<entity Name="" Title="Запрос на запрос всех данных из тестовой таблицы" entityHeight="200" entityIconified="false" entityId="129362824818719" entityLocationX="346" entityLocationY="76" entityWidth="150" queryId="129362816534381" tableDbId="null" tableName="" tableSchemaName=""/>
-</datamodel>

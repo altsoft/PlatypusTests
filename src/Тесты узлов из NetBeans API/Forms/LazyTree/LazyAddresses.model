@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-<entity Name="" Title="addressesTree" entityHeight="200" entityIconified="false" entityId="130518590109308" entityLocationX="179" entityLocationY="11" entityWidth="150" queryId="130518572153150" tableName="" tableSchemaName=""/>
-</datamodel>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<datamodel datamodelDbId="130113304554061">
-        <parametersEntity Title="Параметры" entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150">
-        </parametersEntity>
-        <entity Title="Fake" entityHeight="301" entityIconified="false" entityId="124645078104169770" entityLocationX="246" entityLocationY="9" entityWidth="340" queryId="null" tableAlias="t" tableName="dual">
-        </entity>
-    </datamodel>

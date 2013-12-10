@@ -4,7 +4,11 @@
  * @name TestModule
  */
 
+function TestModule() {
 
-function sum(a, b){
-    return a+b;
+    var self = this;
+
+    function sum(a, b) {
+        return a + b;
+    }
 }

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<datamodel>
-<parameters>
-<parameter description="" name="toExclude" nullable="true" parameterMode="1" precision="0" scale="0" selectionForm="null" signed="true" size="0" type="3" typeName="DECIMAL"/>
-</parameters>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-<entity Name="" Title="entitiesTree" entityHeight="200" entityIconified="false" entityId="130512126706299" entityLocationX="234" entityLocationY="31" entityWidth="150" queryId="130512041184355" tableName="" tableSchemaName=""/>
-<relation leftEntityFieldName="toExclude" leftEntityId="-1" rightEntityId="130512126706299" rightEntityParameterName="toExclude"/>
-</datamodel>

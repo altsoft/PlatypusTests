@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<datamodel>
-<parameters>
-<parameter description="" name="Param1" nullable="true" parameterMode="0" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="2" typeName="NUMERIC"/>
-</parameters>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-<entity Title="Перечень заказов" entityHeight="281" entityIconified="false" entityId="124835577040566712" entityLocationX="360" entityLocationY="10" entityWidth="334" queryId="124349292311931632" tableAlias="T_Q124349292311931632_1" tableName="" tableSchemaName=""/>
-<relation leftEntityFieldName="Param1" leftEntityId="-1" rightEntityId="124835577040566712" rightEntityParameterName="amount"/>
-</datamodel>

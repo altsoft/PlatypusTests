@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<outputFields>
-<field bindedColumn="TEST_FLOAT" sqlType="3"/>
-<field bindedColumn="TEST_DATE" sqlType="12"/>
-</outputFields>

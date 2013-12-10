@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-<entity Name="dsMTNames" Title="Наименования СИ" entityHeight="200" entityIconified="false" entityId="124764433601573826" entityLocationX="175" entityLocationY="18" entityWidth="150" tableName="MT_NAMES" tableSchemaName="EAS"/>
-</datamodel>

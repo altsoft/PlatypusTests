@@ -4,12 +4,16 @@
  * @name TestClientReport
  * @public
  */
+function TestClientReport() {
 
-/*
- * Report's before render event handler.
- * @param evt Event object.
- */
+    var self = this;
 
-onBeforeRender = function(evt){
-    // TODO : place your code here
+    /*
+     * Report's before render event handler.
+     * @param evt Event object.
+     */
+
+    function onBeforeRender(evt) {
+        // TODO : place your code here
+    };
 }

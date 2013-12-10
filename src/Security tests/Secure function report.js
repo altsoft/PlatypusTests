@@ -6,9 +6,15 @@
  * @author vv
  */
 
-/**
- * @rolesAllowed role3
- */
-function test() {
-    return "test";
+function SecureFunctionReport() {
+
+    var self = this;
+
+    /**
+     * @rolesAllowed role3
+     */
+    self.test = function() {
+        return "test";
+    };
+
 }

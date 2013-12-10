@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<datamodel datamodelDbId="128349401051577">
-<parametersEntity>
-<userData Title.String="Параметры" entityHeight.Integer="200" entityIconified.Boolean="false" entityLocationX.Integer="10" entityLocationY.Integer="20" entityWidth.Integer="150"/>
-</parametersEntity>
-<entity entityId="128350707254624" queryId="null" tableName="FLEET_AnalogData" tableSchemaName="">
-<userData Title.String="FLEET_AnalogData" entityHeight.Integer="249" entityIconified.Boolean="false" entityLocationX.Integer="291" entityLocationY.Integer="10" entityWidth.Integer="418" tableAlias.String="T_FLEET_AnalogData_1" tableFilter.TableFilter="org.hsqldb.TableFilter@20a239"/>
-</entity>
-</datamodel>

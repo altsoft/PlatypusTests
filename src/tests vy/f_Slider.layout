@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<layout name="Form" prefHeight="297px" prefWidth="399px">
-<widget maximum="70" minimum="20" name="jSlider1" parent="Form" prefHeight="39px" prefWidth="204px" type="SliderDesignInfo" value="30"/>
-<widget extent="10" name="jSlider2" orientation="1" parent="Form" prefHeight="204px" prefWidth="34px" type="SliderDesignInfo"/>
-<layout type="FlowLayoutDesignInfo"/>
-</layout>

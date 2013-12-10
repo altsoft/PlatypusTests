@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="16" entityLocationY="30" entityWidth="150"/>
-<entity Name="" Title="Заказы" entityHeight="200" entityIconified="true" entityId="124636804871871260" entityLocationX="195" entityLocationY="7" entityWidth="150" tableName="GOODORDER" tableSchemaName="EAS"/>
-<entity Name="dsCustomers" Title="Заказчик" entityHeight="149" entityIconified="false" entityId="124636816057894750" entityLocationX="351" entityLocationY="94" entityWidth="203" tableName="CUSTOMER" tableSchemaName="EAS"/>
-<entity Name="entities" Title="MTD_ENTITIES" entityHeight="200" entityIconified="false" entityId="124575808262509771" entityLocationX="182" entityLocationY="93" entityWidth="150" tableName="MTD_ENTITIES" tableSchemaName="EAS"/>
-<entity Name="" Title="Товары" entityHeight="200" entityIconified="true" entityId="124636806467157177" entityLocationX="363" entityLocationY="7" entityWidth="150" tableName="GOOD" tableSchemaName="EAS"/>
-</datamodel>

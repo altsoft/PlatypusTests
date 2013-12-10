@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<layout name="Form" prefHeight="295px" prefWidth="401px">
-<widget caretPosition="10" dragEnabled="true" name="jTextField1" parent="Form" prefHeight="23px" prefWidth="64px" selectionEnd="10" selectionStart="10" text="textField1" type="TextFieldDesignInfo"/>
-<widget caretPosition="11" dragEnabled="true" editable="false" name="jTextField2" parent="Form" prefHeight="23px" prefWidth="70px" selectionEnd="11" selectionStart="11" text="jTextField2" type="TextFieldDesignInfo"/>
-<layout type="FlowLayoutDesignInfo"/>
-</layout>

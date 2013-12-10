@@ -16,7 +16,7 @@
   <entity Name="" Title=" Элементы приложения по родителю" entityHeight="200" entityIconified="false" entityId="136091764773245" entityLocationX="493" entityLocationY="289" entityWidth="150" queryId="124832514140608864" tableName="" tableSchemaName=""/>
   <entity Name="gridQuery" Title="Запрос для сетки" entityHeight="200" entityIconified="false" entityId="136074861259077" entityLocationX="238" entityLocationY="309" entityWidth="150" queryId="124505954732869424" tableName="" tableSchemaName=""/>
   <referenceRelation leftEntityFieldName="MDENT_PARENT_ID" leftEntityId="135963425539283" rightEntityFieldName="MDENT_ID" rightEntityId="135963425539283"/>
+  <referenceRelation leftEntityFieldName="MDENT_PARENT_ID" leftEntityId="136091764773245" rightEntityFieldName="MDENT_ID" rightEntityId="135963425539283"/>
   <referenceRelation leftEntityFieldName="MDENT_PARENT_ID" leftEntityId="135963425539283" rightEntityFieldName="MDENT_ID" rightEntityId="136091764773245"/>
   <referenceRelation leftEntityFieldName="MDENT_PARENT_ID" leftEntityId="136091764773245" rightEntityFieldName="MDENT_ID" rightEntityId="136091764773245"/>
-  <referenceRelation leftEntityFieldName="MDENT_PARENT_ID" leftEntityId="136091764773245" rightEntityFieldName="MDENT_ID" rightEntityId="135963425539283"/>
 </datamodel>

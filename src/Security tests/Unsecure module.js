@@ -5,14 +5,19 @@
  * @author vv
  */
 
-function test() {
-    java.lang.System.out.println("test");
-    return "test";
-}
+function UnsecureModule() {
 
-/**
- * @rolesAllowed role1
- */
-function testSecure() {
-    return "test";
+    var self = this;
+
+    self.test = function() {
+        java.lang.System.out.println("test");
+        return "test";
+    };
+
+    /**
+     * @rolesAllowed role1
+     */
+    self.testSecure = function() {
+        return "testSecure";
+    };
 }

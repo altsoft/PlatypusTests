@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<datamodel>
-<entity Name="DS_UserList" Title="MTD_USERS" entityHeight="200" entityIconified="false" entityId="126330776423770" entityLocationX="12" entityLocationY="236" entityWidth="150" tableName="MTD_USERS" tableSchemaName=""/>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-<entity Name="DS_UserGroups" Title="User_Groups" entityHeight="87" entityIconified="false" entityId="126269678633697" entityLocationX="621" entityLocationY="23" entityWidth="385" tableName="User_Groups" tableSchemaName=""/>
-<entity Name="DS_UnlinkedUsers" Title="Несвязанные с группой пользователи" entityHeight="205" entityIconified="false" entityId="126269860084748" entityLocationX="369" entityLocationY="242" entityWidth="332" queryId="126269699502114" tableName="" tableSchemaName=""/>
-<entity Name="DS_Users" Title="Связанные пользователи" entityHeight="200" entityIconified="false" entityId="126269680078932" entityLocationX="241" entityLocationY="20" entityWidth="341" tableName="MTD_USERS" tableSchemaName=""/>
-<relation leftEntityFieldName="USER_GROUPS_ID" leftEntityId="126269678633697" rightEntityFieldName="USR_GROUP_ID" rightEntityId="126269680078932"/>
-</datamodel>

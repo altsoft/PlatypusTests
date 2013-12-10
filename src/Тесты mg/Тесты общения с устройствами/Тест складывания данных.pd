@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<datamodel datamodelDbId="null">
-<fieldsEntity entityHeight="200" entityIconified="false" entityId="129164414296845" entityLocationX="10" entityLocationY="20" entityWidth="150" tableName="pos_analog_data"/>
-<fieldsEntity entityHeight="200" entityIconified="false" entityId="129171362317126" entityLocationX="270" entityLocationY="38" entityWidth="150" tableName="DELAWARE_COASTLINE"/>
-</datamodel>

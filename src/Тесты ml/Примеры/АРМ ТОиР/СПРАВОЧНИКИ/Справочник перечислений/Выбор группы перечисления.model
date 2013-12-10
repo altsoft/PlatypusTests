@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-<entity Name="dsEnumGroups" Title="Группы перечислений" entityHeight="200" entityIconified="false" entityId="124904969123440" entityLocationX="228" entityLocationY="23" entityWidth="221" queryId="124904940312527" tableName="" tableSchemaName=""/>
-</datamodel>

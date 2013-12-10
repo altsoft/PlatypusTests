@@ -4,16 +4,22 @@
  * Created on 12.07.2012, 16:03:26
  */
 
-/**
- *
- * @name AmountSelector
- * @author mg
- */
+function AmountSelector() {
+
+    var self = this;
+
+    /**
+     *
+     * @name AmountSelector
+     * @author mg
+     */
 
 function btnOkActionPerformed(evt) {//GEN-FIRST:event_btnOkActionPerformed
-    close(pAmount);
+        self.close(self.pAmount);
 }//GEN-LAST:event_btnOkActionPerformed
 
 function btnCancelActionPerformed(evt) {//GEN-FIRST:event_btnCancelActionPerformed
-    close();
+        self.close();
 }//GEN-LAST:event_btnCancelActionPerformed
+
+}

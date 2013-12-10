@@ -42,7 +42,7 @@
   </resource-ref>
   <security-constraint>
     <web-resource-collection>
-      <url-pattern>/application/api/*</url-pattern>
+      <url-pattern>/application/*</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>*</role-name>

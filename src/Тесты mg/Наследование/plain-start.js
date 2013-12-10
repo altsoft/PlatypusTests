@@ -1,8 +1,10 @@
 
-function j(){alert("Hello from j()!")}
+function j() {
+    alert("Hello from j()!")
+}
 
 
-require(["TestView", "TestReport", "TestModule"], function(){
+require(["TestView", "TestReport", "TestModule"], function() {
     new TestView(
             function() {
                 var rep = new TestReport();
@@ -24,20 +26,26 @@ function extend(Child, Parent) {
     Child.superclass = Parent.prototype;
 }
 
-function Animal(){}
-Animal.prototype.eat = function(){Logger.info("eat called");};
+function Animal() {
+}
+Animal.prototype.eat = function() {
+    Logger.info("eat called");
+};
 
-function Rabbit(){}
-Rabbit.prototype.run = function(){Logger.info("run called");};
+function Rabbit() {
+}
+Rabbit.prototype.run = function() {
+    Logger.info("run called");
+};
 
 extend(Rabbit, Animal);
 /*
-var r = new Rabbit();
-Logger.info("r.constructor: " + r.constructor);
-Logger.info("Rabbit.prototype.constructor: " + Rabbit.prototype.constructor);
-Logger.info("r.constructor == Rabbit.prototype.constructor: " + r.constructor == Rabbit.prototype.constructor);
-Logger.info("r.constructor == Rabbit: " + r.constructor == Rabbit);
-*/
+ var r = new Rabbit();
+ Logger.info("r.constructor: " + r.constructor);
+ Logger.info("Rabbit.prototype.constructor: " + Rabbit.prototype.constructor);
+ Logger.info("r.constructor == Rabbit.prototype.constructor: " + r.constructor == Rabbit.prototype.constructor);
+ Logger.info("r.constructor == Rabbit: " + r.constructor == Rabbit);
+ */
 
 //extend(Messages, Module);
 

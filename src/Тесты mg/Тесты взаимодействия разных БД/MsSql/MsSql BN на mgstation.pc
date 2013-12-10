@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dbSettings name="128349401051577" password="sql" schema="dbo" title="MsSql BN на mgstation" url="jdbc:jtds:sqlserver://mgstation:1433/bn" user="sa"/>
