@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<context>
+<context defaultDatasource="asvrTestDb">
   <run/>
-  <dbSettings name="" password="eas" url="jdbc:oracle:thin:@asvr:1521/adb" user="eas"/>
 </context>
