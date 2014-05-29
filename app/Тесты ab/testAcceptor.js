@@ -2,6 +2,8 @@
  * Platypus module script.
  * @name 134148360246876
  * @public
+ * @acceptor
+ * @stateless
  */
 
 function Asc6Acceptor() {
