@@ -28,7 +28,7 @@ function jRadioButton1ActionPerformed(evt) {//GEN-FIRST:event_jRadioButton1Actio
  
     var form = this;
 
-    self.params.md.Param1.pk = true;
+    self.params.schema.Param1.pk = true;
     self.params.Param3 = 'fffff';
 
     var s = new Style();

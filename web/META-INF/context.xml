@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Context path="/">
-  <Realm className="org.apache.catalina.realm.DataSourceRealm" dataSourceName="asvrTestDb" digest="MD5" localDataSource="true" roleNameCol="GROUP_NAME" userCredCol="USR_PASSWD" userNameCol="USR_NAME" userRoleTable="MTD_GROUPS" userTable="MTD_USERS"/>
-  <Resource driverClassName="oracle.jdbc.OracleDriver" name="asvrTestDb" password="eas" type="javax.sql.DataSource" url="jdbc:oracle:thin:@asvr:1521/adb" username="eas"/>
+<?xml version="1.0" encoding="UTF-8"?><Context URIEncoding="UTF-8" path="/">
+  <Realm className="org.apache.catalina.realm.DataSourceRealm" dataSourceName="eas" digest="MD5" localDataSource="true" roleNameCol="GROUP_NAME" userCredCol="USR_PASSWD" userNameCol="USR_NAME" userRoleTable="MTD_GROUPS" userTable="MTD_USERS"/>
+  <Resource driverClassName="oracle.jdbc.OracleDriver" name="eas" password="eas" schema="EAS" type="javax.sql.DataSource" url="jdbc:oracle:thin:@asvr:1521:adb" username="eas"/>
 </Context>
