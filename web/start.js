@@ -5,8 +5,8 @@ if (!platypus) {
 	var platypus = {};
 }
 platypus.ready = function() {
-	require(['FormsAPI'], function(){
-		var f = new FormsAPI();
+	require(['FirstForm'], function(){
+		var f = new FirstForm();
 		f.show();
 	});
 };
