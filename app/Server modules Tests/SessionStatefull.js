@@ -24,4 +24,20 @@ function SessionStatefull() {
         printf(JSON.stringify(aObject));
         return aObject;
     };
+    
+    self.numbersMarshallingTest = function(a, b){
+        return a + b;
+    };
+    
+    self.stringMarshallingTest = function(a, b){
+        return a + b;
+    };
+    
+    self.booleanMarshallingTest = function(a){
+        return !a;
+    };
+    
+    self.dateMarshallingTest = function(a){
+        return new Date(a.getTime() + 10);
+    };
 }

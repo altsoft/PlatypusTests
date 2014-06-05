@@ -4,28 +4,32 @@
  * @module
  */
 function AsyncServerModuleTests() {
+    Logger.info("- 1 - AsyncServerModuleTests");
     var self = this, model = P.loadModel(this.constructor.name);
 
+    Logger.info("- 2 - AsyncServerModuleTests");
     var sessionStatefull = new P.ServerModule("SessionStatefull");
 
+    var primitiveCalls = 0;
     var statefullCalls = 0;
     var statelessCalls = 0;
     var dateMarshallCalls = 0;
     var failed = null;
 
     function checkEnd() {
-        if (statefullCalls === 3 && statelessCalls === 3 && dateMarshallCalls === 3) {
+        if (primitiveCalls === 4 && statefullCalls === 3 && statelessCalls === 3 && dateMarshallCalls === 3) {
             if (self.onSuccess) {
                 if (failed === null) {
                     self.onSuccess();
                 } else {
-                    Logger.sevee("AsyncServerModuleTests failed (" + failed + ")");
+                    Logger.severe("AsyncServerModuleTests failed (" + failed + ")");
                 }
             } else {
-                Logger.sevee("self.onSuccess is absent. So unable to report about test's result");
+                Logger.severe("self.onSuccess is absent. So unable to report about test's result");
             }
         }
     }
+    Logger.info("- 3 - AsyncServerModuleTests");
     // Statefull test
     sessionStatefull.getCallsCount(function(aValue) {
         statefullCalls++;
@@ -94,7 +98,7 @@ function AsyncServerModuleTests() {
     });
     var sObj = new Object();
     sObj.date = now;
-    sObj.data = ["test", now, 2, true, 7.55]
+    sObj.data = ["test", now, 2, true, 7.55];
     sObj.obj = new Object();
     sObj.obj.dt = now;
     sessionStatefull.objectWithDateMarshaling(sObj, function(gObj) {
@@ -116,6 +120,35 @@ function AsyncServerModuleTests() {
         }
         if (sObj.obj.dt.getTime() !== gObj.obj.dt.getTime()) {
             failed = "Fail SessionStatefull module objectWithDateMarshaling test.";
+        }
+        checkEnd();
+    });
+    sessionStatefull.numbersMarshallingTest(4, 5, function(aSum) {
+        primitiveCalls++;
+        if (aSum !== (4 + 5)) {
+            failed = "Fail SessionStatefull module numbersMarshallingTest test";
+        }
+        checkEnd();
+    });
+    sessionStatefull.stringMarshallingTest('4', '5', function(aSum) {
+        primitiveCalls++;
+        if (aSum !== '45') {
+            failed = "Fail SessionStatefull module stringMarshallingTest test";
+        }
+        checkEnd();
+    });
+    sessionStatefull.booleanMarshallingTest(true, function(aInverse) {
+        primitiveCalls++;
+        if (aInverse) {
+            failed = "Fail SessionStatefull module booleanMarshallingTest test";
+        }
+        checkEnd();
+    });
+    sessionStatefull.dateMarshallingTest(now, function(aIncremented) {
+        primitiveCalls++;
+        var incremented = new Date(now.getTime() + 10);
+        if (incremented.geTime() !== aIncremented.geTime()) {
+            failed = "Fail SessionStatefull module dateMarshallingTest test";
         }
         checkEnd();
     });
