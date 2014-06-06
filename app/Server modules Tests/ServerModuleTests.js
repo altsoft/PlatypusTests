@@ -7,6 +7,7 @@ function ServerModuleTests() {
     var self = this, model = P.loadModel(this.constructor.name);
 
     var sessionStatefull = new P.ServerModule("SessionStatefull");
+    // Statefull test
     if (sessionStatefull.getCallsCount() !== 0) {
         throw "Fail SessionStatefull module getCallsCount test.";
     }
@@ -77,9 +78,18 @@ function ServerModuleTests() {
     }
     var aIncremented = sessionStatefull.dateMarshallingTest(now);
     var incremented = new Date(now.getTime() + 10);
-    if (incremented.geTime() !== aIncremented.geTime()) {
+    if (incremented.getTime() !== aIncremented.getTime()) {
         throw "Fail SessionStatefull module dateMarshallingTest test";
     }
+    var nullRes = sessionStatefull.nullMarshallingTest(null);
+    if(nullRes !== null){
+        throw "Fail SessionStatefull module nullMarshallingTest test";
+    }
+    var undefinedRes = sessionStatefull.undefinedMarshallingTest(null);
+    if(undefinedRes !== null){
+        throw "Fail SessionStatefull module undefinedMarshallingTest test";
+    }
+    // Stateless test 
     var sessionStateless = new P.ServerModule("SessionStateless");
     if (sessionStateless.getCallsCount() !== 0) {
         throw "Fail SessionStateless module getCallsCount test.";

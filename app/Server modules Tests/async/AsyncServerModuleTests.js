@@ -4,10 +4,8 @@
  * @module
  */
 function AsyncServerModuleTests() {
-    Logger.info("- 1 - AsyncServerModuleTests");
     var self = this, model = P.loadModel(this.constructor.name);
 
-    Logger.info("- 2 - AsyncServerModuleTests");
     var sessionStatefull = new P.ServerModule("SessionStatefull");
 
     var primitiveCalls = 0;
@@ -17,19 +15,20 @@ function AsyncServerModuleTests() {
     var failed = null;
 
     function checkEnd() {
-        if (primitiveCalls === 4 && statefullCalls === 3 && statelessCalls === 3 && dateMarshallCalls === 3) {
+        if (self.onSuccess)
+            self.onSuccess();
+        if (primitiveCalls === 6 && statefullCalls === 3 && statelessCalls === 3 && dateMarshallCalls === 3) {
             if (self.onSuccess) {
                 if (failed === null) {
                     self.onSuccess();
                 } else {
-                    Logger.severe("AsyncServerModuleTests failed (" + failed + ")");
+                    P.Logger.severe("AsyncServerModuleTests failed (" + failed + ")");
                 }
             } else {
-                Logger.severe("self.onSuccess is absent. So unable to report about test's result");
+                P.Logger.severe("self.onSuccess is absent. So unable to report about test's result");
             }
         }
     }
-    Logger.info("- 3 - AsyncServerModuleTests");
     // Statefull test
     sessionStatefull.getCallsCount(function(aValue) {
         statefullCalls++;
@@ -47,21 +46,6 @@ function AsyncServerModuleTests() {
             });
             checkEnd();
         });
-        checkEnd();
-    });
-    // Statefull test
-    var sessionStateless = new P.ServerModule("SessionStateless");
-    var parallelCallsConsumer = function(aValue) {
-        statelessCalls++;
-        if (aValue !== 0) {
-            failed = "Fail SessionStateless module getCallsCount test.";
-        }
-        checkEnd();
-    };
-    sessionStateless.getCallsCount(parallelCallsConsumer);
-    sessionStateless.incCallsCount(3, function() {
-        statelessCalls++;
-        sessionStateless.getCallsCount(parallelCallsConsumer);
         checkEnd();
     });
     // Date marshalling test
@@ -147,9 +131,38 @@ function AsyncServerModuleTests() {
     sessionStatefull.dateMarshallingTest(now, function(aIncremented) {
         primitiveCalls++;
         var incremented = new Date(now.getTime() + 10);
-        if (incremented.geTime() !== aIncremented.geTime()) {
+        if (incremented.getTime() !== aIncremented.getTime()) {
             failed = "Fail SessionStatefull module dateMarshallingTest test";
         }
+        checkEnd();
+    });
+    sessionStatefull.nullMarshallingTest(null, function(aResult) {
+        primitiveCalls++;
+        if (aResult !== null) {
+            failed = "Fail SessionStatefull module nullMarshallingTest test";
+        }
+        checkEnd();
+    });
+    sessionStatefull.undefinedMarshallingTest(null, function(aResult) {
+        primitiveCalls++;
+        if (aResult !== null) {
+            failed = "Fail SessionStatefull module undefinedMarshallingTest test";
+        }
+        checkEnd();
+    });
+    // Stateless test
+    var sessionStateless = new P.ServerModule("SessionStateless");
+    var parallelCallsConsumer = function(aValue) {
+        statelessCalls++;
+        if (aValue !== 0) {
+            failed = "Fail SessionStateless module getCallsCount test.";
+        }
+        checkEnd();
+    };
+    sessionStateless.getCallsCount(parallelCallsConsumer);
+    sessionStateless.incCallsCount(3, function() {
+        statelessCalls++;
+        sessionStateless.getCallsCount(parallelCallsConsumer);
         checkEnd();
     });
 }

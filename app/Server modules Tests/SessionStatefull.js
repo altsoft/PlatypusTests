@@ -40,4 +40,11 @@ function SessionStatefull() {
     self.dateMarshallingTest = function(a){
         return new Date(a.getTime() + 10);
     };
+    
+    self.nullMarshallingTest = function(a){
+        return null;
+    };
+    
+    self.undefinedMarshallingTest = function(a){
+    };
 }
