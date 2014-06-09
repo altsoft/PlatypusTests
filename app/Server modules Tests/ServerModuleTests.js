@@ -8,6 +8,7 @@ function ServerModuleTests() {
 
     var sessionStatefull = new P.ServerModule("SessionStatefull");
     // Statefull test
+    sessionStatefull.clearCallsCount();
     if (sessionStatefull.getCallsCount() !== 0) {
         throw "Fail SessionStatefull module getCallsCount test.";
     }
@@ -98,4 +99,12 @@ function ServerModuleTests() {
     if (sessionStateless.getCallsCount() !== 0) {
         throw "Fail SessionStateless module getCallsCount test.";
     }
+    
+    (function(){
+        if (self.onSuccess) {
+            self.onSuccess();
+        } else {
+            P.Logger.severe("self.onSuccess is absent. So unable to report about test's result");
+        }
+    }).invokeLater();
 }

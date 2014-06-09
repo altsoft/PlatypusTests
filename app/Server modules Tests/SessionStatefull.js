@@ -12,6 +12,10 @@ function SessionStatefull() {
         return callCount;  
     };
     
+    self.clearCallsCount = function() {
+        callCount = 0;  
+    };
+    
     self.incCallsCount = function(aCounts) {
         callCount += aCounts;  
     };
