@@ -19,8 +19,8 @@
     }
 })();
 window.P.ready = function() {
-    window.P.require(['FirstForm'], function(){
-        var f = new FirstForm();
+    window.P.require(['ManualRunner'], function(){
+        var f = new ManualRunner();
         f.show();
     });
 };
