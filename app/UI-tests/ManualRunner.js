@@ -12,6 +12,9 @@ function ManualRunner() {
     };
     
     form.btnRun.onActionPerformed = function(event) {
-        var test = new WidgetsStructureTest();
+        //var test = new WidgetsStructureTest();
+        //var test = new MenusStructureTest();
+        //var test = new GroupsStructureTest();
+        var test = new FormattingTest();
     };
 }

@@ -18,7 +18,6 @@ function MenusStructureTest() {
     }
 
     var comps = [new P.Menu()
-        , new P.MenuBar()
         , new P.MenuItem()
         , new P.MenuSeparator()
         , new P.CheckMenuItem()
@@ -37,17 +36,9 @@ function MenusStructureTest() {
             if(comp.parent !== container)
                 throw '.parent mismatch';
             checkContainerCildren(container);
-            container.add(comp);
-            if(comp.parent !== container)
-                throw '.parent mismatch';
-            checkContainerCildren(container);
         }
         for (var c = 0; c < comps.length; c++) {
             var comp = comps[c];
-            container.remove(comp);
-            if(comp.parent !== null)
-                throw '.parent null mismatch';
-            checkContainerCildren(container);
             container.remove(comp);
             if(comp.parent !== null)
                 throw '.parent null mismatch';

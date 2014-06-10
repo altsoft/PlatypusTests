@@ -2,5 +2,8 @@
   <widget name="btnRun" parent="Form" prefHeight="23px" prefWidth="65px" text="Run" type="ButtonDesignInfo">
     <constraints height="23px" left="12px" top="12px" type="MarginConstraintsDesignInfo" width="65px"/>
   </widget>
+  <widget format="#,##0.###" name="modelFormattedField" parent="Form" prefHeight="20px" prefWidth="100px" type="DbLabelDesignInfo" valueType="0">
+    <constraints height="20px" left="228px" top="156px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
   <layout type="MarginLayoutDesignInfo"/>
 </layout>

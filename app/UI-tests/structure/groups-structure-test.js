@@ -48,6 +48,8 @@ function GroupsStructureTest() {
         group2.add(comp);
         if (comp.buttonGroup !== group2)
             throw '.buttonGroup mismatch';
+        if(group1.count > 0)
+            throw 'group1.count mismatch';
         checkContainerCildren(group1);
         checkContainerCildren(group2);
         group2.remove(comp);

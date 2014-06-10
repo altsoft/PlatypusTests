@@ -17,6 +17,19 @@ function WidgetsStructureTest() {
         }
     }
 
+    function checkGridPaneCildren(aGridPane) {
+        var children = aGridPane.children;
+        var i = 0;
+        for (var r = 0; r < aGridPane.rows; r++) {
+            for (var c = 0; c < aGridPane.columns; c++) {
+                var child = aGridPane.child(r, c);
+                if (child !== null && child !== children[i++]) {
+                    throw 'child != children[i++]'
+                }
+            }
+        }
+    }
+
     function checkObjectProjection(aEthalon, aContent) {
         for (var p in aEthalon) {
             if (aEthalon[p] !== aContent[p] && (aEthalon[p] + 'px') !== aContent[p]) {
@@ -101,12 +114,13 @@ function WidgetsStructureTest() {
                         throw '.parent null mismatch';
                     }
                 }
+                checkGridPaneCildren(container);
             } else {
                 container.add(comp);
+                checkContainerCildren(container);
             }
             if (comp.parent !== container)
                 throw '.parent mismatch';
-            checkContainerCildren(container);
             if (container instanceof P.BorderPane && container.centerComponent)
                 break;
         }
@@ -115,7 +129,11 @@ function WidgetsStructureTest() {
             container.remove(comp);
             if (comp.parent !== null)
                 throw '.parent null mismatch';
-            checkContainerCildren(container);
+            if (container instanceof P.GridPane) {
+                checkGridPaneCildren(container);
+            } else {
+                checkContainerCildren(container);
+            }
         }
     }
 
@@ -148,14 +166,24 @@ function WidgetsStructureTest() {
                 container.add(comp, constraint);
             if (comp.parent !== container)
                 throw '.parent mismatch';
-            checkContainerCildren(container);
+            if (container instanceof P.GridPane) {
+                checkGridPaneCildren(container);
+            } else {
+                checkContainerCildren(container);
+            }
+            if (container instanceof P.BorderPane && container.centerComponent)
+                break;
         }
         for (var c = 0; c < comps.length; c++) {
             var comp = comps[c];
             container.remove(comp);
             if (comp.parent !== null)
                 throw '.parent null mismatch';
-            checkContainerCildren(container);
+            if (container instanceof P.GridPane) {
+                checkGridPaneCildren(container);
+            } else {
+                checkContainerCildren(container);
+            }
         }
     }
     (function() {

@@ -2,7 +2,7 @@
  * 
  * @author mg
  */
-function grid_from_scratch_test() {
+function focus_events_test() {
     var self = this
             , model = P.loadModel(this.constructor.name)
             , form = P.loadForm(this.constructor.name, model);
