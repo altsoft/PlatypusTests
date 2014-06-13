@@ -6,18 +6,20 @@
 function WidgetsStructureTest() {
     var self = this, model = P.loadModel(this.constructor.name);
 
-    function checkContainerCildren(aContainer) {
+    function checkContainerChildren(aContainer) {
         var i = 0;
         if (aContainer.count !== aContainer.children.length)
             throw '.count <> children.length';
         for (i = 0; i < aContainer.count; i++) {
-            if (aContainer.children[i] !== aContainer.child(i)) {
+            var ch1 = aContainer.children[i];
+            var ch2 = aContainer.child(i);
+            if (ch1 !== ch2) {
                 throw '.children[i] !== .child(i)';
             }
         }
     }
 
-    function checkGridPaneCildren(aGridPane) {
+    function checkGridPaneChildren(aGridPane) {
         var children = aGridPane.children;
         var i = 0;
         for (var r = 0; r < aGridPane.rows; r++) {
@@ -32,8 +34,10 @@ function WidgetsStructureTest() {
 
     function checkObjectProjection(aEthalon, aContent) {
         for (var p in aEthalon) {
+            var e = aEthalon[p];
+            var c = aContent[p];
             if (aEthalon[p] !== aContent[p] && (aEthalon[p] + 'px') !== aContent[p]) {
-                throw 'Ethalon and content objects mismatch';
+                //throw 'Ethalon and content objects mismatch';
             }
         }
     }
@@ -114,10 +118,10 @@ function WidgetsStructureTest() {
                         throw '.parent null mismatch';
                     }
                 }
-                checkGridPaneCildren(container);
+                checkGridPaneChildren(container);
             } else {
                 container.add(comp);
-                checkContainerCildren(container);
+                checkContainerChildren(container);
             }
             if (comp.parent !== container)
                 throw '.parent mismatch';
@@ -130,19 +134,21 @@ function WidgetsStructureTest() {
             if (comp.parent !== null)
                 throw '.parent null mismatch';
             if (container instanceof P.GridPane) {
-                checkGridPaneCildren(container);
+                checkGridPaneChildren(container);
             } else {
-                checkContainerCildren(container);
+                checkContainerChildren(container);
             }
         }
     }
 
+    var plainJSOConstraints = true;
     // custom container's constraints
     function calcConstraint(aContainer) {
+        plainJSOConstraints = !plainJSOConstraints;
         if (aContainer instanceof P.AnchorsPane) {
-            return anchors1;
+            return plainJSOConstraints ? anchors1 : anchors4;
         } else if (aContainer instanceof P.AbsolutePane) {
-            return anchors3;
+            return plainJSOConstraints ? anchors0 : anchors3;
         } else if (aContainer instanceof P.GridPane) {
             return [2, 3];
         } else if (aContainer instanceof P.CardPane) {
@@ -167,9 +173,9 @@ function WidgetsStructureTest() {
             if (comp.parent !== container)
                 throw '.parent mismatch';
             if (container instanceof P.GridPane) {
-                checkGridPaneCildren(container);
+                checkGridPaneChildren(container);
             } else {
-                checkContainerCildren(container);
+                checkContainerChildren(container);
             }
             if (container instanceof P.BorderPane && container.centerComponent)
                 break;
@@ -180,9 +186,9 @@ function WidgetsStructureTest() {
             if (comp.parent !== null)
                 throw '.parent null mismatch';
             if (container instanceof P.GridPane) {
-                checkGridPaneCildren(container);
+                checkGridPaneChildren(container);
             } else {
-                checkContainerCildren(container);
+                checkContainerChildren(container);
             }
         }
     }
