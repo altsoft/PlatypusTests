@@ -261,12 +261,6 @@ function PlainPropertiesTest() {
         comp.onKeyReleased = null;
         if (comp.onKeyReleased)
             throw 'comp.onKeyReleased mismatch';
-        comp.onStateChanged = f;
-        if (comp.onStateChanged !== f)
-            throw 'comp.onStateChanged mismatch';
-        comp.onStateChanged = null;
-        if (comp.onStateChanged)
-            throw 'comp.onStateChanged mismatch';
 ///
         comp.focus();
     }

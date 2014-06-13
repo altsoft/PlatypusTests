@@ -19,8 +19,8 @@
     }
 })();
 window.P.ready = function() {
-    window.P.require(['ManualRunner'], function(){
-        var f = new ManualRunner();
+    window.P.require(['component_events_test'], function(){
+        var f = new component_events_test();
         f.show();
     });
 };
