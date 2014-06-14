@@ -108,7 +108,7 @@ function GroupsStructureTest() {
                     throw '.selected mismatch';
                 }
             } else if (comps[r].selected) {
-                throw '!.selected mismatch';
+                throw '!.selected mismatch 1';
             }
         }
     }
@@ -120,7 +120,7 @@ function GroupsStructureTest() {
     for (var c in comps) {
         var comp = comps[c];
         if(comp.selected)
-            throw '!.selected mismatch';
+            throw '!.selected mismatch 2';
     }
     
     (function(){

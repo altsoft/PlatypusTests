@@ -17,15 +17,15 @@ function MenusStructureTest() {
         }
     }
 
+    var conts = [new P.Menu()
+        , new P.MenuBar()
+        , new P.PopupMenu()
+        ];
     var comps = [new P.Menu()
         , new P.MenuItem()
         , new P.MenuSeparator()
         , new P.CheckMenuItem()
         , new P.RadioMenuItem()
-        ];
-    var conts = [new P.Menu()
-        , new P.MenuBar()
-        , new P.PopupMenu()
         ];
 
     for (var cn = 0; cn < conts.length; cn++) {

@@ -9,5 +9,12 @@
     <datamodelElement entityId="-1" fieldName="Param1"/>
     <constraints height="20px" left="36px" top="132px" type="MarginConstraintsDesignInfo" width="108px"/>
   </widget>
+  <widget buttonGroup="buttonGroup" name="radioButton" parent="Form" prefHeight="23px" prefWidth="81px" text="radioButton" type="RadioDesignInfo">
+    <constraints bottom="61px" height="23px" left="48px" type="MarginConstraintsDesignInfo" width="81px"/>
+  </widget>
+  <widget buttonGroup="buttonGroup" name="radioButton1" parent="Form" prefHeight="23px" prefWidth="87px" text="radioButton1" type="RadioDesignInfo">
+    <constraints bottom="25px" height="23px" left="48px" type="MarginConstraintsDesignInfo" width="87px"/>
+  </widget>
+  <nonvisual name="buttonGroup" type="ButtonGroupDesignInfo"/>
   <layout type="MarginLayoutDesignInfo"/>
 </layout>
