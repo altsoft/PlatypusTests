@@ -16,6 +16,7 @@ function ManualRunner() {
         //var test = new MenusStructureTest();
         //var test = new GroupsStructureTest();
         //var test = new FormattingTest();
-        var test = new PlainPropertiesTest();
+        //var test = new PlainPropertiesTest();
+        var test = new UIGlobalScopeTest();
     };
 }

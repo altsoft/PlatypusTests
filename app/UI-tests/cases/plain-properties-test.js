@@ -5,7 +5,6 @@
  */
 function PlainPropertiesTest() {
     var self = this, model = P.loadModel(this.constructor.name);
-
     var comps = [new P.AbsolutePane()
                 , new P.AnchorsPane()
                 , new P.BorderPane()
@@ -122,12 +121,12 @@ function PlainPropertiesTest() {
         comp.height = 0;
         if (comp.height)
             throw 'comp.height mismatch';
-        if( !(comp instanceof P.Menu)
+        if (!(comp instanceof P.Menu)
                 && !(comp instanceof P.PopupMenu)
                 && !(comp instanceof P.MenuItem)
                 && !(comp instanceof P.MenuSeparator)
                 && !(comp instanceof P.CheckMenuItem)
-                && !(comp instanceof P.RadioMenuItem) ){
+                && !(comp instanceof P.RadioMenuItem)) {
             var compMenu = new P.PopupMenu();
             comp.componentPopupMenu = compMenu;
             if (comp.componentPopupMenu !== compMenu)
@@ -139,14 +138,17 @@ function PlainPropertiesTest() {
 ///
         if (P.agent === P.HTML5 && !comp.element)
             throw 'comp.element mismatch';
-        if (P.agent === P.J2SE && !comp.component)
+        if (P.agent === P.J2SE && !comp.component){
+            var c = comp.component;
             throw 'comp.component mismatch';
+        }
 ///
         var f = function() {
         };
         comp.onActionPerformed = f;
-        if (comp.onActionPerformed !== f)
+        if (comp.onActionPerformed !== f) {
             throw 'comp.onActionPerformed mismatch';
+        }
         comp.onActionPerformed = null;
         if (comp.onActionPerformed)
             throw 'comp.onActionPerformed mismatch';
@@ -338,8 +340,8 @@ function PlainPropertiesTest() {
         if (comp.icon)
             throw 'comp.icon mismatch';
     }
-    
-    (function(){
+
+    (function() {
         if (self.onSuccess) {
             self.onSuccess();
         } else {
