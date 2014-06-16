@@ -27,7 +27,7 @@
     <url-pattern>/application/*</url-pattern>
   </servlet-mapping>
   <resource-ref>
-    <description>jdbc:oracle:thin:@asvr:1521:adb [eas на EAS]</description>
+    <description>jdbc:oracle:thin:@asvr:1521:ADB [eas на EAS]</description>
     <res-ref-name>eas</res-ref-name>
     <res-type>javax.sql.DataSource</res-type>
     <res-auth>Container</res-auth>

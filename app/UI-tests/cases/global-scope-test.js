@@ -35,13 +35,13 @@ function UIGlobalScopeTest() {
     P.Logger.info("<Form>.view.constructor: " + mrForm.view.constructor);
     P.Form.onChange = function() {
         P.Logger.info("P.Form.shown.length: " + P.Form.shown.length);
+        alert("alert test");
+        var res = confirm("confirm test");
+        var provided = prompt("provide some text", "already typed");
+        provided = null;
         P.msgBox("msgBox test", "msgBox -title-");
-        P.alert("alert test");
-        var res = P.confirm("confirm test");
         P.error("error test");
         P.warn("warn test");
-        var provided = P.prompt("provide some text", "already typed");
-        provided = null;
     };
     mrForm.close();
     var bold = P.FontStyle.BOLD;

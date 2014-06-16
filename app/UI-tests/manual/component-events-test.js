@@ -6,44 +6,132 @@ function component_events_test() {
     var self = this
             , model = P.loadModel(this.constructor.name)
             , form = P.loadForm(this.constructor.name, model);
-    
+
     self.show = function() {
         form.show();
     };
-    
-    function logEvent(event){
-        P.Logger.info(event.constructor.name + ' on ' + event.source.name);
+
+    function logEvent(aName, event) {
+        P.Logger.info(aName + ' on ' + event.source.name);
     }
-    
-    function register(comp){
-        var f = logEvent;
-        comp.onActionPerformed = f;
+
+    function register(comp) {
+        comp.onActionPerformed = function(event) {
+            logEvent('onActionPerformed', event);
+        };
         //
-        comp.onMouseExited = f;
-        comp.onMouseClicked = f;
-        comp.onMousePressed = f;
-        comp.onMouseReleased = f;
-        comp.onMouseEntered = f;
-        comp.onMouseWheelMoved = f;
-        comp.onMouseDragged = f;
-        comp.onMouseMoved = f;
+        comp.onMouseExited = function(event) {
+            logEvent('onMouseExited', event);
+        };
+        comp.onMouseClicked = function(event) {
+            if (event.clickCount > 1)
+                logEvent('onDoubleClicked', event);
+            else
+                logEvent('onMouseClicked', event);
+        };
+        comp.onMousePressed = function(event) {
+            logEvent('onMousePressed', event);
+        };
+        comp.onMouseReleased = function(event) {
+            logEvent('onMouseReleased', event);
+        };
+        comp.onMouseEntered = function(event) {
+            logEvent('onMouseEntered', event);
+        };
+        comp.onMouseWheelMoved = function(event) {
+            logEvent('onMouseWheelMoved', event);
+        };
+        comp.onMouseDragged = function(event) {
+            logEvent('onMouseDragged', event);
+        };
+        comp.onMouseMoved = function(event) {
+            logEvent('onMouseMoved', event);
+        };
         //
-        comp.onComponentResized = f;
-        comp.onComponentMoved = f;
-        comp.onComponentShown = f;
-        comp.onComponentHidden = f;
-        comp.onComponentAdded = f;
-        comp.onComponentRemoved = f;
+        comp.onComponentResized = function(event) {
+            logEvent('onComponentResized', event);
+        };
+        comp.onComponentMoved = function(event) {
+            logEvent('onComponentMoved', event);
+        };
+        comp.onComponentShown = function(event) {
+            logEvent('onComponentShown', event);
+        };
+        comp.onComponentHidden = function(event) {
+            logEvent('onComponentHidden', event);
+        };
+        comp.onComponentAdded = function(event) {
+            logEvent('onComponentAdded', event);
+        };
+        comp.onComponentRemoved = function(event) {
+            logEvent('onComponentRemoved', event);
+        };
         //
-        comp.onFocusGained = f; 
-        comp.onFocusLost = f;
+        comp.onFocusGained = function(event) {
+            logEvent('onFocusGained', event);
+        };
+        comp.onFocusLost = function(event) {
+            logEvent('onFocusLost', event);
+        };
         //
-        comp.onKeyTyped = f;
-        comp.onKeyPressed = f;
-        comp.onKeyReleased = f;
+        comp.onKeyTyped = function(event) {
+            logEvent('onKeyTyped', event);
+        };
+        comp.onKeyPressed = function(event) {
+            logEvent('onKeyPressed', event);
+        };
+        comp.onKeyReleased = function(event) {
+            logEvent('onKeyReleased', event);
+        };
+        if (comp.children) {
+            comp.children.forEach(function(aChild) {
+                register(aChild);
+            });
+        }
     }
-    
-    form.view.children.forEach(function(aComp){
+
+    form.view.children.forEach(function(aComp) {
         register(aComp);
     });
+
+    function invertVisible(aComp) {
+        aComp.visible = !aComp.visible;
+        if (aComp.children) {
+            aComp.children.forEach(function(aChild) {
+                invertVisible(aChild);
+            });
+        }
+    }
+
+    form.view.onMouseClicked = function(event) {
+        if (event.clickCount > 1 && event.controlDown) {
+            form.view.children.forEach(function(aComp) {
+                invertVisible(aComp);
+            });
+        }
+    };
+
+    function touchSize(aComp) {
+        aComp.width++;
+        aComp.height++;
+        if (aComp.children) {
+            aComp.children.forEach(function(aChild) {
+                touchSize(aChild);
+            });
+        }
+    }
+
+    form.view.onMouseClicked = function(event) {
+        if (event.clickCount > 1) {
+            if (event.controlDown) {
+                form.view.children.forEach(function(aComp) {
+                    invertVisible(aComp);
+                });
+            } else if (event.altDown) {
+                form.view.children.forEach(function(aComp) {
+                    touchSize(aComp);
+                });
+            }
+        }
+    };
 }
