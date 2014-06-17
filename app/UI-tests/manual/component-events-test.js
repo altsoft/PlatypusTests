@@ -134,4 +134,12 @@ function component_events_test() {
             }
         }
     };
+    
+    form.view.onComponentAdded = function(event){
+        P.Logger.info("componentAdded on " + event.source.name);
+    };
+    
+    form.view.onComponentRemoved = function(event){
+        P.Logger.info("componentRemoved on " + event.source.name);
+    };    
 }
