@@ -5,8 +5,8 @@ if (!platypus) {
 	var platypus = {};
 }
 platypus.ready = function() {
-	require(['FormsAPI'], function(){
-		var f = new FormsAPI();
+	require(['ScureFunctionForm'], function(){
+		var f = new ScureFunctionForm();
 		f.show();
 	});
 };
