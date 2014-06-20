@@ -3,7 +3,6 @@
  * @author mg
  * @name ORM_Test_View
  */
-
 function ORM_Test_View() {
     var self = this
             , model = P.loadModel(this.constructor.name)
@@ -14,7 +13,8 @@ function ORM_Test_View() {
     };
 
     form.button.onActionPerformed = function(event) {
-        var ormTest = new ORM_Relations_Test();
-        ormTest = null;
+        //var ormTest = new ORM_Relations_Test();
+        var ormTest = new ModelAPI();
+        ormTest.execute();
     };
 }
