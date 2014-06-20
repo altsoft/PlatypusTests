@@ -5,11 +5,16 @@
  */
 
 function ORM_Test_View() {
-    var self = this;
+    var self = this
+            , model = P.loadModel(this.constructor.name)
+            , form = P.loadForm(this.constructor.name, model);
 
-function buttonActionPerformed(evt) {//GEN-FIRST:event_buttonActionPerformed
+    self.show = function() {
+        form.show();
+    };
+
+    form.button.onActionPerformed = function(event) {
         var ormTest = new ORM_Relations_Test();
         ormTest = null;
-}//GEN-LAST:event_buttonActionPerformed
-
+    };
 }

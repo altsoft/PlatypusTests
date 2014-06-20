@@ -10,5 +10,4 @@ function container_events_test() {
     self.show = function() {
         form.show();
     };
-    // TODO : place your code here
 }
