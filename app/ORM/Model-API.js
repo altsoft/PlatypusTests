@@ -48,8 +48,8 @@ function ModelAPI() {
         P.Logger.info("model.params.reduce: " + model.params.reduce);        
         P.Logger.info("model.params.slice: " + model.params.slice);        
         P.Logger.info("model.params.splice: " + model.params.splice);        
-        P.Logger.info("model.params.push: " + model.params.push);        
         P.Logger.info("model.params.pop: " + model.params.pop);        
+        P.Logger.info("model.params.push: " + model.params.push);        
         P.Logger.info("model.params.shift: " + model.params.shift);        
         P.Logger.info("model.params.unshift: " + model.params.unshift);        
         P.Logger.info("model.params instanceof Array: " + (model.params instanceof Array));     

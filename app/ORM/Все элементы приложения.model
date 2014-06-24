@@ -1,5 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<datamodel>
-  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="24" entityLocationY="12" entityWidth="150"/>
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parameters>
+    <parameter description="" name="Param1" nullable="true" parameterMode="1" precision="0" scale="0" selectionForm="null" signed="true" size="0" type="4" typeName="INTEGER"/>
+  </parameters>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="48" entityLocationY="14" entityWidth="150"/>
   <entity Title="Элементы приложения" entityHeight="200" entityIconified="false" entityId="138183324600869" entityLocationX="258" entityLocationY="52" entityWidth="150" tableAlias="entities" tableName="MTD_ENTITIES" tableSchemaName=""/>
 </datamodel>

@@ -19,8 +19,8 @@
     }
 })();
 window.P.ready = function() {
-    window.P.require(['component_events_test'], function(){
-        var f = new component_events_test();
+    window.P.require(['ORM_Test_View'], function(){
+        var f = new ORM_Test_View();
         f.show();
     });
 };
