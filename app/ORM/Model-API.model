@@ -5,6 +5,6 @@
     <parameter description="" name="dvalue" nullable="true" parameterMode="1" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="91" typeName="DATE"/>
   </parameters>
   <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="29" entityLocationY="14" entityWidth="150"/>
-  <entity Name="testData" Title="" entityHeight="200" entityIconified="false" entityId="140361100803958" entityLocationX="324" entityLocationY="124" entityWidth="150" queryId="_24832514140608864" tableName="" tableSchemaName=""/>
+  <entity Name="testData" Title="" entityHeight="200" entityIconified="false" entityId="140361100803958" entityLocationX="436" entityLocationY="308" entityWidth="150" queryId="_24832514140608864" tableName="" tableSchemaName=""/>
   <referenceRelation leftEntityFieldName="MDENT_PARENT_ID" leftEntityId="140361100803958" rightEntityFieldName="MDENT_ID" rightEntityId="140361100803958"/>
 </datamodel>
