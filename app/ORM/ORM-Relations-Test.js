@@ -3,7 +3,6 @@
  * @author mg
  * @name ORM_Relations_Test
  */
-
 function ORM_Relations_Test() {
     var self = this,
             model = P.loadModel(this.constructor.name);
