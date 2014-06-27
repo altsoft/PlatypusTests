@@ -205,7 +205,7 @@ function ModelAPI() {
             if (model.testData.cursorPos !== 56)
                 throw 'testData.scrollTo()/cursorPos test failed';
             P.Logger.info('testData.scrollTo test passed');
-        }else{
+        } else {
             P.Logger.info('testData.scrollTo test skipped');
         }
     }
@@ -258,19 +258,26 @@ function ModelAPI() {
                                 if (!model.testData.empty || model.testData.size > 0 || model.testData.length > 0)
                                     throw 'testData.splice(0, model.testData.length) test failed';
                                 P.Logger.info('testData.splice(0, model.testData.length) test passed');
-                                model.testData.push({MDENT_ID: 45, MDENT_NAME: 'sn', MDENT_TYPE: '50'});
-                                if (model.testData.length !== 1 || model.testData.size !== 1 || model.testData.empty)
+                                model.testData.push(
+                                        {MDENT_ID: 45, MDENT_NAME: 'sn', MDENT_TYPE: '50'},
+                                {MDENT_ID: '_45', MDENT_NAME: '_sn', MDENT_TYPE: '50'});
+                                if (model.testData.length !== 2 || model.testData.size !== 2 || model.testData.empty)
                                     throw 'testData.push({...}) test failed 1';
                                 if (model.testData[0].MDENT_ID !== '45.0' || model.testData[0].MDENT_NAME !== 'sn' || model.testData[0].MDENT_TYPE !== 50)
                                     throw 'testData.push({...}) test failed 2';
                                 P.Logger.info('testData.push({...}) test passed');
                                 model.testData.pop();
-                                model.testData.unshift({MDENT_ID: 46, MDENT_NAME: 'sm', MDENT_TYPE: '55'});
-                                if (model.testData.length !== 1 || model.testData.size !== 1 || model.testData.empty)
+                                model.testData.shift();
+                                model.testData.unshift(
+                                        {MDENT_ID: 46, MDENT_NAME: 'sm', MDENT_TYPE: '55'},
+                                {MDENT_ID: '_46', MDENT_NAME: '_sm', MDENT_TYPE: '56'}
+                                );
+                                if (model.testData.length !== 2 || model.testData.size !== 2 || model.testData.empty)
                                     throw 'testData.unshift({...}) test failed 1';
                                 if (model.testData[0].MDENT_ID !== '46.0' || model.testData[0].MDENT_NAME !== 'sm' || model.testData[0].MDENT_TYPE !== 55)
                                     throw 'testData.unshift({...}) test failed 2';
                                 P.Logger.info('testData.unshift({...}) test passed');
+                                model.testData.pop();
                                 model.testData.shift();
                                 model.testData.insert();
                                 if (model.testData.length !== 1 || model.testData.size !== 1 || model.testData.empty)
@@ -329,8 +336,8 @@ function ModelAPI() {
         model.testData.requery(function() {
             var unfilteredLength = model.testData.length;
             var filter = model.testData.createFilter(model.testData.schema.MDENT_TYPE);
-            filter.apply(70, true, 67);
-            if(model.testData.empty)
+            filter.apply(70);
+            if (model.testData.empty)
                 throw 'filter no content failed.';
             if (model.testData.activeFilter !== filter)
                 throw 'filter/activeFilter test failed';
@@ -355,12 +362,12 @@ function ModelAPI() {
             P.Logger.info('filter test passed');
             var sorter = model.testData.createSorting(model.testData.schema.MDENT_TYPE, true, model.testData.schema.MDENT_NAME, false);
             model.testData.sort(sorter);
-            if (model.testData[0].MDENT_TYPE !== 70)
+            if (model.testData[0].MDENT_TYPE !== 20)
                 throw 'testData.sort() test failed 1';
             model.testData.sort(function(o1, o2) {
                 return o2.MDENT_TYPE - o1.MDENT_TYPE;
             });
-            if (model.testData[0].MDENT_TYPE !== 90)
+            if (model.testData[0].MDENT_TYPE !== 100)
                 throw 'testData.sort() test failed 2';
             P.Logger.info('testData.sort() test passed');
             var modules = model.testData.find(model.testData.schema.MDENT_TYPE, 20);
