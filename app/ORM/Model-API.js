@@ -8,6 +8,8 @@ function ModelAPI() {
 
     function testParams() {
         P.Logger.info("model.params.length: " + model.params.length);
+        if(model.params.length !== 3)
+            throw 'model.params.length !== 3';
         P.Logger.info("model.params: " + model.params);
         P.Logger.info("model.params.svalue: " + model.params.svalue);
         P.Logger.info("model.params.nvalue: " + model.params.nvalue);
@@ -53,7 +55,13 @@ function ModelAPI() {
         P.Logger.info("model.params.shift: " + model.params.shift);
         P.Logger.info("model.params.unshift: " + model.params.unshift);
         P.Logger.info("model.params instanceof Array: " + (model.params instanceof Array));
-        P.Logger.info("model.params instanceof P.ApplicationDbParametersEntity: " + (model.params instanceof P.ApplicationDbParametersEntity));
+        if(!P.ApplicationDbParametersEntity && !P.Entity){
+            throw 'No entity constructor found'; 
+        }
+        if(P.ApplicationDbParametersEntity)
+            P.Logger.info("model.params instanceof P.ApplicationDbParametersEntity: " + (model.params instanceof P.ApplicationDbParametersEntity));
+        if(P.Entity)
+            P.Logger.info("model.params instanceof P.Entity: " + (model.params instanceof P.Entity));
     }
 
     function testArrayLike() {
@@ -105,8 +113,14 @@ function ModelAPI() {
         P.Logger.info("model.testData.push: " + model.testData.push);
         P.Logger.info("model.testData.shift: " + model.testData.shift);
         P.Logger.info("model.testData.unshift: " + model.testData.unshift);
-        P.Logger.info("model.testData instanceof Array: " + (model.testData instanceof Array));
-        P.Logger.info("model.testData instanceof P.ApplicationDbEntity: " + (model.testData instanceof P.ApplicationDbEntity));
+        P.Logger.info("model.params instanceof Array: " + (model.params instanceof Array));
+        if(!P.ApplicationDbEntity && !P.Entity){
+            throw 'No entity constructor found'; 
+        }
+        if(P.ApplicationDbEntity)
+            P.Logger.info("model.testData instanceof P.ApplicationDbEntity: " + (model.params instanceof P.ApplicationDbEntity));
+        if(P.Entity)
+            P.Logger.info("model.testData instanceof P.Entity: " + (model.params instanceof P.Entity));
         model.testData.schema.MDENT_ID.pk = true;
     }
 
@@ -411,7 +425,7 @@ function ModelAPI() {
 
     var requeried = false;
     self.execute = function() {
-        //testParams();
+        testParams();
         testData();
     };
 }
