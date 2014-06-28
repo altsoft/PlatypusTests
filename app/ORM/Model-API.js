@@ -8,7 +8,7 @@ function ModelAPI() {
 
     function testParams() {
         P.Logger.info("model.params.length: " + model.params.length);
-        if(model.params.length !== 3)
+        if (model.params.length !== 3)
             throw 'model.params.length !== 3';
         P.Logger.info("model.params: " + model.params);
         P.Logger.info("model.params.svalue: " + model.params.svalue);
@@ -55,12 +55,12 @@ function ModelAPI() {
         P.Logger.info("model.params.shift: " + model.params.shift);
         P.Logger.info("model.params.unshift: " + model.params.unshift);
         P.Logger.info("model.params instanceof Array: " + (model.params instanceof Array));
-        if(!P.ApplicationDbParametersEntity && !P.Entity){
-            throw 'No entity constructor found'; 
+        if (!P.ApplicationDbParametersEntity && !P.Entity) {
+            throw 'No entity constructor found';
         }
-        if(P.ApplicationDbParametersEntity)
+        if (P.ApplicationDbParametersEntity)
             P.Logger.info("model.params instanceof P.ApplicationDbParametersEntity: " + (model.params instanceof P.ApplicationDbParametersEntity));
-        if(P.Entity)
+        if (P.Entity)
             P.Logger.info("model.params instanceof P.Entity: " + (model.params instanceof P.Entity));
     }
 
@@ -114,12 +114,12 @@ function ModelAPI() {
         P.Logger.info("model.testData.shift: " + model.testData.shift);
         P.Logger.info("model.testData.unshift: " + model.testData.unshift);
         P.Logger.info("model.params instanceof Array: " + (model.params instanceof Array));
-        if(!P.ApplicationDbEntity && !P.Entity){
-            throw 'No entity constructor found'; 
+        if (!P.ApplicationDbEntity && !P.Entity) {
+            throw 'No entity constructor found';
         }
-        if(P.ApplicationDbEntity)
+        if (P.ApplicationDbEntity)
             P.Logger.info("model.testData instanceof P.ApplicationDbEntity: " + (model.params instanceof P.ApplicationDbEntity));
-        if(P.Entity)
+        if (P.Entity)
             P.Logger.info("model.testData instanceof P.Entity: " + (model.params instanceof P.Entity));
         model.testData.schema.MDENT_ID.pk = true;
     }
@@ -277,7 +277,7 @@ function ModelAPI() {
                                 {MDENT_ID: '_45', MDENT_NAME: '_sn', MDENT_TYPE: '50'});
                                 if (model.testData.length !== 2 || model.testData.size !== 2 || model.testData.empty)
                                     throw 'testData.push({...}) test failed 1';
-                                if (model.testData[0].MDENT_ID !== '45.0' || model.testData[0].MDENT_NAME !== 'sn' || model.testData[0].MDENT_TYPE !== 50)
+                                if ((model.testData[0].MDENT_ID !== '45.0' && model.testData[0].MDENT_ID !== '45') || model.testData[0].MDENT_NAME !== 'sn' || model.testData[0].MDENT_TYPE !== 50)
                                     throw 'testData.push({...}) test failed 2';
                                 P.Logger.info('testData.push({...}) test passed');
                                 model.testData.pop();
@@ -288,7 +288,7 @@ function ModelAPI() {
                                 );
                                 if (model.testData.length !== 2 || model.testData.size !== 2 || model.testData.empty)
                                     throw 'testData.unshift({...}) test failed 1';
-                                if (model.testData[0].MDENT_ID !== '46.0' || model.testData[0].MDENT_NAME !== 'sm' || model.testData[0].MDENT_TYPE !== 55)
+                                if ((model.testData[0].MDENT_ID !== '46.0' && model.testData[0].MDENT_ID !== '46') || model.testData[0].MDENT_NAME !== 'sm' || model.testData[0].MDENT_TYPE !== 55)
                                     throw 'testData.unshift({...}) test failed 2';
                                 P.Logger.info('testData.unshift({...}) test passed');
                                 model.testData.pop();
@@ -303,26 +303,26 @@ function ModelAPI() {
                                 model.testData.insert(1, 42, model.testData.schema.MDENT_NAME, 'sk', 3, '60');
                                 if (model.testData.length !== 1 || model.testData.size !== 1 || model.testData.empty)
                                     throw 'testData.insert(...) test failed 1';
-                                if (model.testData[0].MDENT_ID !== '42.0' || model.testData[0].MDENT_NAME !== 'sk' || model.testData[0].MDENT_TYPE !== 60)
+                                if ((model.testData[0].MDENT_ID !== '42.0' && model.testData[0].MDENT_ID !== '42') || model.testData[0].MDENT_NAME !== 'sk' || model.testData[0].MDENT_TYPE !== 60)
                                     throw 'testData.insert(...) test failed 2';
                                 P.Logger.info('testData.insert(...) test passed');
                                 model.testData.splice(0, 0, {MDENT_ID: 43, MDENT_NAME: 'ss', MDENT_TYPE: '65'});
                                 if (model.testData.length !== 2 || model.testData.size !== 2 || model.testData.empty)
                                     throw 'testData.splice(...) test failed 1';
-                                if (model.testData[0].MDENT_ID !== '43.0' || model.testData[0].MDENT_NAME !== 'ss' || model.testData[0].MDENT_TYPE !== 65)
+                                if ((model.testData[0].MDENT_ID !== '43.0' && model.testData[0].MDENT_ID !== '43')|| model.testData[0].MDENT_NAME !== 'ss' || model.testData[0].MDENT_TYPE !== 65)
                                     throw 'testData.splice(...) test failed 2';
                                 P.Logger.info('testData.splice(...) test passed');
                                 model.testData.insertAt(3, 1, 44, model.testData.schema.MDENT_NAME, 'sp', 3, '66');
                                 if (model.testData.length !== 3 || model.testData.size !== 3 || model.testData.empty)
                                     throw 'testData.insertAt(...) test failed 1';
-                                if (model.testData[2].MDENT_ID !== '44.0' || model.testData[2].MDENT_NAME !== 'sp' || model.testData[2].MDENT_TYPE !== 66)
+                                if ((model.testData[2].MDENT_ID !== '44.0' && model.testData[2].MDENT_ID !== '44') || model.testData[2].MDENT_NAME !== 'sp' || model.testData[2].MDENT_TYPE !== 66)
                                     throw 'testData.insertAt(...) test failed 2';
                                 P.Logger.info('testData.insertAt(...) test passed');
                                 model.testData.last();
                                 model.testData.cursor.MDENT_ID = 50;
                                 model.testData.cursor.MDENT_NAME = 'sf';
                                 model.testData.cursor.MDENT_TYPE = 70;
-                                if (model.testData[2].MDENT_ID !== '50.0' || model.testData[2].MDENT_NAME !== 'sf' || model.testData[2].MDENT_TYPE !== 70)
+                                if ((model.testData[2].MDENT_ID !== '50.0' && model.testData[2].MDENT_ID !== '50') || model.testData[2].MDENT_NAME !== 'sf' || model.testData[2].MDENT_TYPE !== 70)
                                     throw 'testData.cursor.<...> = test failed';
                                 P.Logger.info('testData.cursor.<...> = test passed');
                                 model.testData[0].MDENT_ID = '60';
