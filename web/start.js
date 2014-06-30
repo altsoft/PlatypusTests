@@ -19,8 +19,8 @@
     }
 })();
 window.P.ready = function() {
-    window.P.require(['ORM_Test_View'], function(){
-        var f = new ORM_Test_View();
+    window.P.require(['design_binding_test'], function(){
+        var f = new design_binding_test();
         f.show();
     });
 };

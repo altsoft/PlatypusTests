@@ -12,6 +12,11 @@ function design_binding_test() {
     };
 
     model.requery();
+    
+    form.modelSpin.onSelect = function(aEditor){
+        
+    };
+    
     form.btnSelectionTest.onActionPerformed = function(event) {
         var selected = form.modelGrid.selected;
         for (var s in selected) {
