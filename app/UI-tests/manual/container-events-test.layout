@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="300px" prefWidth="400px">
-  <widget name="button" parent="Form" prefHeight="23px" prefWidth="65px" text="button" type="ButtonDesignInfo">
-    <constraints height="23px" left="60px" top="60px" type="MarginConstraintsDesignInfo" width="65px"/>
-  </widget>
-  <widget name="toggleButton" parent="Form" prefHeight="23px" prefWidth="95px" text="toggleButton" type="ToggleButtonDesignInfo">
-    <constraints height="23px" left="96px" top="192px" type="MarginConstraintsDesignInfo" width="95px"/>
-  </widget>
-  <layout type="MarginLayoutDesignInfo"/>
-</layout>

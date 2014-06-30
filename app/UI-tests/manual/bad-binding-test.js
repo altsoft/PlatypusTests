@@ -2,7 +2,7 @@
  * 
  * @author mg
  */
-function container_events_test() {
+function bad_binding_test() {
     var self = this
             , model = P.loadModel(this.constructor.name)
             , form = P.loadForm(this.constructor.name, model);
@@ -10,4 +10,6 @@ function container_events_test() {
     self.show = function() {
         form.show();
     };
+    
+    model.requery();
 }
