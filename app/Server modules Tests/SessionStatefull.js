@@ -12,6 +12,10 @@ function SessionStatefull() {
         return callCount;  
     };
     
+    self.clearCallsCount = function() {
+        callCount = 0;  
+    };
+    
     self.incCallsCount = function(aCounts) {
         callCount += aCounts;  
     };
@@ -23,5 +27,28 @@ function SessionStatefull() {
     self.objectWithDateMarshaling = function(aObject) {
         printf(JSON.stringify(aObject));
         return aObject;
+    };
+    
+    self.numbersMarshallingTest = function(a, b){
+        return a + b;
+    };
+    
+    self.stringMarshallingTest = function(a, b){
+        return a + b;
+    };
+    
+    self.booleanMarshallingTest = function(a){
+        return !a;
+    };
+    
+    self.dateMarshallingTest = function(a){
+        return new Date(a.getTime() + 10);
+    };
+    
+    self.nullMarshallingTest = function(a){
+        return null;
+    };
+    
+    self.undefinedMarshallingTest = function(a){
     };
 }
