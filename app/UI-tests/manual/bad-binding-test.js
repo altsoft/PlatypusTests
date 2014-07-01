@@ -2,7 +2,7 @@
  * 
  * @author mg
  */
-function mouse_events_test() {
+function bad_binding_test() {
     var self = this
             , model = P.loadModel(this.constructor.name)
             , form = P.loadForm(this.constructor.name, model);
@@ -10,5 +10,6 @@ function mouse_events_test() {
     self.show = function() {
         form.show();
     };
-    // TODO : place your code here
+    
+    model.requery();
 }

@@ -3,16 +3,15 @@
  * @author mg
  * @name ORM_Relations_Test
  */
-
 function ORM_Relations_Test() {
-
-    var self = this;
-    
-function appElements1OnRequeried(evt) {//GEN-FIRST:event_appElements1OnRequeried
-        Logger.info(self.appElements1.length);
+    var self = this,
+            model = P.loadModel(this.constructor.name);
+    var appElements1 = model.appElements1;
+    appElements1.onRequeried = function(event) {
+        P.Logger.info(appElements1.length);
         var processed = 0;
         var processed1 = 0;
-        self.appElements1.forEach(function(aAppElement) {
+        appElements1.forEach(function(aAppElement) {
             var ch = aAppElement.children;
             var ch1 = aAppElement.children;
             var ch2 = aAppElement.children;
@@ -40,9 +39,9 @@ function appElements1OnRequeried(evt) {//GEN-FIRST:event_appElements1OnRequeried
             }
             processed++;
         });
-        Logger.info(processed + " application elements processed. " + processed1 + " of them with scalar property 'parent' editing and collections review.");
+        P.Logger.info(processed + " application elements processed. " + processed1 + " of them with scalar property 'parent' editing and collections review.");
         if (self.onSuccess)
             self.onSuccess(processed + processed1);
-}//GEN-LAST:event_appElements1OnRequeried
-
+    };
+    model.requery();
 }
