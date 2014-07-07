@@ -1,5 +1,5 @@
 /**
- * 
+ *  
  * @author mg
  */
 function design_binding_test() {
@@ -22,6 +22,7 @@ function design_binding_test() {
         for (var s in selected) {
             P.Logger.info(selected[s].MDENT_NAME);
         }
+        model.appElements.requery();
     };
     form.btnSelectAll.onActionPerformed = function(event) {
         model.appElements.forEach(function(aElement){
