@@ -11,10 +11,12 @@ function ServerReportTests() {
     if (!report) {
         throw "Report does not return from server module."
     }
-    report.save("C:\\1.xls");
+    report.save("1.xls");
     var File = Java.type("java.io.File");
-    var f = new File("C:\\1.xls");
+    var f = new File("1.xls");
     if (!f.exists()) {
         throw "File not found."
-    }
+    }else{
+        f.delete();
+    }    
 }
