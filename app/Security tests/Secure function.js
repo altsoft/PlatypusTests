@@ -1,12 +1,11 @@
 /**
  * Module and function level security constraint
  * @name 133189629266067
- * @module
+ * @constructor
  * @public
- * @rolesAllowed role1, role2
+ * @rolesAllowed role0, role1, role2
  * @author vv
  */
-
 function SecureFunctionModule() {
 
     var self = this;
@@ -16,6 +15,6 @@ function SecureFunctionModule() {
      */
     self.test = function() {
         return "test";
-    }
+    };
 
 }

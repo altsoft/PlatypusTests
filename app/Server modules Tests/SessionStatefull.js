@@ -2,10 +2,10 @@
  * 
  * @author Andrew
  * @public 
- * @module
+ * @constructor
  */
 function SessionStatefull() {
-    var self = this, model = this.model;
+    var self = this, model = P.loadModel(this.constructor.name);
     var callCount = 0;
     
     self.getCallsCount = function() {

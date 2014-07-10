@@ -5,12 +5,9 @@
  * @public
  */
 function TestServerReport() {
-
-    var self = this;
+    var self = this, model = P.loadModel(this.constructor.name);
 
     var testVar = "testContent";
-
-
     var testArray = [{
             p1: "_1_ p1Value",
             p2: 91,

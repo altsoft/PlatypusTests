@@ -6,8 +6,7 @@
  * @public
  */
 function TestStatelessServerModule() {
-
-    var self = this;
+    var self = this, model = P.loadModel(this.constructor.name);
 
     var stateCounter = 0;
     

@@ -4,13 +4,12 @@
  * @public
  * @author vv
  */
-
 function UnsecureModule() {
 
     var self = this;
 
     self.test = function() {
-        java.lang.System.out.println("test");
+        P.Logger.info("test");
         return "test";
     };
 

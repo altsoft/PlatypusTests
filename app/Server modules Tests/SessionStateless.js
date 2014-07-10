@@ -3,10 +3,10 @@
  * @author Andrew
  * @stateless
  * @public 
- * @module
+ * @constructor
  */
 function SessionStateless() {
-    var self = this, model = this.model;
+    var self = this, model = P.loadModel(this.constructor.name);
     var callCount = 0;
     
     self.getCallsCount = function() {

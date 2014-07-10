@@ -9,7 +9,7 @@ function UnsecureForm() {
     var self = this;
 
     self.test = function() {
-        Logger.info("test");
+        P.Logger.info("test");
         return "test";
     };
 

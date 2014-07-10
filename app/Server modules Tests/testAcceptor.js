@@ -1,37 +1,18 @@
 /**
- * Platypus module script.
+ * Devices communication module.
+ * Note! Server modules methods are synchronized!
+ * So don't try to add any synchronization code here. It's all already safe. 
  * @name 134148360246876
  * @public
  * @acceptor
  * @stateless
+ * @constructor
  */
-
 function Asc6Acceptor() {
-
-
-    var self = this;
-
-
-    /**
-     * testAcceptor.js
-     *
-     * Created on 05.07.2012, 14:20:02
-     */
-
-    /**
-     *
-     * @author AB
-     */
-    /**
-     * Devices communication module.
-     * Note! Server modules methods are synchronized!
-     * So don't try to add any synchronization code here. It's all already safe. 
-     */
-
+    var self = this, model = P.loadModel(this.constructor.name);
     /** 
      *  Variables section
      */
-
 // Queues of the user's or application's requests (typically strings), classified by imei.
     var requestsQueues = new Array();
 // Queues of the device's answers (typically strings), classified by imei.
@@ -47,28 +28,22 @@ function Asc6Acceptor() {
      * If the packet is string answer, it should be placed in answers queue for further polling by client.
      * If the packet is data packet with coordinates and in-values, it should be saved in database.
      */
-    self.recieved = function(p)
-    {
-        if (p.valid)
-        {
-            if (p.text != null)
-            {
+    self.recieved = function(p){
+        if (p.valid){
+            if (p.text != null){
                 if (answersQueues[p.imei] == undefined)
                     answersQueues[p.imei] = new Array();
                 answersQueues[p.imei].push(p.text);
-                Logger.info("imei: " + p.imei + "; text: " + p.text);
-            } else
-            {
+                P.Logger.info("imei: " + p.imei + "; text: " + p.text);
+            } else {
                 // put the packet to the db
-                Logger.severe("imei: " + p.imei + "; Пакет действительный (valid);");
+                P.Logger.severe("imei: " + p.imei + "; Пакет действительный (valid);");
                 //throw "пакет не принялся";
             }
         } else {
-            Logger.severe("imei: " + p.imei + "; Пакет не действительный (not valid);");
+            P.Logger.severe("imei: " + p.imei + "; Пакет не действительный (not valid);");
         }
-    }
-
-
+    };
 
     /**
      * Method is called by the server, when there is an idle time in opened session,
@@ -91,15 +66,12 @@ function Asc6Acceptor() {
     /**
      * Pushs a request string into device's requests queue.
      */
-
     function push(imei, request)
     {
         if (requestsQueues[imei] == undefined)
             requestsQueues[imei] = new Array();
         requestsQueues[imei].push(request);
     }
-
-
 
     /**
      * Polls a recieved answer from device's answers queue.
@@ -110,6 +82,4 @@ function Asc6Acceptor() {
             answersQueues[imei] = new Array();
         return answersQueues[imei].shift();
     }
-
-
 }

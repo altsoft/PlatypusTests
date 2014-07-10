@@ -6,7 +6,6 @@
  * @public
  * @author vv
  */
-
 function SecureModule() {
 
     var self = this;
