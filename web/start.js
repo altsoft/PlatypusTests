@@ -19,8 +19,8 @@
     }
 })();
 window.P.ready = function() {
-    window.P.require(['design_binding_test'], function(){
-        var f = new design_binding_test();
+    window.P.require(['FirstForm'], function(){
+        var f = new FirstForm();
         f.show();
     });
 };
