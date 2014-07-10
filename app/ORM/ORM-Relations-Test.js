@@ -12,7 +12,7 @@ function ORM_Relations_Test() {
     var self = this,
             model = P.loadModel(this.constructor.name);
     var appElements1 = model.appElements1;
-    appElements1.elementsClass = Dog;
+    appElements1.elementClass = Dog;
     appElements1.onRequeried = function(event) {
         P.Logger.info(appElements1.length);
         var processed = 0;
