@@ -18,7 +18,9 @@ function ORM_Relations_Test() {
         var processed = 0;
         var processed1 = 0;
         appElements1.forEach(function(aAppElement) {
-            var r = aAppElement.run;
+            if(aAppElement.run != Dog){
+                throw 'ORM data element methos violation!';
+            }
             var ch = aAppElement.children;
             var ch1 = aAppElement.children;
             var ch2 = aAppElement.children;

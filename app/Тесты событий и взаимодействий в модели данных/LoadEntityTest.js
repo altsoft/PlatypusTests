@@ -5,21 +5,20 @@
  */
 
 function Load_Entity_Test() {
-
-    var self = this;
-
-    var loaded = self.model.loadEntity("_24832514140608864");
+    var self = this,
+            model = P.loadModel(this.constructor.name);
+    var loaded = model.loadEntity("_24832514140608864");
     if (loaded == null)
         throw "entity hasn't been created";
-    if (loaded.md == null)
-        throw "entity's .md is not accessible";
+    if (loaded.schema == null)
+        throw "entity's .schema is not accessible";
 
     loaded.requery(function() {
-        if (loaded.MDENT_NAME == null)
-            throw "entity's .MDENT_NAME is not accessible";
-        if (loaded.MDENT_TYPE == null)
-            throw "entity's .MDENT_TYPE is not accessible";
-        Logger.info("loaded.length: " + loaded.length);
+        if (loaded.cursor.MDENT_NAME == null)
+            throw "entity's .cursor.MDENT_NAME is not accessible";
+        if (loaded.cursor.MDENT_TYPE == null)
+            throw "entity's .cursor.MDENT_TYPE is not accessible";
+        P.Logger.info("loaded.length: " + loaded.length);
         if (self.onSuccess)
             self.onSuccess(loaded.length);
     });

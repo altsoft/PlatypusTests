@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="300px" prefWidth="400px">
+  <widget name="modelGrid" parent="Form" prefHeight="252px" prefWidth="396px" type="DbGridDesignInfo">
+    <column name="colFamilyName" title="Family name of the font">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="140506849637214" fieldName="familyName"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <columnsKeyField/>
+        <cellValueField/>
+        <rowsKeyField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="colStyle" title="Style of the font">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="140506849637214" fieldName="style"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <columnsKeyField/>
+        <cellValueField/>
+        <rowsKeyField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="colSize" title="Size of the font">
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="140506849637214" fieldName="size"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <columnsKeyField/>
+        <cellValueField/>
+        <rowsKeyField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="140506849637214" field="false"/>
+    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
+    <constraints bottom="48px" left="0px" right="4px" top="0px" type="MarginConstraintsDesignInfo"/>
+  </widget>
+  <widget name="btnSave" parent="Form" prefHeight="23px" prefWidth="65px" text="Save" type="ButtonDesignInfo">
+    <constraints bottom="13px" height="23px" right="35px" type="MarginConstraintsDesignInfo" width="65px"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>
