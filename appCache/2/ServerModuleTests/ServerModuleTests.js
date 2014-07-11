@@ -1,7 +1,7 @@
 /**
  * 
  * @author Andrew
- * @module
+ * @constructor
  */
 function ServerModuleTests() {
     var self = this, model = P.loadModel(this.constructor.name);
