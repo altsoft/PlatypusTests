@@ -13,7 +13,10 @@ function HorizontalBoxTest() {
     var i=0;
     form.button.onActionPerformed = function(event) {
         var btn = new P.Button('' + ++i);
+        btn.onActionPerformed = function(ev){
+            btn.parent.remove(btn);
+        };
         btn.width = 30;
-        form.panel.add(btn);
+        form.box1.add(btn);
     };
 }
