@@ -14,7 +14,7 @@
   <widget backgroundColor="#ffcccc" name="box2" parent="box" prefHeight="205px" prefWidth="95px" type="PanelDesignInfo">
     <layout hgap="5" type="BoxLayoutDesignInfo"/>
   </widget>
-  <widget name="box3" parent="box" prefHeight="205px" prefWidth="95px" type="PanelDesignInfo">
+  <widget backgroundColor="#ccccff" name="box3" parent="box" prefHeight="205px" prefWidth="95px" type="PanelDesignInfo">
     <layout hgap="5" type="BoxLayoutDesignInfo"/>
   </widget>
   <widget name="btnIncHGap" parent="Form" prefHeight="23px" prefWidth="96px" text="inc hgap" type="ButtonDesignInfo">
