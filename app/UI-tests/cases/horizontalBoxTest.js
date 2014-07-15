@@ -19,4 +19,16 @@ function HorizontalBoxTest() {
         btn.width = 30;
         form.box1.add(btn);
     };
+    form.btnIncHGap.onActionPerformed = function(event) {
+        form.box.hgap++;
+    };
+    form.btnDecHGap.onActionPerformed = function(event) {
+        form.box.hgap--;
+    };
+    form.btnAddBox.onActionPerformed = function(event) {
+        var newBox = new P.BoxPane();
+        newBox.background = P.Colors.GREEN;
+        form.box.add(newBox);
+        newBox.width = form.box1.width;        
+    };
 }
