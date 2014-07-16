@@ -2,7 +2,7 @@
   <widget name="button" parent="Form" prefHeight="23px" prefWidth="65px" text="add" type="ButtonDesignInfo">
     <constraints height="23px" left="12px" top="12px" type="MarginConstraintsDesignInfo" width="65px"/>
   </widget>
-  <widget name="scrollPane" parent="Form" prefHeight="207px" prefWidth="304px" type="ScrollDesignInfo">
+  <widget backgroundColor="#999900" name="scrollPane" parent="Form" prefHeight="207px" prefWidth="304px" type="ScrollDesignInfo">
     <constraints bottom="60px" left="12px" right="16px" top="48px" type="MarginConstraintsDesignInfo"/>
   </widget>
   <widget backgroundColor="#666666" name="box" parent="scrollPane" prefHeight="205px" prefWidth="302px" type="PanelDesignInfo">
