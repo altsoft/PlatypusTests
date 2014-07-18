@@ -11,6 +11,13 @@ function design_binding_test() {
         form.show();
     };
 
+    self.showOn = function(aElementOrId) {
+        form.view.showOn(aElementOrId);
+    };
+    self.showDateOn = function(aElementOrId) {
+        form.modelDate.showOn(aElementOrId);
+    };
+    
     model.requery();
     
     form.modelSpin.onSelect = function(aEditor){
