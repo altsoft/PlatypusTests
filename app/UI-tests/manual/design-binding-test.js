@@ -21,7 +21,6 @@ function design_binding_test() {
     model.requery();
     
     form.modelSpin.onSelect = function(aEditor){
-        
     };
     
     form.btnSelectionTest.onActionPerformed = function(event) {
