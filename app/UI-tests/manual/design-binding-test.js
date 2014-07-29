@@ -49,4 +49,13 @@ function design_binding_test() {
             form.modelGrid.makeVisible(aElement, true);
         });
     };
+    form.button.onActionPerformed = function(event) {
+        form.minimize();
+    };
+    form.button1.onActionPerformed = function(event) {
+        form.maximize();
+    };
+    form.button2.onActionPerformed = function(event) {
+        form.restore();
+    };
 }

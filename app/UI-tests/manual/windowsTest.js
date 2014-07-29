@@ -27,8 +27,10 @@ function WindowsTest() {
     };
     form.btnClose.onActionPerformed = function(event) {
         P.Logger.info(form.desktopPane.forms);
+        P.Logger.info(form.desktopPane.forms.length);
         form.desktopPane.closeAll();
         P.Logger.info(form.desktopPane.forms);
+        P.Logger.info(form.desktopPane.forms.length);
     };
     form.btnRestore.onActionPerformed = function(event) {
         form.desktopPane.restoreAll();
