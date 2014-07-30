@@ -1,7 +1,7 @@
 /**
  * 
  * @author mg
- */
+ */u
 function ManualRunner() {
     var self = this
            , model = P.loadModel(this.constructor.name)

@@ -13,7 +13,7 @@
     <constraints bottom="61px" height="23px" left="48px" type="MarginConstraintsDesignInfo" width="81px"/>
   </widget>
   <widget buttonGroup="buttonGroup" name="radioButton1" parent="Form" prefHeight="23px" prefWidth="87px" text="radioButton1" type="RadioDesignInfo">
-    <constraints bottom="25px" height="23px" left="36px" type="MarginConstraintsDesignInfo" width="87px"/>
+    <constraints bottom="25px" height="23px" left="48px" type="MarginConstraintsDesignInfo" width="87px"/>
   </widget>
   <nonvisual name="buttonGroup" type="ButtonGroupDesignInfo"/>
   <layout type="MarginLayoutDesignInfo"/>
