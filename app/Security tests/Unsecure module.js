@@ -2,7 +2,7 @@
  * Module functions is avaliable to every user from anywhere
  * @name 133189621201879
  * @public
- * @author vvt
+ * @author vv
  */
 function UnsecureModule() {
 
