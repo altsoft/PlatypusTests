@@ -10,7 +10,31 @@ function design_binding_test() {
     self.show = function() {
         form.show();
     };
-    
+
+    form.modelGrid.colMDENT_ID.onRender = function(ev) {
+        if (ev.object.MDENT_TYPE > 60) {
+            ev.cell.style.background = P.Colors.CYAN;
+            ev.cell.display = "' > 60";
+            return true;
+        }
+    };
+    form.modelGrid.colMDENT_NAME.onRender = function(ev) {
+        if (ev.object.MDENT_TYPE > 60) {
+            ev.cell.style.background = P.Colors.CYAN;
+            return true;
+        }
+    };
+    form.modelGrid.colMDENT_TYPE.onRender = function(ev) {
+        if (ev.object.MDENT_TYPE > 60) {
+            ev.cell.style.background = P.Colors.CYAN;
+            return true;
+        }
+    };
+
+    form.modelGrid.colMDENT_TYPE.onSelect = function(aEditor) {
+        aEditor.value = 90;
+    };
+
     self.showOnDesktop = function(aDesktop) {
         form.showInternalFrame(aDesktop);
     };
@@ -21,12 +45,12 @@ function design_binding_test() {
     self.showDateOn = function(aElementOrId) {
         form.modelDate.showOn(aElementOrId);
     };
-    
+
     model.requery();
-    
-    form.modelSpin.onSelect = function(aEditor){
+
+    form.modelSpin.onSelect = function(aEditor) {
     };
-    
+
     form.btnSelectionTest.onActionPerformed = function(event) {
         var selected = form.modelGrid.selected;
         for (var s in selected) {
@@ -35,17 +59,17 @@ function design_binding_test() {
         model.appElements.requery();
     };
     form.btnSelectAll.onActionPerformed = function(event) {
-        model.appElements.forEach(function(aElement){
+        model.appElements.forEach(function(aElement) {
             form.modelGrid.select(aElement);
         });
     };
     form.btnUnselectAll.onActionPerformed = function(event) {
-        model.appElements.forEach(function(aElement){
+        model.appElements.forEach(function(aElement) {
             form.modelGrid.unselect(aElement);
         });
     };
     form.btnMakeVisible.onActionPerformed = function(event) {
-        model.appElements.forEach(function(aElement){
+        model.appElements.forEach(function(aElement) {
             form.modelGrid.makeVisible(aElement, true);
         });
     };
