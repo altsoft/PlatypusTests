@@ -13,26 +13,32 @@ function design_binding_test() {
 
     form.modelGrid.colMDENT_ID.onRender = function(ev) {
         if (ev.object.MDENT_TYPE > 60) {
-            ev.cell.style.background = P.Colors.CYAN;
-            ev.cell.display = "' > 60";
+            (function() {
+                ev.cell.style.background = P.Colors.CYAN;
+                ev.cell.display = "' > 60";
+            }).invokeLater();
             return true;
         }
     };
     form.modelGrid.colMDENT_NAME.onRender = function(ev) {
         if (ev.object.MDENT_TYPE > 60) {
             ev.cell.style.background = P.Colors.CYAN;
+            ev.cell.style.icon = P.Icon.load('http://favicon.yandex.net/favicon/rm.tvigle.ru');
             return true;
         }
     };
     form.modelGrid.colMDENT_TYPE.onRender = function(ev) {
         if (ev.object.MDENT_TYPE > 60) {
-            ev.cell.style.background = P.Colors.CYAN;
+            ev.cell.style.background = P.Colors.CYAN;   
             return true;
         }
     };
 
     form.modelGrid.colMDENT_TYPE.onSelect = function(aEditor) {
-        aEditor.value = 90;
+        var selector = new ConstantSelector();
+        selector.showModal(function(aSelected){
+            aEditor.value = aSelected;
+        });
     };
 
     self.showOnDesktop = function(aDesktop) {
