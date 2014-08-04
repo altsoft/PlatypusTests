@@ -17,20 +17,19 @@ function design_binding_test() {
                 ev.cell.style.background = P.Colors.CYAN;
                 ev.cell.display = "' > 60";
             }).invokeLater();
-            return true;
         }
     };
     form.modelGrid.colMDENT_NAME.onRender = function(ev) {
         if (ev.object.MDENT_TYPE > 60) {
-            ev.cell.style.background = P.Colors.CYAN;
+            var s = new P.Style();
+            s.background = P.Colors.CYAN;
+            ev.cell.style = s;
             ev.cell.style.icon = P.Icon.load('http://favicon.yandex.net/favicon/rm.tvigle.ru');
-            return true;
         }
     };
     form.modelGrid.colMDENT_TYPE.onRender = function(ev) {
         if (ev.object.MDENT_TYPE > 60) {
             ev.cell.style.background = P.Colors.CYAN;   
-            return true;
         }
     };
 
