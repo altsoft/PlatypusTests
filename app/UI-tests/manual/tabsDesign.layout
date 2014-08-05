@@ -4,7 +4,7 @@
   </widget>
   <widget name="panel" parent="tabbedPane" prefHeight="224px" prefWidth="391px" type="PanelDesignInfo">
     <layout type="MarginLayoutDesignInfo"/>
-    <constraints tabTitle="tab0" type="TabsConstraintsDesignInfo"/>
+    <constraints tabIcon="http://favicon.yandex.net/favicon/rm.tvigle.ru" tabTitle="tab0" tabTooltipText="Первая закладка" type="TabsConstraintsDesignInfo"/>
   </widget>
   <widget name="label" parent="panel" prefHeight="14px" prefWidth="108px" text="label" type="LabelDesignInfo">
     <constraints height="14px" left="72px" top="96px" type="MarginConstraintsDesignInfo" width="108px"/>
