@@ -11,4 +11,7 @@ function tabsDesign() {
         form.show();
     };
     // TODO : place your code here
+    form.menuItem.onActionPerformed = function(event) {
+        form.menuItem.icon = P.Icon.load('http://favicon.yandex.net/favicon/rm.tvigle.ru');
+    };
 }
