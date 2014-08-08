@@ -2,7 +2,6 @@
  * Platypus report script.
  * @public
  */
-
 function TestReportCore() {
     var self = this, model = P.loadModel(this.constructor.name);
     
