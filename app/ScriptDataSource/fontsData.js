@@ -5,11 +5,11 @@
  */
 function fontsData() {
     var self = this, model = P.loadModel(this.constructor.name);
-
-    this.schema = [
+ 
+    this.schema = [ 
         {name: "familyName", entity: "fonts", description: "Family name of the font", type: String, key: true},
-        {name: "style", entity: "fonts", description: "Style of the font", type: String},
-        {name: "size", entity: "fonts", description: "Size of the font", type: Number},
+        {name: "style", entity: "fonts", description: "Style of the font", type: String, ref:{property: "familyName", entity: "fonts"}},
+        {name: "size", entity: "fonts", description: "Size of the font", type: Number}
     ];
 
     /**
