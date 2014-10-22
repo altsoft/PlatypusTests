@@ -6,9 +6,9 @@
 if(!this.P)
     this.P = {};
 P.ready = function() {
-    P.require(['MultiSourceWithErrorTestView'], function(){
-        var f = new MultiSourceWithErrorTestView();
-        f.show();
+    P.require(['FontsDataTest'], function(){
+        var m = new FontsDataTest();
+        m.show();
     }, function(e){
         P.Logger.severe(e);
     });

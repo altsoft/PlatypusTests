@@ -12,6 +12,10 @@ function fontsData() {
         {name: "size", entity: "fonts", description: "Size of the font", type: Number}
     ];
 
+    this.params = [
+        {name: "familyName", type: String}
+    ];
+
     /**
      * Method invoked by platypus runtime in data fetching purposes.
      * @param aParams Object, with properties as defined in this module's model's parameters.
