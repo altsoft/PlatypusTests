@@ -5,5 +5,6 @@
     <parameter description="" name="id" nullable="true" parameterMode="1" precision="0" scale="0" selectionForm="null" signed="true" size="0" type="2" typeName="NUMERIC"/>
   </parameters>
   <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-  <entity Name="dsValues" Title="reportQuery" entityHeight="200" entityIconified="false" entityId="136369021578116" entityLocationX="325" entityLocationY="10" entityWidth="150" queryId="reportQuery" tableName="" tableSchemaName=""/>
+  <entity Name="dsValues" Title="reportQuery" entityHeight="200" entityIconified="false" entityId="136369021578116" entityLocationX="320" entityLocationY="14" entityWidth="150" queryId="reportQuery" tableName="" tableSchemaName=""/>
+  <relation leftEntityId="-1" leftEntityParameterName="testParamString" rightEntityFieldName="name" rightEntityId="136369021578116"/>
 </datamodel>

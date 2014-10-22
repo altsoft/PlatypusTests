@@ -185,7 +185,7 @@ function dbCheckOnSelect(aEditor) {//GEN-FIRST:event_dbCheckOnSelect
         aEditor.value = !aEditor.value;
 }//GEN-LAST:event_dbCheckOnSelect
 
-    var selector = new fakeSelector();
+    var selector = new FakeSelector();
 
 function param1OnSelect(aEditor) {//GEN-FIRST:event_param1OnSelect
         selector.showModal(function(aValue) {
