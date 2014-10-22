@@ -25,7 +25,7 @@ function FontsDataTest() {
                 P.Logger.info("model.fontsData[0].familyName: " + model.fontsData[0].familyName);
                 if (model.fontsData[0].familyName !== 'Arial')
                     throw "fontsData violation 2";
-                model.fontsData.params.familyName = 'Arial';
+                model.fontsData.params.familyName = null;
                 model.fontsData.requery(function () {
                     P.Logger.info("model.fontsData.length: " + model.fontsData.length);
                     if (model.fontsData.length !== 3)
