@@ -6,8 +6,8 @@
 if(!this.P)
     this.P = {};
 P.ready = function() {
-    P.require(['FontsDataTest'], function(){
-        var m = new FontsDataTest();
+    P.require(['FontsDataValidatorTest'], function(){
+        var m = new FontsDataValidatorTest();
         m.show();
     }, function(e){
         P.Logger.severe(e);

@@ -15,9 +15,12 @@ function fontsValidator() {
      * @returns {Boolean} False if you whant to stop validating process (e.g. break validators chain), nothing or true otherwise.
      * @throws An exception if validation fails. 
      */
-    this.validate = function (aLog, aDatasource) {
-        // TODO: place your validation code here
-        
+    this.validate = function (aLog, aDatasource, aOnSuccess, aOnFailure) {
         P.Logger.info("fontsValidator. aLog.length: " + aLog.length + "; aDatasource: " + aDatasource + ";");
+        fontsValidatorCalls++;
+        if(aOnSuccess)
+            aOnSuccess();
     };
 }
+
+var fontsValidatorCalls = 0;

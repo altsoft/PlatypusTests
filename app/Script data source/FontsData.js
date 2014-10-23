@@ -23,7 +23,7 @@ function fontsData() {
      */
     this.fetch = function (aParams, aOnSuccess, aOnFailure) {
         var data;
-        if (aParams.familyName.value === 'Arial') {
+        if (aParams.familyName === 'Arial') {
             data = [
                 {familyName: "Arial", style: 'normal', size: 12},
             ];
@@ -34,7 +34,7 @@ function fontsData() {
                 {familyName: "Times", style: "italic", size: 10}
             ];
         }
-        if (aOnSuccess !== null) {
+        if (aOnSuccess) {
             aOnSuccess(data);
             return null;
         } else {
@@ -46,17 +46,19 @@ function fontsData() {
      * Method invoked by platypus runtime in data applying purposes.
      * @param aLog Array of changes - log of changes made by clients or server side data driven code to be applied.
      */
-    this.apply = function (aLog) {
+    this.apply = function (aLog, aOnSuccess, aOnFailure) {
         P.Logger.info("fontsData. aLog.length: " + aLog.length + ";");
+        var entities = {};
         for (var i = 0; i < aLog.length; i++) {
             var change = aLog[i];
-            change.consume();
             var data = change.data;
             var keys = change.keys;
             var type = change.type;
             type = null;
+            entities[change.entity] = 1;
         }
-        ;
+        if(aOnSuccess)
+            aOnSuccess(Object.keys(entities).length);
     };
 
 }
