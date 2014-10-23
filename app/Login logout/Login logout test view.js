@@ -7,14 +7,15 @@ function Login_Logout_Test_View() {
             , model = P.loadModel(this.constructor.name)
             , form = P.loadForm(this.constructor.name, model);
 
-    self.show = function() {
+    self.show = function () {
         form.show();
     };
 
-    form.btnLogout.onActionPerformed = function(event) {
+    form.btnLogout.onActionPerformed = function (event) {
         P.principal.logout();
-        for(var i=0;i<50;i++){
-            P.require('ModelAPI', function(){});
+        for (var i = 0; i < 50; i++) {
+            P.require('ModelAPI', function () {
+            });
         }
     };
 }
