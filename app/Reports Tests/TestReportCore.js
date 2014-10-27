@@ -1,6 +1,7 @@
 /**
  * Platypus report script.
  * @public
+ * @stateless
  */
 
 function TestReportCore() {
