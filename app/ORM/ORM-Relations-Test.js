@@ -1,6 +1,7 @@
+var dogMemberFunctionRun = function () {
+};
 function Dog() {
-    this.run = function () {
-    };
+    this.run = dogMemberFunctionRun;
 }
 
 /**
@@ -21,8 +22,9 @@ function ORM_Relations_Test() {
             var processed = 0;
             var processed1 = 0;
             appElements1.forEach(function (aAppElement) {
-                if (aAppElement.run != Dog) {
-                    throw 'ORM data element methos violation!';
+                var r = aAppElement.run;
+                if (aAppElement.run != dogMemberFunctionRun) {
+                    throw 'ORM data element methods violation!';
                 }
                 var ch = aAppElement.children;
                 var ch1 = aAppElement.children;
@@ -55,6 +57,6 @@ function ORM_Relations_Test() {
             if (self.onSuccess)
                 self.onSuccess(processed + processed1);
         };
+        model.requery();
     };
-    model.requery();
 }

@@ -11,14 +11,6 @@ function design_binding_test() {
         form.show();
     };
 
-    form.modelGrid.colMDENT_ID.onRender = function(ev) {
-        if (ev.object.MDENT_TYPE > 60) {
-            (function() {
-                ev.cell.style.background = P.Colors.CYAN;
-                ev.cell.display = "' > 60";
-            }).invokeLater();
-        }
-    };
     form.modelGrid.colMDENT_NAME.onRender = function(ev) {
         if (ev.object.MDENT_TYPE > 60) {
             var s = new P.Style();
