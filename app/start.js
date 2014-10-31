@@ -6,9 +6,9 @@
 if(!this.P)
     this.P = {};
 P.ready = function() {
-    P.require(['design_binding_test'], function(){
-        var m = new design_binding_test();
-        m.show();
+    P.require(['extra_fields_insert_update'], function(){
+        var m = new extra_fields_insert_update();
+        m.execute();
     }, function(e){
         P.Logger.severe(e);
     });

@@ -3,7 +3,7 @@
  * @author mg
  * @constructor
  */
-function ambigous_changes_1() {
+function ambigous_changes_semi_writable() {
     var NEW_RECORD_ID = 4125;
     var NEW_RECORD_NAME_G = "test gname";
     var NEW_RECORD_NAME_T = "test tname";
@@ -59,7 +59,7 @@ function ambigous_changes_1() {
                     if (instance.kname !== NEW_RECORD_NAME_K)
                         throw 'instance.kname violation';
                     // Delete operation
-                    model.ambigousChanges.deleteRow(instance);
+                    model.ambigousChanges.remove(instance);
                     model.save(function () {
                         model.requery(function () {
                             var newLength1 = model.ambigousChanges.length;
@@ -71,6 +71,7 @@ function ambigous_changes_1() {
                                 throw 'Array.isArray violation 2';
                             if (found1.length !== 0)
                                 throw 'found.length violation 2';
+                            P.Logger.info("ambigous_changes_semi_writable passed");
                         }, function (e) {
                             P.Logger.info(e);
                         });
