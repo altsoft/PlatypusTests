@@ -9,14 +9,14 @@ function Create_Entity_Test() {
     
     self.execute = function () {
         var created = model.createEntity("select * from mtd_entities");
-        if (created == null)
+        if (created === null)
             throw "entity hasn't been created";
-        if (created.schema == null)
+        if (created.schema === null)
             throw "entity's .schema is not accessible";
         created.requery(function () {
-            if (created.cursor.mdent_name == null)
+            if (created.cursor.mdent_name === null)
                 throw "entity's .cursor.MDENT_NAME is not accessible";
-            if (created.cursor.mdent_type == null)
+            if (created.cursor.mdent_type === null)
                 throw "entity's .cursor.MDENT_TYPE is not accessible";
             P.Logger.info("created.length: " + created.length);
         });

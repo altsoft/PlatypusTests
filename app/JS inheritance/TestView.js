@@ -3,20 +3,18 @@
  * @author mg
  * @name TestView
  */
-
 function TestView() {
-
-    var self = this;
+    var self = this,
+            model = P.loadModel(this.constructor.name),
+            form = P.loadForm(this.constructor.name);
 
     var repCallback = arguments[0];
     var moduleCallback = arguments[1];
 
-function buttonActionPerformed(evt) {//GEN-FIRST:event_buttonActionPerformed
+    form.button.onActionPerformed = function (event) {
         repCallback();
-}//GEN-LAST:event_buttonActionPerformed
-
-function button1ActionPerformed(evt) {//GEN-FIRST:event_button1ActionPerformed
+    };
+    form.button1.onActionPerformed = function (event) {
         moduleCallback();
-}//GEN-LAST:event_button1ActionPerformed
-
+    };
 }

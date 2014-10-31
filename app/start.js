@@ -6,8 +6,8 @@
 if(!this.P)
     this.P = {};
 P.ready = function() {
-    P.require(['extra_fields_insert_update'], function(){
-        var m = new extra_fields_insert_update();
+    P.require(['ambigous_changes_semi_writable'], function(){
+        var m = new ambigous_changes_semi_writable();
         m.execute();
     }, function(e){
         P.Logger.severe(e);

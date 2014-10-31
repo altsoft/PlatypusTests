@@ -1,6 +1,6 @@
 
 function j() {
-    alert("Hello from j()!")
+    alert("Hello from j()!");
 }
 
 
@@ -29,13 +29,13 @@ function extend(Child, Parent) {
 function Animal() {
 }
 Animal.prototype.eat = function() {
-    Logger.info("eat called");
+    P.Logger.info("eat called");
 };
 
 function Rabbit() {
 }
 Rabbit.prototype.run = function() {
-    Logger.info("run called");
+    P.Logger.info("run called");
 };
 
 extend(Rabbit, Animal);
@@ -50,26 +50,26 @@ extend(Rabbit, Animal);
 //extend(Messages, Module);
 
 Messages.prototype.message1 = function(aValue) {
-    Logger.info("message1; " + aValue);
+    P.Logger.info("message1; " + aValue);
 };
 Messages.prototype.message2 = function(aValue) {
-    Logger.info("message2; " + aValue);
+    P.Logger.info("message2; " + aValue);
 };
 Messages.prototype.message3 = function(aValue) {
-    Logger.info("message3; " + aValue);
+    P.Logger.info("message3; " + aValue);
 };
 Messages.prototype.message4 = function(aValue) {
-    Logger.info("message4; " + aValue);
+    P.Logger.info("message4; " + aValue);
 };
 
 extend(Alerts, Messages);
 var a = new Alerts(70, "Sample argument");
 a.message2("Sample");
-Logger.info("a.constructor == Alerts.prototype.constructor: " + a.constructor == Alerts.prototype.constructor);
-Logger.info("a.constructor == Alerts: " + a.constructor == Alerts);
-Logger.info("a instanceof Alerts: " + (a instanceof Alerts));
-Logger.info("a instanceof Messages: " + (a instanceof Messages));
-Logger.info("a instanceof Module: " + (a instanceof Module));
+P.Logger.info("a.constructor == Alerts.prototype.constructor: " + a.constructor === Alerts.prototype.constructor);
+P.Logger.info("a.constructor == Alerts: " + a.constructor === Alerts);
+P.Logger.info("a instanceof Alerts: " + (a instanceof Alerts));
+P.Logger.info("a instanceof Messages: " + (a instanceof Messages));
+P.Logger.info("a instanceof Module: " + (a instanceof Module));
 
 var m = new Messages();
 Logger.info("m instanceof Messages: " + (m instanceof Messages));

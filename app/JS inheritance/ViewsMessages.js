@@ -5,7 +5,5 @@
  */
 
 function ViewsMessages() {
-
     var self = this;
-
 }

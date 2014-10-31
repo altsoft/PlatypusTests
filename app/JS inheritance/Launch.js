@@ -5,11 +5,12 @@
  */
 
 function Launch() {
-
-    var self = this;
+    var self = this,
+            model = P.loadModel(this.constructor.name),
+            form = P.loadForm(this.constructor.name);
 
     function extend(Child, Parent) {
-        var F = function() {
+        var F = function () {
         };
         F.prototype = Parent.prototype;
         Child.prototype = new F();
@@ -17,16 +18,13 @@ function Launch() {
         Child.superclass = Parent.prototype;
     }
 
-
-// Won't work: Rabbit.prototype - readonly property, because of resource nature of Rabbit (data self.model with javascript interface)
-    Animal.prototype.sum = function(a, b) {
+    // Won't work: Rabbit.prototype - readonly property, because of resource nature of Rabbit (data self.model with javascript interface)
+    Animal.prototype.sum = function (a, b) {
         return a + b;
     };
     extend(Rabbit, Animal);
-
-function btnRunActionPerformed(evt) {//GEN-FIRST:event_btnRunActionPerformed
+    form.btnRun.onActionPerformed = function (event) {
         var r = new Rabbit(45, 89);
         alert(r.sum(4, 5));
-}//GEN-LAST:event_btnRunActionPerformed
-
+    };
 }

@@ -11,6 +11,6 @@ function Rabbit() {
     var o1 = arguments[0];
     var o2 = arguments[1];
 
-    Animal();// won't work because of resource nature of Rabbit (data self.model with javascript interface);
+    Animal();// won't work because of resource nature of Rabbit;
 
 }

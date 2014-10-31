@@ -8,7 +8,7 @@ function Alerts() {
 
     var self = this;
 
-    Logger.info("arguments: " + arguments);
-    Logger.info("arguments.length: " + arguments.length);
-    Logger.info("arguments[1]: " + arguments[1]);
+    P.Logger.info("arguments: " + arguments);
+    P.Logger.info("arguments.length: " + arguments.length);
+    P.Logger.info("arguments[1]: " + arguments[1]);
 }
