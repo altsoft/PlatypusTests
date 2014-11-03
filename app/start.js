@@ -6,9 +6,7 @@
 if(!this.P)
     this.P = {};
 P.ready = function() {
-    P.require(['ambigous_changes_semi_writable'], function(){
-        var m = new ambigous_changes_semi_writable();
-        m.execute();
+    P.require(['JS inheritance/plain-start.js'], function(){
     }, function(e){
         P.Logger.severe(e);
     });
