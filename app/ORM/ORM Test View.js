@@ -12,9 +12,8 @@ function ORM_Test_View() {
         form.show();
     };
 
-    form.button.onActionPerformed = function(event) {
-        //var ormTest = new ORM_Relations_Test();
-        var ormTest = new ModelAPI();
-        ormTest.execute();
+    form.btnTest.onActionPerformed = function(event) {
+        var test = new ORM_Relations_Test();
+        test.execute();
     };
 }

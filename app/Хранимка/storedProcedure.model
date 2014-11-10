@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<datamodel>
-  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-  <entity Name="procedureSample" Title="Пример хранимки" entityHeight="89" entityIconified="false" entityId="137415609220649" entityLocationX="200" entityLocationY="32" entityWidth="150" queryId="ProcedureSample" tableName="" tableSchemaName=""/>
-</datamodel>
