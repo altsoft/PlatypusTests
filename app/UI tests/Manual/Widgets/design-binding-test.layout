@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="405px" prefWidth="540px">
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="405px" prefWidth="540px" title="Виджеты">
   <widget name="modelCheckBox" parent="Form" prefHeight="20px" prefWidth="152px" text="Sample text" type="DbCheckDesignInfo">
     <datamodelElement entityId="-1" fieldName="nvalue"/>
     <constraints height="20px" left="12px" top="12px" type="MarginConstraintsDesignInfo" width="152px"/>
@@ -30,131 +30,130 @@
     <constraints height="20px" right="168px" top="108px" type="MarginConstraintsDesignInfo" width="193px"/>
   </widget>
   <widget name="modelGrid" parent="Form" prefHeight="192px" prefWidth="527px" type="DbGridDesignInfo">
-    <rowsColumnsDesignInfo fixedColumns="2" fixedRows="5">
+    <rowsColumnsDesignInfo fixedRows="5">
       <rowsDatasource entityId="140410667793902" field="false"/>
     </rowsColumnsDesignInfo>
     <treeDesignInfo>
       <unaryLinkField entityId="140410667793902" fieldName="MDENT_PARENT_ID"/>
     </treeDesignInfo>
-    <column name="colMDENT_ID" width="250">
+    <column name="colMDENT_NAME" readonly="true" title="Название">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-      <datamodelElement entityId="140410667793902" fieldName="MDENT_ID"/>
-      <columnsDatasource/>
-      <columnsDisplayField/>
-      <cellsDatasource/>
-      <cellDesignInfo>
-        <rowsKeyField/>
-        <columnsKeyField/>
-        <cellValueField/>
-      </cellDesignInfo>
-    </column>
-    <column name="colMDENT_NAME" readonly="true">
-      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
       <datamodelElement entityId="140410667793902" fieldName="MDENT_NAME"/>
       <columnsDatasource/>
       <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
-        <rowsKeyField/>
         <columnsKeyField/>
         <cellValueField/>
+        <rowsKeyField/>
       </cellDesignInfo>
-    </column>
-    <column name="colMDENT_TYPE" readonly="true">
-      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+    </column>
+    <column name="colMDENT_TYPE" readonly="true" title="Тип" visible="false">
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
       <datamodelElement entityId="140410667793902" fieldName="MDENT_TYPE"/>
       <columnsDatasource/>
       <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
-        <rowsKeyField/>
         <columnsKeyField/>
         <cellValueField/>
+        <rowsKeyField/>
       </cellDesignInfo>
-    </column>
-    <column name="colTAG1">
-      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+    </column>
+    <column name="colMisc" title="Разное">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <column name="colMDENT_PARENT_ID" title="Родитель">
+        <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+        <datamodelElement entityId="140410667793902" fieldName="MDENT_PARENT_ID"/>
+        <columnsDatasource/>
+        <columnsDisplayField/>
+        <cellsDatasource/>
+        <cellDesignInfo>
+          <columnsKeyField/>
+          <cellValueField/>
+          <rowsKeyField/>
+        </cellDesignInfo>
+        <headerStyle>
+          <nativeFont name="Tahoma" size="11"/>
+        </headerStyle>
+      </column>
+      <column name="colMDENT_ORDER" title="Порядок">
+        <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+        <datamodelElement entityId="140410667793902" fieldName="MDENT_ORDER"/>
+        <columnsDatasource/>
+        <columnsDisplayField/>
+        <cellsDatasource/>
+        <cellDesignInfo>
+          <columnsKeyField/>
+          <cellValueField/>
+          <rowsKeyField/>
+        </cellDesignInfo>
+        <headerStyle>
+          <nativeFont name="Tahoma" size="11"/>
+        </headerStyle>
+      </column>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <columnsKeyField/>
+        <cellValueField/>
+        <rowsKeyField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="colTAG1" title="Доплнение 1">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
       <datamodelElement entityId="140410667793902" fieldName="TAG1"/>
       <columnsDatasource/>
       <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
-        <rowsKeyField/>
         <columnsKeyField/>
         <cellValueField/>
+        <rowsKeyField/>
       </cellDesignInfo>
-    </column>
-    <column name="colTAG2">
-      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+    </column>
+    <column name="colTAG2" title="Доплнение 2">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
       <datamodelElement entityId="140410667793902" fieldName="TAG2"/>
       <columnsDatasource/>
       <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
-        <rowsKeyField/>
         <columnsKeyField/>
         <cellValueField/>
+        <rowsKeyField/>
       </cellDesignInfo>
-    </column>
-    <column name="colTAG3">
-      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
+    </column>
+    <column name="colTAG3" title="Доплнение 3">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
       <datamodelElement entityId="140410667793902" fieldName="TAG3"/>
       <columnsDatasource/>
       <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
-        <rowsKeyField/>
         <columnsKeyField/>
         <cellValueField/>
+        <rowsKeyField/>
       </cellDesignInfo>
-    </column>
-    <column name="colMDENT_PARENT_ID">
-      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="140410667793902" fieldName="MDENT_PARENT_ID"/>
-      <columnsDatasource/>
-      <columnsDisplayField/>
-      <cellsDatasource/>
-      <cellDesignInfo>
-        <rowsKeyField/>
-        <columnsKeyField/>
-        <cellValueField/>
-      </cellDesignInfo>
-    </column>
-    <column name="colMDENT_ORDER">
-      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-      <datamodelElement entityId="140410667793902" fieldName="MDENT_ORDER"/>
-      <columnsDatasource/>
-      <columnsDisplayField/>
-      <cellsDatasource/>
-      <cellDesignInfo>
-        <rowsKeyField/>
-        <columnsKeyField/>
-        <cellValueField/>
-      </cellDesignInfo>
     </column>
     <constraints bottom="57px" left="12px" right="1px" top="156px" type="MarginConstraintsDesignInfo"/>
   </widget>

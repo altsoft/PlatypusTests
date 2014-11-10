@@ -31,8 +31,8 @@ function MultiSourceTestView() {
                     if (model.dataHR.length !== 1) {
                         throw "MultiSourceTest. dataHR violoation 2";
                     }
-                    model.dataEAS.deleteAll();
-                    model.dataHR.deleteAll();
+                    model.dataEAS.splice(0, model.dataEAS.length);
+                    model.dataHR.splice(0, model.dataHR.length);
                     model.save(function () {
                         P.Logger.info("Commit succeded 2");
                         model.requery(function () {

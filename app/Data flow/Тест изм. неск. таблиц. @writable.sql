@@ -1,6 +1,7 @@
 /**
  * @name test.ambigous.changes.mutatable
  * @writable Asset_Kinds, AssET_TYPES
+ * @public
  */ 
 Select g.ID gid, g.NAME gname, k.ID kid
 , k.NAME kname, t.ID tid, t.NAME tname 

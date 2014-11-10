@@ -9,7 +9,7 @@ function Resource_load() {
     var asyncLoaded = 0;
     self.execute = function () {
         if (P.agent !== P.HTML5) {
-            // sync resources loading        
+            // sync resources loading test       
             var loadedReource = P.Resource.load('Resources/resource load.model');
             if (loadedReource.length !== 10)
                 throw 'loaded.length violation 1';
@@ -17,7 +17,7 @@ function Resource_load() {
             if(loadedFormInet.length !== 10)
                 throw 'loaded.length violation 2'
         }
-        // async test
+        // async resources loading test
         P.Resource.load('Resources/resource load.model', function (aLoaded) {
             if (aLoaded.length !== 10)
                 throw 'loaded.length violation 3';

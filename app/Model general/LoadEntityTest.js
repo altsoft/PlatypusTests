@@ -10,15 +10,15 @@ function Load_Entity_Test() {
 
     self.execute = function () {
         var loaded = model.loadEntity("_24832514140608864");
-        if (loaded == null)
+        if (loaded === null)
             throw "entity hasn't been created";
-        if (loaded.schema == null)
+        if (loaded.schema === null)
             throw "entity's .schema is not accessible";
 
         loaded.requery(function () {
-            if (loaded.cursor.MDENT_NAME == null)
+            if (loaded.cursor.MDENT_NAME === null)
                 throw "entity's .cursor.MDENT_NAME is not accessible";
-            if (loaded.cursor.MDENT_TYPE == null)
+            if (loaded.cursor.MDENT_TYPE === null)
                 throw "entity's .cursor.MDENT_TYPE is not accessible";
             P.Logger.info("loaded.length: " + loaded.length);
             if (self.onSuccess)

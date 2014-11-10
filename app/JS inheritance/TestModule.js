@@ -6,9 +6,9 @@
 
 function TestModule() {
 
-    var self = this;
+    var self = this, model = P.loadModel(this.constructor.name);
 
-    function sum(a, b) {
+    self.sum = function (a, b) {
         return a + b;
-    }
+    };
 }

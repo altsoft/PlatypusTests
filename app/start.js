@@ -6,9 +6,7 @@
 if(!this.P)
     this.P = {};
 P.ready = function() {
-    P.require(['TestReportsView'], function(){
-        var m = new TestReportsView();
-        m.show();
+    P.require(['JS inheritance/plain-start.js'], function(){
     }, function(e){
         P.Logger.severe(e);
     });
