@@ -6,7 +6,9 @@
 if(!this.P)
     this.P = {};
 P.ready = function() {
-    P.require(['JS inheritance/plain-start.js'], function(){
+    P.require(['LargeView'], function(){
+        var m = new LargeView();
+        m.show();
     }, function(e){
         P.Logger.severe(e);
     });

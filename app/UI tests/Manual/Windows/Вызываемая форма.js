@@ -1,5 +1,5 @@
 /**
- * @name Маленькая
+ * @name _Маленькая
  */
 
 function SmallView() {

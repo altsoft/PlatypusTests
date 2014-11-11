@@ -1,57 +1,84 @@
-/**
- * @name Большая
- */
-
 function LargeView() {
+    var self = this
+            , model = P.loadModel(this.constructor.name)
+            , form = P.loadForm(this.constructor.name, model);
 
-    var self = this;
+    self.show = function () {
+        form.show();
+    };
 
-    var FORM1_RUNNER = null;
+    var pureRuntimeForm = null;
 
-    function checkSmallForm(){
-        if (FORM1_RUNNER == null)
-            FORM1_RUNNER = new Form("Маленькая");
+    function checkSmallForm() {
+        if (!pureRuntimeForm) {
+            pureRuntimeForm = new P.Form();
+            pureRuntimeForm.title = "Маленькая";
+            pureRuntimeForm.onWindowActivated = function (e) {
+                P.Logger.info("Window activated");
+            };
+            pureRuntimeForm.onWindowClosed = function (e) {
+                P.Logger.info("Window closed");
+            };
+            pureRuntimeForm.onWindowClosing = function (e) {
+                P.Logger.info("Window is closing");
+                return confirm('Really close?');
+            };
+            pureRuntimeForm.onWindowDeactivated = function (e) {
+                P.Logger.info("Window deactivated");
+            };
+            pureRuntimeForm.onWindowMaximized = function (e) {
+                P.Logger.info("Window maximized");
+            };
+            pureRuntimeForm.onWindowMinimized = function (e) {
+                P.Logger.info("Window minimized");
+            };
+            pureRuntimeForm.onWindowOpened = function (e) {
+                P.Logger.info("Window opened");
+            };
+            pureRuntimeForm.onWindowRestored = function (e) {
+                P.Logger.info("Window restored");
+            };
+            var btnClose = new P.Button("close");
+            btnClose.onActionPerformed = function () {
+                pureRuntimeForm.close();
+            };
+            btnClose.left = 30;
+            btnClose.top = 20;
+            btnClose.width = 70;
+            btnClose.height = 40;
+            pureRuntimeForm.view.add(btnClose);
+        }
     }
 
-function btnTest2ActionPerformed(evt) {//GEN-FIRST:event_btnTest2ActionPerformed
+    form.btnTest2.onActionPerformed = function (event) {
         checkSmallForm();
-        FORM1_RUNNER.showInternalFrame(self.pnlDesktop);
-}//GEN-LAST:event_btnTest2ActionPerformed
-
-function btnShowOnPanelActionPerformed(evt) {//GEN-FIRST:event_btnShowOnPanelActionPerformed
+        pureRuntimeForm.showInternalFrame(self.pnlDesktop);
+    };
+    form.btnShowOnPanel.onActionPerformed = function (event) {
         checkSmallForm();
-        FORM1_RUNNER.showOnPanel(self.pnlContainer);
-}//GEN-LAST:event_btnShowOnPanelActionPerformed
-
-function btnTest1ActionPerformed(evt) {//GEN-FIRST:event_btnTest1ActionPerformed
+        pureRuntimeForm.showOnPanel(self.pnlContainer);
+    };
+    form.btnTest1.onActionPerformed = function (event) {
         checkSmallForm();
-        if (self.cbModal1.selected)
-        {
-            FORM1_RUNNER.showModal();
-        } else
-        {
-            FORM1_RUNNER.show();
+        if (form.cbModal1.selected){
+            pureRuntimeForm.showModal();
+        } else {
+            pureRuntimeForm.show();
         }
-}//GEN-LAST:event_btnTest1ActionPerformed
-
-function btnMinnimizeActionPerformed(evt) {//GEN-FIRST:event_btnMinnimizeActionPerformed
-        self.pnlDesktop.minimizeAll();
-}//GEN-LAST:event_btnMinnimizeActionPerformed
-
-function btnRestoreActionPerformed(evt) {//GEN-FIRST:event_btnRestoreActionPerformed
-        self.pnlDesktop.restoreAll();
-}//GEN-LAST:event_btnRestoreActionPerformed
-
-function btnMaximizeActionPerformed(evt) {//GEN-FIRST:event_btnMaximizeActionPerformed
-        self.pnlDesktop.maximizeAll();
-}//GEN-LAST:event_btnMaximizeActionPerformed
-
-function buttonActionPerformed(evt) {//GEN-FIRST:event_buttonActionPerformed
-        self.pnlDesktop.closeAll();
-}//GEN-LAST:event_buttonActionPerformed
-
-function button1ActionPerformed(evt) {//GEN-FIRST:event_button1ActionPerformed
-        alert(self.pnlDesktop.forms);
-}//GEN-LAST:event_button1ActionPerformed
-
+    };
+    form.btnMinnimize.onActionPerformed = function (event) {
+        form.pnlDesktop.minimizeAll();
+    };
+    form.btnRestore.onActionPerformed = function (event) {
+        form.pnlDesktop.restoreAll();
+    };
+    form.btnMaximize.onActionPerformed = function (event) {
+        form.pnlDesktop.maximizeAll();
+    };
+    form.button.onActionPerformed = function (event) {
+        form.pnlDesktop.closeAll();
+    };
+    form.button1.onActionPerformed = function (event) {
+        alert(form.pnlDesktop.forms);
+    };
 }
