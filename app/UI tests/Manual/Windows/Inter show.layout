@@ -5,12 +5,12 @@
   <widget name="btnTest2" parent="Form" prefHeight="25px" prefWidth="120px" text="showInternal" type="ButtonDesignInfo">
     <constraints height="25px" left="0px" top="50px" type="MarginConstraintsDesignInfo" width="120px"/>
   </widget>
-  <widget name="cbModal1" parent="Form" prefHeight="25px" prefWidth="130px" text="Модальная форма" type="CheckDesignInfo">
+  <widget name="cbModal1" parent="Form" prefHeight="25px" prefWidth="130px" text="Modal view" type="CheckDesignInfo">
     <constraints height="25px" left="130px" top="10px" type="MarginConstraintsDesignInfo" width="130px"/>
   </widget>
   <widget foregroundColor="#000000" name="pnlDesktop" parent="Form" prefHeight="269px" prefWidth="300px" type="DesktopDesignInfo">
-    <easFont name="Tahoma" size="11"/>
     <constraints bottom="0px" left="0px" top="130px" type="MarginConstraintsDesignInfo" width="300px"/>
+    <easFont name="Tahoma" size="11"/>
   </widget>
   <widget name="btnShowOnPanel" parent="Form" prefHeight="23px" prefWidth="120px" text="showOnPanel" type="ButtonDesignInfo">
     <constraints height="23px" left="0px" top="90px" type="MarginConstraintsDesignInfo" width="120px"/>

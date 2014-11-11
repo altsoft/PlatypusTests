@@ -11,8 +11,11 @@ function LargeView() {
 
     function checkSmallForm() {
         if (!pureRuntimeForm) {
+            debugger;
             pureRuntimeForm = new P.Form();
             pureRuntimeForm.title = "Маленькая";
+            pureRuntimeForm.width = 300;
+            pureRuntimeForm.height = 250;
             pureRuntimeForm.onWindowActivated = function (e) {
                 P.Logger.info("Window activated");
             };
