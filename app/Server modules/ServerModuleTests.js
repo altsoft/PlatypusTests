@@ -86,10 +86,16 @@ function ServerModuleTests() {
     if(nullRes !== null){
         throw "Fail SessionStatefull module nullMarshallingTest test";
     }
-    var undefinedRes = sessionStatefull.undefinedMarshallingTest(null);
-    if(undefinedRes !== null){
-        throw "Fail SessionStatefull module undefinedMarshallingTest test";
+//    var undefinedRes = sessionStatefull.undefinedMarshallingTest(null); TO DO Uncomment when platypus JS will be changed.
+//    if(undefinedRes !== null){
+//        throw "Fail SessionStatefull module undefinedMarshallingTest test";
+//    }
+
+    var rowset = sessionStatefull.rowsetMarshalingTest();
+    if (!rowset || rowset.length != 13) {
+        throw "Fail SessionStatefull module rowsetMarshallingTest test";
     }
+    
     // Stateless test 
     var sessionStateless = new P.ServerModule("SessionStateless");
     if (sessionStateless.getCallsCount() !== 0) {

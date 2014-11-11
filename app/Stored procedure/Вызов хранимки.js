@@ -6,13 +6,28 @@
 
 function ProcedureCallerView() {
 
-    var self = this;
+    var self = this, model = P.loadModel(this.constructor.name)
+            , form = P.loadForm(this.constructor.name, model);
 
-function buttonActionPerformed(evt) {//GEN-FIRST:event_buttonActionPerformed
-        var caller = new ServerModule("StoredProcedureCaller");
-        caller.achiveResult(20, 5, function(aResult) {
-            alert(aResult);
+    self.show = function () {
+        form.show();
+    };
+
+
+    model.requery(function () {
+    });
+
+    form.btnCall.onActionPerformed = function (evt) {
+        var caller = new P.ServerModule("StoredProcedureCaller");
+        caller.achiveProcedureResult(20, 5, function (aResult) {
+            if (aResult != 25) {
+                throw "Error calling stored procedure.";
+            }
         });
-}//GEN-LAST:event_buttonActionPerformed
-
+        caller.achiveFunctionResult(20, 5, function (aResult) {
+            if (aResult != 25) {
+                throw "Error calling stored procedure.";
+            }
+        });
+    };
 }
