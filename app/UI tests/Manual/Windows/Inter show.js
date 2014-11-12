@@ -12,7 +12,7 @@ function LargeView() {
     function checkSmallForm() {
         if (!pureRuntimeForm) {
             debugger;
-            pureRuntimeForm = new P.Form();
+            pureRuntimeForm = new P.Form(new P.AbsolutePane());
             pureRuntimeForm.title = "Маленькая";
             pureRuntimeForm.width = 300;
             pureRuntimeForm.height = 250;
