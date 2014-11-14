@@ -6,7 +6,9 @@
 if(!this.P)
     this.P = {};
 P.ready = function() {
-    P.require(['JS inheritance/plain-start.js'], function(){
+    P.require(['Icon_load'], function(){
+        var m = new Icon_load();
+        m.execute();
     }, function(e){
         P.Logger.severe(e);
     });
