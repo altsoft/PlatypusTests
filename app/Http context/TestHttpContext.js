@@ -9,7 +9,7 @@ function TestHttpContext() {
     var self = this, model = P.loadModel(this.constructor.name);
     var httpContext = new P.HttpContext();
 
-    self.changeParam = function() {
+    self.addParam = function() {
         httpContext.response.headers.add("test", "test");
     };
 

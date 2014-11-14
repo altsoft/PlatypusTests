@@ -12,10 +12,11 @@ function AsyncServerModuleTests() {
     var statefullCalls = 0;
     var statelessCalls = 0;
     var dateMarshallCalls = 0;
+    var rowsetMarshallCalls = 0;
     var failed = null;
 
     function checkEnd() {
-        if (primitiveCalls === 6 && statefullCalls === 4 && statelessCalls === 3 && dateMarshallCalls === 3) {
+        if (primitiveCalls === 5/*6*/ && statefullCalls === 4 && statelessCalls === 3 && dateMarshallCalls === 3 && rowsetMarshallCalls === 1) {
             if (self.onSuccess) {
                 if (failed === null) {
                     self.onSuccess();
@@ -28,16 +29,16 @@ function AsyncServerModuleTests() {
         }
     }
     // Statefull test
-    sessionStatefull.clearCallsCount(function(){
+    sessionStatefull.clearCallsCount(function () {
         statefullCalls++;
-        sessionStatefull.getCallsCount(function(aValue) {
+        sessionStatefull.getCallsCount(function (aValue) {
             statefullCalls++;
             if (aValue !== 0) {
                 failed = "Fail SessionStatefull module getCallsCount test.";
             }
-            sessionStatefull.incCallsCount(3, function() {
+            sessionStatefull.incCallsCount(3, function () {
                 statefullCalls++;
-                sessionStatefull.getCallsCount(function(aValue1) {
+                sessionStatefull.getCallsCount(function (aValue1) {
                     statefullCalls++;
                     if (aValue1 !== 3) {
                         failed = "Fail SessionStatefull module getCallsCount test.";
@@ -48,9 +49,20 @@ function AsyncServerModuleTests() {
             });
             checkEnd();
         });
+
+        //Rowset marshaling test.
+        sessionStatefull.rowsetMarshalingTest(function (aRowset) {
+            if (aRowset && aRowset.length === 13) {
+                rowsetMarshallCalls++;
+            } else {
+                failed = "Fail SessionStatefull module rowsetMarshallingTest test";
+            }
+            checkEnd();
+        });
+
         // Date marshalling test
         var now = new Date();
-        sessionStatefull.dateMarshaling(now, function(aValue) {
+        sessionStatefull.dateMarshaling(now, function (aValue) {
             dateMarshallCalls++;
             if (!aValue || aValue.getTime() !== now.getTime()) {
                 failed = "Fail SessionStatefull module dateMalshaling test.";
@@ -58,7 +70,7 @@ function AsyncServerModuleTests() {
             checkEnd();
         });
         var sendObj = {date: now, data: ["test", now, 2, true, 7.55], obj: {dt: now}};
-        sessionStatefull.objectWithDateMarshaling(sendObj, function(getObj) {
+        sessionStatefull.objectWithDateMarshaling(sendObj, function (getObj) {
             dateMarshallCalls++;
             if (sendObj.date.getTime() !== getObj.date.getTime()) {
                 failed = "Fail SessionStatefull module objectWithDateMarshaling test.";
@@ -85,7 +97,7 @@ function AsyncServerModuleTests() {
         sObj.data = ["test", now, 2, true, 7.55];
         sObj.obj = new Object();
         sObj.obj.dt = now;
-        sessionStatefull.objectWithDateMarshaling(sObj, function(gObj) {
+        sessionStatefull.objectWithDateMarshaling(sObj, function (gObj) {
             dateMarshallCalls++;
             if (sObj.date.getTime() !== gObj.date.getTime()) {
                 failed = "Fail SessionStatefull module objectWithDateMarshaling test.";
@@ -107,28 +119,28 @@ function AsyncServerModuleTests() {
             }
             checkEnd();
         });
-        sessionStatefull.numbersMarshallingTest(4, 5, function(aSum) {
+        sessionStatefull.numbersMarshallingTest(4, 5, function (aSum) {
             primitiveCalls++;
             if (aSum !== (4 + 5)) {
                 failed = "Fail SessionStatefull module numbersMarshallingTest test";
             }
             checkEnd();
         });
-        sessionStatefull.stringMarshallingTest('4', '5', function(aSum) {
+        sessionStatefull.stringMarshallingTest('4', '5', function (aSum) {
             primitiveCalls++;
             if (aSum !== '45') {
                 failed = "Fail SessionStatefull module stringMarshallingTest test";
             }
             checkEnd();
         });
-        sessionStatefull.booleanMarshallingTest(true, function(aInverse) {
+        sessionStatefull.booleanMarshallingTest(true, function (aInverse) {
             primitiveCalls++;
             if (aInverse) {
                 failed = "Fail SessionStatefull module booleanMarshallingTest test";
             }
             checkEnd();
         });
-        sessionStatefull.dateMarshallingTest(now, function(aIncremented) {
+        sessionStatefull.dateMarshallingTest(now, function (aIncremented) {
             primitiveCalls++;
             var incremented = new Date(now.getTime() + 10);
             if (incremented.getTime() !== aIncremented.getTime()) {
@@ -136,25 +148,25 @@ function AsyncServerModuleTests() {
             }
             checkEnd();
         });
-        sessionStatefull.nullMarshallingTest(null, function(aResult) {
+        sessionStatefull.nullMarshallingTest(null, function (aResult) {
             primitiveCalls++;
             if (aResult !== null) {
                 failed = "Fail SessionStatefull module nullMarshallingTest test";
             }
             checkEnd();
         });
-        sessionStatefull.undefinedMarshallingTest(null, function(aResult) {
-            primitiveCalls++;
-            if (aResult !== null) {
-                failed = "Fail SessionStatefull module undefinedMarshallingTest test";
-            }
-            checkEnd();
-        });
+//        sessionStatefull.undefinedMarshallingTest(null, function(aResult) { TO DO Uncomment when platypus JS will be changed.
+//            primitiveCalls++;
+//            if (aResult !== null) {
+//                failed = "Fail SessionStatefull module undefinedMarshallingTest test";
+//            }
+//            checkEnd();
+//        });
         checkEnd();
     });
     // Stateless test
     var sessionStateless = new P.ServerModule("SessionStateless");
-    var parallelCallsConsumer = function(aValue) {
+    var parallelCallsConsumer = function (aValue) {
         statelessCalls++;
         if (aValue !== 0) {
             failed = "Fail SessionStateless module getCallsCount test.";
@@ -162,7 +174,7 @@ function AsyncServerModuleTests() {
         checkEnd();
     };
     sessionStateless.getCallsCount(parallelCallsConsumer);
-    sessionStateless.incCallsCount(3, function() {
+    sessionStateless.incCallsCount(3, function () {
         statelessCalls++;
         sessionStateless.getCallsCount(parallelCallsConsumer);
         checkEnd();

@@ -2,15 +2,6 @@ function j() {
     alert("Hello from j()!");
 }
 
-function extend(Child, Parent) {
-    var F = function () {
-    };
-    F.prototype = Parent.prototype;
-    Child.prototype = new F();
-    Child.prototype.constructor = Child;
-    Child.superclass = Parent.prototype;
-}
-
 function Animal() {
 }
 Animal.prototype.eat = function () {
@@ -23,7 +14,7 @@ Rabbit.prototype.run = function () {
     P.Logger.info("run called");
 };
 
-extend(Rabbit, Animal);
+P.extend(Rabbit, Animal);
 
 var r = new Rabbit();
 P.Logger.info("r.constructor: " + r.constructor);
@@ -52,8 +43,8 @@ P.require(['Messages', 'Alerts', 'ViewsMessages'], function () {
     };
 
     // Model js inheritance test
-    extend(P.Form, Messages);
-    extend(Alerts, Messages);
+    P.extend(P.Form, Messages);
+    P.extend(Alerts, Messages);
     var a = new Alerts(70, "Sample argument");
     a.message2("Sample");
     if (a.constructor !== Alerts.prototype.constructor)
@@ -70,7 +61,7 @@ P.require(['Messages', 'Alerts', 'ViewsMessages'], function () {
 
     if (P.agent !== P.HTML5) {
         P.require(['OwnerReport', 'ReportsMessages'], function () {
-            extend(OwnerReport, ReportsMessages);
+            P.extend(OwnerReport, ReportsMessages);
             var or = new OwnerReport();
             if (or instanceof OwnerReport)
                 throw "or instanceof OwnerReport violation";

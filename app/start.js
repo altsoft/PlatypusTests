@@ -6,9 +6,9 @@
 if(!this.P)
     this.P = {};
 P.ready = function() {
-    P.require(['Icon_load'], function(){
-        var m = new Icon_load();
-        m.execute();
+    P.require(['LargeView'], function(){
+        var m = new LargeView();
+        m.show();
     }, function(e){
         P.Logger.severe(e);
     });

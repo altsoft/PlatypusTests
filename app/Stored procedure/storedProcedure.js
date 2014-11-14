@@ -7,14 +7,19 @@
  */
 function StoredProcedureCaller() {
 
-    var self = this;
+    var self = this, model = P.loadModel(this.constructor.name);
 
-    var d = 0;
-
-    function achiveResult(aEmpId, aSalary) {
-        self.procedureSample.params.emp_id = aEmpId;
-        self.procedureSample.params.salary = aSalary;
-        self.procedureSample.requery();
-        return self.procedureSample.params.res + d++;
-    }
+    self.achiveProcedureResult = function (aEmpId, aSalary) {
+        model.procedureSample.params.emp_id = aEmpId;
+        model.procedureSample.params.salary = aSalary;
+        model.procedureSample.requery();
+        return model.procedureSample.params.res;
+    };
+    
+    self.achiveFunctionResult = function (aFirst, aSecond) {
+        model.storedFunctionTest.params.first = aFirst;
+        model.storedFunctionTest.params.second = aSecond;
+        model.storedFunctionTest.requery();
+        return model.storedFunctionTest.cursor.res;
+    };
 }
