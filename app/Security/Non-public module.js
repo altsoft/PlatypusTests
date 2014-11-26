@@ -1,10 +1,8 @@
 /**
- *
- * @name 133239635501682
+ * Module functions is avaliable to every user from other modules, but not from network
  * @author vv
  */
-
-function UnsecureForm() {
+function NonPublicModule() {
 
     var self = this;
 
@@ -12,5 +10,4 @@ function UnsecureForm() {
         P.Logger.info("test");
         return "test";
     };
-
 }

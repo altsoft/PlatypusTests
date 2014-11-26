@@ -6,8 +6,13 @@
 if(!this.P)
     this.P = {};
 P.ready = function() {
+<<<<<<< HEAD
+    P.require(['SecureServerModuleView'], function(){
+        var m = new SecureServerModuleView();
+=======
     P.require(['LargeView'], function(){
         var m = new LargeView();
+>>>>>>> 83bcdb393bb33c603489255f4bba434f8531ee29
         m.show();
     }, function(e){
         P.Logger.severe(e);
