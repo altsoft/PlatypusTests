@@ -1,5 +1,6 @@
 /**
- * @rolesAllowedWrite role1, role3
+ * @rolesAllowed role1, role2
+ * @rolesAllowedWrite role3
  * @name 133189638245364
  * @public
  */

@@ -16,7 +16,7 @@ function AsyncServerModuleTests() {
     var failed = null;
 
     function checkEnd() {
-        if (primitiveCalls === 5/*6*/ && statefullCalls === 4 && statelessCalls === 3 && dateMarshallCalls === 3 && rowsetMarshallCalls === 1) {
+        if (primitiveCalls === 6 && statefullCalls === 4 && statelessCalls === 3 && dateMarshallCalls === 3 && rowsetMarshallCalls === 1) {
             if (self.onSuccess) {
                 if (failed === null) {
                     self.onSuccess();
@@ -155,13 +155,13 @@ function AsyncServerModuleTests() {
             }
             checkEnd();
         });
-//        sessionStatefull.undefinedMarshallingTest(null, function(aResult) { TO DO Uncomment when platypus JS will be changed.
-//            primitiveCalls++;
-//            if (aResult !== null) {
-//                failed = "Fail SessionStatefull module undefinedMarshallingTest test";
-//            }
-//            checkEnd();
-//        });
+        sessionStatefull.undefinedMarshallingTest(null, function(aResult) { //TO DO Uncomment when platypus JS will be changed.
+            primitiveCalls++;
+            if (aResult !== null) {
+                failed = "Fail SessionStatefull module undefinedMarshallingTest test";
+            }
+            checkEnd();
+        });
         checkEnd();
     });
     // Stateless test

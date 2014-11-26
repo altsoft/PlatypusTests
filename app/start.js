@@ -6,7 +6,9 @@
 if(!this.P)
     this.P = {};
 P.ready = function() {
-    P.require(['JS inheritance/plain-start.js'], function(){
+    P.require(['SecureServerModuleView'], function(){
+        var m = new SecureServerModuleView();
+        m.show();
     }, function(e){
         P.Logger.severe(e);
     });

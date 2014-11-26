@@ -15,8 +15,8 @@ function RequiringForm() {
         P.require("SecuredForm", function() {
             var f = new SecuredForm();
             f.show();
-        }, function() {
-            alert("Access is denied!");
+        }, function(error) {
+            throw "Access is denied!" + error;
         });
     };
     form.btnLogout.onActionPerformed = function(event) {

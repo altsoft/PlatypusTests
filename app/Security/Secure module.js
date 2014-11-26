@@ -10,8 +10,25 @@ function SecureModule() {
 
     var self = this;
 
-    self.test = function() {
+    self.test = function () {
         return "test";
     };
 
+    /**
+     * @rolesAllowed role2
+     */
+    self.secureTest = function () {
+        return "securetest";
+    };
+
+    /**
+     * @rolesAllowed role2
+     */
+    function localSecureTest() {
+        return "localsecuretest";
+    };
+    
+    self.callLocalSecureTest = function() {
+        return localSecureTest();
+    };
 }
