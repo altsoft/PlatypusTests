@@ -16,6 +16,10 @@ function HttpContextTestView() {
     });
 
     form.button.onActionPerformed = function (event) {
+        self.execute();
+    };
+    
+    self.execute = function(){
         var testModule = new P.ServerModule("TestHttpContext");
         testModule.addParam(function (result) {
         }, function () {

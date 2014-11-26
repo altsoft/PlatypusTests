@@ -11,28 +11,45 @@ function Launcher() {
     };
 
     var tests = [
-                  new ambigous_changes_semi_writable()
+        new ambigous_changes_semi_writable()
                 , new ambigous_changes()
                 , new extra_fields_insert_update()
-                //, new SqlUpdateTest
+                , new SqlUpdateTestClient()
                 , new Dependent()
-                //, new TestHttpContext()
                 , new InheritanceTest()
                 //, new Login_Logout_Test_View()
-                //, new Create_Entity_Test()
+                , new CreateEntityTestClient()
                 , new LoadEntityTest()
                 , new ModelAPI()
                 , new MultiSourceTestView()
                 , new MultiSourceWithErrorTestView()
                 , new ORM_Relations_Test()
                 , new ORM_properties_names_calc()
-                ,
-                ,
-                ,
-                ,
+                , new TestReportsView()
+                , new Icon_load()
+                , new Resource_load()
+                , new FontsDataTest()
+                , new FontsDataValidatorTest()
+                //, Security
+                , new ServerModuleTests()
+                , new AsyncServerModuleTests()
+                , new ProcedureCallerView()
     ];
 
-    form.btnRun.onActionPerformed = function (event) {
+    if(P.agent === P.HTML5)
+        tests[tests.length] = new HttpContextTestView();
 
+    form.progress.minimum = 0;
+    form.progress.maximum = tests.length;
+
+    form.btnRun.onActionPerformed = function (event) {
+        tests.forEach(function (aTest) {
+            try {
+                aTest.execute();
+                form.progress.value++;
+            } catch (e) {
+                P.Logger.severe(e);
+            }
+        });
     };
 }

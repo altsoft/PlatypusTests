@@ -19,14 +19,20 @@ function FontsDataValidatorTest() {
         model.fontsData[1].familyName = 'edited';
         model.fontsData[1].size = 45686;
         model.save(function (aChangedCount) {
-            if(fontsValidatorCalls <= 0)
+            if (fontsValidatorCalls <= 0)
                 throw "fontsValidatorCalls violation";
-            if(aChangedCount !== 1)
+            if (aChangedCount !== 1)
                 throw "aChangedCount violation";
             P.Logger.info("FontsDataValidatorTest passed");
         }, function (e) {
             model.revert();
             throw "FontsDataValidatorTest failed. " + e;
         });
+    };
+
+    self.execute = function () {
+        model.fontsData.requery(function () {
+            form.btnTestIt.onActionPerformed();
+        }, function(e){P.Logger.severe(e);});
     };
 }

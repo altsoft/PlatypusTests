@@ -12,6 +12,10 @@ function TestReportsView() {
     };
     
     form.btnReportExecute.onActionPerformed = function (event) {
+        self.execute();
+    };
+    
+    self.execute = function(){
         var reportModule = new TestReportsModule();
         reportModule.execute();
     };

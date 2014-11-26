@@ -2,17 +2,22 @@
  * 
  * @author mg
  */
-function SqlUpdateTest() {
+function SqlUpdateTwoTierTestView() {
     var NEW_RECORD_ID = 4125;
     var NEW_RECORD_NAME_G = 'sql updated gname';
     var self = this
-            , model = P.loadModel(this.constructor.name);
+            , model = P.loadModel(this.constructor.name)
+            , form = P.loadForm(this.constructor.name, model);
 
-    self.execute = function (event) {
+    self.show = function () {
+        form.show();
+    };
+
+    form.btnTest.onActionPerformed = function (event) {
         model.ambigousChanges.requery(function () {
             if (model.ambigousChanges.length === 0)
                 throw 'ambiguousChanges.length violation';
-            var toPush = {gid: NEW_RECORD_ID, gname: "g-name must be overwritten", tname: "t-name must be overwritten", kname: "k-name must be overwritten"};
+            var toPush = {gid: NEW_RECORD_ID, gname: "g-name must be overwritten", tname: "t-name must be overwritten", kname: "k-name must be overwritten"}
             model.ambigousChanges.push(toPush);
             if (toPush !== model.ambigousChanges[model.ambigousChanges.length - 1])
                 throw 'toPush violation';

@@ -6,8 +6,8 @@
 function Create_Entity_Test() {
     var self = this,
             model = P.loadModel(this.constructor.name);
-    
-    self.execute = function () {
+
+    self.execute = function (onSuccess, onFailure) {
         var created = model.createEntity("select * from mtd_entities");
         if (created === null)
             throw "entity hasn't been created";
@@ -19,8 +19,12 @@ function Create_Entity_Test() {
             if (created.cursor.mdent_type === null)
                 throw "entity's .cursor.MDENT_TYPE is not accessible";
             P.Logger.info("created.length: " + created.length);
+            onSuccess(created.length);
+        }, function (e) {
+            P.Logger.severe(e);
+            onFailure(e);
         });
-    }
+    };
 // include save tests
 // include leaks tests
 // include right and mad use cases of model's entities in constructor

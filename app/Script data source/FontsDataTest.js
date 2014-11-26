@@ -41,4 +41,8 @@ function FontsDataTest() {
             P.Logger.severe(e);
         });
     };
+    
+    self.execute = function(){
+        form.btnTestIt.onActionPerformed();
+    };
 }

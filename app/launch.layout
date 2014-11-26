@@ -9,7 +9,7 @@
   <widget name="lblLog" parent="Form" prefHeight="24px" prefWidth="276px" text="Журнал" type="LabelDesignInfo">
     <constraints height="24px" left="12px" right="112px" top="96px" type="MarginConstraintsDesignInfo"/>
   </widget>
-  <widget name="progressBar" parent="Form" prefHeight="24px" prefWidth="372px" type="ProgressBarDesignInfo">
+  <widget name="progress" parent="Form" prefHeight="24px" prefWidth="372px" type="ProgressBarDesignInfo">
     <constraints height="24px" left="12px" right="16px" top="60px" type="MarginConstraintsDesignInfo"/>
   </widget>
   <widget name="btnRun" parent="Form" prefHeight="23px" prefWidth="96px" text="Запуск" type="ButtonDesignInfo">

@@ -13,11 +13,14 @@ function ProcedureCallerView() {
         form.show();
     };
 
-
     model.requery(function () {
     });
 
     form.btnCall.onActionPerformed = function (evt) {
+        self.execute();
+    };
+    
+    self.execute = function(){
         var caller = new P.ServerModule("StoredProcedureCaller");
         caller.achiveProcedureResult(20, 5, function (aResult) {
             if (aResult != 25) {
