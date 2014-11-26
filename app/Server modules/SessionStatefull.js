@@ -51,8 +51,8 @@ function SessionStatefull() {
         return null;
     };
 
-//    self.undefinedMarshallingTest = function (a) { TO DO Uncomment when platypus JS will be changed.
-//    };
+    self.undefinedMarshallingTest = function (a) {
+    };
 
     self.rowsetMarshalingTest = function () {
         model.reportQuery.requery();

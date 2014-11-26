@@ -7,9 +7,15 @@
  */
 function TestHttpContext() {
     var self = this, model = P.loadModel(this.constructor.name);
-    var httpContext = new P.HttpContext();
+    var httpContext;
+
+    function checkHttpContext(){
+        if(!httpContext)
+            httpContext = new P.HttpContext();
+    }
 
     self.addParam = function() {
+        checkHttpContext();
         httpContext.response.headers.add("test", "test");
     };
 
@@ -18,10 +24,12 @@ function TestHttpContext() {
             value: "tost",
             comment: "test test",
             maxAge: 100};
+        checkHttpContext();
         httpContext.response.addCookie(cookie);
     };
 
     self.changeBody = function() {
+        checkHttpContext();
         httpContext.response.contentType = "text/plain";
         httpContext.response.characterEncoding = "utf-8";
         httpContext.response.body = "Фишер: \"В 1970 году в Бледе я принял участие в международном \n" +

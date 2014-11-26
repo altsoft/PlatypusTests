@@ -86,7 +86,7 @@ function ServerModuleTests() {
     if(nullRes !== null){
         throw "Fail SessionStatefull module nullMarshallingTest test";
     }
-    var undefinedRes = sessionStatefull.undefinedMarshallingTest(null); //TO DO Uncomment when platypus JS will be changed.
+    var undefinedRes = sessionStatefull.undefinedMarshallingTest(null); //TODO: Uncomment when platypus JS will be changed.
     if(undefinedRes !== null){
         throw "Fail SessionStatefull module undefinedMarshallingTest test";
     }

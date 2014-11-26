@@ -2,7 +2,6 @@
  * 
  * @author mg
  * @constructor
- * @rolesAllowed role1
  */
 function ModelAPI() {
     var self = this, model = P.loadModel(this.constructor.name);

@@ -1,6 +1,7 @@
 /**
  * 
  * @author mg
+ * @rolesAllowed role1
  */
 function Launcher() {
     var self = this
@@ -19,7 +20,7 @@ function Launcher() {
                 , new InheritanceTest()
                 //, new Login_Logout_Test_View()
                 , new CreateEntityTestClient()
-                , new LoadEntityTest()
+                , new Load_Entity_Test()
                 , new ModelAPI()
                 , new MultiSourceTestView()
                 , new MultiSourceWithErrorTestView()
