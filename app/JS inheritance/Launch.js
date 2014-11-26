@@ -4,7 +4,7 @@
  * @name Launch
  */
 
-function Launch() {
+function InheritanceLaunch() {
     var self = this,
             model = P.loadModel(this.constructor.name),
             form = P.loadForm(this.constructor.name);
