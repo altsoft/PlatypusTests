@@ -15,8 +15,12 @@ function SecureServerModuleView() {
     var secureModule = new P.ServerModule("SecureModule");
 
     form.button.onActionPerformed = function (event) {
-        if (P.principal.name == "testuser2") {
-            if (secureModule.secureTest() == "securetest") {
+        secureFunctionTest();
+    };
+    
+    function secureFunctionTest(){
+        if (P.principal.name === "testuser2") {
+            if (secureModule.secureTest() === "securetest") {
                 return;
             }
         } else {
@@ -28,15 +32,23 @@ function SecureServerModuleView() {
             }
         }
         throw "Failed to call secure function";
-    };
+    }
 
     form.button2.onActionPerformed = function (event) {
-        if (secureModule.callLocalSecureTest() != "localsecuretest") {
+        rootSecureFunctionTest();
+    };
+    
+    function rootSecureFunctionTest(){
+        if (secureModule.callLocalSecureTest() !== "localsecuretest") {
             throw "Failed to call local secure function";
         }
-    };
+    }
 
     form.button1.onActionPerformed = function (event) {
+        nonPublicModuleTest();
+    };
+    
+    function nonPublicModuleTest(){
         try {
             var nonPublicModule = new P.ServerModule("NonPublicModule");
             nonPublicModule.test();
@@ -45,10 +57,14 @@ function SecureServerModuleView() {
             return;
         }
         throw "Failed to call non public module function";
-    };
+    }
     form.button3.onActionPerformed = function(event) {
+        secureFunctionAsyncTest();
+    };
+    
+    function secureFunctionAsyncTest(){
         secureModule.secureTest(function(aResult) {
-            if (P.principal.name == "testuser2" &&  aResult == "securetest") {
+            if (P.principal.name === "testuser2" &&  aResult === "securetest") {
                 return;
             } else {
             throw "Failed to call secure function";
@@ -56,5 +72,12 @@ function SecureServerModuleView() {
         }, function(aError) {
             P.Logger.warning(aError);
         });
+    }
+    
+    self.execute = function(){
+        secureFunctionTest();
+        secureFunctionAsyncTest();
+        rootSecureFunctionTest();
+        nonPublicModuleTest();
     };
 }

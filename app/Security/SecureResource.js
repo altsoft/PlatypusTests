@@ -18,6 +18,10 @@ function SecureResource() {
     });
     
     form.button.onActionPerformed = function(event) {
+        self.execute();
+    };
+    
+    self.execute = function(){
         P.Resource.load("secure/error.html", function(aData) {
             alert(aData);
         }, function (error) {

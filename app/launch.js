@@ -31,7 +31,9 @@ function Launcher() {
                 , new Resource_load()
                 , new FontsDataTest()
                 , new FontsDataValidatorTest()
-                //, Security
+                , new SecureServerModuleView()
+                , new SecureResource()
+                , new SecureDataSources()
                 , new ServerModuleTests()
                 , new AsyncServerModuleTests()
                 , new ProcedureCallerView()

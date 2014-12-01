@@ -11,7 +11,17 @@ function SecureDataSources() {
         form.show();
     };
 
+    self.execute = function(){
+        secureReadTest();
+        secureTest();
+        secureReadWriteTest();
+    };
+
     form.button1.onActionPerformed = function (event) {
+        secureReadTest();
+    };
+    
+    function secureReadTest(){
         model.dsSecureRead.requery(function () {
             model.dsSecureRead.push({
                 customer_name: "1",
@@ -28,7 +38,12 @@ function SecureDataSources() {
             });
         });
     };
+    
     form.button2.onActionPerformed = function(event) {
+        secureReadWriteTest();
+    };
+    
+    function secureReadWriteTest(){
        model.dsSecureWrite.requery(function () {
             model.dsSecureWrite.push({
                 customer_name: "5",
@@ -47,6 +62,10 @@ function SecureDataSources() {
     };
     
     form.button3.onActionPerformed = function(event) {
+        secureTest();
+    };
+    
+    function secureTest(){
         model.dsSecure.requery(function () {
             model.dsSecure.push({
                 customer_name: "3",
@@ -62,5 +81,5 @@ function SecureDataSources() {
                 });
             });
         });
-    };
+    }
 }
