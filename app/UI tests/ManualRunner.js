@@ -12,12 +12,12 @@ function ManualRunner() {
     };
     
     form.btnRun.onActionPerformed = function(event) {
-        //var test = new WidgetsStructureTest();
-        //var test = new MenusStructureTest();
-        //var test = new GroupsStructureTest();
-        //var test = new FormattingTest();
-        //var test = new PlainPropertiesTest();
-        var test = new UIGlobalScopeTest();
+//        var test = new WidgetsStructureTest();
+//        var test = new MenusStructureTest();
+//        var test = new GroupsStructureTest();
+//        var test = new FormattingTest();
+        var test = new PlainPropertiesTest();
+//        var test = new UIGlobalScopeTest();
         test = null;
     };
 }

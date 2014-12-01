@@ -4,21 +4,25 @@
  * @name SimpleStyleTest
  */
 function SimpleStyleTest() {
+    var self = this
+            , model = P.loadModel(this.constructor.name)
+            , form = P.loadForm(this.constructor.name, model);
 
-    var self = this;
+    self.show = function () {
+        form.show();
+    };
 
-
-function btnTestActionPerformed(evt) {//GEN-FIRST:event_btnTestActionPerformed
-        var viewForeground = self.view.foreground;
-        var viewBackground = self.view.background;
-        var viewFont = self.view.font;
-        var viewCursor = self.view.cursor;
-        var viewOpaque = self.view.opaque;
+    form.btnTest.onActionPerformed = function (evt) {
+        var viewForeground = form.view.foreground;
+        var viewBackground = form.view.background;
+        var viewFont = form.view.font;
+        var viewCursor = form.view.cursor;
+        var viewOpaque = form.view.opaque;
         var t = 0;
-}//GEN-LAST:event_btnTestActionPerformed
+    };
 
-function rowsetRequeried(evt) {//GEN-FIRST:event_rowsetRequeried
-	// TODO Добавьте здесь свой код:
-}//GEN-LAST:event_rowsetRequeried
+    function rowsetRequeried(evt) {
+        // TODO Добавьте здесь свой код:
+    }
 
 }

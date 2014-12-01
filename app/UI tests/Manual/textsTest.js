@@ -6,58 +6,55 @@
  */
 
 function TextsTest() {
+    var self = this
+            , model = P.loadModel(this.constructor.name)
+            , form = P.loadForm(this.constructor.name, model);
 
-    var self = this;
+    self.show = function () {
+        form.show();
+    };
 
-    params.md.Param0.pk = true;
+    form.button1.onActionPerformed = function (event) {
+        form.modelText.format = null;
+    };
+    form.btnCreateFormattedField.onActionPerformed = function (event) {
+        var ff = new P.FormattedField("753-3579");
+        ff.format = "###-####"
+        form.view.add(ff,{"right": 19, "top": 45, "width": event.source.width, "height": 25})
 
-function btnSetValueActionPerformed(evt) {//GEN-FIRST:event_btnSetValueActionPerformed
-        self.formattedField.value = "258-6454";//new Date();
-        self.modelText.value = self.formattedField.value;
-        var e = evt;
-}//GEN-LAST:event_btnSetValueActionPerformed
-
-function buttonActionPerformed(evt) {//GEN-FIRST:event_buttonActionPerformed
-        self.modelText.value = self.formattedField.value;
-}//GEN-LAST:event_buttonActionPerformed
-
-function btnSetParamsActionPerformed(evt) {//GEN-FIRST:event_btnSetParamsActionPerformed
-        params.Param1 = new Date();
-        params.Param2 = "789-9876";
-        params.Param3 = 91;
-}//GEN-LAST:event_btnSetParamsActionPerformed
-
-function btnSetSelectorsActionPerformed(evt) {//GEN-FIRST:event_btnSetSelectorsActionPerformed
-        self.modelGrid.columnDate.onSelect = function(aEditor) {
+    };
+    form.btnSetValue.onActionPerformed = function (event) {
+        form.formattedField.value = "258-6454";//new Date();
+        form.modelText.value = form.formattedField.value;
+    };
+    
+    form.btnSetSelectors.onActionPerformed = function (event) {
+        form.modelGrid.columnDate.onSelect = function (aEditor) {
             aEditor.value = new Date();
         };
         var n = 0;
-        self.modelGrid.columnMask.onSelect = function(aEditor) {
+        form.modelGrid.columnMask.onSelect = function (aEditor) {
             aEditor.value = "456-885" + (++n);
         };
 
-        self.modelGrid.columnNumber.onSelect = function(aEditor) {
+        form.modelGrid.columnNumber.onSelect = function (aEditor) {
             aEditor.value++;
         };
 
-        self.modelGrid.columnPercent.onSelect = function(aEditor) {
+        form.modelGrid.columnPercent.onSelect = function (aEditor) {
             aEditor.value++;
         };
 
-        self.modelGrid.columnCurrency.onSelect = function(aEditor) {
+        form.modelGrid.columnCurrency.onSelect = function (aEditor) {
             aEditor.value++;
         };
-}//GEN-LAST:event_btnSetSelectorsActionPerformed
-
-function btnCreateFormattedFieldActionPerformed(evt) {//GEN-FIRST:event_btnCreateFormattedFieldActionPerformed
-        var ff = new FormattedField("753-3579");
-        //ff.value = new Date();
-        ff.format += "###"
-        self.view.add(ff, {"right": 19, "top": 45, "width": evt.source.width, "height": 25});
-}//GEN-LAST:event_btnCreateFormattedFieldActionPerformed
-
-function button1ActionPerformed(evt) {//GEN-FIRST:event_button1ActionPerformed
-        self.modelText.format = null;
-}//GEN-LAST:event_button1ActionPerformed
-
+    };
+    form.btnSetParams.onActionPerformed = function (event) {
+        model.params.Param1 = new Date();
+        model.params.Param2 = "789-9876";
+        model.params.Param3 = 91;
+    };
+    form.button.onActionPerformed = function (event) {
+        form.modelText.value = form.formattedField.value;
+    };
 }

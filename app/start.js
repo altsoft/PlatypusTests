@@ -6,9 +6,9 @@
 if(!this.P)
     this.P = {};
 P.ready = function() {
-    P.require(['Launcher'], function(){
-        var m = new Launcher();
-        m.show();
+    P.require(['testWSConnection'], function(){
+        var m = new testWSConnection();
+        m.execute();
     }, function(e){
         P.Logger.severe(e);
     });
