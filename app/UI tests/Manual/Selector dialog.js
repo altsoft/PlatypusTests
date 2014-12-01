@@ -9,7 +9,10 @@ function FakeSelector() {
             , form = P.loadForm(this.constructor.name, model);
 
     var selectedValue = 8;
-
+     self.show = function() {
+       form.show();  
+     };
+     
     form.btnSelect.onActionPerformed = function(event) {
         form.close(++selectedValue);
     };

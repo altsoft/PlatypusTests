@@ -6,8 +6,8 @@
 if(!this.P)
     this.P = {};
 P.ready = function() {
-    P.require(['LargeView'], function(){
-        var m = new LargeView();
+    P.require(['uploadTest'], function(){
+        var m = new uploadTest();
         m.show();
     }, function(e){
         P.Logger.severe(e);

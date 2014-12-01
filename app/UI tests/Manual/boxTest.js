@@ -5,40 +5,40 @@
  */
 
 function BoxTest() {
+    var self = this
+            , model = P.loadModel(this.constructor.name)
+            , form = P.loadForm(this.constructor.name, model);
+    self.show = function () {
+        form.show();
+    };
 
-    var self = this;
-
-
-function btnAddButtonActionPerformed(evt) {//GEN-FIRST:event_btnAddButtonActionPerformed
-        self.pnlBox.add(new Button("Sample button", null, function(evt) {
-            evt.source.parent.remove(evt.source);
+    form.btnAddButton.onActionPerformed = function (event) {
+        form.pnlBox.add(new P.Button("Sample button", null, function (event) {
+            event.source.parent.remove(event.source);
         }));
-}//GEN-LAST:event_btnAddButtonActionPerformed
-
-function btnAddTextFieldActionPerformed(evt) {//GEN-FIRST:event_btnAddTextFieldActionPerformed
-        self.pnlBox.add(new TextField("Sample text"));
-}//GEN-LAST:event_btnAddTextFieldActionPerformed
-
-function btnAddTextAreaActionPerformed(evt) {//GEN-FIRST:event_btnAddTextAreaActionPerformed
-        self.pnlBox.add(new TextArea("Sample area"));
-}//GEN-LAST:event_btnAddTextAreaActionPerformed
-
-function btnClearActionPerformed(evt) {//GEN-FIRST:event_btnClearActionPerformed
-        self.pnlBox.clear();
-}//GEN-LAST:event_btnClearActionPerformed
-
-function btnIncSizeActionPerformed(evt) {//GEN-FIRST:event_btnIncSizeActionPerformed
-        if (self.pnlBox.orientation == Orientation.HORIZONTAL)
-            self.pnlBox.children[1].width += 20;
+    };
+    form.btnAddTextField.onActionPerformed = function (event) {
+        var textField = new P.TextField("Sample text")
+        form.pnlBox.add(textField,P.Orientation.HORIZONTAL)
+//        form.pnlBox.add(textField);
+    };
+    form.btnAddTextArea.onActionPerformed = function (event) {
+        var textField = new P.TextArea("Sample area")
+        form.pnlBox.add(textField);
+    };
+    form.btnClear.onActionPerformed = function (event) {
+        form.pnlBox.clear();
+    };
+    form.btnIncSize.onActionPerformed = function (event) {
+        if (form.pnlBox.orientation == P.Orientation.HORIZONTAL)
+            form.pnlBox.children[1].width += 20;
         else
-            self.pnlBox.children[1].height += 20;
-}//GEN-LAST:event_btnIncSizeActionPerformed
-
-function btnDecSizeActionPerformed(evt) {//GEN-FIRST:event_btnDecSizeActionPerformed
-        if (self.pnlBox.orientation == Orientation.HORIZONTAL)
-            self.pnlBox.children[1].width -= 20;
+            form.pnlBox.children[1].height += 20;
+    };
+    form.btnDecSize.onActionPerformed = function (event) {
+        if (form.pnlBox.orientation == P.Orientation.HORIZONTAL)
+            form.pnlBox.children[1].width -= 20;
         else
-            self.pnlBox.children[1].height -= 20;
-}//GEN-LAST:event_btnDecSizeActionPerformed
-
+            form.pnlBox.children[1].height -= 20;
+    };
 }

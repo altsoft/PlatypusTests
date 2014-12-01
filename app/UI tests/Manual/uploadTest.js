@@ -1,40 +1,46 @@
 /**
  * 
  * @author mg
- * @name UploadTest
+ * @name uploadTest
  */
-function UploadTest() {
+function uploadTest() {
 
-    var self = this;
+    var self = this
+            , model = P.loadModel(this.constructor.name)
+            , form = P.loadForm(this.constructor.name, model);
 
+    self.show = function () {
+        form.show();
+    };
 
     var file;
     var loading;
 
-function btnSelectFileActionPerformed(evt) {//GEN-FIRST:event_btnSelectFileActionPerformed
-        selectFile(function(aFile) {
+    form.btnSelectFile.onActionPerformed = function (event) {
+        P.selectFile(function (aFile) {
             file = aFile;
-            self.lblFileName.text = file.name;
-        });
-}//GEN-LAST:event_btnSelectFileActionPerformed
+            P.Logger.info(file);
+            form.lblFileName.text = file.name;
+        },P.Logger.info("file"));
+    };
 
-function btnStartUploadActionPerformed(evt) {//GEN-FIRST:event_btnStartUploadActionPerformed
+    form.btnStartUpload.onActionPerformed = function (event) {
         if (loading == null) {
             if (file != null) {
                 loading = upload(file,
-                        function(aUrl) {
+                        function (aUrl) {
                             loading = null;
                             self.progressBar.value = 0;
                             self.progressBar.text = "";
                             alert("File is uploaded successfully and accessible at:\n" + aUrl);
                         },
-                        function(aEvent) {
+                        function (aEvent) {
                             if (loading != null) {
                                 self.progressBar.value = aEvent.loaded / aEvent.total * 100;
                                 self.progressBar.text = self.progressBar.value + "%";
                             }
                         },
-                        function(aError) {
+                        function (aError) {
                             loading = null;
                             self.progressBar.value = 0;
                             self.progressBar.text = "";
@@ -45,11 +51,12 @@ function btnStartUploadActionPerformed(evt) {//GEN-FIRST:event_btnStartUploadAct
                 alert("Select a file please...");
         } else
             alert("Wait please while current upload ends!");
-}//GEN-LAST:event_btnStartUploadActionPerformed
+    };
 
-function btnAbortActionPerformed(evt) {//GEN-FIRST:event_btnAbortActionPerformed
+    form.btnAbort.onActionPerformed = function (event) {
         if (loading != null)
             loading.abort();
-}//GEN-LAST:event_btnAbortActionPerformed
+    };
+
 
 }

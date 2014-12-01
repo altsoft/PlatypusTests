@@ -332,7 +332,7 @@ function PlainPropertiesTest() {
         if (comp.iconTextGap !== 6)
             throw 'comp.iconTextGap mismatch';
         //icon
-        var compIcon = P.Icon.load('UI-tests/point.png');
+        var compIcon = P.Icon.load('UI tests/point.png');
         comp.icon = compIcon;
         if (comp.icon !== compIcon)
             throw 'comp.icon mismatch';

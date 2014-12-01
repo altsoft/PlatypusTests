@@ -2,9 +2,15 @@
  * 
  * @author mg
  * @module
+ * @constructor
  */
 function FormattingTest() {
     var self = this;
+
+self.execute = function () {
+   
+};
+
 
     var comps = [
         new P.FormattedField(),

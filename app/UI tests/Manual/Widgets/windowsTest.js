@@ -31,6 +31,9 @@ function WindowsTest() {
         form.desktopPane.closeAll();
         P.Logger.info(form.desktopPane.forms);
         P.Logger.info(form.desktopPane.forms.length);
+        if (form.desktopPane.forms.length!=0){
+            throw "Not all widgets are closed"
+        }
     };
     form.btnRestore.onActionPerformed = function(event) {
         form.desktopPane.restoreAll();
