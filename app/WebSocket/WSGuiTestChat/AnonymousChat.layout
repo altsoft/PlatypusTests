@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="311px" prefWidth="494px">
-  <widget name="scrollPane" parent="Form" prefHeight="252px" prefWidth="470px" type="ScrollDesignInfo">
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="375px" prefWidth="680px">
+  <widget name="scrollPane" parent="Form" prefHeight="316px" prefWidth="656px" type="ScrollDesignInfo">
     <constraints bottom="47px" left="12px" right="12px" top="12px" type="MarginConstraintsDesignInfo"/>
   </widget>
-  <widget name="txtChatField" parent="scrollPane" prefHeight="250px" prefWidth="468px" type="TextPaneDesignInfo"/>
-  <widget name="txtMessage" parent="Form" prefHeight="27px" prefWidth="372px" type="TextFieldDesignInfo">
+  <widget name="txtChatField" parent="scrollPane" prefHeight="314px" prefWidth="654px" type="TextPaneDesignInfo"/>
+  <widget name="txtMessage" parent="Form" prefHeight="27px" prefWidth="558px" type="TextFieldDesignInfo">
     <constraints bottom="8px" height="27px" left="12px" right="110px" type="MarginConstraintsDesignInfo"/>
   </widget>
   <widget name="btnSend" parent="Form" prefHeight="29px" prefWidth="84px" text="Send" type="ButtonDesignInfo">

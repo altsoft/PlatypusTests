@@ -9,13 +9,13 @@ function AnonymousChat() {
     var userName;
     // TODO : place your code here
     var chat = new P.ServerModule("chatServer");
-    
+
     model.requery(function () {
         // TODO : place your code here
     });
-    
-    
-     var webSocket = null;
+
+
+    var webSocket = null;
     function addEventsListener() {
         var eventsTypes = "";
         var delimiter = "";
@@ -34,8 +34,8 @@ function AnonymousChat() {
             P.Logger.info("onOpen");
         };
 
-        webSocket.onerror = function (aError) {
-            P.Logger.info(aError);
+        webSocket.onerror = function () {
+            P.Logger.info("onError");
         };
 
         webSocket.onmessage = function (aEventData) {
@@ -47,8 +47,10 @@ function AnonymousChat() {
         };
     }
 
-    var uNameCallback = function(aName){
+    var uNameCallback = function (aName) {
         userName = aName;
+        form.txtMessage.focus();
+        form.toFront();
     };
 
     self.show = function () {
@@ -56,15 +58,15 @@ function AnonymousChat() {
         form.show();
         uNameForm.showModal(uNameCallback);
         addEventsListener();
-
+        
     };
-    
-    form.btnSend.onActionPerformed = function(event) {
-        chat.sendMessage(userName + ": " +form.txtMessage.text +"\r\n");
+
+    form.btnSend.onActionPerformed = function (event) {
+        webSocket.send(userName + ": " + form.txtMessage.text + "\r\n");
         form.txtMessage.text = "";
     };
-    form.txtMessage.onActionPerformed = function(event) {
-       chat.sendMessage(userName + ": " +form.txtMessage.text +"\r\n");
+    form.txtMessage.onActionPerformed = function (event) {
+        webSocket.send(userName + ": " + form.txtMessage.text + "\r\n");
         form.txtMessage.text = "";
     };
 }
