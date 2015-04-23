@@ -40,7 +40,7 @@ function ambigous_changes_semi_writable() {
                     if (oldLength + 1 !== newLength) {
                         throw 'length violation 2';
                     }
-                    var found = model.ambigousChanges.find(model.ambigousChanges.schema.kid, NEW_RECORD_ID);
+                    var found = model.ambigousChanges.find({kid: NEW_RECORD_ID});
                     if (!Array.isArray(found))
                         throw 'Array.isArray violation 1';
                     if (found.length !== 1)
@@ -66,7 +66,7 @@ function ambigous_changes_semi_writable() {
                             if (oldLength !== newLength1) {
                                 throw 'length violation 3';
                             }
-                            var found1 = model.ambigousChanges.find(model.ambigousChanges.schema.gid, NEW_RECORD_ID);
+                            var found1 = model.ambigousChanges.find({gid: NEW_RECORD_ID});
                             if (!Array.isArray(found1))
                                 throw 'Array.isArray violation 2';
                             if (found1.length !== 0)
