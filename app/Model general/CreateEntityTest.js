@@ -2,6 +2,8 @@
  * 
  * @author mg
  * @name Create_Entity_Test
+ * @public
+ * @stateless
  */
 function Create_Entity_Test() {
     var self = this,
@@ -14,15 +16,16 @@ function Create_Entity_Test() {
         if (created.schema === null)
             throw "entity's .schema is not accessible";
         created.requery(function () {
-            if (created.cursor.mdent_name === null)
+            if (!created.cursor.mdent_name)
                 throw "entity's .cursor.MDENT_NAME is not accessible";
-            if (created.cursor.mdent_type === null)
+            if (!created.cursor.mdent_type)
                 throw "entity's .cursor.MDENT_TYPE is not accessible";
             P.Logger.info("created.length: " + created.length);
             onSuccess(created.length);
         }, function (e) {
             P.Logger.severe(e);
-            onFailure(e);
+            if (onFailure)
+                onFailure(e);
         });
     };
 // include save tests

@@ -22,5 +22,11 @@ function TestReportCore() {
         return template.generateReport();
     };
     
-    model.requery();
+    this.execute = function(aOnSuccess){
+        model.requery();
+        var generated = self.getReport();
+        if(!generated)
+            throw 'generated report violation';
+        aOnSuccess();
+    };
 }

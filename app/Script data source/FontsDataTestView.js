@@ -2,11 +2,16 @@
  * 
  * @author mg
  */
-function FontsDataTest() {
+function FontsDataTestView() {
     var self = this
-            , model = P.loadModel(this.constructor.name);
+            , model = P.loadModel(this.constructor.name)
+            , form = P.loadForm(this.constructor.name, model);
 
-    self.execute = function(aOnSuccess){
+    self.show = function () {
+        form.show();
+    };
+
+    form.btnTestIt.onActionPerformed = function (event) {
         model.fontsData.requery(function () {
             P.Logger.info("model.fontsData.length: " + model.fontsData.length);
             if (model.fontsData.length !== 3)
@@ -25,7 +30,7 @@ function FontsDataTest() {
                     P.Logger.info("model.fontsData.length: " + model.fontsData.length);
                     if (model.fontsData.length !== 3)
                         throw "fontsData violation 3";
-                    aOnSuccess();
+                    P.Logger.info("FontsDataTest passed");
                 }, function (e) {
                     P.Logger.severe(e);
                 });
@@ -35,5 +40,9 @@ function FontsDataTest() {
         }, function (e) {
             P.Logger.severe(e);
         });
+    };
+    
+    self.execute = function(){
+        form.btnTestIt.onActionPerformed();
     };
 }

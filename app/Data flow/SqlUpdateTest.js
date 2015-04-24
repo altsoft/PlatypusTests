@@ -1,6 +1,8 @@
 /**
  * 
  * @author mg
+ * @public
+ * @stateless
  */
 function SqlUpdateTest() {
     var NEW_RECORD_ID = 4125;
@@ -8,7 +10,7 @@ function SqlUpdateTest() {
     var self = this
             , model = P.loadModel(this.constructor.name);
 
-    self.execute = function (event) {
+    self.execute = function (aOnSuccess) {
         model.ambigousChanges.requery(function () {
             if (model.ambigousChanges.length === 0)
                 throw 'ambiguousChanges.length violation';
@@ -36,7 +38,7 @@ function SqlUpdateTest() {
                             throw 'saved.gname violation';
                         model.ambigousChanges.remove(saved);
                         model.save(function () {
-                            P.Logger.info("SqlUpdateTest passed");
+                            aOnSuccess();
                         }, function (e) {
                             P.Logger.severe(e);
                         });

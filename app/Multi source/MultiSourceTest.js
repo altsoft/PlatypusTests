@@ -2,16 +2,11 @@
  * 
  * @author mg
  */
-function MultiSourceTestView() {
+function MultiSourceTest() {
     var self = this
-            , model = P.loadModel(this.constructor.name)
-            , form = P.loadForm(this.constructor.name, model);
+            , model = P.loadModel(this.constructor.name);
 
-    self.show = function () {
-        form.show();
-    };
-
-    form.button.onActionPerformed = function (event) {
+    this.execute = function (aOnSuccess) {
         model.requery(function () {
             if (model.dataEAS.length !== 0) {
                 throw "MultiSourceTest. dataEAS violoation 1";
@@ -20,8 +15,9 @@ function MultiSourceTestView() {
                 throw "MultiSourceTest. dataHR violoation 1";
             }
             var inserted = {addr: "addr1", entries: 4, modified: new Date()};
+            var inserted1 = {addr: "addr1", entries: 4, modified: new Date()};
             model.dataEAS.push(inserted);
-            model.dataHR.push(inserted);
+            model.dataHR.push(inserted1);
             model.save(function () {
                 P.Logger.info("Commit succeded 1");
                 model.requery(function () {
@@ -42,7 +38,7 @@ function MultiSourceTestView() {
                             if (model.dataHR.length !== 0) {
                                 throw "MultiSourceTest. dataHR violoation 3";
                             }
-                            P.Logger.info("MultiTest passed");
+                            aOnSuccess();
                         }, function (e) {
                             P.Logger.severe(e);
                         });

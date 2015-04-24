@@ -1,6 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<datamodel>
-  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-  <entity Name="_24832514140608864" Title="Все элементы приложения" entityHeight="200" entityIconified="false" entityId="138202184316110" entityLocationX="249" entityLocationY="131" entityWidth="150" queryId="_24832514140608864" tableName="" tableSchemaName=""/>
-  <referenceRelation leftEntityFieldName="MDENT_PARENT_ID" leftEntityId="138202184316110" rightEntityFieldName="MDENT_ID" rightEntityId="138202184316110"/>
-</datamodel>
+<?xml version="1.0" encoding="UTF-8"?><datamodel/>

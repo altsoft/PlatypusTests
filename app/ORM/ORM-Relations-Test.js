@@ -14,7 +14,7 @@ function ORM_Relations_Test() {
     var self = this,
             model = P.loadModel(this.constructor.name);
 
-    self.execute = function () {
+    self.execute = function (aOnSuccess) {
         var appElements1 = model.appElements1;
         appElements1.elementClass = Dog;
         appElements1.onRequeried = function (event) {
@@ -22,20 +22,19 @@ function ORM_Relations_Test() {
             var processed = 0;
             var processed1 = 0;
             appElements1.forEach(function (aAppElement) {
-                var r = aAppElement.run;
                 if (aAppElement.run !== dogMemberFunctionRun) {
                     throw 'ORM data element methods violation!';
                 }
                 var ch = aAppElement.children;
                 var ch1 = aAppElement.children;
                 var ch2 = aAppElement.children;
-                if (!((ch === ch1) && (ch === ch2)))
-                    throw "ORM equality violation for collection property 'children'!";
+                if (!((ch.length === ch1.length) && (ch.length === ch2.length)))
+                    throw "ORM equality violation for collection property 'children'";
                 var par = aAppElement.parent;
                 var par1 = aAppElement.parent;
                 var par2 = aAppElement.parent;
                 if (!((par === par1) && (par === par2)))
-                    throw "ORM equality violation for collection property 'parent'!";
+                    throw "ORM equality violation for collection property 'parent'";
                 if (aAppElement.parent !== null) {
                     var _par = aAppElement.parent;
                     var oldChildrenCount = _par.children.length;
@@ -54,8 +53,7 @@ function ORM_Relations_Test() {
                 processed++;
             });
             P.Logger.info(processed + " application elements processed. " + processed1 + " of them with scalar property 'parent' editing and collections review.");
-            if (self.onSuccess)
-                self.onSuccess(processed + processed1);
+            aOnSuccess(processed + processed1);
         };
         model.requery();
     };
