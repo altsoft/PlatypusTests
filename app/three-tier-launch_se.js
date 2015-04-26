@@ -1,7 +1,6 @@
 /**
  * 
  * @author mg
- * @rolesAllowed role1
  */
 function ThreeTierSELauncher() {
     var self = this
@@ -14,7 +13,6 @@ function ThreeTierSELauncher() {
     form.btnRun.onActionPerformed = function (event) {
 
         var tests = [
-            /*
             new ambigous_changes_semi_writable()
                      , new ambigous_changes()
                      , new extra_fields_insert_update()
@@ -28,21 +26,15 @@ function ThreeTierSELauncher() {
                      , new ORM_Relations_Test()
                      , new ORM_properties_names_calc()
                      , new TestReportCore()
-                     ,*/ new TestReportClient()
-                     /*
+                     , new TestReportClient()
                      , new IconLoadTest()
                      , new ResourceLoadTest()
                      , new FontsDataTest()
-                     , new FontsDataValidatorTest()
-                     , new StoredProcedureCallerTest()
-                     , new SecureServerModuleView()
-                     , new SecureResource()
-                     , new SecureDataSources()
-                     , new ServerModuleTests()
-                     , new AsyncServerModuleTests()
-                     , new Login_Logout_Test_View()
-                     , new HttpContextTestView()
-                     */
+                     , new StoredProcedureTestClient()
+                     , new SecureServerModulesClient()
+                     , new SecureDataSourcesTest()
+                     , new SyncServerModulesTest()
+                     , new AsyncServerModulesTest()
         ];
         form.progress.minimum = 0;
         form.progress.maximum = tests.length;

@@ -2,7 +2,7 @@
  * 
  * @author mg
  */
-function TwoTierLauncher() {
+function ThreeTierBrowserLauncher() {
     var self = this
             , form = P.loadForm(this.constructor.name);
 
@@ -13,24 +13,31 @@ function TwoTierLauncher() {
     form.btnRun.onActionPerformed = function (event) {
 
         var tests = [
+                     /*
             new ambigous_changes_semi_writable()
                      , new ambigous_changes()
                      , new extra_fields_insert_update()
-                     , new SqlUpdateTest()
+                     , new SqlUpdateTestClient()
                      , new DependenciesTest()
-                     , new Create_Entity_Test()
-                     , new Load_Entity_Test()
+                     , new CreateEntityTestClient()
+                     , new LoadEntityTestClient()
                      , new ModelAPI()
                      , new MultiSourceTest()
                      , new MultiSourceWithErrorTest()
                      , new ORM_Relations_Test()
                      , new ORM_properties_names_calc()
                      , new TestReportCore()
+                     , new TestReportClient()
                      , new IconLoadTest()
                      , new ResourceLoadTest()
                      , new FontsDataTest()
-                     , new FontsDataValidatorTest()
-                     , new StoredProcedureCallerTest()
+                     , new StoredProcedureTestClient()
+                     , new SecureServerModulesClient()
+                     , new SecureDataSourcesTest()
+                     , new SyncServerModulesTest()
+                     , new AsyncServerModulesTest()
+                     , new HttpContextTestView()
+                     */
         ];
         form.progress.minimum = 0;
         form.progress.maximum = tests.length;
