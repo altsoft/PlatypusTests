@@ -14,7 +14,8 @@ function ThreeTierBrowserLauncher() {
 
         var tests = [
                      /*
-            new ambigous_changes_semi_writable()
+            */new ambigous_changes_semi_writable()
+           /*
                      , new ambigous_changes()
                      , new extra_fields_insert_update()
                      , new SqlUpdateTestClient()

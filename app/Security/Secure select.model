@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<datamodel>
-<parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
-<entity Title="Заказчик" entityHeight="200" entityIconified="false" entityId="133214446015522" entityLocationX="176" entityLocationY="6" entityWidth="150" tableAlias="T_CUSTOMER_1" tableName="CUSTOMER" tableSchemaName=""/>
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
+  <entity Title="" entityHeight="200" entityIconified="false" entityId="143012851510226" entityLocationX="176" entityLocationY="6" entityWidth="150" tableAlias="t" tableName="security_test_data" tableSchemaName=""/>
 </datamodel>

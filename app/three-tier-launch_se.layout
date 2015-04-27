@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><layout title="Тесты с SE сервером" view="view">
+<?xml version="1.0" encoding="UTF-8"?><layout title="Тесты с сервером" view="view">
   <AnchorsPane cursor="0" name="view" prefHeight="296px" prefWidth="400px"/>
   <Label cursor="0" name="lblTests" parent="view" prefHeight="24px" prefWidth="276px" text="Выполненные тесты:">
     <AnchorsPaneConstraints height="24px" left="10px" top="35px" width="276px"/>

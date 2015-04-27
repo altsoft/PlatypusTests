@@ -7,16 +7,50 @@ function SecureDataSourcesTest() {
             , model = P.loadModel(this.constructor.name);
 
     self.execute = function (aOnSuccess) {
-        secureTest(aOnSuccess);
-        secureReadTest(aOnSuccess);
-        secureReadWriteTest(aOnSuccess);
+        var cleaner = new P.ServerModule('SecureDatasourcesCleaning');
+        cleaner.execute(function () {
+            secureTest(function () {
+                cleaner.execute(function () {
+                    secureReadTest(function () {
+                        cleaner.execute(function () {
+                            secureReadWriteTest(function () {
+                                cleaner.execute(function () {
+                                    aOnSuccess();
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
     };
+
+    function secureTest(aOnSuccess) {
+        model.dsSecure.requery(function () {
+            if (model.dsSecure.length > 0)
+                throw 'Dirty data 1';
+            model.dsSecure.push({
+                tetsfield: "3"
+            });
+            model.save(function () {
+                model.dsSecure.requery(function () {
+                    if (model.dsSecure.length < 1) {
+                        throw "Failed to insert";
+                    } else
+                        aOnSuccess();
+                }, function (error) {
+                    throw error;
+                });
+            });
+        });
+    }
 
     function secureReadTest(aOnSuccess) {
         model.dsSecureRead.requery(function () {
+            if (model.dsSecureRead.length > 0)
+                throw 'Dirty data 1';
             model.dsSecureRead.push({
-                customer_name: "1",
-                customer_address: "22"
+                tetsfield: "22"
             });
             model.save(function () {
                 model.dsSecureRead.requery(function () {
@@ -30,43 +64,18 @@ function SecureDataSourcesTest() {
             });
         });
     }
-    ;
 
     function secureReadWriteTest(aOnSuccess) {
         model.dsSecureWrite.requery(function () {
+            if (model.dsSecureWrite.length > 0)
+                throw 'Dirty data 1';
             model.dsSecureWrite.push({
-                customer_name: "5",
-                customer_address: "666666"
+                tetsfield: "5"
             });
             model.save(function () {
-                model.dsSecureWrite.requery(function () {
-                    if (model.dsSecureWrite.length < 1) {
-                        throw "Failed to insert";
-                    } else
-                        aOnSuccess();
-                }, function (error) {
-                    throw error;
-                });
-            });
-        });
-    }
-    ;
-
-    function secureTest(aOnSuccess) {
-        model.dsSecure.requery(function () {
-            model.dsSecure.push({
-                customer_name: "3",
-                customer_address: "4444"
-            });
-            model.save(function () {
-                model.dsSecure.requery(function () {
-                    if (model.dsSecure.length < 1) {
-                        throw "Failed to insert";
-                    } else
-                        aOnSuccess();
-                }, function (error) {
-                    throw error;
-                });
+                throw "Insert have to be prevented by write role, but data is inserted.";
+            }, function () {
+                aOnSuccess();
             });
         });
     }
