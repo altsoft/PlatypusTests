@@ -1,7 +1,5 @@
 /**
  * Module level security constraint
- * @name 133189149718000
- * @module
  * @rolesAllowed role1, role2
  * @public
  * @author vv
@@ -22,7 +20,7 @@ function SecureModule() {
     };
 
     /**
-     * @rolesAllowed role2
+     * @rolesAllowed role2857952
      */
     function localSecureTest() {
         return "localsecuretest";

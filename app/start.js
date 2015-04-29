@@ -5,8 +5,8 @@
 // this === global
 (function () {
     function ready() {
-        P.require(['AnonymousChat'], function(){
-            var m = new AnonymousChat();
+        P.require(['ThreeTierSELauncher'], function(){
+            var m = new ThreeTierSELauncher();
             m.show();
         }, function(e){
             P.Logger.severe(e);

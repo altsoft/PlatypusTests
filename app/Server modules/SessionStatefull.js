@@ -14,12 +14,10 @@ function SessionStatefull() {
 
     self.clearCallsCount = function () {
         callCount = 0;
-        //return callCount;//TO DO Uncomment when platypus JS will be changed.
     };
 
     self.incCallsCount = function (aCounts) {
         callCount += aCounts;
-        //return callCount; //TO DO Uncomment when platypus JS will be changed.
     };
 
     self.dateMarshaling = function (aDate) {
@@ -27,7 +25,7 @@ function SessionStatefull() {
     };
 
     self.objectWithDateMarshaling = function (aObject) {
-        printf(JSON.stringify(aObject));
+        P.Logger.info(JSON.stringify(aObject));
         return aObject;
     };
 

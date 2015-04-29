@@ -10,7 +10,7 @@ function ambigous_changes() {
     var NEW_RECORD_NAME_K = "test kname";
     var self = this, model = P.loadModel(this.constructor.name);
 
-    self.execute = function () {
+    self.execute = function (aOnSuccess) {
         model.ambigousChanges.requery(function () {
             var oldLength = model.ambigousChanges.length;
             if (model.ambigousChanges.length <= 0) {
@@ -40,23 +40,11 @@ function ambigous_changes() {
                     if (oldLength + 1 !== newLength) {
                         throw 'length violation 2';
                     }
-                    var found = model.ambigousChanges.find(model.ambigousChanges.schema.gid, NEW_RECORD_ID);
+                    var found = model.ambigousChanges.find({gid: NEW_RECORD_ID});
                     if (!Array.isArray(found))
                         throw 'Array.isArray violation 1';
                     if (found.length !== 1)
                         throw 'found.length violation 1';
-                    var found1 = model.ambigousChanges.find([model.ambigousChanges.schema.gid, NEW_RECORD_ID]);
-                    var found2 = model.ambigousChanges.find("gid", NEW_RECORD_ID);
-                    var found3 = model.ambigousChanges.find(["gid", NEW_RECORD_ID]);
-                    var found4 = model.ambigousChanges.find({gid: NEW_RECORD_ID});
-                    if(found1.length !== found.length || found1[0] !== found[0])
-                        throw 'found1 violation';
-                    if(found2.length !== found.length || found2[0] !== found[0])
-                        throw 'found2 violation';
-                    if(found3.length !== found.length || found3[0] !== found[0])
-                        throw 'found3 violation';
-                    if(found4.length !== found.length || found4[0] !== found[0])
-                        throw 'found4 violation';
                     var instance = found[0];
                     if (instance.gid !== NEW_RECORD_ID)
                         throw 'instance.gid violation';
@@ -78,12 +66,12 @@ function ambigous_changes() {
                             if (oldLength !== newLength1) {
                                 throw 'length violation 3';
                             }
-                            var found_1 = model.ambigousChanges.find(model.ambigousChanges.schema.gid, NEW_RECORD_ID);
+                            var found_1 = model.ambigousChanges.find({gid: NEW_RECORD_ID});
                             if (!Array.isArray(found_1))
                                 throw 'Array.isArray violation 2';
                             if (found_1.length !== 0)
                                 throw 'found.length violation 2';
-                            P.Logger.info("ambigous_changes passed");
+                            aOnSuccess();
                         }, function (e) {
                             P.Logger.info(e);
                         });

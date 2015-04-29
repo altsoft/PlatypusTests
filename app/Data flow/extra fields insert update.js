@@ -7,7 +7,7 @@ function extra_fields_insert_update() {
     var NEW_ORDER_ID = 789654;
     var self = this, model = P.loadModel(this.constructor.name);
 
-    self.execute = function () {
+    self.execute = function (aOnSuccess) {
         model.extraFields.push({order_id: NEW_ORDER_ID, good_id: 4589, good: 4589, extra1: 'yuyu', extra2: 8598});
         // Keys auto generaion feature test
         if (model.extraFields[model.extraFields.length - 1].good_id === null)
@@ -28,7 +28,7 @@ function extra_fields_insert_update() {
                         if (model.extraFields.length !== 0) {
                             throw "extraFields.length violation";
                         }
-                        P.Logger.info("extra_fields_insert_update test passed");
+                        aOnSuccess();
                     }, function (e) {
                         P.Logger.severe(e);
                     });

@@ -21,7 +21,7 @@ function ProcedureCallerView() {
     };
     
     self.execute = function(){
-        var caller = new P.ServerModule("StoredProcedureCaller");
+        var caller = new P.ServerModule("StoredProcedureCallerTest");
         caller.achiveProcedureResult(20, 5, function (aResult) {
             if (aResult != 25) {
                 throw "Error calling stored procedure.";

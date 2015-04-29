@@ -1,5 +1,5 @@
 /**
- * Module functions is avaliable to every user from other modules, but not from network
+ * Module functions is avaliable to every user from other modules, but not from the network
  * @author vv
  */
 function NonPublicModule() {

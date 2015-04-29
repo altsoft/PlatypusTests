@@ -15,6 +15,5 @@ function SessionStateless() {
     
     self.incCallsCount = function(aCounts) {
         callCount += aCounts;  
-        //return callCount; //TO DO Uncomment when platypus JS will be changed.
     };
 }

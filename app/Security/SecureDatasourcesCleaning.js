@@ -2,13 +2,13 @@
  * 
  * @author mg
  * @constructor
+ * @public
+ * @stateless
  */ 
-function InheritanceTest() {
+function SecureDatasourcesCleaning() {
     var self = this, model = P.loadModel(this.constructor.name);
     
     self.execute = function () {
-        P.require('JS inheritance/inheritance-plain-test.js', function(){
-            
-        });
+        model.tempDataDeleter.executeUpdate();
     };
 }

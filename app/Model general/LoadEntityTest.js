@@ -2,13 +2,14 @@
  * 
  * @author mg
  * @name Load_Entity_Test
+ * @public
+ * @stateless
  */
-
 function Load_Entity_Test() {
     var self = this,
             model = P.loadModel(this.constructor.name);
 
-    self.execute = function () {
+    self.execute = function (aOnSuccess) {
         var loaded = model.loadEntity("_24832514140608864");
         if (loaded === null)
             throw "entity hasn't been created";
@@ -21,8 +22,7 @@ function Load_Entity_Test() {
             if (loaded.cursor.MDENT_TYPE === null)
                 throw "entity's .cursor.MDENT_TYPE is not accessible";
             P.Logger.info("loaded.length: " + loaded.length);
-            if (self.onSuccess)
-                self.onSuccess(loaded.length);
+            aOnSuccess(loaded.length);
         });
     }
 // include save tests

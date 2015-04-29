@@ -1,18 +1,21 @@
 /**
  * 
- * @author mg
+ * @author mg 
  * @constructor
  */
-function Icon_load() {
+function IconLoadTest() {
     var self = this, model = P.loadModel(this.constructor.name);
     var btn = new P.Button();
 
     var asyncLoaded = 0;
-    var asyncExpCount = 4;
-    self.execute = function () {
+    self.execute = function (aOnSuccess) {
+        function complete(){
+            if (++asyncLoaded === 4)
+                aOnSuccess();
+        }
+        
         var isCompatible;
         if (P.agent !== P.HTML5) {
-            asyncExpCount = 4;
             // sync resources loading test       
             var loadedIcon = P.Icon.load('Resources/wrench.png');
             try {
@@ -26,7 +29,7 @@ function Icon_load() {
                 btn.icon = loadedResource;
                 isCompatible = true;
             } catch (e) {
-                //This is right behaviour - types are incompartible 
+                //This is right behaviour - types are incompatible 
                 isCompatible = false;
             }
             if (isCompatible) {
@@ -59,8 +62,7 @@ function Icon_load() {
                     isCompatible = true;
                 }, function (e) {
                     isCompatible = false;
-                    if (++asyncLoaded === asyncExpCount)
-                        P.Logger.info('Icon_load passed');
+                    complete();
                 });
 //            } catch (ex) {
 //                isCompatible = false;
@@ -75,15 +77,13 @@ function Icon_load() {
                 //it cannot be loaded by Html5
                 throw 'loaded.icon violation types incompatible 3';
             }, function (e) {
-                if (++asyncLoaded === asyncExpCount)
-                    P.Logger.info('Icon_load passed');
+                complete();
             });
         }
 
         P.Icon.load('Resources/wrench.png', function (aLoaded) {
             btn.icon = aLoaded;
-            if (++asyncLoaded === asyncExpCount)
-                P.Logger.info('Icon_load passed');
+            complete();
         }, function (e) {
             P.Logger.severe(e);
         });
@@ -98,16 +98,14 @@ function Icon_load() {
             if (isCompatible) {
                 throw 'loaded.icon violation types incompatible 4';
             }
-            if (++asyncLoaded === asyncExpCount)
-                P.Logger.info('Icon_load passed');
+            complete();
         }, function (e) {
             P.Logger.severe(e);
         });
 
         P.Icon.load('http://lh6.googleusercontent.com/-UXdNdTTGgXg/AAAAAAAAAAI/AAAAAAAAAAA/b3u7m4nqaNo/s32-c/photo.jpg', function (aLoaded) {
             btn.icon = aLoaded;
-            if (++asyncLoaded === asyncExpCount)
-                P.Logger.info('Icon_load passed');
+            complete();
         }, function (e) {
             P.Logger.severe(e);
         });

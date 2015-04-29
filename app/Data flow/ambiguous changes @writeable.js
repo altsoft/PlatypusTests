@@ -10,7 +10,7 @@ function ambigous_changes_semi_writable() {
     var NEW_RECORD_NAME_K = "test kname";
     var self = this, model = P.loadModel(this.constructor.name);
 
-    self.execute = function () {
+    self.execute = function (aOnSuccess) {
         model.ambigousChanges.requery(function () {
             var oldLength = model.ambigousChanges.length;
             if (model.ambigousChanges.length <= 0) {
@@ -40,7 +40,7 @@ function ambigous_changes_semi_writable() {
                     if (oldLength + 1 !== newLength) {
                         throw 'length violation 2';
                     }
-                    var found = model.ambigousChanges.find(model.ambigousChanges.schema.kid, NEW_RECORD_ID);
+                    var found = model.ambigousChanges.find({kid: NEW_RECORD_ID});
                     if (!Array.isArray(found))
                         throw 'Array.isArray violation 1';
                     if (found.length !== 1)
@@ -66,12 +66,12 @@ function ambigous_changes_semi_writable() {
                             if (oldLength !== newLength1) {
                                 throw 'length violation 3';
                             }
-                            var found1 = model.ambigousChanges.find(model.ambigousChanges.schema.gid, NEW_RECORD_ID);
+                            var found1 = model.ambigousChanges.find({gid: NEW_RECORD_ID});
                             if (!Array.isArray(found1))
                                 throw 'Array.isArray violation 2';
                             if (found1.length !== 0)
                                 throw 'found.length violation 2';
-                            P.Logger.info("ambigous_changes_semi_writable passed");
+                            aOnSuccess();
                         }, function (e) {
                             P.Logger.info(e);
                         });

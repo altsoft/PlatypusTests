@@ -16,7 +16,7 @@ function TestReportsView() {
     };
     
     self.execute = function(){
-        var reportModule = new TestReportsModule();
+        var reportModule = new TestReportsCore();
         reportModule.execute();
     };
 }

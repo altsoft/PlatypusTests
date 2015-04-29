@@ -24,6 +24,7 @@ function runtime_binding_test() {
         form.modelDate.field = model.params.schema.dvalue;
         form.modelTextArea.field = model.params.schema.svalue;
     };
+    
     form.btnUnBind.onActionPerformed = function(event) {
         form.modelCheckBox.field = null;
         form.modelCombo.field = null;
