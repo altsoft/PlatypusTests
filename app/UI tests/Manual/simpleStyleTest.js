@@ -13,11 +13,14 @@ function SimpleStyleTest() {
     };
 
     form.btnTest.onActionPerformed = function (evt) {
-        var viewForeground = form.view.foreground;
+        var viewForeground = form.view; //.foreground;
         var viewBackground = form.view.background;
         var viewFont = form.view.font;
         var viewCursor = form.view.cursor;
         var viewOpaque = form.view.opaque;
+        form.panel.background = P.Color.BLUE;
+        var viewBG = form.panel.background;
+        form.label.text = viewBG;
         var t = 0;
     };
 

@@ -3,13 +3,19 @@
  * Platypus Application Designer.
  */
 // this === global
-if(!this.P)
-    this.P = {};
-P.ready = function() {
-    P.require(['testWSConnection'], function(){
-        var m = new testWSConnection();
-        m.execute();
-    }, function(e){
-        P.Logger.severe(e);
-    });
-};
+(function () {
+    function ready() {
+        P.require(['AnonymousChat'], function(){
+            var m = new AnonymousChat();
+            m.show();
+        }, function(e){
+            P.Logger.severe(e);
+        });
+    }
+    if(!this.P) {
+        this.P = {};
+        P.ready = ready;
+    } else {
+        ready();
+    }
+})();

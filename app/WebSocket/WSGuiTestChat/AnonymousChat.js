@@ -40,7 +40,20 @@ function AnonymousChat() {
 
         webSocket.onmessage = function (aEventData) {
             P.Logger.info("onMessage");
-            form.txtChatField.text += aEventData.data;
+//            form.txtChatField.text += aEventData.data;
+            var msgBox = new P.BoxPane();
+//            msgBox.width = form.ffWidth.value;
+//            msgBox.height = 20;
+           
+
+            var redColor = Math.round(Math.random() * 255);
+            var greenColor = Math.round(Math.random() * 255);
+            var blueColor = Math.round(Math.random() * 255);
+            msgBox.background = new P.Color(redColor, greenColor, blueColor);
+            msgBox.element.innerHTML ="<div>" + aEventData.data + "</div>";
+            
+            form.panel.add(msgBox);
+            
         };
         webSocket.onclose = function () {
             P.Logger.info("onClose");
@@ -58,15 +71,12 @@ function AnonymousChat() {
         form.show();
         uNameForm.showModal(uNameCallback);
         addEventsListener();
-        
+
     };
 
     form.btnSend.onActionPerformed = function (event) {
-        webSocket.send(userName + ": " + form.txtMessage.text + "\r\n");
-        form.txtMessage.text = "";
+        webSocket.send(form.txtMessage.value);
+        form.txtMessage.value = "";
     };
-    form.txtMessage.onActionPerformed = function (event) {
-        webSocket.send(userName + ": " + form.txtMessage.text + "\r\n");
-        form.txtMessage.text = "";
-    };
+
 }

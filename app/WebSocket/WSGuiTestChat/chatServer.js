@@ -25,7 +25,7 @@ function chatServer() {
         };
         session.onmessage = function (message) {
             P.Logger.info("WebSocket Got message " + message.data);
-//            self.sendMessage(message.data);
+            self.sendMessage(message.data);
         };
         session.onerror =  function (aError){
             P.Logger.info("Got Error " + aError);

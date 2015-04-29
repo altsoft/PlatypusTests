@@ -20,30 +20,44 @@ function uploadTest() {
         P.selectFile(function (aFile) {
             file = aFile;
             P.Logger.info(file);
+            P.Logger.info(file.name);
             form.lblFileName.text = file.name;
-        },P.Logger.info("file"));
+        });
+        
     };
+    
+    form.btnSelectFileMask.onActionPerformed = function (event) {
+        P.selectFile(function (aFile) {
+            file = aFile;
+            P.Logger.info(file);
+            P.Logger.info(file.name);
+            form.lblFileName.text = file.name;
+        },form.txtMask.text);
+        
+    };
+
 
     form.btnStartUpload.onActionPerformed = function (event) {
         if (loading == null) {
             if (file != null) {
-                loading = upload(file,
+                loading = P.Resource.upload(file,file.name,
                         function (aUrl) {
                             loading = null;
-                            self.progressBar.value = 0;
-                            self.progressBar.text = "";
+                            form.progressBar.value = 0;
+                            form.progressBar.text = "";
+                            P.Logger.info(aUrl);
                             alert("File is uploaded successfully and accessible at:\n" + aUrl);
                         },
                         function (aEvent) {
                             if (loading != null) {
-                                self.progressBar.value = aEvent.loaded / aEvent.total * 100;
-                                self.progressBar.text = self.progressBar.value + "%";
+                                form.progressBar.value = aEvent.loaded / aEvent.total * 100;
+                                form.progressBar.text = form.progressBar.value + "%";
                             }
                         },
                         function (aError) {
                             loading = null;
-                            self.progressBar.value = 0;
-                            self.progressBar.text = "";
+                            form.progressBar.value = 0;
+                            form.progressBar.text = "";
                             alert("Uploading is aborted with message: " + aError);
                         }
                 );
