@@ -14,8 +14,7 @@ function ThreeTierBrowserLauncher() {
 
         var tests = [
                      /*
-            */new ambigous_changes_semi_writable()
-           /*
+                       new ambigous_changes_semi_writable()
                      , new ambigous_changes()
                      , new extra_fields_insert_update()
                      , new SqlUpdateTestClient()
@@ -27,10 +26,10 @@ function ThreeTierBrowserLauncher() {
                      , new MultiSourceWithErrorTest()
                      , new ORM_Relations_Test()
                      , new ORM_properties_names_calc()
-                     , new TestReportCore()
                      , new TestReportClient()
                      , new IconLoadTest()
-                     , new ResourceLoadTest()
+                     ,*/ new ResourceLoadTest()
+                    /*
                      , new FontsDataTest()
                      , new StoredProcedureTestClient()
                      , new SecureServerModulesClient()

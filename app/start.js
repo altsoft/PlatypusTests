@@ -5,8 +5,8 @@
 // this === global
 (function () {
     function ready() {
-        P.require(['ThreeTierSELauncher'], function(){
-            var m = new ThreeTierSELauncher();
+        P.require(['ThreeTierBrowserLauncher'], function(){
+            var m = new ThreeTierBrowserLauncher();
             m.show();
         }, function(e){
             P.Logger.severe(e);
