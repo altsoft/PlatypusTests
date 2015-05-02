@@ -44,7 +44,7 @@ function ResourceLoadTest() {
             });
         }
         // async resources loading test
-        P.Resource.load('Resources/resource load.model', function (aLoaded) {
+        P.Resource.loadText('Resources/resource load.model', function (aLoaded) {
             if (aLoaded.length !== 249)
                 throw 'loaded.length violation 3';
             complete();

@@ -11,7 +11,6 @@ function HttpContextTestView() {
         form.show();
     };
 
-
     model.requery(function () {
     });
 

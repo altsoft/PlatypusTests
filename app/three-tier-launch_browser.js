@@ -13,7 +13,6 @@ function ThreeTierBrowserLauncher() {
     form.btnRun.onActionPerformed = function (event) {
 
         var tests = [
-                     /*
                        new ambigous_changes_semi_writable()
                      , new ambigous_changes()
                      , new extra_fields_insert_update()
@@ -28,16 +27,14 @@ function ThreeTierBrowserLauncher() {
                      , new ORM_properties_names_calc()
                      , new TestReportClient()
                      , new IconLoadTest()
-                     ,*/ new ResourceLoadTest()
-                    /*
+                     , new ResourceLoadTest()
                      , new FontsDataTest()
                      , new StoredProcedureTestClient()
                      , new SecureServerModulesClient()
                      , new SecureDataSourcesTest()
                      , new SyncServerModulesTest()
                      , new AsyncServerModulesTest()
-                     , new HttpContextTestView()
-                     */
+                     , new HttpContextTestClient()
         ];
         form.progress.minimum = 0;
         form.progress.maximum = tests.length;
