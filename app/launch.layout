@@ -1,19 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="296px" prefWidth="400px">
-  <widget name="lblTests" parent="Form" prefHeight="24px" prefWidth="276px" text="Выполненные тесты:" type="LabelDesignInfo">
-    <constraints height="24px" left="10px" top="35px" type="MarginConstraintsDesignInfo" width="276px"/>
-  </widget>
-  <widget name="scrollPane" parent="Form" prefHeight="176px" prefWidth="396px" type="ScrollDesignInfo">
-    <constraints bottom="0px" left="0px" right="4px" top="120px" type="MarginConstraintsDesignInfo"/>
-  </widget>
-  <widget name="txtLog" parent="scrollPane" prefHeight="174px" prefWidth="394px" type="TextPaneDesignInfo"/>
-  <widget name="lblLog" parent="Form" prefHeight="24px" prefWidth="276px" text="Журнал" type="LabelDesignInfo">
-    <constraints height="24px" left="12px" right="112px" top="96px" type="MarginConstraintsDesignInfo"/>
-  </widget>
-  <widget name="progress" parent="Form" prefHeight="24px" prefWidth="372px" type="ProgressBarDesignInfo">
-    <constraints height="24px" left="12px" right="16px" top="60px" type="MarginConstraintsDesignInfo"/>
-  </widget>
-  <widget name="btnRun" parent="Form" prefHeight="23px" prefWidth="96px" text="Запуск" type="ButtonDesignInfo">
-    <constraints height="23px" left="12px" top="2px" type="MarginConstraintsDesignInfo" width="96px"/>
-  </widget>
-  <layout type="MarginLayoutDesignInfo"/>
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane cursor="0" name="view" prefHeight="296px" prefWidth="400px"/>
+  <Button cursor="0" name="btnRun" parent="view" prefHeight="23px" prefWidth="96px" text="Запуск">
+    <AnchorsPaneConstraints height="23px" left="12px" top="2px" width="96px"/>
+  </Button>
 </layout>
