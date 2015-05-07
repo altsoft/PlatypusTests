@@ -6,8 +6,10 @@
 function ModelModyfiedTestClient() {
     var self = this, model = P.loadModel(this.constructor.name);
     
-   self.execute = function (onSuccess, onFailure) {
+   self.execute = function (aOnSuccess) {
         var proxy = new P.ServerModule('ModelModyfiedTest');
-        proxy.execute(onSuccess, onFailure);
+         proxy.execute(aOnSuccess, function (e) {
+            P.Logger.severe(e);
+        });
     };
 }

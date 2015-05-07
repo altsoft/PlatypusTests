@@ -27,7 +27,7 @@ function ModelGeneralTestsManualRunner() {
         test.execute();
     };
     form.modifiedTest.onActionPerformed = function(event) {
-        var test = new ModelModyfiedTest();
+        var test = new ModelModyfiedTestClient();
         test.execute();
     };
 }

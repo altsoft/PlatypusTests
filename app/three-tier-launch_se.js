@@ -16,6 +16,7 @@ function ThreeTierSELauncher() {
             new ambigous_changes_semi_writable()
                      , new ambigous_changes()
                      , new extra_fields_insert_update()
+                     , new ModelModyfiedTestClient()
                      , new SqlUpdateTestClient()
                      , new DependenciesTest()
                      , new CreateEntityTestClient()

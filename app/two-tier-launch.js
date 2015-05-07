@@ -16,6 +16,7 @@ function TwoTierLauncher() {
             new ambigous_changes_semi_writable()
                      , new ambigous_changes()
                      , new extra_fields_insert_update()
+                     , new ModelModyfiedTest()
                      , new SqlUpdateTest()
                      , new DependenciesTest()
                      , new Create_Entity_Test()
