@@ -5,8 +5,8 @@
 // this === global
 (function () {
     function ready() {
-        P.require(['ModelGeneralTestsManualRunner'], function(){
-            var m = new ModelGeneralTestsManualRunner();
+        P.require(['ThreeTierBrowserLauncher'], function(){
+            var m = new ThreeTierBrowserLauncher();
             m.show();
         }, function(e){
             P.Logger.severe(e);
