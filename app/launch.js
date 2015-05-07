@@ -22,6 +22,7 @@ function Launcher() {
                 , new CreateEntityTestClient()
                 , new Load_Entity_Test()
                 , new ModelAPI()
+                , new ModelModyfiedTest()
                 , new MultiSourceTestView()
                 , new MultiSourceWithErrorTestView()
                 , new ORM_Relations_Test()

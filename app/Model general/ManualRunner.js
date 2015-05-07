@@ -26,4 +26,8 @@ function ModelGeneralTestsManualRunner() {
         var test = new ModelAPI();
         test.execute();
     };
+    form.modifiedTest.onActionPerformed = function(event) {
+        var test = new ModelModyfiedTest();
+        test.execute();
+    };
 }
