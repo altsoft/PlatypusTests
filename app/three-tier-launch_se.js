@@ -13,7 +13,9 @@ function ThreeTierSELauncher() {
     form.btnRun.onActionPerformed = function (event) {
 
         var tests = [
-            new ambigous_changes_semi_writable()
+                       new select_stateless_test()
+                     , new append_test()
+                     , new ambigous_changes_semi_writable()
                      , new ambigous_changes()
                      , new extra_fields_insert_update()
                      , new ModelModyfiedTestClient()
