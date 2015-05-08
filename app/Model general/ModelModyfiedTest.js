@@ -40,22 +40,23 @@ function ModelModyfiedTest() {
             if (model.modified == true) {
                 throw "Changes have been saved, but flag does not reseted";
             }
+            model.datamodel.cursor.name = "newVal";
+            if (model.modified == false) {
+                throw "Model has been modified, but flag was not set";
+            }
+            if (model.datamodel.cursor.name == "test") {
+                throw "Value changed, but it still old";
+            }
+
+            model.datamodel.splice((model.datamodel.cursorPos - 1), 1);
+            if (model.modified == false) {
+                throw "Model has been modified, but flag was not set";
+            }
+            model.save(aOnSuccess());
         });
-        model.datamodel.cursor.name = "newVal";
-        if (model.modified == false) {
-            throw "Model has been modified, but flag was not set";
-        }
-        if (model.datamodel.cursor.name == "test") {
-            throw "Value changed, but it still old";
-        }
 
-        model.datamodel.splice((model.datamodel.cursorPos - 1), 1);
-        if (model.modified == false) {
-            throw "Model has been modified, but flag was not set";
-        }
-        model.save(aOnSuccess());
 
-        
+
 
     };
 }
