@@ -21,6 +21,7 @@ function ThreeTierSELauncher() {
                      , new ModelModyfiedTestClient()
                      , new SqlUpdateTestClient()
                      , new DependenciesTest()
+                     , new ParallelRequire()
                      , new CreateEntityTestClient()
                      , new LoadEntityTestClient()
                      , new ModelAPI()
