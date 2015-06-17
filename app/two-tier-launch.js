@@ -57,6 +57,7 @@ function TwoTierLauncher() {
                     });
             } else {
                 form.btnRun.enabled = true;
+                form.btnRun.focus();
             }
         }
         performTest();

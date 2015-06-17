@@ -9,6 +9,7 @@ function SecureServerModulesClient() {
         var secureModule = new P.ServerModule("SecureModule");
 
         function secureFunctionTest() {
+            P.Logger.info("P.principal.name: " + P.principal.name);
             if (P.principal.name === "testuser2") {
                 if (secureModule.secureTest() === "securetest") {
                     return;
@@ -21,7 +22,7 @@ function SecureServerModulesClient() {
                     return;
                 }
             }
-            throw "Failed to call secure function";
+            throw "Failed to call secure function 1";
         }
 
         function rootSecureFunctionTest() {
@@ -46,7 +47,7 @@ function SecureServerModulesClient() {
                 if (P.principal.name === "testuser2" && aResult === "securetest") {
                     aOnSuccess();
                 } else {
-                    throw "Failed to call secure function";
+                    throw "Failed to call secure function 2";
                 }
             }, function (aError) {
                 P.Logger.warning(aError);

@@ -47,7 +47,7 @@ function IconLoadTest() {
                 var loadedResource = P.Icon.load('Resources/resource load.model');
                 isCompatible = true;
             } catch (ex) {
-                //This is right behaviour - we have loaded not image 
+                //This is right behaviour - we have loaded a non image resource
                 isCompatible = false;
             }
             if (isCompatible) {

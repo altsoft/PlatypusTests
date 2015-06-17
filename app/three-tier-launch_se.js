@@ -10,6 +10,10 @@ function ThreeTierSELauncher() {
         form.show();
     };
 
+    form.onWindowClosed = function (ev) {
+        exit();
+    };
+
     form.btnRun.onActionPerformed = function (event) {
 
         var tests = [
@@ -39,6 +43,7 @@ function ThreeTierSELauncher() {
                      , new SecureDataSourcesTest()
                      , new SyncServerModulesTest()
                      , new AsyncServerModulesTest()
+>>>>>>> origin/master
         ];
         form.progress.minimum = 0;
         form.progress.maximum = tests.length;
@@ -49,16 +54,16 @@ function ThreeTierSELauncher() {
         function performTest() {
             if (testidx < tests.length) {
                 var test = tests[testidx];
-                    test.execute(function () {
-                        form.progress.value++;
-                        var msg = test.constructor.name + " - passed";
-                        if (form.txtLog.text)
-                            form.txtLog.text += '\n';
-                        form.txtLog.text += msg;
-                        P.Logger.info(msg);
-                        testidx++;
-                        performTest();
-                    });
+                test.execute(function () {
+                    form.progress.value++;
+                    var msg = test.constructor.name + " - passed";
+                    if (form.txtLog.text)
+                        form.txtLog.text += '\n';
+                    form.txtLog.text += msg;
+                    P.Logger.info(msg);
+                    testidx++;
+                    performTest();
+                });
             } else {
                 form.btnRun.enabled = true;
             }
