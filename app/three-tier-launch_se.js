@@ -43,7 +43,6 @@ function ThreeTierSELauncher() {
                      , new SecureDataSourcesTest()
                      , new SyncServerModulesTest()
                      , new AsyncServerModulesTest()
->>>>>>> origin/master
         ];
         form.progress.minimum = 0;
         form.progress.maximum = tests.length;
