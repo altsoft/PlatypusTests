@@ -25,7 +25,7 @@ function ThreeTierSELauncher() {
                      , new ModelModyfiedTestClient()
                      , new SqlUpdateTestClient()
                      , new DependenciesTest()
-                     , new ParallelRequire()
+                     , new ParallelRequireTest()
                      , new CreateEntityTestClient()
                      , new LoadEntityTestClient()
                      , new ModelAPI()
@@ -43,7 +43,7 @@ function ThreeTierSELauncher() {
                      , new SecureDataSourcesTest()
                      , new SyncServerModulesTest()
                      , new AsyncServerModulesTest()
-        ];
+                ];
         form.progress.minimum = 0;
         form.progress.maximum = tests.length;
         form.btnRun.enabled = false;
