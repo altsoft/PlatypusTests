@@ -22,7 +22,7 @@ function ThreeTierBrowserLauncher() {
                      , new extra_fields_insert_update()
                      , new SqlUpdateTestClient()
                      , new DependenciesTest()
-                     , new ParallelRequire()
+                     , new ParallelRequireTest()
                      , new CreateEntityTestClient()
                      , new LoadEntityTestClient()
                      , new ModelAPI()
