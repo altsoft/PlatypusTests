@@ -21,6 +21,7 @@ function TwoTierLauncher() {
                      , new ModelModyfiedTest()
                      , new SqlUpdateTest()
                      , new DependenciesTest()
+                     , new ParallelRequire()
                      , new Create_Entity_Test()
                      , new Load_Entity_Test()
                      , new ModelAPI()
