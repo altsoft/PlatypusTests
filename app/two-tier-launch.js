@@ -13,29 +13,28 @@ function TwoTierLauncher() {
     form.btnRun.onActionPerformed = function (event) {
 
         var tests = [
-                       new FontsDataTest()
-//                     , new FontsDataValidatorTest() 
-//                     , new select_stateless_test()
-//                     , new append_test()
-//                     , new ambigous_changes_semi_writable()
-//                     , new ambigous_changes()
-//                     , new extra_fields_insert_update()
-//                     , new ModelModyfiedTest()
-//                     , new SqlUpdateTest()
-//                     , new DependenciesTest()
-//                     , new Create_Entity_Test()
-//                     , new Load_Entity_Test()
-//                     , new ModelAPI()
-//                     , new MultiSourceTest()
-//                     , new MultiSourceWithErrorTest()
-//                     , new ORM_Relations_Test()
-//                     , new ORM_properties_names_calc()
-//                     , new TestReportCore()
-//                     , new IconLoadTest()
-//                     , new ResourceLoadTest()
-//                     , new FontsDataTest()
-//                     , new FontsDataValidatorTest()
-//                     , new StoredProcedureCallerTest()
+                       new select_stateless_test()
+                     , new append_test()
+                     , new ambigous_changes_semi_writable()
+                     , new ambigous_changes()
+                     , new extra_fields_insert_update()
+                     , new ModelModyfiedTest()
+                     , new SqlUpdateTest()
+                     , new DependenciesTest()
+                     , new ParallelRequireTest()
+                     , new Create_Entity_Test()
+                     , new Load_Entity_Test()
+                     , new ModelAPI()
+                     , new MultiSourceTest()
+                     , new MultiSourceWithErrorTest()
+                     , new ORM_Relations_Test()
+                     , new ORM_properties_names_calc()
+                     , new TestReportCore()
+                     , new IconLoadTest()
+                     , new ResourceLoadTest()
+                     , new FontsDataTest()
+                     , new FontsDataValidatorTest()
+                     , new StoredProcedureCallerTest()
         ];
         form.progress.minimum = 0;
         form.progress.maximum = tests.length;
@@ -58,6 +57,7 @@ function TwoTierLauncher() {
                     });
             } else {
                 form.btnRun.enabled = true;
+                form.btnRun.focus();
             }
         }
         performTest();
