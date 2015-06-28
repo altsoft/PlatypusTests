@@ -5,11 +5,19 @@
 // this === global
 (function () {
     function ready() {
-        P.require(['FormattingTest'], function(){
-            var m = new FormattingTest();
-            m.execute();
+        P.cacheBust = true;
+        var startModule = 'ThreeTierSELauncher';
+        P.require([startModule], function(){
+            var m = new ThreeTierSELauncher();
+            m.show();
         }, function(e){
             P.Logger.severe(e);
+            var messageParagraph = document.createElement("p");
+            document.body.appendChild(messageParagraph);
+            messageParagraph.innerHTML = "An error occured while require('" + startModule + "'). Error: " + e;
+            messageParagraph.style.margin = '10px';
+            messageParagraph.style.fontFamily = 'Arial';
+            messageParagraph.style.fontSize = '14pt';
         });
     }
     if(!this.P) {
