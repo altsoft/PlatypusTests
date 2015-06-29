@@ -41,7 +41,8 @@ function ThreeTierBrowserLauncher() {
                      , new AsyncServerModulesTest()
                      , new HttpContextTestClient()
                      , new PrincipalTestClient()
-                     ,*/ new AccounterClient()
+                     , new AccounterClient()
+                     ,*/ new InvokeLaterDelayedClient()
         ];
         form.progress.minimum = 0;
         form.progress.maximum = tests.length;
