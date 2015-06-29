@@ -43,7 +43,8 @@ function ThreeTierSELauncher() {
                      , new SecureDataSourcesTest()
                      , new SyncServerModulesTest()
                      , new AsyncServerModulesTest()
-                     ,*/ new InvokeLaterDelayedClient()
+                     , new PrincipalTestClient()
+                     ,*/ new AccounterClient()
                 ];
         form.progress.minimum = 0;
         form.progress.maximum = tests.length;
