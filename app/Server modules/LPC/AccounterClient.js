@@ -11,7 +11,7 @@ function AccounterClient() {
     self.execute = function (aOnSuccess) {
         var accounter = new P.ServerModule("Accounter");
         var dt = new Date();
-        accounter.execute(1000000, function (aRes) {
+        accounter.execute(100, function (aRes) {
             var dt1 = new Date();
             aOnSuccess(aRes);
             P.Logger.info("Accounter test time: " + (dt1 - dt) + "ms");
