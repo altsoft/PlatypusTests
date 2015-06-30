@@ -6,9 +6,9 @@
 (function () {
     function ready() {
         P.cacheBust = true;
-        var startModule = 'AttainabilityTestView_1';
+        var startModule = 'ThreeTierBrowserLauncher';
         P.require([startModule], function(){
-            var m = new AttainabilityTestView_1();
+            var m = new ThreeTierBrowserLauncher();
             m.show();
         }, function(e){
             P.Logger.severe(e);

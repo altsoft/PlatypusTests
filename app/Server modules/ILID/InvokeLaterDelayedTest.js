@@ -10,7 +10,11 @@
 function InvokeLaterDelayedTest() {
     var self = this, model = P.loadModel(this.constructor.name);
 
-    this.execute = function (aCalls, aOnSuccess) {
+    this.execute = function (aOnSuccess) {
+        this.test(100, aOnSuccess);
+    };
+    
+    this.test = function (aCalls, aOnSuccess) {
         var executed = 0;
         var calls1 = 0;
         for (var i = 0; i < aCalls; i++) {

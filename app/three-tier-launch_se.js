@@ -16,7 +16,7 @@ function ThreeTierSELauncher() {
 
     form.btnRun.onActionPerformed = function (event) {
 
-        var tests = [/*
+        var tests = [
                        new select_stateless_test()
                      , new append_test()
                      , new ambigous_changes_semi_writable()
@@ -45,7 +45,8 @@ function ThreeTierSELauncher() {
                      , new AsyncServerModulesTest()
                      , new PrincipalTestClient()
                      , new AccounterClient()
-                     ,*/ new InvokeLaterDelayedClient()
+                     , new InvokeLaterDelayedClient()
+                     , new InvokeLaterDelayedTest()
                 ];
         form.progress.minimum = 0;
         form.progress.maximum = tests.length;

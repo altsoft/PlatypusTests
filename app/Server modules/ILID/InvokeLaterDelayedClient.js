@@ -10,7 +10,7 @@ function InvokeLaterDelayedClient() {
 
     this.execute = function (aOnSuccess) {
         var proxy = new P.ServerModule('InvokeLaterDelayedTest');
-        proxy.execute(100, function(){
+        proxy.test(100, function(){
             aOnSuccess();
         });
     };
