@@ -54,7 +54,7 @@ function HTTPRequest() {
 
     function execute(aMethod, aData, onSuccess, onFailure) {
         request.open(aMethod, URL, true);
-        request.setRequestHeader('Content-type', 'text/plain');// Don't use application/x-www-form-urlencoded MIME type
+        request.setRequestHeader('Content-type', 'text/plain;charset=utf-8');// Don't use application/x-www-form-urlencoded MIME type
         request.onreadystatechange = function () {
             if (request.readyState === 4) {
                 request.onreadystatechange = null;// Avoid memoy leak. Crazy browsers!
