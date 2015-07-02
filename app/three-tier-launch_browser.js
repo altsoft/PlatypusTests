@@ -12,7 +12,7 @@ function ThreeTierBrowserLauncher() {
 
     form.btnRun.onActionPerformed = function (event) {
 
-        var tests = [
+        var tests = [/*
                        new select_stateless_test()
                      , new append_test()
                      , new ambigous_changes_semi_writable()
@@ -40,10 +40,11 @@ function ThreeTierBrowserLauncher() {
                      , new SyncServerModulesTest()
                      , new AsyncServerModulesTest()
                      , new HttpContextTestClient()
+                     ,*/ new HttpPostTestClient()/*
                      , new PrincipalTestClient()
                      , new AccounterClient()
                      , new InvokeLaterDelayedClient()
-                     , new InvokeLaterDelayedTest()
+                     , new InvokeLaterDelayedTest()*/
         ];
         form.progress.minimum = 0;
         form.progress.maximum = tests.length;
