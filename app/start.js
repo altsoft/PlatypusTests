@@ -5,9 +5,9 @@
 // this === global
 (function () {
     function ready() {
-        P.require(['ThreeTierBrowserLauncher'], function(){
-            var m = new ThreeTierBrowserLauncher();
-            m.show();
+        P.require(['FormattingTest'], function(){
+            var m = new FormattingTest();
+            m.execute();
         }, function(e){
             P.Logger.severe(e);
         });
