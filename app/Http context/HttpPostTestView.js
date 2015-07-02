@@ -24,7 +24,7 @@ function HttpContextTestView_1() {
         req.method = 'test';
         req.post("111", function(aRes) {
             if (aRes !== "111") 
-                throw "Error! Response in not equal to request";
+                throw "Error! Response is not equal to request";
         }, function(e) {
             throw "Error in post query. Server response: " + e;
         });
