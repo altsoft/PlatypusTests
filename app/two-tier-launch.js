@@ -35,6 +35,7 @@ function TwoTierLauncher() {
                      , new FontsDataTest()
                      , new FontsDataValidatorTest()
                      , new StoredProcedureCallerTest()
+                     , new InvokeLaterDelayedTest()
         ];
         form.progress.minimum = 0;
         form.progress.maximum = tests.length;
