@@ -6,9 +6,9 @@
 (function () {
     function ready() {
         P.cacheBust = true;
-        var startModule = 'ThreeTierBrowserLauncher';
+        var startModule = 'network_load_browser';
         P.require([startModule], function(){
-            var m = new ThreeTierBrowserLauncher();
+            var m = new network_load_browser();
             m.show();
         }, function(e){
             P.Logger.severe(e);
