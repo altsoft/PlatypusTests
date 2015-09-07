@@ -1,15 +1,17 @@
 /* global P */
-
 /**
  * 
  * @author mg
  * @stateless
  * @constructor
- */ 
+ */
 function Worker() {
-    var self = this, model = P.loadModel(this.constructor.name);
-    
+    var self = this;
+
     self.execute = function (aAngle) {
-        return Math.sin(aAngle);
+        var cosSum = 0;
+        for (var i = 0; i < 250; i++)
+            cosSum += Math.sin(aAngle);
+        return cosSum;
     };
 }
