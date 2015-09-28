@@ -19,12 +19,22 @@ function HttpPostTestClient() {
     };
     
     self.execute = function(aOnComplete){
+        var jCount = 0;
+        function finished() {
+            jCount++;
+            if (jCount === 5)
+                aOnComplete();
+        }
         var req0 = new HTTPRequest();        
         req0.module = 'HttpPostTestServer';
         req0.method = 'simplePostTest';
         req0.post("111", function(aRes) {
             if (aRes !== "ok!") 
                 throw "simplePostTest. Error! Response is wrong!";
+            else {
+                P.Logger.info("simplePostTest - passed");
+                finished();
+            }
         }, function(e) {
             throw "simplePostTest. Error in post query. Server response: " + e;
         });
@@ -35,6 +45,10 @@ function HttpPostTestClient() {
         req1.post("111", function(aRes) {
             if (aRes !== "111") 
                 throw "testBody. Error! Response is not equal to request";
+            else {
+                P.Logger.info("testBody - passed");
+                finished();
+            }
         }, function(e) {
             throw "testBody. Error in post query. Server response: " + e;
         });
@@ -44,6 +58,10 @@ function HttpPostTestClient() {
         req2.post(null, function(aRes) {
             if (aRes !== "ok") 
                 throw "restSimleTest. Error! Wrong responce from server.";
+            else {
+                P.Logger.info("restSimleTest - passed");
+                finished();
+            }
         }, function(e) {
             throw "restSimleTest. Error in rest POST query. Server response: " + e;
         });
@@ -53,6 +71,10 @@ function HttpPostTestClient() {
         req3.post(null, function(aRes) {
             if (aRes !== "ok") 
                 throw "restUPCASETest. Error! Wrong responce from server.";
+            else {
+                P.Logger.info("restUPCASETest - passed");
+                finished();
+            }
         }, function(e) {
             throw "restUPCASETest. Error in rest POST query. Server response: " + e;
         });
@@ -62,6 +84,10 @@ function HttpPostTestClient() {
         req4.post({p1: 10, p2: 'test'}, function(aRes) {
             if (aRes.p2 !== "test" && aRes.p1 !== 10) 
                 throw "restParamsTest. Error! Wrong responce from server.";
+            else {
+                P.Logger.info("restParamsTest - passed");
+                finished();
+            }
         }, function(e) {
             throw "restParamsTest. Error in rest POST query. Server response: " + e;
         });
