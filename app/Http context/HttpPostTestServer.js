@@ -33,6 +33,14 @@ function HttpPostTestServer() {
     };
     
     /**
+     * @post /restGetObjTest
+     * @returns {undefined}
+     */
+    self.restGetObjTest = function() {
+        return {result: 'ok!'};
+    };
+    
+    /**
      * @post /restParamsTest
      * @returns {undefined}
      */

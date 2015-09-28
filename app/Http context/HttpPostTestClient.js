@@ -22,7 +22,7 @@ function HttpPostTestClient() {
         var jCount = 0;
         function finished() {
             jCount++;
-            if (jCount === 5)
+            if (jCount === 6)
                 aOnComplete();
         }
         var req0 = new HTTPRequest();        
@@ -57,13 +57,13 @@ function HttpPostTestClient() {
         req2.restMethod = 'restSimpleTest';
         req2.post('', function(aRes) {
             if (aRes !== "ok") 
-                throw "restSimleTest. Error! Wrong responce from server.";
+                throw "restSimpleTest. Error! Wrong responce from server.";
             else {
-                P.Logger.info("restSimleTest - passed");
+                P.Logger.info("restSimpleTest - passed");
                 finished();
             }
         }, function(e) {
-            throw "restSimleTest. Error in rest POST query. Server response: " + e;
+            throw "restSimpleTest. Error in rest POST query. Server response: " + e;
         });
         
         var req3 = new HTTPRequest();
@@ -78,18 +78,44 @@ function HttpPostTestClient() {
         }, function(e) {
             throw "restUPCASETest. Error in rest POST query. Server response: " + e;
         });
-        
+        //        
         var req4 = new HTTPRequest();
-        req4.restMethod = 'restParamsTest';
-        req4.post({p1: 10, p2: 'test'}, function(aRes) {
-            if (aRes.p2 !== "test" && aRes.p1 !== 10) 
-                throw "restParamsTest. Error! Wrong responce from server.";
+        req4.restMethod = 'restGetObjTest';
+        req4.post("", function(aRes) {
+            if (aRes.result !== "ok!") 
+                throw "restGetObjTest. Error! Wrong responce from server.";
             else {
-                P.Logger.info("restParamsTest - passed");
+                P.Logger.info("restGetObjTest - passed");
                 finished();
             }
         }, function(e) {
-            throw "restParamsTest. Error in rest POST query. Server response: " + e;
+            throw "restGetObjTest. Error in rest POST query. Server response: " + e;
         });
+        
+        var dv = document.createElement("div");
+        dv.innerHTML = '<iframe id="test-frame" name="test-frame"></iframe>' +
+'<form id="test-post-form" action="application/restParamsTest" method="POST" target="test-frame" />' +
+'    <input name="p1" value="10" />' +
+'    <input name="p2" value="test" />' +
+'    <button id="form-submit" type="submit" />' +
+'</form>';
+        
+        var bd = document.getElementsByTagName('body')[0];
+        bd.appendChild(dv);
+        var tf = document.getElementById("test-frame");
+        tf.onload = function(){
+            var response = tf.contentDocument.body.childNodes[0].innerHTML;
+            var res = JSON.parse(response);
+            if (res.p1 === 10 && res.p2 === "test") {
+                bd.removeChild(dv);
+                finished();
+            } else
+                throw "restParamsTest. Error! Wrong responce from server. Server response: " + response;
+        };
+        try {
+            document.getElementById("test-post-form").submit();
+        } catch(e) {
+            throw "restParamsTest. Error!";
+        }
     };
 }

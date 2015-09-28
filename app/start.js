@@ -6,15 +6,15 @@
 (function () {
     function ready() {
         P.cacheBust = true;
-        P.require('ThreeTierBrowserLauncher', function(){
-            var m = new ThreeTierBrowserLauncher();
+        P.require('HttpPostTestClient', function(){
+            var m = new HttpPostTestClient();
             m.show();
         }, function(e){
             P.Logger.severe(e);
             if(document){
                 var messageParagraph = document.createElement('p');
                 document.body.appendChild(messageParagraph);
-                messageParagraph.innerHTML = 'An error occured while require(\'ThreeTierBrowserLauncher\'). Error: ' + e;
+                messageParagraph.innerHTML = 'An error occured while require(\'HttpPostTestClient\'). Error: ' + e;
                 messageParagraph.style.margin = '10px';
                 messageParagraph.style.fontFamily = 'Arial';
                 messageParagraph.style.fontSize = '14pt';
