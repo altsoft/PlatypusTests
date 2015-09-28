@@ -1,5 +1,4 @@
 /* global P */
-
 /**
  * 
  * @author mg
@@ -8,8 +7,7 @@
  * @constructor
  */
 function Accounter() {
-    var self = this, model = P.loadModel(this.constructor.name);
-
+    var self = this;//, model = P.loadModel(this.constructor.name);
 
     self.execute = function (aCycles, onSuccess, onFailure) {
         var worker = new P.ServerModule("Worker");
@@ -25,10 +23,11 @@ function Accounter() {
                     onSuccess(sinusesSum);
             }
         }
+        function sinusCalced(aRes) {
+            complete(aRes);
+        }
         for (var i = 0; i < aCycles; i++) {
-            worker.execute(30 + i, function (aRes) {
-                complete(aRes);
-            }, function (aError) {
+            worker.execute(30 + i, sinusCalced, function (aError) {
                 P.Logger.severe(aError);
                 errors.push(aError);
                 complete(0);

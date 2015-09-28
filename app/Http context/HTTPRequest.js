@@ -58,20 +58,19 @@ function HTTPRequest() {
     }); 
 
     function getParsedResponse(req) {
-        var result;
         try {
-            result = JSON.parse(req.responseText);
+            return JSON.parse(req.responseText);
         } catch (e) {
-            result = req.responseText;
+            return req.responseText;
         }
-        return result;
     }
 
     function execute(aMethod, aData, onSuccess, onFailure) {
         request.open(aMethod, URL, true);
-        request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        request.setRequestHeader('Content-type', 'text/plain;charset=utf-8');// Don't use application/x-www-form-urlencoded MIME type
         request.onreadystatechange = function () {
             if (request.readyState === 4) {
+                request.onreadystatechange = null;// Avoid memoy leak. Crazy browsers!
                 if (request.status >= 200 && request.status < 300) {
                     onSuccess(getParsedResponse(request));
                 } else {

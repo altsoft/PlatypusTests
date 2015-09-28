@@ -18,7 +18,7 @@ function HttpPostTestClient() {
         self.execute();
     };
     
-    self.execute = function(){
+    self.execute = function(aOnComplete){
         var req0 = new HTTPRequest();        
         req0.module = 'HttpPostTestServer';
         req0.method = 'simplePostTest';
