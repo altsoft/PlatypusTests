@@ -5,14 +5,15 @@
  */
 function HTTPRequest() {
     var self = this;
-    var URL, module, method;
+    var URL, module, method, restMethod;
 
     var request = new XMLHttpRequest();
     
     function updateUrlByPlatypus() {
         var path = window.location.pathname;
         path = path.slice(0, path.lastIndexOf('/'));
-        URL = window.location.protocol +'//' + window.location.host + path + '/application?__type=14&__moduleName=' + module + '&__methodName=' + method;
+        URL = window.location.protocol +'//' + window.location.host + path +
+               '/application' + (restMethod ? '/' + restMethod : '?__type=14&__moduleName=' + module + '&__methodName=' + method);
     }
 
     Object.defineProperty(self, 'URL', {
@@ -30,6 +31,7 @@ function HTTPRequest() {
         },
         set: function (aNewModule) {
             module = aNewModule;
+            restMethod = null;
             updateUrlByPlatypus();
         }
     });    
@@ -40,9 +42,20 @@ function HTTPRequest() {
         },
         set: function (aNewMethod) {
             method = aNewMethod;
+            restMethod = null;
             updateUrlByPlatypus();
         }
-    });    
+    });
+    
+    Object.defineProperty(self, 'restMethod', {
+        get: function () {
+            return restMethod;
+        },
+        set: function (aNewMethod) {
+            restMethod = aNewMethod;
+            updateUrlByPlatypus();
+        }
+    }); 
 
     function getParsedResponse(req) {
         var result;
