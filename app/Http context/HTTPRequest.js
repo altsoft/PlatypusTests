@@ -6,6 +6,7 @@
 function HTTPRequest() {
     var self = this;
     var URL, module, method, restMethod;
+    var contentType = null;
 
     var request = new XMLHttpRequest();
     
@@ -57,6 +58,15 @@ function HTTPRequest() {
         }
     }); 
 
+    Object.defineProperty(self, 'contentType', {
+        get: function () {
+            return contentType;
+        },
+        set: function (aValue) {
+            contentType = aValue;
+        }
+    }); 
+
     function getParsedResponse(req) {
         try {
             return JSON.parse(req.responseText);
@@ -67,7 +77,7 @@ function HTTPRequest() {
 
     function execute(aMethod, aData, onSuccess, onFailure) {
         request.open(aMethod, URL, true);
-        request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded;charset=utf-8');
+        request.setRequestHeader('Content-type', contentType ? contentType : 'application/x-www-form-urlencoded;charset=utf-8');
         request.onreadystatechange = function () {
             if (request.readyState === 4) {
                 request.onreadystatechange = null;// Avoid memoy leak. Crazy browsers!

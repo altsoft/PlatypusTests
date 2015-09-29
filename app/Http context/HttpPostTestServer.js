@@ -44,7 +44,7 @@ function HttpPostTestServer() {
      * @post /restParamsTest
      * @returns {undefined}
      */
-    self.restTest = function() {
+    self.restParamsTest = function() {
         var request = (new P.HttpContext()).request;
         var resp = {};
         for (var j in request.params) {
