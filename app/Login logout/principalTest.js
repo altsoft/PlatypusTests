@@ -10,12 +10,13 @@
 function PrincipalTest() {
     var self = this, model = P.loadModel(this.constructor.name);
 
+    var principal = require('security').principal();
     this.testName = function () {
-        return P.principal.name;
+        return principal.name;
     };
 
     this.testHasRole = function (aRole) {
-        return P.principal.hasRole(aRole);
+        return principal.hasRole(aRole);
     };
 
 }

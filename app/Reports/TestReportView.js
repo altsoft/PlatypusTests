@@ -12,11 +12,13 @@ function TestReportsView() {
     };
     
     form.btnReportExecute.onActionPerformed = function (event) {
-        self.execute();
+        var reportModule = new TestReportCore();
+        var report = reportModule.getCalcedReport(2, 78);
+        report.show();
     };
     
     self.execute = function(){
-        var reportModule = new TestReportsCore();
+        var reportModule = new TestReportCore();
         reportModule.execute();
     };
 }

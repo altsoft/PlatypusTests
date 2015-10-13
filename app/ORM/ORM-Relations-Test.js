@@ -7,7 +7,6 @@ function Dog() {
 /**
  * 
  * @author mg
- * @name ORM_Relations_Test
  * @constructor
  */
 function ORM_Relations_Test() {
