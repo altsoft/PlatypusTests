@@ -58,7 +58,7 @@ function HttpPostTestClient() {
         req2.restMethod = 'restSimpleTest';
         req2.post('', function (aRes) {
             if (aRes !== "ok!")
-                throw "restSimpleTest. Error! Wrong responce from server.";
+                throw "restSimpleTest. Error! Wrong response from server.";
             else {
                 P.Logger.info("restSimpleTest - passed");
                 finished();
@@ -71,7 +71,7 @@ function HttpPostTestClient() {
         req3.restMethod = 'restUPCASETest';
         req3.post('', function (aRes) {
             if (aRes !== "ok!")
-                throw "restUPCASETest. Error! Wrong responce from server.";
+                throw "restUPCASETest. Error! Wrong response from server.";
             else {
                 P.Logger.info("restUPCASETest - passed");
                 finished();
@@ -84,7 +84,7 @@ function HttpPostTestClient() {
         req4.restMethod = 'restGetObjTest';
         req4.post("", function (aRes) {
             if (aRes.result !== "ok!")
-                throw "restGetObjTest. Error! Wrong responce from server.";
+                throw "restGetObjTest. Error! Wrong response from server.";
             else {
                 P.Logger.info("restGetObjTest - passed");
                 finished();
@@ -112,7 +112,7 @@ function HttpPostTestClient() {
                 bd.removeChild(dv);
                 finished();
             } else
-                throw "restParamsTest. Error! Wrong responce from server. Server response: " + response;
+                throw "restParamsTest. Error! Wrong response from server. Server response: " + response;
         };
         try {
             document.getElementById("test-post-form").submit();

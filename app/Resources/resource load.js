@@ -24,11 +24,11 @@ function ResourceLoadTest() {
                 throw 'loaded.length violation 1.1';
             var loadedFormInet = P.Resource.load('http://lh6.googleusercontent.com/-UXdNdTTGgXg/AAAAAAAAAAI/AAAAAAAAAAA/b3u7m4nqaNo/s32-c/photo.jpg');
             var len = loadedFormInet.length;
-            if (loadedFormInet.length !== 1196)
+            if (loadedFormInet.length !== 1200)
                 throw 'loaded.length violation 2'
 
             P.Resource.load('http://lh6.googleusercontent.com/-UXdNdTTGgXg/AAAAAAAAAAI/AAAAAAAAAAA/b3u7m4nqaNo/s32-c/photo.jpg', function (aLoaded) {
-                if (aLoaded.length !== 1196)
+                if (aLoaded.length !== 1200)
                     throw 'loaded.length violation 4';
                 complete();
             }, function (e) {

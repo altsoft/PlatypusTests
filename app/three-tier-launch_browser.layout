@@ -10,7 +10,7 @@
   <Label cursor="0" name="lblLog" parent="view" prefHeight="24px" prefWidth="276px" text="Журнал">
     <AnchorsPaneConstraints height="24px" left="12px" right="112px" top="96px"/>
   </Label>
-  <ProgressBar cursor="0" maximum="100" name="progress" parent="view" prefHeight="24px" prefWidth="372px" text="0%">
+  <ProgressBar cursor="0" maximum="100" name="progress" parent="view" prefHeight="24px" prefWidth="372px">
     <AnchorsPaneConstraints height="24px" left="12px" right="16px" top="60px"/>
   </ProgressBar>
   <Button cursor="0" name="btnRun" parent="view" prefHeight="23px" prefWidth="96px" text="Запуск">

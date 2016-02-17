@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><datamodel>
-  <entity Name="fontsData" Title="" entityHeight="201" entityIconified="false" entityId="140506849637214" entityLocationX="270" entityLocationY="75" entityWidth="186" queryId="fontsData" tableName="" tableSchemaName=""/>
-  <referenceRelation leftEntityFieldName="style" leftEntityId="140506849637214" rightEntityFieldName="familyName" rightEntityId="140506849637214"/>
-</datamodel>

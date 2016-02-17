@@ -14,9 +14,6 @@ function LPC_load_browser() {
         form.show();
     };
 
-    model.requery(function () {
-    });
-
     var maxRequests, requests = maxRequests = 100;
     
     form.btnRunIt.onActionPerformed = function (event) {

@@ -33,7 +33,6 @@ function ThreeTierBrowserLauncher() {
                      , new TestReportClient()
                      , new IconLoadTest()
                      , new ResourceLoadTest()
-                     , new FontsDataTest()
                      , new StoredProcedureTestClient()
                      , new SecureServerModulesClient()
                      , new SecureDataSourcesTest()
