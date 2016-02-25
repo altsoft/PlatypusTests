@@ -33,7 +33,6 @@ function ThreeTierSELauncher() {
                      , new MultiSourceWithErrorTest()
                      , new ORM_Relations_Test()
                      , new ORM_properties_names_calc()
-                     , new TestReportCore()
                      , new TestReportClient()
                      , new IconLoadTest()
                      , new ResourceLoadTest()

@@ -27,6 +27,7 @@ function HttpPostTestClient() {
             if (jCount === 6)
                 aOnComplete();
         }
+        
         var req0 = new HTTPRequest();
         req0.module = 'HttpPostTestServer';
         req0.method = 'simplePostTest';
@@ -54,6 +55,7 @@ function HttpPostTestClient() {
         }, function (e) {
             throw "testBody. Error in post query. Server response: " + e;
         });
+        
         var req2 = new HTTPRequest();
         req2.restMethod = 'restSimpleTest';
         req2.post('', function (aRes) {
@@ -92,7 +94,7 @@ function HttpPostTestClient() {
         }, function (e) {
             throw "restGetObjTest. Error in rest POST query. Server response: " + e;
         });
-
+        var bd = document.getElementsByTagName('body')[0];
         var dv = document.createElement("div");
         dv.innerHTML = '' +
                 '<iframe id="test-frame" name="test-frame"></iframe>' +
@@ -102,7 +104,6 @@ function HttpPostTestClient() {
                 '    <button id="form-submit" type="submit" />' +
                 '</form>';
 
-        var bd = document.getElementsByTagName('body')[0];
         bd.appendChild(dv);
         var tf = document.getElementById("test-frame");
         tf.onload = function () {
