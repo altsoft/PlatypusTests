@@ -4,16 +4,8 @@
  */
 function AnonymousChat() {
     var self = this
-            , model = P.loadModel(this.constructor.name)
-            , form = P.loadForm(this.constructor.name, model);
+            , form = P.loadForm(this.constructor.name);
     var userName;
-    // TODO : place your code here
-    var chat = new P.ServerModule("chatServer");
-
-    model.requery(function () {
-        // TODO : place your code here
-    });
-
 
     var webSocket = null;
     function addEventsListener() {
@@ -29,7 +21,6 @@ function AnonymousChat() {
             wsProtocol = "wss:";
 
         webSocket = new WebSocket(wsProtocol + "//" + window.location.host + window.location.pathname.substr(0, window.location.pathname.lastIndexOf("/")) + "/chatServer");
-        console.log(webSocket);
         webSocket.onopen = function () {
             P.Logger.info("onOpen");
         };
@@ -38,23 +29,13 @@ function AnonymousChat() {
             P.Logger.info("onError");
         };
 
-        webSocket.onmessage = function (aEventData) {
+        webSocket.onmessage = function (evt) {
             P.Logger.info("onMessage");
-//            form.txtChatField.text += aEventData.data;
             var msgBox = new P.BoxPane();
-//            msgBox.width = form.ffWidth.value;
-//            msgBox.height = 20;
-           
-
-            var redColor = Math.round(Math.random() * 255);
-            var greenColor = Math.round(Math.random() * 255);
-            var blueColor = Math.round(Math.random() * 255);
-            msgBox.background = new P.Color(redColor, greenColor, blueColor);
-            msgBox.element.innerHTML ="<div>" + aEventData.data + "</div>";
-            
+            msgBox.element.innerHTML = evt.data;
             form.panel.add(msgBox);
-            
         };
+        
         webSocket.onclose = function () {
             P.Logger.info("onClose");
         };

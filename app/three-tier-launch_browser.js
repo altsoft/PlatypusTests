@@ -44,6 +44,7 @@ function ThreeTierBrowserLauncher() {
                      , new AccounterClient()
                      , new InvokeLaterDelayedClient()
                      , new InvokeLaterDelayedTest()
+                     , new WebSocketTestClient()
         ];
         form.progress.minimum = 0;
         form.progress.maximum = tests.length;
