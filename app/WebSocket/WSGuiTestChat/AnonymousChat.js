@@ -20,7 +20,7 @@ function AnonymousChat() {
         if (window.location.protocol == 'https:')
             wsProtocol = "wss:";
 
-        webSocket = new WebSocket(wsProtocol + "//" + window.location.host + window.location.pathname.substr(0, window.location.pathname.lastIndexOf("/")) + "/chatServer");
+        webSocket = new WebSocket(wsProtocol + "//" + window.location.host + window.location.pathname.substr(0, window.location.pathname.lastIndexOf("/")) + "/ChatEndpoint");
         webSocket.onopen = function () {
             P.Logger.info("onOpen");
         };

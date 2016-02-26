@@ -13,7 +13,7 @@ function WebSocketTestClient() {
             wsProtocol = "wss:";
 
         // Unfortunately, only solid WebSocket modules names are allowed
-        var webSocket = new WebSocket(wsProtocol + "//" + window.location.host + window.location.pathname.substr(0, window.location.pathname.lastIndexOf("/")) + "/chatServer");
+        var webSocket = new WebSocket(wsProtocol + "//" + window.location.host + window.location.pathname.substr(0, window.location.pathname.lastIndexOf("/")) + "/ChatEndpoint");
         webSocket.onopen = function () {
             P.Logger.info("Ws.onOpen");
             webSocket.send(testWsData);
