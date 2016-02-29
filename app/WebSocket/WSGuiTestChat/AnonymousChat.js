@@ -5,7 +5,6 @@
 function AnonymousChat() {
     var self = this
             , form = P.loadForm(this.constructor.name);
-    var userName;
 
     var webSocket = null;
     function addEventsListener() {
@@ -41,18 +40,10 @@ function AnonymousChat() {
         };
     }
 
-    var uNameCallback = function (aName) {
-        userName = aName;
-        form.txtMessage.focus();
-        form.toFront();
-    };
-
     self.show = function () {
-        var uNameForm = new askUserName();
         form.show();
-        uNameForm.showModal(uNameCallback);
         addEventsListener();
-
+        form.txtMessage.focus();
     };
 
     form.btnSend.onActionPerformed = function (event) {

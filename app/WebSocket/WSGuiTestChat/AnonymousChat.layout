@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
   <AnchorsPane cursor="0" name="view" prefHeight="350px" prefWidth="536px"/>
-  <HtmlArea cursor="0" name="txtMessage" parent="view" prefHeight="90px" prefWidth="415px" text="Hello!">
-    <AnchorsPaneConstraints bottom="8px" height="90px" left="10px" right="111px"/>
+  <HtmlArea cursor="0" name="txtMessage" parent="view" prefHeight="92px" prefWidth="415px" text="Hello!">
+    <AnchorsPaneConstraints bottom="8px" height="92px" left="10px" right="111px"/>
   </HtmlArea>
   <Button cursor="0" name="btnSend" parent="view" prefHeight="29px" prefWidth="84px" text="Send">
     <AnchorsPaneConstraints bottom="6px" height="29px" right="14px" width="84px"/>

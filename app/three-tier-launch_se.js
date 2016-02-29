@@ -18,6 +18,7 @@ function ThreeTierSELauncher() {
 
         var tests = [
                        new select_stateless_test()
+                     , new EasHRValidatorTest()
                      , new append_test()
                      , new ambigous_changes_semi_writable()
                      , new ambigous_changes()

@@ -1,13 +1,11 @@
 /**
  * Validator module checks changes made by application on client or server side.
  * Validator module can validate changes made in context of script and relational datasources.
- * @author mg
- * @constructor
- * @validator fontsData
- */ 
-function fontsValidator() {
-    var self = this, model = P.loadModel(this.constructor.name);
-    
+ * @validator easHR
+ */
+function EasHRValidator() {
+    var self = this;
+
     /**
      * Method for validating of changes log to be applied within a particular datasources.
      * @param {Array} aLog Array of changes - log of changes made by clients or server side data driven code to be applied.
@@ -16,11 +14,20 @@ function fontsValidator() {
      * @throws An exception if validation fails. 
      */
     this.validate = function (aLog, aDatasource, aOnSuccess, aOnFailure) {
-        P.Logger.info("fontsValidator. aLog.length: " + aLog.length + "; aDatasource: " + aDatasource + ";");
-        fontsValidatorCalls++;
-        if(aOnSuccess)
+        P.Logger.info("EasHRValidator. aLog.length: " + aLog.length + "; aDatasource: " + aDatasource + ";");
+        easHRValidatorCalls++;
+        for(var le = 0; le < aLog.length; le++) {
+            var aChange = aLog[le];
+            for(var de = 0; de < aChange.data.length; de ++) {
+                var aData = aChange.data[de];
+                if (aData.name == 'postal_code' && aData.value == '-1')
+                    throw "postal_code can't be '-1'";// You may call here aOnFailure instead.
+            }
+        }
+        if (aOnSuccess) {
             aOnSuccess();
+        }
     };
 }
 
-var fontsValidatorCalls = 0;
+var easHRValidatorCalls = 0;
