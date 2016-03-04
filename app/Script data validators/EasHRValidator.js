@@ -16,12 +16,14 @@ function EasHRValidator() {
     this.validate = function (aLog, aDatasource, aOnSuccess, aOnFailure) {
         P.Logger.info("EasHRValidator. aLog.length: " + aLog.length + "; aDatasource: " + aDatasource + ";");
         easHRValidatorCalls++;
-        for(var le = 0; le < aLog.length; le++) {
+        for (var le = 0; le < aLog.length; le++) {
             var aChange = aLog[le];
-            for(var de = 0; de < aChange.data.length; de ++) {
-                var aData = aChange.data[de];
-                if (aData.name == 'postal_code' && aData.value == '-1')
-                    throw "postal_code can't be '-1'";// You may call here aOnFailure instead.
+            if (aChange.data) {// insert and update
+                for (var de = 0; de < aChange.data.length; de++) {
+                    var aData = aChange.data[de];
+                    if (aData.name == 'postal_code' && aData.value == '-1')
+                        throw "postal_code can't be '-1'";// You may call here aOnFailure instead.
+                }
             }
         }
         if (aOnSuccess) {
