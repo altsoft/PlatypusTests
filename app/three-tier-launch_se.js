@@ -46,6 +46,7 @@ function ThreeTierSELauncher() {
                      , new AccounterClient()
                      , new InvokeLaterDelayedClient()
                      , new InvokeLaterDelayedTest()
+                     , new ErrorsTestClient()
                 ];
         form.progress.minimum = 0;
         form.progress.maximum = tests.length;

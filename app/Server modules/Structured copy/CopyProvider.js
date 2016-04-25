@@ -14,6 +14,9 @@ define('rpc', function (Lpc) {
         {data: undefined, verify: function (aCopy) {
                 return aCopy === null;
             }},
+        {data: '', verify: function (aCopy) {
+                return aCopy === '';
+            }},
         {data: 8, verify: function (aCopy) {
                 return aCopy === 8;
             }},

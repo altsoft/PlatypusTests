@@ -47,6 +47,7 @@ function ThreeTierBrowserLauncher() {
                      , new InvokeLaterDelayedTest()
                      , new WebSocketTestClient()
                      , new StructuredCopyTestClient()
+                     , new ErrorsTestClient()
         ];
         form.progress.minimum = 0;
         form.progress.maximum = tests.length;

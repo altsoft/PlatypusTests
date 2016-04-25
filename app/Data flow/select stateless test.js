@@ -6,7 +6,7 @@
 function select_stateless_test() {
     var self = this, model = P.loadModel(this.constructor.name);
 
-    self.execute = function (aOnSuccess) {
+    self.execute = function (aOnSuccess, aOnFailure) {
         model.customers.requery(function () {
             var expectedLength = model.customers.length;
             var completed = 0;

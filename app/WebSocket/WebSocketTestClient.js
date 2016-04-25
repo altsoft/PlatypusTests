@@ -16,7 +16,6 @@ function WebSocketTestClient() {
         var webSocket = new WebSocket(wsProtocol + "//" + window.location.host + window.location.pathname.substr(0, window.location.pathname.lastIndexOf("/")) + "/ChatEndpoint");
         webSocket.onopen = function () {
             P.Logger.info("Ws.onOpen");
-            webSocket.send(testWsData);
         };
 
         webSocket.onerror = function () {
@@ -24,13 +23,18 @@ function WebSocketTestClient() {
         };
 
         webSocket.onmessage = function (evt) {
-            if (evt.data !== testWsData) {
-                throw "Web socket data violation";
+            if (evt.data === 'registered') {
+                webSocket.send(testWsData);
+                P.Logger.info("Ws.registered");
             } else {
-                webSocket.close();
-                aOnSuccess();
+                if (evt.data !== testWsData) {
+                    throw "Web socket data violation";
+                } else {
+                    webSocket.close();
+                    P.invokeLater(aOnSuccess);
+                }
+                P.Logger.info("Ws.onMessage");
             }
-            P.Logger.info("Ws.onMessage");
         };
 
         webSocket.onclose = function (evt) {

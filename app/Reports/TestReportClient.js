@@ -8,6 +8,8 @@ function TestReportClient() {
     
     self.execute = function (aOnSuccess) {
         var r = new P.ServerModule('TestReportCore');
-        r.execute(aOnSuccess);
+        r.execute(function () {
+            aOnSuccess();
+        });
     };
 }

@@ -33,7 +33,6 @@ function TwoTierLauncher() {
                      , new TestReportCore()
                      , new IconLoadTest()
                      , new ResourceLoadTest()
-                     //, new FontsDataValidatorTest()
                      , new StoredProcedureCallerTest()
                      , new InvokeLaterDelayedTest()
         ];

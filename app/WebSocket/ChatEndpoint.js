@@ -2,7 +2,7 @@
  * @public
  * @stateless
  */
-define('ChatEndpoint', ['rpc'], function (Lpc) {
+define('ChatEndpoint', ['rpc', 'logger'], function (Lpc, Logger) {
     function mc() {
         var accounter = new Lpc.Proxy('WebSocket/ChatAccounter');
 

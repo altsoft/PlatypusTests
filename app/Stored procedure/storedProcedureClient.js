@@ -4,8 +4,12 @@
  */
 function StoredProcedureTestClient() {
 
-    this.execute = function (aOnSuccess) {
+    this.execute = function (aOnSuccess, aOnFailure) {
         var proxy = new P.ServerModule('StoredProcedureCallerTest');
-        proxy.execute(aOnSuccess);
+        proxy.execute(function () {
+            aOnSuccess();
+        },function () {
+            aOnFailure();
+        });
     };
 }
