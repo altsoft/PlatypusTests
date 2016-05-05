@@ -23,6 +23,7 @@ function TwoTierLauncher() {
                      , new SqlUpdateTest()
                      , new DependenciesTest()
                      , new ParallelRequireTest()
+                     , new AMDSelfTest()
                      , new Create_Entity_Test()
                      , new Load_Entity_Test()
                      , new ModelAPI()

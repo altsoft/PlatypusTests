@@ -25,7 +25,6 @@ function SessionStatefull() {
     };
 
     self.objectWithDateMarshaling = function (aObject) {
-        P.Logger.info(JSON.stringify(aObject));
         return aObject;
     };
 

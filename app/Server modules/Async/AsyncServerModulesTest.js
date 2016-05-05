@@ -66,7 +66,7 @@ function AsyncServerModulesTest() {
             sessionStatefull.dateMarshaling(now, function (aValue) {
                 dateMarshallCalls++;
                 if (!aValue || aValue.getTime() !== now.getTime()) {
-                    failed = "Fail SessionStatefull module dateMalshaling test.";
+                    failed = "Fail SessionStatefull module dateMarshaling test.";
                 }
                 checkEnd();
             });

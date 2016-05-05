@@ -20,7 +20,7 @@ function SyncServerModulesTest() {
         }
         var now = new Date();
         if (sessionStatefull.dateMarshaling(now).getTime() !== now.getTime()) {
-            throw "Fail SessionStatefull module dateMalshaling test.";
+            throw "Fail SessionStatefull module dateMarshaling test.";
         }
         var sendObj = {date: now, data: ["test", now, 2, true, 7.55], obj: {dt: now}};
         var getObj = sessionStatefull.objectWithDateMarshaling(sendObj);
