@@ -26,7 +26,7 @@ function SqlUpdateTest() {
             toPush.kid = toPush.gid;
 
             model.save(function () {
-                model.sqlUpdate.params.gid = NEW_RECORD_ID;
+                model.sqlUpdate.params.gid = new Number(NEW_RECORD_ID); // Tests boxing.boxAsJava() capability for executeUpdate()
                 model.sqlUpdate.params.gname = NEW_RECORD_NAME_G;
                 model.sqlUpdate.executeUpdate(function () {
                     model.ambigousChanges.requery(function () {
