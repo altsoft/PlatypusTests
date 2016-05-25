@@ -21,6 +21,8 @@ function TwoTierLauncher() {
                      , new extra_fields_insert_update()
                      , new ModelModyfiedTest()
                      , new SqlUpdateTest()
+                     , new SqlExecuteUpdateTest()
+                     , new SqlEnqueueUpdateTest()
                      , new DependenciesTest()
                      , new ParallelRequireTest()
                      , new AMDSelfTest()
