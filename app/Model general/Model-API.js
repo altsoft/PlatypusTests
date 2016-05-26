@@ -43,7 +43,7 @@ function ModelAPI() {
     function testScroll() {
         // Scroll interface
         var scrollCounter = 0;
-        model.testData.onScrolled = function (event) {
+        model.testData.onScroll = function (event) {
             scrollCounter++;
         };
         var scrollCounterEthalon = model.testData.length;
@@ -57,7 +57,7 @@ function ModelAPI() {
             throw "scrollCounter != scrollCounterEthalon";
         else
             P.Logger.info("scroll of type 2 passed");
-        model.testData.onScrolled = null;
+        model.testData.onScroll = null;
     }
 
     function testModify(aOnSuccess) {

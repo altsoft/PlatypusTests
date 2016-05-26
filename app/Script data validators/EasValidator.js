@@ -1,9 +1,9 @@
 /**
  * Validator module checks changes made by application on client or server side.
  * Validator module can validate changes made in context of script and relational datasources.
- * @validator easHR
+ * @validator
  */
-function EasHRValidator() {
+function EasValidator() {
     var self = this;
 
     /**
@@ -14,7 +14,7 @@ function EasHRValidator() {
      * @throws An exception if validation fails. 
      */
     this.validate = function (aLog, aDatasource, aOnSuccess, aOnFailure) {
-        P.Logger.info("EasHRValidator. aLog.length: " + aLog.length + "; aDatasource: " + aDatasource + ";");
+        P.Logger.info("EasValidator. aLog.length: " + aLog.length + "; aDatasource: " + aDatasource + ";");
         easHRValidatorCalls++;
         for (var le = 0; le < aLog.length; le++) {
             var aChange = aLog[le];
