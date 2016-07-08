@@ -28,6 +28,7 @@ function ThreeTierBrowserLauncher() {
                     , new DependenciesTest()
                     , new ParallelRequireTest()
                     , new AMDSelfTest()
+                    , new AMDRecursiveTest()
                     , new CreateEntityTestClient()
                     , new LoadEntityTestClient()
                     , new ModelAPI()
