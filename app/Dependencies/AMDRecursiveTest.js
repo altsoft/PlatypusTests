@@ -7,7 +7,7 @@ define('AMDRecursiveTest', ['AMDRecursive2'], function (AMDRecursive2, ModuleNam
         var self = this;
         
         self.execute = function(onSuccess, onFailure) {
-            if (!AMDRecursive2())
+            if (AMDRecursive2())
                 onSuccess('AMD recursive require test passed');
             else
                 onFailure('AMD recursive require test failed')  
