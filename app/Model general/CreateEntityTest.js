@@ -10,7 +10,7 @@ function Create_Entity_Test() {
             model = P.loadModel(this.constructor.name);
 
     self.execute = function (onSuccess, onFailure) {
-        var created = model.createEntity("select * from mtd_entities");
+        var created = model.createEntity("select * from MTD_ENTITIES");
         if (created === null)
             throw "entity hasn't been created";
         if (created.schema === null)

@@ -1,7 +1,6 @@
 /**
  * 
  * @author mg
- * @name StoredProcedureCaller
  * @public
  * @stateless
  */

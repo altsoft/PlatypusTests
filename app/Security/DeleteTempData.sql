@@ -3,4 +3,4 @@
  * @manual 
  * @public
 */
-DELETE FROM security_test_data
+DELETE FROM SECURITY_TEST_DATA

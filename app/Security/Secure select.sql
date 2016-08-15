@@ -3,4 +3,4 @@
  * @name 133189623152950
  * @public
  */
-Select * From security_test_data t
+Select * From SECURITY_TEST_DATA t
