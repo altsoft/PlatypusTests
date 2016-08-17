@@ -24,10 +24,10 @@ function StoredProcedureCallerTest() {
     
     this.execute = function(aOnSuccess){
         var sum1 = self.achiveProcedureResult(8, 9);
-        if(sum1 !== 8 + 9)
+        if(sum1 != 8 + 9)
             throw 'Stored procedure sum violation 1'
         var sum2 = self.achiveFunctionResult(45, 78);
-        if(sum2 !== 45 + 78)
+        if(sum2 != 45 + 78)
             throw 'Stored procedure sum violation 2'
         aOnSuccess();
     };

@@ -17,7 +17,7 @@ function ResourceLoadTest() {
         if (P.agent !== P.HTML5) {
             // sync resources loading test       
             var loadedResource = P.Resource.load('Resources/resource load.model');
-            if (loadedResource.length !== 254)
+            if (loadedResource.replace('\r\n','\n').length !== 249)
                 throw 'loaded.length violation 1';
             var loadedPicture = P.Resource.load('Resources/wrench.png');
             var len = loadedPicture.length;
@@ -46,7 +46,7 @@ function ResourceLoadTest() {
         }
         // async resources loading test
         P.Resource.loadText('Resources/resource load.model', function (aLoaded) {
-            if (aLoaded.length !== 254)
+            if (aLoaded.replace('\r\n','\n').length !== 249)
                 throw 'loaded.length violation 3';
             complete();
         }, function (e) {
