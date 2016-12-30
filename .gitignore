@@ -1,4 +1,4 @@
 .gradle
-private.properties
-build
 .nb-gradle
+build
+private.properties
