@@ -1,0 +1,62 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+repositories {
+    jcenter()
+    mavenLocal()
+}
+
+configurations {
+    compile.transitive = false
+    testCompile.transitive = false
+    pwc.transitive = false
+    wrappers.transitive = false
+}
+
+dependencies {
+    runtime 'platypus-js:servlet:5.11.0'
+    pwc 'platypus-js:web-client:5.11.0'
+    wrappers 'platypus-js:wrappers:5.11.0'
+}
+
+def pwcDir = "${webAppDirName}/pwc"
+def wrappersDir = "${webAppDirName}/WEB-INF/classes"
+
+task cleanExplodePwc(type: Delete) {
+    delete pwcDir
+}
+
+task cleanExplodeWrappers(type: Delete) {
+    delete wrappersDir
+}
+
+clean.dependsOn cleanExplodePwc
+clean.dependsOn cleanExplodeWrappers
+
+task explodePwc(type: Copy) {
+    configurations.pwc.each {
+        from zipTree(file(it))
+    }
+    into pwcDir
+}
+
+task explodeWrappers(type: Copy) {
+    configurations.wrappers.each {
+        from zipTree(file(it))
+    }
+    into wrappersDir
+}
+
+war {
+    exclude 'platypus.xml'
+    exclude 'private.properties'
+    exclude 'project.properties'
+}
+war.dependsOn explodePwc
+war.dependsOn explodeWrappers
