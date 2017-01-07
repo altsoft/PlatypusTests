@@ -17,16 +17,26 @@ configurations {
     testCompile.transitive = false
     pwc.transitive = false
     wrappers.transitive = false
+    tomcat
+    containerLibs
 }
+
+def tomcatVersion = '8.5.2'
 
 dependencies {
     runtime 'platypus-js:servlet:5.11.0'
     pwc 'platypus-js:web-client:5.11.0'
     wrappers 'platypus-js:wrappers:5.11.0'
+    tomcat "org.apache.tomcat.embed:tomcat-embed-core:$tomcatVersion",
+           "org.apache.tomcat.embed:tomcat-embed-logging-juli:$tomcatVersion",
+           "org.apache.tomcat.embed:tomcat-embed-jasper:$tomcatVersion",
+           "org.apache.tomcat.embed:tomcat-embed-websocket:$tomcatVersion"
+    containerLibs 'mysql:mysql-connector-java:6.0.5'
 }
 
 def pwcDir = "${webAppDirName}/pwc"
 def wrappersDir = "${webAppDirName}/WEB-INF/classes"
+def libDir = "${webAppDirName}/WEB-INF/lib"
 
 task cleanExplodePwc(type: Delete) {
     delete pwcDir
@@ -36,8 +46,13 @@ task cleanExplodeWrappers(type: Delete) {
     delete wrappersDir
 }
 
+task cleanLib(type: Delete) {
+    delete libDir
+}
+
 clean.dependsOn cleanExplodePwc
 clean.dependsOn cleanExplodeWrappers
+clean.dependsOn cleanLib
 
 task explodePwc(type: Copy) {
     configurations.pwc.each {
@@ -53,6 +68,13 @@ task explodeWrappers(type: Copy) {
     into wrappersDir
 }
 
+task distilleLib(type: Copy) {
+    configurations.runtime.each {
+        from file(it)
+    }
+    into libDir
+}
+
 war {
     exclude 'platypus.xml'
     exclude 'private.properties'
@@ -60,3 +82,47 @@ war {
 }
 war.dependsOn explodePwc
 war.dependsOn explodeWrappers
+
+def tomcatDir = 'tomcat'
+def tomcatBinDir = "${tomcatDir}/bin"
+def tomcatLibsDir = "${tomcatDir}/lib"
+
+task buildTomcatBin(type: Copy) {
+    configurations.tomcat.each {
+        from file(it)
+    }
+    into tomcatBinDir
+}
+
+task buildTomcatLibs(type: Copy) {
+    configurations.containerLibs.each {
+        from file(it)
+    }
+    into tomcatLibsDir
+}
+
+task buildTomcat() {
+}
+
+buildTomcat.dependsOn buildTomcatBin
+buildTomcat.dependsOn buildTomcatLibs
+
+task cleanTomcat(type: Delete){
+    delete tomcatDir
+}
+clean.dependsOn cleanTomcat
+
+task runWebApp(type: JavaExec){
+    workingDir tomcatDir
+    classpath fileTree(tomcatBinDir)
+    main 'org.apache.catalina.startup.Bootstrap'
+    args '-config', "${file('src/main/tomcat-conf/server.xml')}", 'start'
+}
+
+runWebApp.dependsOn buildTomcat
+runWebApp.dependsOn distilleLib
+runWebApp.dependsOn explodeWrappers
+runWebApp.dependsOn explodePwc
+
+task runThinServer(){}
+task runJ2SEClient(){}
