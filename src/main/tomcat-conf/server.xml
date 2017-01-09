@@ -14,16 +14,16 @@
     <!-- Global JNDI resources
          Documentation at /docs/jndi-resources-howto.html
     -->
-    <GlobalNamingResources>
-        <!-- Editable user database that can also be used by
-             UserDatabaseRealm to authenticate users
-        -->
-        <Resource name="UserDatabase" auth="Container"
-                  type="org.apache.catalina.UserDatabase"
-                  description="User database that can be updated and saved"
-                  factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
-                  pathname="../src/main/tomcat-conf/tomcat-users.xml" />
-    </GlobalNamingResources>
+    <!--GlobalNamingResources-->
+    <!-- Editable user database that can also be used by
+         UserDatabaseRealm to authenticate users
+    -->
+    <!--Resource name="UserDatabase" auth="Container"
+    type="org.apache.catalina.UserDatabase"
+    description="User database that can be updated and saved"
+    factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
+    pathname="../src/main/tomcat-conf/tomcat-users.xml" /-->
+    <!--/GlobalNamingResources-->
 
     <!-- A "Service" is a collection of one or more "Connectors" that share
         a single "Container" Note:  A "Service" is not itself a "Container",
@@ -38,7 +38,7 @@
             parallel requests as possible in presence of eventually blocked threads.
             Keep in mind the case of eventual waking up of all blocked thread at some mystery point in time.
         -->
-        <Executor name="tomcatThreadPool" namePrefix="catalina-exec-"
+        <Executor name="ContainrExecutor" namePrefix="tomcat-exec-"
                   maxThreads="5" minSpareThreads="0"/>
 
         <!-- A "Connector" represents an endpoint by which requests are received
@@ -49,8 +49,8 @@
              Define a non-SSL HTTP/1.1 Connector on port 8080
         -->
         <!-- A "Connector" using the shared thread pool-->
-        <Connector executor="tomcatThreadPool"
-                   port="8080" protocol="HTTP/1.1"
+        <Connector executor="ContainrExecutor"
+                   port="${tomcat.http.port}" protocol="HTTP/1.1"
                    connectionTimeout="20000"
                    redirectPort="8443" URIEncoding="UTF-8"/>
 
@@ -82,14 +82,14 @@
 
             <!-- Use the LockOutRealm to prevent attempts to guess user passwords
             via a brute-force attack -->
-            <Realm className="org.apache.catalina.realm.LockOutRealm">
-                <!-- This Realm uses the UserDatabase configured in the global JNDI
-                resources under the key "UserDatabase".  Any edits
-                that are performed against this UserDatabase are immediately
-                available for use by the Realm.  -->
-                <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
+            <!--Realm className="org.apache.catalina.realm.LockOutRealm"-->
+            <!-- This Realm uses the UserDatabase configured in the global JNDI
+            resources under the key "UserDatabase".  Any edits
+            that are performed against this UserDatabase are immediately
+            available for use by the Realm.  -->
+            <!--Realm className="org.apache.catalina.realm.UserDatabaseRealm"
                        resourceName="UserDatabase"/>
-            </Realm>
+            </Realm-->
 
             <Host name="localhost"  appBase="webapps"
                   unpackWARs="true" autoDeploy="true">
@@ -107,9 +107,16 @@
                        prefix="localhost_access_log" suffix=".txt"
                        pattern="%h %l %u %t &quot;%r&quot; %s %b" />
 
-                <Context path="p-tests"
-                         docBase="../../src/main/webapp"
-                         reloadable="true" />
+                <Context path="${app.context}"
+                         docBase="${app.base}"
+                         reloadable="true">
+                    <Realm className="org.apache.catalina.realm.DataSourceRealm" dataSourceName="eas" localDataSource="true" roleNameCol="GROUP_NAME" userCredCol="USR_PASSWD" userNameCol="USR_NAME" userRoleTable="MTD_GROUPS" userTable="MTD_USERS">
+                        <CredentialHandler className="org.apache.catalina.realm.MessageDigestCredentialHandler"     
+                                           algorithm="md5" />
+                    </Realm>
+                    <Resource driverClassName="com.mysql.cj.jdbc.Driver" name="eas" password="test2" type="javax.sql.DataSource" url="jdbc:mysql://192.168.10.205:3306/eas?zeroDateTimeBehavior=convertToNull&amp;serverTimezone=UTC" username="test2"/>
+                    <Resource driverClassName="com.mysql.cj.jdbc.Driver" name="easHR" password="test2" type="javax.sql.DataSource" url="jdbc:mysql://192.168.10.205:3306/hr?zeroDateTimeBehavior=convertToNull&amp;serverTimezone=UTC" username="test2"/>
+                </Context>
             </Host>
         </Engine>
     </Service>

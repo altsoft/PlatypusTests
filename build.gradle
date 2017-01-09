@@ -21,17 +21,18 @@ configurations {
     containerLibs
 }
 
-def tomcatVersion = '8.5.2'
+def tomcatVersion = '8.5.8'
 
 dependencies {
-    runtime 'platypus-js:servlet:5.11.0'
-    pwc 'platypus-js:web-client:5.11.0'
-    wrappers 'platypus-js:wrappers:5.11.0'
-    tomcat "org.apache.tomcat.embed:tomcat-embed-core:$tomcatVersion",
-           "org.apache.tomcat.embed:tomcat-embed-logging-juli:$tomcatVersion",
-           "org.apache.tomcat.embed:tomcat-embed-jasper:$tomcatVersion",
-           "org.apache.tomcat.embed:tomcat-embed-websocket:$tomcatVersion"
-    containerLibs 'mysql:mysql-connector-java:6.0.5'
+    runtime 'platypus-js:platypus-js-servlet:5.11.0'
+    pwc 'platypus-js:platypus-js-web-client:5.11.0'
+    wrappers 'platypus-js:platypus-js-wrappers:5.11.0'
+    tomcat "org.apache.tomcat:tomcat-catalina:$tomcatVersion",
+           "org.apache.tomcat:tomcat-jasper:$tomcatVersion",
+           "org.apache.tomcat:tomcat-dbcp:$tomcatVersion",
+           "org.apache.tomcat:tomcat-websocket:$tomcatVersion",
+           "org.apache.tomcat:tomcat-jaspic-api:$tomcatVersion"
+    containerLibs 'com.h2database:h2:1.4.193'
 }
 
 def pwcDir = "${webAppDirName}/pwc"
@@ -82,10 +83,11 @@ war {
 }
 war.dependsOn explodePwc
 war.dependsOn explodeWrappers
+war.dependsOn distilleLib
 
 def tomcatDir = 'tomcat'
 def tomcatBinDir = "${tomcatDir}/bin"
-def tomcatLibsDir = "${tomcatDir}/lib"
+def tomcatLibDir = "${tomcatDir}/lib"
 
 task buildTomcatBin(type: Copy) {
     configurations.tomcat.each {
@@ -98,7 +100,7 @@ task buildTomcatLibs(type: Copy) {
     configurations.containerLibs.each {
         from file(it)
     }
-    into tomcatLibsDir
+    into tomcatLibDir
 }
 
 task buildTomcat() {
@@ -112,17 +114,88 @@ task cleanTomcat(type: Delete){
 }
 clean.dependsOn cleanTomcat
 
-task runWebApp(type: JavaExec){
+def props = { 
+    fileName ->
+    def input = file(fileName).newDataInputStream()
+    try {
+        def loadedProps = new Properties()
+        loadedProps.load(input)
+        return loadedProps
+    } finally {
+        input.close()
+    }
+}
+
+def appProps = props('src/main/webapp/project.properties')
+def appPrivateProps = props('src/main/webapp/private.properties')
+
+task completeTomcatConf(type: Copy){
+    from 'src/main/tomcat-conf'
+    into 'tomcat/conf'
+    rename 'default-web.xml', 'web.xml'
+}
+
+def asCommandLine = {
+    commandParts ->
+    def result = new StringBuilder()
+    return '"' + commandParts.join('" "') + '"'
+}
+
+def tomcatCommandLine
+task tomcatExec(type: JavaExec) {
     workingDir tomcatDir
     classpath fileTree(tomcatBinDir)
     main 'org.apache.catalina.startup.Bootstrap'
-    args '-config', "${file('src/main/tomcat-conf/server.xml')}", 'start'
+    jvmArgs "-Dtomcat.http.port=8080",
+            "-Dapp.context=${appProps.context}",
+            "-Dapp.base=${file('src/main/webapp')}"
+    tomcatCommandLine = asCommandLine(commandLine)
+}
+def thinServerCommandLine
+task thinServerExec(type: JavaExec) {
+    classpath fileTree(tomcatLibDir), fileTree('src/main/webapp/WEB-INF/lib'), 'src/main/webapp/WEB-INF/classes'
+    main 'com.eas.server.ServerMain'
+    args '-url', 'platypus://localhost:8500', '-default-datasource', 'eas',
+         '-datasource', 'eas', '-dburl', '', '-dbuser', 'sa', '-dbpassword', 'sa', '-dbschema', 'eas',
+         '-datasource', 'easHR', '-dburl', '', '-dbuser', 'sa', '-dbpassword', 'sa', '-dbschema', 'HR',
+         '-source-path', 'app',
+         '-global-api'
+    thinServerCommandLine = asCommandLine(commandLine)
 }
 
-runWebApp.dependsOn buildTomcat
-runWebApp.dependsOn distilleLib
-runWebApp.dependsOn explodeWrappers
-runWebApp.dependsOn explodePwc
+def h2CommandLine
+task h2Exec(type: JavaExec) {
+    classpath fileTree(tomcatLibDir)
+    main 'org.h2.tools.Server'
+    args '-tcp'
+    h2CommandLine = asCommandLine(commandLine)
+}
 
-task runThinServer(){}
-task runJ2SEClient(){}
+def tomcatServer
+def thinServer
+def h2Server
+task launchServers(){
+    doFirst {
+        tomcatServer = tomcatCommandLine.exec()
+        thinServer = thinServerCommandLine.exec()
+        h2Server = h2Server.exec()
+    }
+}
+
+task shutdownServers (){
+    doFirst {
+        tomcatServer.destroy()
+        tomcatServer.waitFor()
+        thinServer.destroy()
+        thinServer.waitFor()
+        h2Server.destroy()
+        h2Server.waitFor()
+    }
+}
+
+launchServers.dependsOn buildTomcat
+launchServers.dependsOn completeTomcatConf
+launchServers.dependsOn distilleLib
+launchServers.dependsOn explodeWrappers
+launchServers.dependsOn explodePwc
+
