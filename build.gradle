@@ -135,13 +135,6 @@ task completeTomcatConf(type: Copy){
     rename 'default-web.xml', 'web.xml'
 }
 
-def asCommandLine = {
-    commandParts ->
-    def result = new StringBuilder()
-    return '"' + commandParts.join('" "') + '"'
-}
-
-def tomcatCommandLine
 task tomcatExec(type: JavaExec) {
     workingDir tomcatDir
     classpath fileTree(tomcatBinDir)
@@ -149,26 +142,22 @@ task tomcatExec(type: JavaExec) {
     jvmArgs "-Dtomcat.http.port=8080",
             "-Dapp.context=${appProps.context}",
             "-Dapp.base=${file('src/main/webapp')}"
-    tomcatCommandLine = asCommandLine(commandLine)
 }
-def thinServerCommandLine
+
 task thinServerExec(type: JavaExec) {
     classpath fileTree(tomcatLibDir), fileTree('src/main/webapp/WEB-INF/lib'), 'src/main/webapp/WEB-INF/classes'
     main 'com.eas.server.ServerMain'
-    args '-url', 'platypus://localhost:8500', '-default-datasource', 'eas',
-         '-datasource', 'eas', '-dburl', '', '-dbuser', 'sa', '-dbpassword', 'sa', '-dbschema', 'eas',
-         '-datasource', 'easHR', '-dburl', '', '-dbuser', 'sa', '-dbpassword', 'sa', '-dbschema', 'HR',
-         '-source-path', 'app',
+    args '-url', "${file('src/main/webapp').toURI().toURL()}", '-default-datasource', 'eas',
+         '-datasource', 'eas', '-dburl', 'jdbc:h2:tcp/localhost/~/platypus-tests-eas', '-dbuser', 'sa', '-dbpassword', 'sa', '-dbschema', 'PUBLIC',
+         '-datasource', 'easHR', '-dburl', 'jdbc:h2:tcp/localhost/~/platypus-tests-easHR', '-dbuser', 'sa', '-dbpassword', 'sa', '-dbschema', 'PUBLIC',
+         '-source-path', "${appProps.sourcePath}",
          '-global-api'
-    thinServerCommandLine = asCommandLine(commandLine)
 }
 
-def h2CommandLine
 task h2Exec(type: JavaExec) {
     classpath fileTree(tomcatLibDir)
     main 'org.h2.tools.Server'
     args '-tcp'
-    h2CommandLine = asCommandLine(commandLine)
 }
 
 def tomcatServer
@@ -176,9 +165,38 @@ def thinServer
 def h2Server
 task launchServers(){
     doFirst {
-        tomcatServer = tomcatCommandLine.exec()
-        thinServer = thinServerCommandLine.exec()
-        h2Server = h2Server.exec()
+        h2Server = new ProcessBuilder(h2Exec.commandLine)
+                            .redirectErrorStream(true)
+                            .start()
+        def h2StdOut = new InputStreamReader(h2Server.getInputStream())
+        def h2NextLine = h2StdOut.readLine()
+        while(!h2NextLine.contains('TCP server running at')){
+            println(h2NextLine)
+            h2NextLine = h2StdOut.readLine()
+        }
+        println(h2NextLine)
+        
+        tomcatServer = new ProcessBuilder(tomcatExec.commandLine)
+                            .directory(file(tomcatExec.workingDir))
+                            .redirectErrorStream(true).start()
+        def tomcatStdOut = new InputStreamReader(tomcatServer.getInputStream())
+        def tomcatNextLine = tomcatStdOut.readLine()
+        while(!tomcatNextLine.contains('Server startup in')){
+            println(tomcatNextLine)
+            tomcatNextLine = tomcatStdOut.readLine()
+        }
+        println(tomcatNextLine)
+        
+        thinServer = new ProcessBuilder(thinServerExec.commandLine)
+                            .redirectErrorStream(true)
+                            .start()
+        def thinServerStdOut = new InputStreamReader(thinServer.getInputStream())
+        def thinServerNextLine = thinServerStdOut.readLine()
+        while(!thinServerNextLine.contains('Listening platypus protocol on')){
+            println(thinServerNextLine)
+            thinServerNextLine = thinServerStdOut.readLine()
+        }
+        println(thinServerNextLine)
     }
 }
 
@@ -186,10 +204,13 @@ task shutdownServers (){
     doFirst {
         tomcatServer.destroy()
         tomcatServer.waitFor()
+        println "Tomcat shutted down"
         thinServer.destroy()
         thinServer.waitFor()
+        println "Thin server shutted down"
         h2Server.destroy()
         h2Server.waitFor()
+        println "H2 server shutted down"
     }
 }
 
@@ -199,3 +220,6 @@ launchServers.dependsOn distilleLib
 launchServers.dependsOn explodeWrappers
 launchServers.dependsOn explodePwc
 
+test.dependsOn launchServers
+launchServers.finalizedBy shutdownServers
+shutdownServers.mustRunAfter test
